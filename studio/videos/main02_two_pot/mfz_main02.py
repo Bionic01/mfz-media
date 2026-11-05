@@ -134,8 +134,9 @@ class MFZMain02(Scene):
         return lines
 
     def para(self, s, n, size, col=MUTED, align="center"):
-        return Paragraph(*self._wrap(s, n), font="Barlow", font_size=size, color=col, alignment=align,
-                         line_spacing=0.8)
+        # disable_ligatures: with ligatures ("fi", "ffi") Paragraph assigns glyphs to the wrong line
+        return Paragraph(*self._wrap(s, n), font="Barlow", weight=MEDIUM, font_size=size, color=col,
+                         alignment=align, line_spacing=0.85, disable_ligatures=True)
 
     def construct(self):
         self.t = 0.0
@@ -291,7 +292,7 @@ class MFZMain02(Scene):
 
         def rule(title, sub, x, y, col=TEXT, stroke=STROKE):
             b = box(7.4, 1.3, x, y, stroke=stroke, sw=3 if stroke == STROKE else 5)
-            t = label(title, 40, col).move_to([x - 3.3, y + (0.2 if sub else 0), 0], aligned_edge=LEFT)
+            t = fit(label(title, 40, col), 6.5).move_to([x - 3.3, y + (0.2 if sub else 0), 0], aligned_edge=LEFT)
             g = VGroup(b, t)
             if sub:
                 g.add(body(sub, 28, MUTED).move_to([x - 3.3, y - 0.3, 0], aligned_edge=LEFT))
@@ -360,7 +361,7 @@ class MFZMain02(Scene):
         bars = []
         for i, (lab_, v) in enumerate(vals):
             x = -4.5 + i * 3.0
-            h = v / 86439 * 4.2
+            h = v / 86439 * 3.4
             col = GREY if i == 0 else GOLD
             bar = RoundedRectangle(corner_radius=0.12, width=1.8, height=h, stroke_width=0, fill_color=col,
                                    fill_opacity=1).move_to([x, base_y + h / 2, 0])
@@ -391,7 +392,8 @@ class MFZMain02(Scene):
         K = "ch5_retire"
         self.chapter_in(K, "THE RETIREMENT POT")
         lk = lock_icon(2.3).move_to([-5.0, 0.5, 0])
-        lkl = label("Locked until\nyou retire", 40, GOLD).next_to(lk, DOWN, buff=0.4)
+        lkl = Paragraph("Locked until", "you retire", font="Barlow", weight=SEMIBOLD, font_size=40, color=GOLD,
+                        alignment="center", line_spacing=0.8).next_to(lk, DOWN, buff=0.4)
         self.at(cue("this one is strict", K))
         self.P(FadeIn(lk, scale=0.8), FadeIn(lkl), rt=0.5)
 
@@ -420,8 +422,8 @@ class MFZMain02(Scene):
         for i, (t, s, ph, c) in enumerate(ex):
             x = -5.1 + i * 5.1
             b = box(4.7, 3.4, x, -0.6)
-            tt = bold(t, 60, c).move_to([x, 0.35, 0])
-            ss = self.para(s, 22, 30, TEXT).move_to([x, -1.0, 0])
+            tt = fit(bold(t, 60, c), 4.2).move_to([x, 0.35, 0])
+            ss = self.para(s, 25, 30, TEXT).move_to([x, -1.0, 0])
             fit(ss, 4.2)
             self.at(cue(ph, K))
             self.P(FadeIn(VGroup(b, tt, ss), shift=UP * 0.25), rt=0.45)
@@ -431,7 +433,7 @@ class MFZMain02(Scene):
         K = "ch6_vested"
         self.chapter_in(K, "THE VESTED POT")
         sub = label("Money saved before 1 September 2024: the old rules still apply", 36, BLUE).move_to([0, 2.15, 0])
-        data = [("Pension or provident fund", "Can usually cash out when you resign (taxed)", "if youre in a pension", TEXT),
+        data = [("Pension or provident fund", "Usually cash out when you resign (taxed)", "if youre in a pension", TEXT),
                 ("Tax-free on withdrawal", "First R27 500 in your lifetime", "but the first", GREEN),
                 ("Tax-free at retirement", "Up to R550 000 of your cash lump sum", "when you retire up to", GREEN),
                 ("Retirement annuity", "Usually locked until age 55", "if you have a retirement annuity", GOLD)]
@@ -451,7 +453,7 @@ class MFZMain02(Scene):
         self.chapter_in(K, "THE 4 TRAPS")
         pos = [(-3.95, 0.95), (3.95, 0.95), (-3.95, -2.15), (3.95, -2.15)]
         cards = []
-        specs = [("Tax surprise", "Your final tax is set when you file. You could still owe SARS more.", RED),
+        specs = [("Tax surprise", "Final tax is set when you file. You may still owe SARS more.", RED),
                  ("Flat fee", "R320 is small on R20 000. On R2 000 it eats", RED),
                  ("The habit", "of Momentum claims since 1 March 2026 were third withdrawals", GOLD),
                  ("Scams", "Official channels only. Never share your OTP or password.", RED)]
@@ -462,7 +464,7 @@ class MFZMain02(Scene):
             cards.append([b, n, tt, x, y, c])
         # card bodies with their own visuals
         x, y = cards[0][3], cards[0][4]
-        b0 = self.para(specs[0][1], 34, 28, TEXT, "left").move_to([x - 3.35, y - 0.55, 0], aligned_edge=LEFT)
+        b0 = self.para(specs[0][1], 36, 28, TEXT, "left").move_to([x - 3.35, y - 0.55, 0], aligned_edge=LEFT)
         v0 = bold("+ R?", 80, RED).move_to([x + 2.55, y + 0.55, 0])
         x, y = cards[1][3], cards[1][4]
         b1 = self.para(specs[1][1], 26, 28, TEXT, "left").move_to([x - 3.35, y - 0.55, 0], aligned_edge=LEFT)
@@ -582,7 +584,7 @@ class MFZMain02(Scene):
     def ch9(self):
         K = "ch9_how"
         self.chapter_in(K, "HOW TO WITHDRAW")
-        steps = [("1", "Check", "At least R2 000 in your savings pot, and no withdrawal yet this tax year", "step one"),
+        steps = [("1", "Check", "At least R2 000 saved, and no withdrawal yet this tax year", "step one"),
                  ("2", "Tax in order", "Registered, returns filed, name, ID and bank details all match", "step two"),
                  ("3", "Apply", "On your fund's website or app, or through HR at work", "step three"),
                  ("4", "Tax directive", "SARS sets the tax and takes any money you owe", "step four"),
@@ -592,8 +594,7 @@ class MFZMain02(Scene):
             b = box(2.92, 4.0, x, 0.05)
             nt = flip_tile(n, 0.7, 1.0, GOLD).move_to([x, 1.35, 0])
             tt = fit(label(t, 34), 2.6).move_to([x, 0.4, 0])
-            st = self.para(s, 17, 24, MUTED).move_to([x, -0.75, 0])
-            fit(st, 2.6)
+            st = fit(self.para(s, 17, 24, MUTED), 2.6).next_to(tt, DOWN, buff=0.25)
             self.at(cue(ph, K))
             self.P(FadeIn(VGroup(b, nt, tt, st), shift=UP * 0.25), rt=0.45)
         dl = outline_pill("Don't apply at the very end of February: it may count against the next tax year", GOLD, 30)
