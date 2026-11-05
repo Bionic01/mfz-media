@@ -4,3 +4,4 @@
 |---|---|---|---|---|
 | 2026-11-06 17:00 | Short | The tax-free account most South Africans never open #TFSA | YouTube Studio, scheduled | scheduled |
 | 2026-11-07 16:00 | Main video | Tax-Free Savings Account (TFSA) Explained: The Complete Beginner Guide (South Africa 2026) | Metricool post 418286047 (media/main01_tfsa @ 2e8ab36) | scheduled |
+| 2026-11-09 16:00 | Main video | Two-Pot Retirement System Explained: What You REALLY Get When You Withdraw (South Africa 2026) | Metricool post 418313114 (media/main02_two_pot @ e47b63d) | scheduled |

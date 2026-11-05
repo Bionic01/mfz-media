@@ -22,6 +22,9 @@ Take topics from the top of each list. Move a topic to LOG.md once it's publishe
 17. **Investing offshore**: the R1 million allowance explained.
 18. **Inflation explained with SA prices**: why your salary buys less.
 
+## Published long videos (don't repeat)
+- TFSA complete guide (main01), two-pot retirement system (main02)
+
 ## Shorts (45–60 s), cut from the long videos
 - TFSA: unused space is gone forever (use it or lose it).
 - TFSA: R3,834 a month means a SARS penalty (R8 over the limit).
