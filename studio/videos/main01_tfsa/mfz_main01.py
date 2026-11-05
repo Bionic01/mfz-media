@@ -25,18 +25,26 @@ def norm(w):
     return re.sub(r"[^a-z0-9%]", "", w.lower())
 
 
-NW = [norm(w[0]) for w in WORDS]
+# Amounts are voiced as "46,000 rand": match cues without the "rand" words and without an "r" prefix.
+IDX = [i for i, w in enumerate(WORDS) if norm(w[0]) not in ("rand", "")]
+NW = [norm(WORDS[i][0]) for i in IDX]
+
+
+def _tok(t):
+    t = norm(t)
+    return t[1:] if re.fullmatch(r"r\d+", t) else t
 
 
 def cue(phrase, chapter=None, after=0.0):
-    toks = [norm(t) for t in phrase.split()]
-    for i in range(len(WORDS) - len(toks) + 1):
-        if WORDS[i][1] < after:
+    toks = [x for x in (_tok(t) for t in phrase.split()) if x not in ("rand", "")]
+    for j in range(len(IDX) - len(toks) + 1):
+        w = WORDS[IDX[j]]
+        if w[1] < after:
             continue
-        if chapter and WORDS[i][3] != chapter:
+        if chapter and w[3] != chapter:
             continue
-        if NW[i:i + len(toks)] == toks:
-            return WORDS[i][1]
+        if NW[j:j + len(toks)] == toks:
+            return w[1]
     raise ValueError(f"cue not found: {phrase} ({chapter})")
 
 
