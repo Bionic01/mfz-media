@@ -1,6 +1,11 @@
 # Money From Zero: production playbook
 
-Read this whole file before making or posting anything for the channel.
+Read this whole file, and `STRATEGY.md` (goals, monetisation rules, learnings), before making or posting anything for the channel. Learnings in STRATEGY.md override the defaults here.
+
+**Schedule:**
+- Long videos go out **Mon, Wed and Fri at 16:00**. The production runs are Sun, Tue and Thu evening, and each schedules the next day's video.
+- Shorts go out **daily at 18:00**. A morning run makes and schedules that day's Short.
+- A weekly growth review runs on Sunday morning and updates STRATEGY.md and BACKLOG.md.
 
 ## The channel
 - **Name:** Money From Zero
@@ -68,6 +73,10 @@ Read this whole file before making or posting anything for the channel.
 - 1080x1920 or more (rendered at 2160x3840, 60 fps). 45–60 seconds, one idea, with the hook in the first 2 seconds.
 - Burned-in word-synced captions (ASS) and a loop-friendly ending.
 - Template: `shorts/001_tfsa/` (`mfz_tfsa.py`, `make_captions.py`, `assemble.sh`).
+- **Timing files:** `words_*.json` holds the word timings, as `[[text, start, end], ...]` from the free transcription of the TTS node. `timings.json` lists one entry per spoken line: `{key, start, end, n, text}` plus the `duration`.
+- **Animation:** cue it with `CUE[key]`.
+- **Captions:** `make_captions.py` writes word-synced ASS captions: Barlow ExtraBold 96, at most 16 characters per line, amounts in gold, MarginV 400.
+- **Assembly:** `assemble.sh` burns in the captions at CRF 14 and muxes the voice. If the result is over 95 MB, raise the CRF.
 - Title of at most 60 characters ending in one hashtag, plus 3 hashtags in the description.
 - A good Short cuts down one chapter of the latest long video and points viewers to the full guide.
 
