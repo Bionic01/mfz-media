@@ -1,0 +1,114 @@
+{
+ "duration": 535.72,
+ "offsets": {
+  "part1": 0.4,
+  "part2": 189.116,
+  "part3": 349.437
+ },
+ "chapters": [
+  {
+   "key": "cold_open",
+   "start": 0.88,
+   "end": 34.52,
+   "n": 89,
+   "ok": true,
+   "first": "Imagine"
+  },
+  {
+   "key": "ch1_what",
+   "start": 34.56,
+   "end": 65.88,
+   "n": 81,
+   "ok": true,
+   "first": "First,"
+  },
+  {
+   "key": "ch2_tax",
+   "start": 65.92,
+   "end": 133.947,
+   "n": 153,
+   "ok": true,
+   "first": "So"
+  },
+  {
+   "key": "ch3_limits",
+   "start": 133.973,
+   "end": 188.24,
+   "n": 112,
+   "ok": true,
+   "first": "Of"
+  },
+  {
+   "key": "ch4_growth",
+   "start": 189.276,
+   "end": 245.447,
+   "n": 132,
+   "ok": true,
+   "first": "Now"
+  },
+  {
+   "key": "ch5_trap1",
+   "start": 245.505,
+   "end": 294.996,
+   "n": 124,
+   "ok": true,
+   "first": "But"
+  },
+  {
+   "key": "ch6_trap2",
+   "start": 295.036,
+   "end": 323.556,
+   "n": 76,
+   "ok": true,
+   "first": "Trap"
+  },
+  {
+   "key": "ch7_transfer",
+   "start": 323.663,
+   "end": 348.556,
+   "n": 74,
+   "ok": true,
+   "first": "What"
+  },
+  {
+   "key": "ch8_inside",
+   "start": 349.645,
+   "end": 413.077,
+   "n": 170,
+   "ok": true,
+   "first": "So"
+  },
+  {
+   "key": "ch8b_ra",
+   "start": 413.117,
+   "end": 446.277,
+   "n": 91,
+   "ok": true,
+   "first": "A"
+  },
+  {
+   "key": "ch9_kids",
+   "start": 446.317,
+   "end": 465.437,
+   "n": 55,
+   "ok": true,
+   "first": "You"
+  },
+  {
+   "key": "ch10_open",
+   "start": 465.517,
+   "end": 498.837,
+   "n": 91,
+   "ok": true,
+   "first": "Ready"
+  },
+  {
+   "key": "ch11_recap",
+   "start": 498.877,
+   "end": 534.237,
+   "n": 92,
+   "ok": true,
+   "first": "Let's"
+  }
+ ]
+}

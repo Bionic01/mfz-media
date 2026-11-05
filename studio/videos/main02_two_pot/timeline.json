@@ -1,0 +1,53 @@
+{
+ "duration": 501.64,
+ "chapters": [
+  {
+   "key": "cold_open",
+   "start": 0.48
+  },
+  {
+   "key": "ch1_why",
+   "start": 40.44
+  },
+  {
+   "key": "ch2_pots",
+   "start": 75.76
+  },
+  {
+   "key": "ch3_rules",
+   "start": 127.76
+  },
+  {
+   "key": "ch4_example",
+   "start": 167.669
+  },
+  {
+   "key": "ch5_retire",
+   "start": 224.869
+  },
+  {
+   "key": "ch6_vested",
+   "start": 261.749
+  },
+  {
+   "key": "ch7_traps",
+   "start": 296.805
+  },
+  {
+   "key": "ch8_when",
+   "start": 355.758
+  },
+  {
+   "key": "ch9_how",
+   "start": 401.198
+  },
+  {
+   "key": "ch10_news",
+   "start": 454.558
+  },
+  {
+   "key": "ch11_recap",
+   "start": 469.758
+  }
+ ]
+}
