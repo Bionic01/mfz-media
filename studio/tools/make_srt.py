@@ -9,11 +9,11 @@ toks = []
 i = 0
 while i < len(W):
     t, s, e, k = W[i]
-    if re.fullmatch(r"\d[\d,]*", t) and i + 1 < len(W) and re.fullmatch(r"rand[.,!?]?", W[i + 1][0].lower()):
+    if re.fullmatch(r"\d[\d,]*(?:\.\d+)?", t) and i + 1 < len(W) and re.fullmatch(r"rand[.,!?]?", W[i + 1][0].lower()):
         toks.append(["R" + t + W[i + 1][0][4:], s, W[i + 1][2]])
         i += 2
         continue
-    if (re.fullmatch(r"\d[\d,]*", t) and i + 2 < len(W) and W[i + 1][0] in ("billion", "million")
+    if (re.fullmatch(r"\d[\d,]*(?:\.\d+)?", t) and i + 2 < len(W) and W[i + 1][0] in ("billion", "million")
             and re.fullmatch(r"rand[.,!?]?", W[i + 2][0].lower())):
         toks.append(["R" + t, s, W[i][2]])
         toks.append([W[i + 1][0] + W[i + 2][0][4:], W[i + 1][1], W[i + 2][2]])

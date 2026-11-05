@@ -15,7 +15,7 @@ def norm(w):
 
 
 def to_tts(s):
-    return re.sub(r"R(\d{1,3}(?:,\d{3})*)( billion| million)?", lambda m: m.group(1) + (m.group(2) or "") + " rand", s)
+    return re.sub(r"R(\d{1,3}(?:,\d{3})*(?:\.\d+)?)( billion| million)?", lambda m: m.group(1) + (m.group(2) or "") + " rand", s)
 
 
 def dur(f):

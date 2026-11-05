@@ -1,102 +1,102 @@
 {
- "voice": "Darius (ElevenLabs eleven_v4) take B",
- "duration": 59.25,
+ "voice": "Darius (ElevenLabs eleven_v4) rand take, 6 Nov 2026",
+ "duration": 64.26,
  "lines": [
   {
    "key": "hook1",
-   "start": 0.137,
-   "end": 4.96,
+   "start": 0.0,
+   "end": 4.92,
    "n": 12,
    "text": "In South Africa, there's an account where your savings grow completely tax-free."
   },
   {
    "key": "hook2",
-   "start": 5.04,
-   "end": 7.04,
+   "start": 5.2,
+   "end": 7.12,
    "n": 6,
    "text": "But many people never open one."
   },
   {
    "key": "name",
-   "start": 7.12,
-   "end": 9.84,
+   "start": 7.36,
+   "end": 10.16,
    "n": 6,
    "text": "It's called a Tax-Free Savings Account."
   },
   {
    "key": "year",
-   "start": 9.92,
-   "end": 14,
-   "n": 10,
+   "start": 10.48,
+   "end": 14.32,
+   "n": 11,
    "text": "Each tax year, you can put in up to R46 000."
   },
   {
    "key": "lose",
-   "start": 14.04,
-   "end": 18.72,
+   "start": 14.8,
+   "end": 19.36,
    "n": 13,
    "text": "If you don't use it, you lose it. Unused space doesn't carry over."
   },
   {
    "key": "life",
-   "start": 18.8,
-   "end": 23.04,
-   "n": 11,
+   "start": 19.92,
+   "end": 24.72,
+   "n": 12,
    "text": "Over your whole life, you can put in up to R500 000."
   },
   {
    "key": "best",
-   "start": 23.12,
-   "end": 24.64,
+   "start": 24.8,
+   "end": 25.84,
    "n": 4,
    "text": "Now the best part."
   },
   {
    "key": "never",
-   "start": 24.72,
-   "end": 28.453,
+   "start": 26.32,
+   "end": 30.24,
    "n": 10,
    "text": "The interest, dividends and growth you earn are never taxed."
   },
   {
    "key": "past",
-   "start": 28.507,
-   "end": 34.4,
-   "n": 16,
+   "start": 30.64,
+   "end": 36.88,
+   "n": 17,
    "text": "And that growth doesn't count towards your limits. So your account can grow way past R500 000."
   },
   {
    "key": "traps",
-   "start": 34.533,
-   "end": 36.48,
+   "start": 37.44,
+   "end": 39.04,
    "n": 6,
    "text": "But watch out for two traps."
   },
   {
    "key": "one",
-   "start": 36.56,
-   "end": 42.16,
+   "start": 39.6,
+   "end": 45.04,
    "n": 16,
    "text": "One: Put in more than the limit, and SARS charges a 40% penalty on the extra."
   },
   {
    "key": "two",
-   "start": 42.24,
-   "end": 48.64,
+   "start": 45.68,
+   "end": 52.52,
    "n": 19,
    "text": "Two: Money you take out can't be put back for free. Putting it back counts as a new contribution."
   },
   {
    "key": "open",
-   "start": 48.777,
-   "end": 55.76,
+   "start": 52.72,
+   "end": 60.64,
    "n": 20,
    "text": "So treat it as long-term money. Open one at your bank or an investment app. Start small, and start early."
   },
   {
    "key": "follow",
-   "start": 55.84,
-   "end": 59.28,
+   "start": 60.72,
+   "end": 64.16,
    "n": 10,
    "text": "Follow Money From Zero for more money tips, made simple."
   }
