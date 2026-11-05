@@ -1,0 +1,709 @@
+1
+00:00:00,880 --> 00:00:05,140
+Imagine putting away R3,833 a month.
+
+2
+00:00:05,160 --> 00:00:10,140
+In about eleven years you stop… and your
+money just keeps growing, for the rest of
+
+3
+00:00:10,160 --> 00:00:11,580
+your working life.
+
+4
+00:00:11,600 --> 00:00:15,207
+And SARS never takes a
+single cent of that growth.
+
+5
+00:00:15,227 --> 00:00:16,353
+That's not a trick.
+
+6
+00:00:16,373 --> 00:00:17,420
+It's the law.
+
+7
+00:00:17,440 --> 00:00:22,140
+It's called a Tax-Free Savings Account,
+and many South Africans either don't have
+
+8
+00:00:22,160 --> 00:00:24,460
+one… or aren't using it properly.
+
+9
+00:00:24,480 --> 00:00:29,500
+In this video, you'll learn exactly how it
+works, the two mistakes that cost people
+
+10
+00:00:29,560 --> 00:00:32,940
+money, and how to open one, step by step.
+
+11
+00:00:32,960 --> 00:00:34,540
+Let's start from zero.
+
+12
+00:00:34,560 --> 00:00:37,900
+First, what is a Tax-Free Savings Account?
+
+13
+00:00:37,920 --> 00:00:40,327
+It's not a special type of investment.
+
+14
+00:00:40,347 --> 00:00:41,953
+Think of it as a container.
+
+15
+00:00:41,973 --> 00:00:43,020
+A wrapper.
+
+16
+00:00:43,040 --> 00:00:47,300
+Inside the wrapper, you can hold different
+things: a simple savings account at your
+
+17
+00:00:47,320 --> 00:00:51,980
+bank, a unit trust, or an ETF
+that follows the stock market.
+
+18
+00:00:52,000 --> 00:00:54,087
+The wrapper's job is simple.
+
+19
+00:00:54,107 --> 00:00:58,007
+Whatever your money earns
+inside it is protected from tax.
+
+20
+00:00:58,027 --> 00:01:04,180
+TFSAs started on 1 March 2015, and today
+most banks and investment platforms in
+
+21
+00:01:04,200 --> 00:01:05,900
+South Africa offer one.
+
+22
+00:01:05,920 --> 00:01:08,673
+So which taxes do you avoid?
+
+23
+00:01:08,693 --> 00:01:11,340
+Normally, your money
+gets taxed in three ways.
+
+24
+00:01:11,360 --> 00:01:15,447
+Interest is taxed as income, once
+it's above your yearly exemption.
+
+25
+00:01:15,467 --> 00:01:19,820
+That's R23,800 a year if you're under 65.
+
+26
+00:01:19,840 --> 00:01:23,100
+Dividends from shares are taxed at 20%.
+
+27
+00:01:23,120 --> 00:01:27,500
+And when an investment grows and you sell
+it, you can pay capital gains tax on the
+
+28
+00:01:27,520 --> 00:01:30,300
+profit above R50,000 a year.
+
+29
+00:01:30,320 --> 00:01:33,740
+Inside a TFSA, none of that applies.
+
+30
+00:01:33,760 --> 00:01:35,500
+No income tax on interest.
+
+31
+00:01:35,520 --> 00:01:36,980
+No dividends tax.
+
+32
+00:01:37,000 --> 00:01:38,727
+No capital gains tax.
+
+33
+00:01:38,747 --> 00:01:45,420
+And here's a bonus: TFSA interest doesn't
+even use up your normal R23,800 interest
+
+34
+00:01:45,440 --> 00:01:46,300
+exemption.
+
+35
+00:01:46,320 --> 00:01:48,460
+You keep that for your other savings.
+
+36
+00:01:48,480 --> 00:01:49,927
+Let's make that real.
+
+37
+00:01:49,947 --> 00:01:54,967
+Say you have R500,000 in a normal
+savings account earning 8% a year.
+
+38
+00:01:54,987 --> 00:01:57,207
+That's R40,000 of interest.
+
+39
+00:01:57,227 --> 00:02:03,580
+The first R23,800 is exempt,
+so R16,200 is taxable.
+
+40
+00:02:03,600 --> 00:02:08,700
+If you pay 26% tax, that's
+about R4,200 to SARS.
+
+41
+00:02:08,720 --> 00:02:10,567
+Every single year.
+
+42
+00:02:10,587 --> 00:02:13,953
+Inside a TFSA, that bill is zero.
+
+43
+00:02:13,973 --> 00:02:15,500
+Of course, there's a limit.
+
+44
+00:02:15,520 --> 00:02:16,940
+Actually, there are two.
+
+45
+00:02:16,960 --> 00:02:18,140
+The yearly limit.
+
+46
+00:02:18,160 --> 00:02:23,793
+From 1 March 2026, you can put
+in up to R46,000 per tax year.
+
+47
+00:02:23,813 --> 00:02:27,180
+That's about R3,833 a month.
+
+48
+00:02:27,200 --> 00:02:30,780
+When TFSAs started, the limit was R30,000.
+
+49
+00:02:30,800 --> 00:02:38,020
+It went up to R33,000, then
+R36,000, and now R46,000,
+
+50
+00:02:38,040 --> 00:02:40,100
+the biggest increase so far.
+
+51
+00:02:40,120 --> 00:02:46,060
+And the lifetime limit: R500,000
+per person, for your whole life.
+
+52
+00:02:46,080 --> 00:02:48,060
+One thing catches people out.
+
+53
+00:02:48,240 --> 00:02:51,180
+Unused space does not carry over.
+
+54
+00:02:51,520 --> 00:02:58,140
+If you only put in R20,000 this tax
+year, the other R26,000 is gone forever.
+
+55
+00:02:58,480 --> 00:03:02,260
+Next year, you start again at R46,000.
+
+56
+00:03:02,320 --> 00:03:07,660
+At the full amount, it takes about eleven
+years to reach the R500,000 lifetime
+
+57
+00:03:07,680 --> 00:03:08,540
+limit.
+
+58
+00:03:09,276 --> 00:03:10,976
+Now the best part.
+
+59
+00:03:10,996 --> 00:03:15,469
+The limits only count what you
+put in… not what it grows into.
+
+60
+00:03:15,489 --> 00:03:17,016
+Let's look at an example.
+
+61
+00:03:17,036 --> 00:03:20,536
+These numbers are only an
+illustration, not a promise.
+
+62
+00:03:20,556 --> 00:03:22,723
+Say you start at 25.
+
+63
+00:03:22,743 --> 00:03:29,416
+You put in R3,833 a month until you
+reach the R500,000 limit, at about
+
+64
+00:03:29,436 --> 00:03:30,856
+age 36.
+
+65
+00:03:30,876 --> 00:03:34,483
+Then you stop paying in
+completely, and you just leave it.
+
+66
+00:03:34,503 --> 00:03:40,656
+If it grows at 5% a year above inflation,
+after fees, then by 65 you'd have about
+
+67
+00:03:40,676 --> 00:03:44,056
+R2.7 million, in today's money.
+
+68
+00:03:44,076 --> 00:03:47,256
+Only R500,000 of that came from you.
+
+69
+00:03:47,276 --> 00:03:52,776
+About 82% is growth… and
+every rand of it is tax-free.
+
+70
+00:03:52,796 --> 00:03:58,936
+Start ten years later, at 35, and you'd
+end up with about R1.7 million instead.
+
+71
+00:03:58,956 --> 00:04:00,376
+Same contributions.
+
+72
+00:04:00,396 --> 00:04:02,593
+Ten fewer years of growth.
+
+73
+00:04:02,613 --> 00:04:05,485
+That's why starting early matters so much.
+
+74
+00:04:05,505 --> 00:04:07,176
+But there are two traps.
+
+75
+00:04:07,196 --> 00:04:10,109
+Trap number one: going over the limit.
+
+76
+00:04:10,129 --> 00:04:13,576
+The limits are for you as
+a person, not per account.
+
+77
+00:04:13,596 --> 00:04:17,976
+You're allowed to have more than one TFSA,
+but everything you put into all of them
+
+78
+00:04:17,996 --> 00:04:19,256
+counts together.
+
+79
+00:04:19,276 --> 00:04:23,016
+And your bank can only see its
+own account, so it can't warn you.
+
+80
+00:04:23,036 --> 00:04:25,096
+Keeping track is your job.
+
+81
+00:04:25,116 --> 00:04:29,523
+If you go over, SARS charges
+a 40% penalty on the extra.
+
+82
+00:04:29,543 --> 00:04:34,296
+Here's SARS's own example: you
+put in R50,000 in one tax year.
+
+83
+00:04:34,316 --> 00:04:38,856
+The limit is R46,000,
+so you're R4,000 over.
+
+84
+00:04:38,876 --> 00:04:43,576
+Forty percent of R4,000
+is a R1,600 penalty.
+
+85
+00:04:43,596 --> 00:04:45,896
+Even a tiny mistake counts.
+
+86
+00:04:45,916 --> 00:04:52,856
+A debit order of R3,834 a month
+adds up to R46,008 for the year.
+
+87
+00:04:52,876 --> 00:04:55,016
+That's R8 over the limit.
+
+88
+00:04:55,036 --> 00:04:57,923
+Trap number two: taking money out.
+
+89
+00:04:57,943 --> 00:05:00,963
+You can withdraw from a TFSA at any time.
+
+90
+00:05:00,983 --> 00:05:03,216
+But the space you used is gone.
+
+91
+00:05:03,236 --> 00:05:08,616
+If you take out R10,000 and later put it
+back, SARS treats that as a new R10,000
+
+92
+00:05:08,636 --> 00:05:10,056
+contribution.
+
+93
+00:05:10,076 --> 00:05:14,136
+It counts against your yearly limit
+and your lifetime limit again.
+
+94
+00:05:14,156 --> 00:05:17,416
+So a TFSA is not your emergency fund.
+
+95
+00:05:17,436 --> 00:05:22,456
+Keep emergency money in a normal savings
+account, and let your TFSA do the long,
+
+96
+00:05:22,476 --> 00:05:23,643
+slow work.
+
+97
+00:05:23,663 --> 00:05:25,629
+What if you find a better provider?
+
+98
+00:05:25,649 --> 00:05:27,069
+You don't have to withdraw.
+
+99
+00:05:27,089 --> 00:05:28,456
+You can transfer.
+
+100
+00:05:28,476 --> 00:05:31,816
+Ask your new provider to
+move your TFSA across.
+
+101
+00:05:31,836 --> 00:05:36,536
+A proper transfer is not a new contribution,
+so it doesn't touch your limits.
+
+102
+00:05:36,556 --> 00:05:40,296
+The rules say it must be done within
+ten business days of your request.
+
+103
+00:05:40,316 --> 00:05:45,816
+What you must never do is withdraw the money
+yourself and deposit it somewhere else.
+
+104
+00:05:45,836 --> 00:05:48,856
+That counts as a brand new contribution.
+
+105
+00:05:49,645 --> 00:05:52,497
+So what should you put inside your TFSA?
+
+106
+00:05:52,517 --> 00:05:54,297
+There are two main options.
+
+107
+00:05:54,317 --> 00:05:58,457
+A cash option, like a bank
+savings or fixed deposit account.
+
+108
+00:05:58,477 --> 00:06:03,737
+It's simple and safe, but the growth is
+usually slow, and fixed terms can lock your
+
+109
+00:06:03,757 --> 00:06:05,977
+money for up to five years.
+
+110
+00:06:05,997 --> 00:06:10,297
+Or an investment option,
+like a unit trust or an ETF.
+
+111
+00:06:10,317 --> 00:06:15,497
+An ETF can follow a whole stock market
+index, so one purchase spreads your money
+
+112
+00:06:15,517 --> 00:06:17,710
+across many companies at once.
+
+113
+00:06:17,730 --> 00:06:23,017
+The value goes up and down, sometimes a
+lot, but over long periods it has more room
+
+114
+00:06:23,037 --> 00:06:24,084
+to grow.
+
+115
+00:06:24,104 --> 00:06:28,697
+That's why many people use their TFSA for
+money they won't need for ten years or
+
+116
+00:06:28,797 --> 00:06:29,257
+more.
+
+117
+00:06:29,277 --> 00:06:35,097
+One thing you can't do: buy individual
+company shares directly inside a TFSA.
+
+118
+00:06:35,117 --> 00:06:37,497
+You invest through funds instead.
+
+119
+00:06:37,517 --> 00:06:39,710
+The rules also protect you.
+
+120
+00:06:39,730 --> 00:06:44,737
+Providers can't charge performance fees
+on a TFSA, fees must be reasonable, and
+
+121
+00:06:44,757 --> 00:06:48,244
+withdrawals must be paid out
+within seven business days.
+
+122
+00:06:48,264 --> 00:06:53,097
+But fees still differ between products,
+so always compare before you choose.
+
+123
+00:06:53,117 --> 00:06:58,564
+A common question: should you use
+a TFSA or a retirement annuity?
+
+124
+00:06:58,584 --> 00:07:00,537
+They work in opposite ways.
+
+125
+00:07:00,557 --> 00:07:05,257
+A retirement annuity gives you a tax
+deduction now, when you pay in, but you're
+
+126
+00:07:05,277 --> 00:07:09,950
+taxed when you take it out, and most of
+your money stays locked until retirement.
+
+127
+00:07:09,970 --> 00:07:15,457
+A TFSA gives you no deduction now, but
+everything comes out tax-free, and you can
+
+128
+00:07:15,477 --> 00:07:17,657
+reach your money if you really need to.
+
+129
+00:07:17,677 --> 00:07:19,017
+They're not rivals.
+
+130
+00:07:19,037 --> 00:07:23,937
+Many people use both: the retirement
+annuity for retirement, and the TFSA for
+
+131
+00:07:23,957 --> 00:07:26,297
+long-term goals and extra freedom.
+
+132
+00:07:26,317 --> 00:07:29,284
+You can also open a
+TFSA for your children.
+
+133
+00:07:29,304 --> 00:07:33,417
+A child's TFSA uses the
+child's own limits, not yours.
+
+134
+00:07:33,437 --> 00:07:38,777
+So you're using up part of their R500,000
+lifetime limit, which can give them a huge
+
+135
+00:07:38,797 --> 00:07:39,897
+head start.
+
+136
+00:07:39,917 --> 00:07:44,217
+Just remember: when money is withdrawn,
+it has to be paid into an account in the
+
+137
+00:07:44,237 --> 00:07:45,497
+child's name.
+
+138
+00:07:45,517 --> 00:07:46,777
+Ready to open one?
+
+139
+00:07:46,797 --> 00:07:47,817
+Here's how.
+
+140
+00:07:47,837 --> 00:07:50,004
+Step one: choose a provider.
+
+141
+00:07:50,024 --> 00:07:52,857
+That can be your bank, or
+an investment platform.
+
+142
+00:07:52,877 --> 00:07:58,137
+Step two: have your ID ready, and possibly
+a proof of address, for the normal FICA
+
+143
+00:07:58,237 --> 00:07:58,697
+checks.
+
+144
+00:07:58,717 --> 00:08:04,217
+Step three: choose what goes inside,
+cash or investments, and check the fees.
+
+145
+00:08:04,237 --> 00:08:10,937
+Step four: set up a debit order that stays
+under the limit, like R3,833 a month.
+
+146
+00:08:10,957 --> 00:08:12,404
+And watch the deadline.
+
+147
+00:08:12,424 --> 00:08:16,777
+The tax year ends on the last day of
+February, and some providers stop accepting
+
+148
+00:08:16,797 --> 00:08:18,857
+deposits a few days before that.
+
+149
+00:08:18,877 --> 00:08:20,004
+Let's recap.
+
+150
+00:08:20,024 --> 00:08:23,790
+A TFSA is a wrapper that
+protects your money from tax.
+
+151
+00:08:23,810 --> 00:08:28,697
+You can put in R46,000 a
+year, and R500,000 for life.
+
+152
+00:08:28,717 --> 00:08:31,417
+Growth doesn't count towards the limits.
+
+153
+00:08:31,437 --> 00:08:36,057
+Don't go over the limit, don't treat it
+like an emergency fund, and if you switch
+
+154
+00:08:36,077 --> 00:08:39,417
+providers, transfer
+instead of withdrawing.
+
+155
+00:08:39,437 --> 00:08:42,737
+Start small if you have
+to, but start early.
+
+156
+00:08:42,757 --> 00:08:44,777
+Your future self will thank you.
+
+157
+00:08:44,797 --> 00:08:47,777
+If this helped, subscribe
+to Money From Zero.
+
+158
+00:08:47,797 --> 00:08:50,777
+Every week, we make one
+more piece of money simple.
+
+159
+00:08:50,797 --> 00:08:54,737
+This video is general
+information, not financial advice.
