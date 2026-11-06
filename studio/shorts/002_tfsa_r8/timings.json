@@ -1,0 +1,76 @@
+{
+ "voice": "Darius (ElevenLabs eleven_v4) single take, 6 Nov 2026",
+ "duration": 58.15,
+ "lines": [
+  {
+   "key": "hook",
+   "start": 0.15,
+   "end": 6.79,
+   "n": 16,
+   "text": "Save R3,834 a month in a tax-free savings account, and you'll go over the limit."
+  },
+  {
+   "key": "math",
+   "start": 7.03,
+   "end": 12.63,
+   "n": 8,
+   "text": "Twelve months of R3,834 is R46,008."
+  },
+  {
+   "key": "limit",
+   "start": 12.87,
+   "end": 17.79,
+   "n": 12,
+   "text": "But the yearly limit is R46,000. That's R8 too much."
+  },
+  {
+   "key": "penalty",
+   "start": 18.07,
+   "end": 22.31,
+   "n": 11,
+   "text": "SARS charges a 40% penalty on every rand above the limit."
+  },
+  {
+   "key": "small",
+   "start": 22.79,
+   "end": 28.47,
+   "n": 17,
+   "text": "On R8, that's only R3.20. But the rule works the same for big mistakes."
+  },
+  {
+   "key": "big",
+   "start": 28.71,
+   "end": 35.51,
+   "n": 15,
+   "text": "Put in R50,000 this year, and the R4,000 extra costs you R1,600."
+  },
+  {
+   "key": "all",
+   "start": 35.55,
+   "end": 41.27,
+   "n": 16,
+   "text": "And the limit counts all your tax-free accounts together. Two accounts don't give you two limits."
+  },
+  {
+   "key": "fix",
+   "start": 41.67,
+   "end": 47.91,
+   "n": 14,
+   "text": "So keep your total at R3,833 a month or less, across every account."
+  },
+  {
+   "key": "guide",
+   "start": 48.31,
+   "end": 53.35,
+   "n": 16,
+   "text": "The full TFSA guide is on the channel. Follow for a new money rule every day."
+  },
+  {
+   "key": "loop",
+   "start": 53.67,
+   "end": 56.95,
+   "n": 10,
+   "text": "Because one extra rand a month is all it takes."
+  }
+ ]
+}

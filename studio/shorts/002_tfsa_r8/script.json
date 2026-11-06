@@ -1,0 +1,12 @@
+[
+ ["hook", "Save R3,834 a month in a tax-free savings account, and you'll go over the limit.", "Save 3,834 rand a month in a tax-free savings account, and you'll go over the limit."],
+ ["math", "Twelve months of R3,834 is R46,008.", "Twelve months of 3,834 rand is 46,008 rand."],
+ ["limit", "But the yearly limit is R46,000. That's R8 too much.", "But the yearly limit is 46,000 rand. That's 8 rand too much."],
+ ["penalty", "SARS charges a 40% penalty on every rand above the limit.", "SARS charges a 40% penalty on every rand above the limit."],
+ ["small", "On R8, that's only R3.20. But the rule works the same for big mistakes.", "On 8 rand, that's only 3 rand 20. But the rule works the same for big mistakes."],
+ ["big", "Put in R50,000 this year, and the R4,000 extra costs you R1,600.", "Put in 50,000 rand this year, and the 4,000 rand extra costs you 1,600 rand."],
+ ["all", "And the limit counts all your tax-free accounts together. Two accounts don't give you two limits.", "And the limit counts all your tax-free accounts together. Two accounts don't give you two limits."],
+ ["fix", "So keep your total at R3,833 a month or less, across every account.", "So keep your total at 3,833 rand a month or less, across every account."],
+ ["guide", "The full TFSA guide is on the channel. Follow for a new money rule every day.", "The full TFSA guide is on the channel. Follow for a new money rule every day."],
+ ["loop", "Because one extra rand a month is all it takes.", "Because one extra rand a month is all it takes."]
+]
