@@ -6,3 +6,4 @@
 | 2026-11-07 16:00 | Main video | Tax-Free Savings Account (TFSA) Explained: The Complete Beginner Guide (South Africa 2026) | Metricool post 418368881 (was 418286047; v2 re-voiced with amounts said as "rand", media/main01_tfsa/..._v2.mp4 @ e519601, new chapters) | scheduled |
 | 2026-11-09 16:00 | Main video | Two-Pot Retirement System Explained: What You REALLY Get When You Withdraw (South Africa 2026) | Metricool post 418313114 (media/main02_two_pot @ e47b63d) | scheduled |
 | 2026-11-07 18:00 | Short | R3,834 a month in a TFSA puts you over the limit #TFSA | Metricool post 418637652 (media/shorts/002_tfsa_r8 @ 6b5c2f4); 58 s, single voice take, points to the TFSA guide | scheduled |
+| 2026-11-08 18:00 | Short | Skip your TFSA this year and the space is gone forever #TFSA | Metricool post 419765601 (media/shorts/003_tfsa_unused @ 57f0883); 58 s, single voice take, points to the TFSA guide | scheduled |

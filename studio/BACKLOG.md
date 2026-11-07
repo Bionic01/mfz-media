@@ -26,7 +26,7 @@ Take topics from the top of each list. Move a topic to LOG.md once it's publishe
 - TFSA complete guide (main01), two-pot retirement system (main02)
 
 ## Shorts (45–60 s), cut from the long videos
-- TFSA: unused space is gone forever (use it or lose it).
+- ~~TFSA: unused space is gone forever (use it or lose it).~~ USED: Short 003, 8 Nov 2026.
 - ~~TFSA: R3,834 a month means a SARS penalty (R8 over the limit).~~ USED: Short 002, 7 Nov 2026 (also covers "all accounts share one limit").
 - TFSA: switching providers? Transfer, don't withdraw.
 - TFSA: R500,000 in, about R2.7 million at 65 (illustration).
