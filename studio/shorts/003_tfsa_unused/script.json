@@ -1,0 +1,52 @@
+[
+ [
+  "hook",
+  "Every year you skip your TFSA, you lose R46,000 of tax-free space. Forever.",
+  "Every year you skip your tax-free savings account, you lose 46,000 rand of tax-free space. Forever."
+ ],
+ [
+  "rule",
+  "SARS says any unused part of the yearly limit is forfeited. It does not carry over.",
+  "SARS says any unused part of the yearly limit is forfeited. It does not carry over."
+ ],
+ [
+  "example",
+  "Put in R10,000 this tax year, and the other R36,000 of space disappears on the first of March.",
+  "Put in 10,000 rand this tax year, and the other 36,000 rand of space disappears on the first of March."
+ ],
+ [
+  "next",
+  "Next year, you can't catch up. You only get next year's limit.",
+  "Next year, you can't catch up. You only get next year's limit."
+ ],
+ [
+  "lifetime",
+  "The R500,000 lifetime limit stays, but you fill it one year at a time.",
+  "The 500,000 rand lifetime limit stays, but you fill it one year at a time."
+ ],
+ [
+  "math",
+  "At today's limit, that takes about eleven years. Every year you skip adds one more.",
+  "At today's limit, that takes about eleven years. Every year you skip adds one more."
+ ],
+ [
+  "deadline",
+  "This tax year ends on the last day of February. That's your deadline.",
+  "This tax year ends on the last day of February. That's your deadline."
+ ],
+ [
+  "safe",
+  "Just don't go over R46,000 in total, or SARS charges a 40% penalty on the extra.",
+  "Just don't go over 46,000 rand in total, or SARS charges a 40% penalty on the extra."
+ ],
+ [
+  "guide",
+  "The full TFSA guide is on the channel. Follow for a new money rule every day.",
+  "The full TFSA guide is on the channel. Follow for a new money rule every day."
+ ],
+ [
+  "loop",
+  "Because the space you skip this year never comes back.",
+  "Because the space you skip this year never comes back."
+ ]
+]

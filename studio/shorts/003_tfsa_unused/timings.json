@@ -1,0 +1,76 @@
+{
+ "voice": "Darius (ElevenLabs eleven_v4) single take, 7 Nov 2026",
+ "duration": 58.23,
+ "lines": [
+  {
+   "key": "hook",
+   "start": 0.15,
+   "end": 7.67,
+   "n": 16,
+   "text": "Every year you skip your TFSA, you lose R46,000 of tax-free space. Forever."
+  },
+  {
+   "key": "rule",
+   "start": 8.23,
+   "end": 14.07,
+   "n": 16,
+   "text": "SARS says any unused part of the yearly limit is forfeited. It does not carry over."
+  },
+  {
+   "key": "example",
+   "start": 14.47,
+   "end": 21.43,
+   "n": 20,
+   "text": "Put in R10,000 this tax year, and the other R36,000 of space disappears on the first of March."
+  },
+  {
+   "key": "next",
+   "start": 21.59,
+   "end": 25.71,
+   "n": 12,
+   "text": "Next year, you can't catch up. You only get next year's limit."
+  },
+  {
+   "key": "lifetime",
+   "start": 25.91,
+   "end": 31.19,
+   "n": 15,
+   "text": "The R500,000 lifetime limit stays, but you fill it one year at a time."
+  },
+  {
+   "key": "math",
+   "start": 31.35,
+   "end": 37.35,
+   "n": 15,
+   "text": "At today's limit, that takes about eleven years. Every year you skip adds one more."
+  },
+  {
+   "key": "deadline",
+   "start": 37.59,
+   "end": 41.59,
+   "n": 13,
+   "text": "This tax year ends on the last day of February. That's your deadline."
+  },
+  {
+   "key": "safe",
+   "start": 41.75,
+   "end": 48.15,
+   "n": 17,
+   "text": "Just don't go over R46,000 in total, or SARS charges a 40% penalty on the extra."
+  },
+  {
+   "key": "guide",
+   "start": 48.47,
+   "end": 53.51,
+   "n": 16,
+   "text": "The full TFSA guide is on the channel. Follow for a new money rule every day."
+  },
+  {
+   "key": "loop",
+   "start": 53.67,
+   "end": 57.03,
+   "n": 10,
+   "text": "Because the space you skip this year never comes back."
+  }
+ ]
+}

@@ -1,0 +1,71 @@
+[Script Info]
+ScriptType: v4.00+
+PlayResX: 1080
+PlayResY: 1920
+WrapStyle: 2
+ScaledBorderAndShadow: yes
+
+[V4+ Styles]
+Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding
+Style: Cap,Barlow ExtraBold,96,&H00DFEEF4,&H00DFEEF4,&H00141212,&H96000000,0,0,0,0,100,100,0,0,1,7,4,2,70,70,400,1
+
+[Events]
+Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
+Dialogue: 0,0:00:00.15,0:00:01.11,Cap,,0,0,0,,{\fad(40,0)}Every year you
+Dialogue: 0,0:00:01.11,0:00:01.59,Cap,,0,0,0,,{\fad(40,0)}skip your
+Dialogue: 0,0:00:01.59,0:00:02.55,Cap,,0,0,0,,{\fad(40,0)}tax-free savings
+Dialogue: 0,0:00:02.55,0:00:03.43,Cap,,0,0,0,,{\fad(40,0)}account, you
+Dialogue: 0,0:00:03.43,0:00:05.59,Cap,,0,0,0,,{\fad(40,0)}lose {\c&H33BEF7&}R46 000{\c&HDFEEF4&} of
+Dialogue: 0,0:00:05.59,0:00:07.03,Cap,,0,0,0,,{\fad(40,0)}tax-free space.
+Dialogue: 0,0:00:07.03,0:00:08.12,Cap,,0,0,0,,{\fad(40,0)}Forever.
+Dialogue: 0,0:00:08.23,0:00:09.51,Cap,,0,0,0,,{\fad(40,0)}SARS says any
+Dialogue: 0,0:00:09.51,0:00:10.51,Cap,,0,0,0,,{\fad(40,0)}unused part of
+Dialogue: 0,0:00:10.51,0:00:11.43,Cap,,0,0,0,,{\fad(40,0)}the yearly limit
+Dialogue: 0,0:00:11.43,0:00:12.55,Cap,,0,0,0,,{\fad(40,0)}is forfeited.
+Dialogue: 0,0:00:12.55,0:00:13.35,Cap,,0,0,0,,{\fad(40,0)}It does not
+Dialogue: 0,0:00:13.35,0:00:14.47,Cap,,0,0,0,,{\fad(40,0)}carry over.
+Dialogue: 0,0:00:14.47,0:00:15.83,Cap,,0,0,0,,{\fad(40,0)}Put in {\c&H33BEF7&}R10 000{\c&HDFEEF4&}
+Dialogue: 0,0:00:15.83,0:00:16.91,Cap,,0,0,0,,{\fad(40,0)}this tax year,
+Dialogue: 0,0:00:16.91,0:00:17.51,Cap,,0,0,0,,{\fad(40,0)}and the other
+Dialogue: 0,0:00:17.51,0:00:19.43,Cap,,0,0,0,,{\fad(40,0)}{\c&H33BEF7&}R36 000{\c&HDFEEF4&} of space
+Dialogue: 0,0:00:19.43,0:00:20.31,Cap,,0,0,0,,{\fad(40,0)}disappears on
+Dialogue: 0,0:00:20.31,0:00:20.87,Cap,,0,0,0,,{\fad(40,0)}the first of
+Dialogue: 0,0:00:20.87,0:00:21.59,Cap,,0,0,0,,{\fad(40,0)}March.
+Dialogue: 0,0:00:21.59,0:00:22.55,Cap,,0,0,0,,{\fad(40,0)}Next year, you
+Dialogue: 0,0:00:22.55,0:00:23.67,Cap,,0,0,0,,{\fad(40,0)}can't catch up.
+Dialogue: 0,0:00:23.67,0:00:24.55,Cap,,0,0,0,,{\fad(40,0)}You only get
+Dialogue: 0,0:00:24.55,0:00:25.31,Cap,,0,0,0,,{\fad(40,0)}next year's
+Dialogue: 0,0:00:25.31,0:00:25.91,Cap,,0,0,0,,{\fad(40,0)}limit.
+Dialogue: 0,0:00:25.91,0:00:27.35,Cap,,0,0,0,,{\fad(40,0)}The {\c&H33BEF7&}R500 000{\c&HDFEEF4&}
+Dialogue: 0,0:00:27.35,0:00:28.23,Cap,,0,0,0,,{\fad(40,0)}lifetime limit
+Dialogue: 0,0:00:28.23,0:00:29.43,Cap,,0,0,0,,{\fad(40,0)}stays, but you
+Dialogue: 0,0:00:29.43,0:00:30.39,Cap,,0,0,0,,{\fad(40,0)}fill it one year
+Dialogue: 0,0:00:30.39,0:00:31.35,Cap,,0,0,0,,{\fad(40,0)}at a time.
+Dialogue: 0,0:00:31.35,0:00:31.99,Cap,,0,0,0,,{\fad(40,0)}At today's
+Dialogue: 0,0:00:31.99,0:00:32.71,Cap,,0,0,0,,{\fad(40,0)}limit, that
+Dialogue: 0,0:00:32.71,0:00:33.35,Cap,,0,0,0,,{\fad(40,0)}takes about
+Dialogue: 0,0:00:33.35,0:00:34.79,Cap,,0,0,0,,{\fad(40,0)}eleven years.
+Dialogue: 0,0:00:34.79,0:00:35.59,Cap,,0,0,0,,{\fad(40,0)}Every year you
+Dialogue: 0,0:00:35.59,0:00:36.79,Cap,,0,0,0,,{\fad(40,0)}skip adds one
+Dialogue: 0,0:00:36.79,0:00:37.59,Cap,,0,0,0,,{\fad(40,0)}more.
+Dialogue: 0,0:00:37.59,0:00:38.39,Cap,,0,0,0,,{\fad(40,0)}This tax year
+Dialogue: 0,0:00:38.39,0:00:39.27,Cap,,0,0,0,,{\fad(40,0)}ends on the last
+Dialogue: 0,0:00:39.27,0:00:40.55,Cap,,0,0,0,,{\fad(40,0)}day of February.
+Dialogue: 0,0:00:40.55,0:00:40.95,Cap,,0,0,0,,{\fad(40,0)}That's your
+Dialogue: 0,0:00:40.95,0:00:41.75,Cap,,0,0,0,,{\fad(40,0)}deadline.
+Dialogue: 0,0:00:41.75,0:00:42.55,Cap,,0,0,0,,{\fad(40,0)}Just don't go
+Dialogue: 0,0:00:42.55,0:00:44.39,Cap,,0,0,0,,{\fad(40,0)}over {\c&H33BEF7&}R46 000{\c&HDFEEF4&} in
+Dialogue: 0,0:00:44.39,0:00:45.59,Cap,,0,0,0,,{\fad(40,0)}total, or SARS
+Dialogue: 0,0:00:45.59,0:00:46.55,Cap,,0,0,0,,{\fad(40,0)}charges a {\c&H33BEF7&}40%{\c&HDFEEF4&}
+Dialogue: 0,0:00:46.55,0:00:47.87,Cap,,0,0,0,,{\fad(40,0)}penalty on the
+Dialogue: 0,0:00:47.87,0:00:48.47,Cap,,0,0,0,,{\fad(40,0)}extra.
+Dialogue: 0,0:00:48.47,0:00:49.75,Cap,,0,0,0,,{\fad(40,0)}The full TFSA
+Dialogue: 0,0:00:49.75,0:00:50.39,Cap,,0,0,0,,{\fad(40,0)}guide is on the
+Dialogue: 0,0:00:50.39,0:00:51.19,Cap,,0,0,0,,{\fad(40,0)}channel.
+Dialogue: 0,0:00:51.19,0:00:52.07,Cap,,0,0,0,,{\fad(40,0)}Follow for a new
+Dialogue: 0,0:00:52.07,0:00:53.11,Cap,,0,0,0,,{\fad(40,0)}money rule every
+Dialogue: 0,0:00:53.11,0:00:53.67,Cap,,0,0,0,,{\fad(40,0)}day.
+Dialogue: 0,0:00:53.67,0:00:54.15,Cap,,0,0,0,,{\fad(40,0)}Because the
+Dialogue: 0,0:00:54.15,0:00:55.03,Cap,,0,0,0,,{\fad(40,0)}space you skip
+Dialogue: 0,0:00:55.03,0:00:56.15,Cap,,0,0,0,,{\fad(40,0)}this year never
+Dialogue: 0,0:00:56.15,0:00:57.48,Cap,,0,0,0,,{\fad(40,0)}comes back.
