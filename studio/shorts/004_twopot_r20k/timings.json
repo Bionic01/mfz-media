@@ -1,0 +1,76 @@
+{
+ "voice": "Darius (ElevenLabs eleven_v4) single take, 8 Nov 2026",
+ "duration": 53.03,
+ "lines": [
+  {
+   "key": "hook",
+   "start": 0.15,
+   "end": 5.91,
+   "n": 13,
+   "text": "You withdraw R20,000 from your savings pot. You don't get R20,000."
+  },
+  {
+   "key": "rule",
+   "start": 5.95,
+   "end": 11.59,
+   "n": 18,
+   "text": "SARS adds the withdrawal to your income for the year, and taxes it at your normal tax rate."
+  },
+  {
+   "key": "example",
+   "start": 11.67,
+   "end": 18.63,
+   "n": 16,
+   "text": "Say you earn R25,000 a month. That's R300,000 a year, and you're under 65."
+  },
+  {
+   "key": "rate",
+   "start": 18.71,
+   "end": 23.27,
+   "n": 10,
+   "text": "At that income, every extra rand is taxed at 26%."
+  },
+  {
+   "key": "tax",
+   "start": 23.35,
+   "end": 28.31,
+   "n": 10,
+   "text": "So SARS takes about R5,200 of your R20,000."
+  },
+  {
+   "key": "left",
+   "start": 28.39,
+   "end": 33.83,
+   "n": 13,
+   "text": "That leaves R14,800. And your fund's admin fee comes off that too."
+  },
+  {
+   "key": "debt",
+   "start": 34.07,
+   "end": 38.15,
+   "n": 10,
+   "text": "Owe SARS money? That's taken first, before you get paid."
+  },
+  {
+   "key": "limits",
+   "start": 38.19,
+   "end": 42.31,
+   "n": 12,
+   "text": "And you can only withdraw once a tax year, from R2,000."
+  },
+  {
+   "key": "guide",
+   "start": 42.39,
+   "end": 47.19,
+   "n": 16,
+   "text": "The full two-pot guide is on the channel. Follow for a new money rule every day."
+  },
+  {
+   "key": "loop",
+   "start": 47.35,
+   "end": 51.83,
+   "n": 12,
+   "text": "So before you withdraw R20,000, work out what you'll really get."
+  }
+ ]
+}

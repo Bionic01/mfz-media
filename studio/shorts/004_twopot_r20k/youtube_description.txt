@@ -1,0 +1,25 @@
+TITLE: Two-pot: withdraw R20,000 and SARS takes R5,200 #TwoPot
+
+Withdraw R20,000 from your two-pot savings pot and you won't get R20,000. SARS adds the withdrawal to your income for the year and taxes it at your normal (marginal) tax rate.
+
+- Example: you earn R25,000 a month (R300,000 a year), you're under 65 and have no other income or deductions
+- At 2026/27 rates that income is in the 26% bracket (R245,101 to R383,100), so the extra R20,000 is taxed at 26%
+- Tax: about R5,200. Left: about R14,800, and your fund's admin fee comes off that too
+- If you owe SARS, the debt is taken first, before you're paid (unless you have a debt arrangement with SARS)
+- One withdrawal per tax year, minimum R2,000
+- Your fund's tax directive may withhold a different amount; the final tax is worked out on assessment
+
+Full guide: "Two-Pot Retirement System Explained: What You REALLY Get When You Withdraw (South Africa 2026)" on the Money From Zero channel.
+
+Sources
+- SARS, Rates of tax for individuals (2027 tax year): https://www.sars.gov.za/tax-rates/income-tax/rates-of-tax-for-individuals/
+- SARS, Tax implications of withdrawing from the two-pot retirement system: https://www.sars.gov.za/media-release/tax-implications-of-withdrawing-from-two-pot-retirement-system/
+- SARS, Tax directive enhancements and tax implications of the two-pot system: https://www.sars.gov.za/latest-news/tax-directives-enhancements-and-tax-implications-of-the-two-pot-retirement-system/
+
+What should the next Short be? Tell me in the comments.
+
+New Shorts every day. Full step-by-step guides every week. Subscribe to learn money from zero.
+
+This video is general information and education only, not financial or tax advice.
+
+#TwoPot #SouthAfrica #PersonalFinance

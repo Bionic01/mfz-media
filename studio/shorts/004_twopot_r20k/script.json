@@ -1,0 +1,12 @@
+[
+ ["hook", "You withdraw R20,000 from your savings pot. You don't get R20,000.", "You withdraw 20,000 rand from your savings pot. You don't get 20,000 rand."],
+ ["rule", "SARS adds the withdrawal to your income for the year, and taxes it at your normal tax rate.", "SARS adds the withdrawal to your income for the year, and taxes it at your normal tax rate."],
+ ["example", "Say you earn R25,000 a month. That's R300,000 a year, and you're under 65.", "Say you earn 25,000 rand a month. That's 300,000 rand a year, and you're under 65."],
+ ["rate", "At that income, every extra rand is taxed at 26%.", "At that income, every extra rand is taxed at 26%."],
+ ["tax", "So SARS takes about R5,200 of your R20,000.", "So SARS takes about 5,200 rand of your 20,000 rand."],
+ ["left", "That leaves R14,800. And your fund's admin fee comes off that too.", "That leaves 14,800 rand. And your fund's admin fee comes off that too."],
+ ["debt", "Owe SARS money? That's taken first, before you get paid.", "Owe SARS money? That's taken first, before you get paid."],
+ ["limits", "And you can only withdraw once a tax year, from R2,000.", "And you can only withdraw once a tax year, from 2,000 rand."],
+ ["guide", "The full two-pot guide is on the channel. Follow for a new money rule every day.", "The full two-pot guide is on the channel. Follow for a new money rule every day."],
+ ["loop", "So before you withdraw R20,000, work out what you'll really get.", "So before you withdraw 20,000 rand, work out what you'll really get."]
+]

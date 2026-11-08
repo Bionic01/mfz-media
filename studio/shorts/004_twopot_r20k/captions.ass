@@ -1,0 +1,60 @@
+[Script Info]
+ScriptType: v4.00+
+PlayResX: 1080
+PlayResY: 1920
+WrapStyle: 2
+ScaledBorderAndShadow: yes
+
+[V4+ Styles]
+Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding
+Style: Cap,Barlow ExtraBold,96,&H00DFEEF4,&H00DFEEF4,&H00141212,&H96000000,0,0,0,0,100,100,0,0,1,7,4,2,70,70,400,1
+
+[Events]
+Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
+Dialogue: 0,0:00:00.15,0:00:00.79,Cap,,0,0,0,,{\fad(40,0)}You withdraw
+Dialogue: 0,0:00:00.79,0:00:02.15,Cap,,0,0,0,,{\fad(40,0)}{\c&H33BEF7&}R20 000{\c&HDFEEF4&} from
+Dialogue: 0,0:00:02.15,0:00:02.95,Cap,,0,0,0,,{\fad(40,0)}your savings
+Dialogue: 0,0:00:02.95,0:00:03.67,Cap,,0,0,0,,{\fad(40,0)}pot.
+Dialogue: 0,0:00:03.67,0:00:04.51,Cap,,0,0,0,,{\fad(40,0)}You don't get
+Dialogue: 0,0:00:04.51,0:00:05.95,Cap,,0,0,0,,{\fad(40,0)}{\c&H33BEF7&}R20 000.{\c&HDFEEF4&}
+Dialogue: 0,0:00:05.95,0:00:06.99,Cap,,0,0,0,,{\fad(40,0)}SARS adds the
+Dialogue: 0,0:00:06.99,0:00:07.51,Cap,,0,0,0,,{\fad(40,0)}withdrawal to
+Dialogue: 0,0:00:07.51,0:00:08.31,Cap,,0,0,0,,{\fad(40,0)}your income for
+Dialogue: 0,0:00:08.31,0:00:09.11,Cap,,0,0,0,,{\fad(40,0)}the year, and
+Dialogue: 0,0:00:09.11,0:00:10.23,Cap,,0,0,0,,{\fad(40,0)}taxes it at your
+Dialogue: 0,0:00:10.23,0:00:11.67,Cap,,0,0,0,,{\fad(40,0)}normal tax rate.
+Dialogue: 0,0:00:11.67,0:00:12.31,Cap,,0,0,0,,{\fad(40,0)}Say you earn
+Dialogue: 0,0:00:12.31,0:00:14.47,Cap,,0,0,0,,{\fad(40,0)}{\c&H33BEF7&}R25 000{\c&HDFEEF4&} a month.
+Dialogue: 0,0:00:14.47,0:00:15.95,Cap,,0,0,0,,{\fad(40,0)}That's {\c&H33BEF7&}R300 000{\c&HDFEEF4&}
+Dialogue: 0,0:00:15.95,0:00:16.87,Cap,,0,0,0,,{\fad(40,0)}a year, and
+Dialogue: 0,0:00:16.87,0:00:18.71,Cap,,0,0,0,,{\fad(40,0)}you're under 65.
+Dialogue: 0,0:00:18.71,0:00:19.91,Cap,,0,0,0,,{\fad(40,0)}At that income,
+Dialogue: 0,0:00:19.91,0:00:20.95,Cap,,0,0,0,,{\fad(40,0)}every extra rand
+Dialogue: 0,0:00:20.95,0:00:23.35,Cap,,0,0,0,,{\fad(40,0)}is taxed at {\c&H33BEF7&}26%.{\c&HDFEEF4&}
+Dialogue: 0,0:00:23.35,0:00:24.39,Cap,,0,0,0,,{\fad(40,0)}So SARS takes
+Dialogue: 0,0:00:24.39,0:00:26.63,Cap,,0,0,0,,{\fad(40,0)}about {\c&H33BEF7&}R5 200{\c&HDFEEF4&} of
+Dialogue: 0,0:00:26.63,0:00:28.39,Cap,,0,0,0,,{\fad(40,0)}your {\c&H33BEF7&}R20 000.{\c&HDFEEF4&}
+Dialogue: 0,0:00:28.39,0:00:28.95,Cap,,0,0,0,,{\fad(40,0)}That leaves
+Dialogue: 0,0:00:28.95,0:00:31.27,Cap,,0,0,0,,{\fad(40,0)}{\c&H33BEF7&}R14 800.{\c&HDFEEF4&}
+Dialogue: 0,0:00:31.27,0:00:32.11,Cap,,0,0,0,,{\fad(40,0)}And your fund's
+Dialogue: 0,0:00:32.11,0:00:32.87,Cap,,0,0,0,,{\fad(40,0)}admin fee comes
+Dialogue: 0,0:00:32.87,0:00:34.07,Cap,,0,0,0,,{\fad(40,0)}off that too.
+Dialogue: 0,0:00:34.07,0:00:35.35,Cap,,0,0,0,,{\fad(40,0)}Owe SARS money?
+Dialogue: 0,0:00:35.35,0:00:35.99,Cap,,0,0,0,,{\fad(40,0)}That's taken
+Dialogue: 0,0:00:35.99,0:00:37.03,Cap,,0,0,0,,{\fad(40,0)}first, before
+Dialogue: 0,0:00:37.03,0:00:38.19,Cap,,0,0,0,,{\fad(40,0)}you get paid.
+Dialogue: 0,0:00:38.19,0:00:39.07,Cap,,0,0,0,,{\fad(40,0)}And you can only
+Dialogue: 0,0:00:39.07,0:00:39.99,Cap,,0,0,0,,{\fad(40,0)}withdraw once a
+Dialogue: 0,0:00:39.99,0:00:40.87,Cap,,0,0,0,,{\fad(40,0)}tax year, from
+Dialogue: 0,0:00:40.87,0:00:42.39,Cap,,0,0,0,,{\fad(40,0)}{\c&H33BEF7&}R2 000.{\c&HDFEEF4&}
+Dialogue: 0,0:00:42.39,0:00:43.31,Cap,,0,0,0,,{\fad(40,0)}The full two-pot
+Dialogue: 0,0:00:43.31,0:00:43.91,Cap,,0,0,0,,{\fad(40,0)}guide is on the
+Dialogue: 0,0:00:43.91,0:00:44.79,Cap,,0,0,0,,{\fad(40,0)}channel.
+Dialogue: 0,0:00:44.79,0:00:45.51,Cap,,0,0,0,,{\fad(40,0)}Follow for a new
+Dialogue: 0,0:00:45.51,0:00:46.59,Cap,,0,0,0,,{\fad(40,0)}money rule every
+Dialogue: 0,0:00:46.59,0:00:47.35,Cap,,0,0,0,,{\fad(40,0)}day.
+Dialogue: 0,0:00:47.35,0:00:48.31,Cap,,0,0,0,,{\fad(40,0)}So before you
+Dialogue: 0,0:00:48.31,0:00:48.67,Cap,,0,0,0,,{\fad(40,0)}withdraw
+Dialogue: 0,0:00:48.67,0:00:50.31,Cap,,0,0,0,,{\fad(40,0)}{\c&H33BEF7&}R20 000,{\c&HDFEEF4&} work
+Dialogue: 0,0:00:50.31,0:00:50.95,Cap,,0,0,0,,{\fad(40,0)}out what you'll
+Dialogue: 0,0:00:50.95,0:00:52.28,Cap,,0,0,0,,{\fad(40,0)}really get.
