@@ -1,0 +1,45 @@
+{
+ "duration": 499.32,
+ "chapters": [
+  {
+   "key": "cold_open",
+   "start": 0.8
+  },
+  {
+   "key": "ch1_what",
+   "start": 30.92
+  },
+  {
+   "key": "ch2_why",
+   "start": 77.6
+  },
+  {
+   "key": "ch3_size",
+   "start": 122.48
+  },
+  {
+   "key": "ch4_where",
+   "start": 189.038
+  },
+  {
+   "key": "ch5_example",
+   "start": 290.238
+  },
+  {
+   "key": "ch6_find",
+   "start": 342.567
+  },
+  {
+   "key": "ch7_traps",
+   "start": 391.783
+  },
+  {
+   "key": "ch8_how",
+   "start": 430.007
+  },
+  {
+   "key": "ch9_recap",
+   "start": 465.527
+  }
+ ]
+}

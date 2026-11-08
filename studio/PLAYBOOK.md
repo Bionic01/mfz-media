@@ -54,6 +54,8 @@ Read this whole file, and `STRATEGY.md` (goals, monetisation rules, learnings), 
    - Check every chapter with stills (`still.sh <seconds>`, rendered at 1080p) before the 4K render. Fix overlaps and text running off the screen.
 8. **Render:** `manim --disable_caching --media_dir media_4k <scene>.py <Class>` in the background.
    - Expect about 1.5–2.5 hours at 4K30 on 2 cores. Use `run_in_background` and don't use nohup.
+   - A fresh container may not have manim: `apt-get install -y libpango1.0-dev libcairo2-dev pkg-config python3-dev && pip install manim --break-system-packages` (0.22.1 worked, 8 Nov 2026).
+   - main03 (8 Nov 2026, 312 animations) rendered in about 40 minutes. The 4K mux below took about 15 minutes, so start it in the background as well and poll it; a foreground call times out at 10 minutes.
 9. **Mux:** encode the final file, then check frames:
    ```
    ffmpeg -i video -i voice_master.m4a -filter_complex "[0:v]tpad=stop_mode=clone:stop_duration=3[v]" -map "[v]" -map 1:a -c:v libx264 -preset slow -crf 16 -tune animation -pix_fmt yuv420p -c:a copy -movflags +faststart out.mp4

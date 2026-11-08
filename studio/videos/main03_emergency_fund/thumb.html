@@ -1,0 +1,40 @@
+<!doctype html><html><head><meta charset="utf-8"><style>
+@font-face{font-family:BC;font-weight:700;src:url("../../fonts/BarlowCondensed-Bold.ttf")}
+@font-face{font-family:BC;font-weight:800;src:url("../../fonts/BarlowCondensed-ExtraBold.ttf")}
+@font-face{font-family:B;font-weight:600;src:url("../../fonts/Barlow-SemiBold.ttf")}
+@font-face{font-family:B;font-weight:800;src:url("../../fonts/Barlow-ExtraBold.ttf")}
+body{margin:0}
+.wrap{width:1920px;height:1080px;position:relative;overflow:hidden;background:#121214 url(../../lib/thumb_bg.png) center/cover;font-family:B}
+.shade{position:absolute;inset:0;background:radial-gradient(ellipse at 35% 50%, rgba(18,18,20,0) 0%, rgba(18,18,20,.55) 75%)}
+.row{position:absolute;display:flex;gap:16px}
+.tile{position:relative;width:170px;height:240px;border-radius:18px;background:linear-gradient(#2B2B30 0 50%,#202024 50% 100%);display:flex;align-items:center;justify-content:center;box-shadow:0 10px 30px rgba(0,0,0,.55)}
+.tile b{font-family:BC;font-weight:800;font-size:200px;line-height:1;color:#F4EEDF}
+.tile.gold b{color:#F7BE33}
+.tile i{position:absolute;left:0;right:0;top:calc(50% - 3px);height:6px;background:#121214}
+.tile.gold{outline:4px solid rgba(247,190,51,.75)}
+.tile.blank{width:24px;background:transparent;box-shadow:none}
+.taxfree{position:absolute;left:96px;top:420px;font-family:BC;font-weight:800;font-size:250px;line-height:.9;color:#2FD27F;letter-spacing:2px;text-shadow:0 8px 30px rgba(0,0,0,.6)}
+.sub{position:absolute;left:104px;top:660px;font-family:B;font-weight:800;font-size:64px;color:#F4EEDF}
+.sub em{font-style:normal;color:#F7BE33}
+.badge{position:absolute;right:96px;top:110px;background:#2FD27F;color:#121214;font-family:BC;font-weight:800;font-size:150px;line-height:1;padding:10px 40px 14px;border-radius:28px;transform:rotate(4deg);box-shadow:0 12px 30px rgba(0,0,0,.5)}
+.badge small{display:block;font-family:B;font-weight:800;font-size:40px;letter-spacing:2px;text-align:center}
+.zero{position:absolute;right:120px;bottom:100px;display:flex;align-items:center;gap:22px;font-family:BC;font-weight:700;font-size:58px;color:#F4EEDF}
+.zero .tile{width:72px;height:100px;border-radius:10px}
+.zero .tile b{font-size:84px;color:#F7BE33}
+.zero .tile i{height:4px;top:calc(50% - 2px)}
+
+
+.top{position:absolute;left:104px;top:120px;font-family:B;font-weight:800;font-size:56px;letter-spacing:3px;color:#B9B3A8}
+.amonth{position:absolute;left:820px;top:420px;font-family:BC;font-weight:800;font-size:120px;line-height:1;color:#F4EEDF}
+.sub{position:absolute;left:104px;top:560px;font-family:B;font-weight:800;font-size:120px;line-height:1.05;color:#F4EEDF}
+.sub em{font-style:normal;color:#2FD27F}
+.badge{background:#F7BE33;font-size:110px}
+.badge small{font-size:36px}
+</style></head><body><div class="wrap"><div class="shade"></div>
+<div class="top">START WITH</div>
+<div class="row" style="left:96px;top:220px"><span class="tile gold"><b>R</b><i></i></span><span class="tile gold"><b>2</b><i></i></span><span class="tile gold"><b>0</b><i></i></span><span class="tile gold"><b>0</b><i></i></span></div>
+<div class="amonth" style="left:880px;top:330px">A MONTH</div>
+<div class="sub">Your <em>emergency<br>fund</em>, from zero</div>
+<div class="badge">SA 2026<small>BEGINNER GUIDE</small></div>
+<div class="zero"><span class="tile"><b>0</b><i></i></span>MONEY FROM ZERO</div>
+</div></body></html>
