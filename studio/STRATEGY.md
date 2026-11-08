@@ -8,9 +8,10 @@ Read this before every production run. The weekly growth review updates it.
 - Always high-quality, well-researched education, simple enough for complete beginners.
 - Keep improving from data, comments and trends, with no one needing to step in.
 
-## The monetisation rules (checked 6 Nov 2026)
+## The monetisation rules (checked 6 Nov 2026; re-checked 8 Nov 2026 on support.google.com/youtube answers 72851 and 12843009)
 - **Until 31 Jan 2027:** 1,000 subscribers AND either 4,000 public long-form watch hours in 365 days OR 10 million public Shorts views in 90 days.
-- **From 1 Feb 2027 (new applicants):** 1,000 subscribers AND either 8,000 hours in 365 days OR 20 million Shorts views in 90 days. The Shorts revenue pool also needs 10 million Shorts views over a rolling 90 days.
+- **From 1 Feb 2027 (new applicants):** 1,000 subscribers AND either 8,000 hours in 365 days OR 20 million Shorts views in 90 days. The Shorts revenue pool also needs 10 million Shorts views over a rolling 90 days. Channels already in YPP are not affected. Accept the updated terms in Studio by 31 Jan 2027 once we are in.
+- **Staying active (from 1 Feb 2027):** 1,000 watch hours in 365 days, OR 1M Shorts views in 90 days, OR 2 long videos or 5 Shorts every 90 days. Our cadence covers this easily.
 - **Lower tier (fan funding, unchanged):** 500 subscribers AND 3,000 hours or 3 million Shorts views.
 - **What this means for us:**
   - The realistic route to ad money is long-form watch hours.
@@ -56,4 +57,12 @@ Read this before every production run. The weekly growth review updates it.
 - **Rules:** never invent prices or offers, and never put it in the first 30 seconds.
 
 ## Learnings log (newest first; dated, with evidence)
+- 2026-11-08 (week 1 review): **No audience data yet.** Metricool shows 0 subscribers, 0 views and no per-video rows for 1 Oct–8 Nov; traffic sources are empty. Published so far: Short 001 (6 Nov), main01 TFSA guide and Short 002 (7 Nov). YouTube analytics usually lags 2–3 days, so judge nothing on week 1. No tool here exposes comments; check them by hand or when a tool appears.
+- 2026-11-08: **YPP rules confirmed** on support.google.com/youtube (answers 72851 and 12843009): 1,000 subs + 4,000 hours (12 months) or 10M Shorts views (90 days) until 31 Jan 2027; new applicants from 1 Feb 2027 need 8,000 hours or 20M Shorts views. Realistically we won't hit 4,000 hours by 31 Jan, so plan for the 8,000-hour bar and treat the fan-funding tier (500 subs + 3,000 hours or 3M Shorts views, unchanged) as the first paid milestone.
+- 2026-11-08: **Topic concentration.** The first 4 Shorts (incl. tonight's) are all TFSA. Hypothesis to test, not yet evidence: rotating topics reaches more viewers and gives each long guide its own Shorts funnel. From 9 Nov, Shorts switch to two-pot (main02 goes live 9 Nov 16:00) and rotate after that.
+- 2026-11-08: **Timely hooks for the next 4 weeks** (sources: BizNews SA 28 Oct; SAnews 23 Sep; BusinessTech 21 Oct; Stuff 7 Nov):
+  - SARB MPC decision **Thu 19 Nov 2026**. Repo 7.25%, prime 10.75% since 25 Sep. Economists are split on a 25bp hike.
+  - **Black Friday Fri 27 Nov 2026.** Coverage frames it as debt-trap and "survival" shopping, which fits our store-card topic.
+  - **Fuel:** MTBPS fuel-levy relief: petrol -R1.50/l and diesel -R3.00/l from 4 Nov to 1 Dec; then -R1.00 and -R1.50 from 1 Dec to 5 Jan 2027. The December pump-price change is on **Wed 2 Dec**. Early CEF data point to petrol falling about R1.50–R1.80 and diesel rising about R1.15–R1.50. These are predictions only; use official DMPR figures.
+  - **Provisional taxpayers' filing deadline: 22 Jan 2027.** The non-provisional deadline (23 Oct) has passed.
 - 2026-11-06: Launch. Metricool's best-time data for YouTube peaks at 16:00 every day, and weekdays get about 2x weekend traffic. The schedule is: long videos Mon/Wed/Fri 16:00, Shorts daily 18:00.

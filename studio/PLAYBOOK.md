@@ -79,6 +79,8 @@ Read this whole file, and `STRATEGY.md` (goals, monetisation rules, learnings), 
 - **Assembly:** `assemble.sh` burns in the captions at CRF 14 and muxes the voice. If the result is over 95 MB, raise the CRF.
 - Title of at most 60 characters ending in one hashtag, plus 3 hashtags in the description.
 - A good Short cuts down one chapter of the latest long video and points viewers to the full guide.
+- **Topic rotation (added 8 Nov 2026):** don't post more than 3 Shorts in a row on the same topic. Once a new long guide goes live, the next Shorts point to it. This is a test, because the first 4 Shorts were all TFSA. Review it once per-Short views exist.
+- **Timely Shorts:** after a SARB rate decision or an official fuel-price announcement, a Short that day or the next may replace the planned one. Use only the official figures (SARB statement, DMPR media release), never forecasts presented as fact.
 
 ## Publishing (automatic, no review step)
 1. Copy the final mp4, thumbnail.png and srt into `media/<video_folder>/` in this repo, then commit and push.
@@ -98,7 +100,7 @@ Read this whole file, and `STRATEGY.md` (goals, monetisation rules, learnings), 
      - videoThumbnailUrl = raw thumbnail URL
    - The text is the description.
    - Times are Africa/Johannesburg; check `getBestTimeToPostByNetwork`.
-   - Default slots: long videos at 17:00 on Mon/Wed/Fri; Shorts at 12:30 or 18:30 daily.
+   - Default slots: long videos at **16:00** on Mon/Wed/Fri; Shorts at **18:00** daily. These match the schedule at the top of this file and the 6 Nov best-time data; the earlier 17:00 and 12:30/18:30 defaults were out of date (fixed 8 Nov 2026).
 4. After the post goes live, upload the SRT in YouTube Studio (Subtitles → English → Upload file → With timing) if a browser is available.
 5. Never post channel content to any other brand. Never delete anything.
 
