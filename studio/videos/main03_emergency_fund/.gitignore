@@ -1,0 +1,18 @@
+# Render and check artifacts (the published master lives in media/main03_emergency_fund)
+media_4k/
+media_s/
+__pycache__/
+*.mp4
+audio/
+voice_raw.wav
+voice_master.m4a
+bg_board.png
+bg_board_16x9.png
+thumb_bg.png
+mfz_brand.py
+still.sh
+render.log
+mux.log
+mux.prog
+check/
+thumbnail.png
