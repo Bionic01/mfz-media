@@ -35,7 +35,7 @@ _From 9 Nov, switch to two-pot (main02 goes live 9 Nov 16:00). Don't post more t
 - ~~TFSA: R3,834 a month means a SARS penalty (R8 over the limit).~~ USED: Short 002, 7 Nov 2026 (also covers "all accounts share one limit").
 - TFSA: switching providers? Transfer, don't withdraw.
 - TFSA: R500,000 in, about R2.7 million at 65 (illustration).
-- Two-pot: you withdraw R20,000 and get about R14,450.
+- ~~Two-pot: you withdraw R20,000 and get about R14,450.~~ USED: Short 004, 9 Nov 2026 (framed as SARS takes R5,200, R14,800 left before the fund's fee).
 - Two-pot: it's called two-pot, but there are 3 pots.
 - Two-pot: 62% of claims are third withdrawals (Momentum, March 2026).
 - Two-pot: don't apply at the end of February.
