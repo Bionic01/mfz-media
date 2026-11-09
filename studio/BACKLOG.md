@@ -35,7 +35,7 @@ _From 9 Nov, switch to two-pot (main02 goes live 9 Nov 16:00). Don't post more t
 - TFSA: switching providers? Transfer, don't withdraw.
 - TFSA: R500,000 in, about R2.7 million at 65 (illustration).
 - ~~Two-pot: you withdraw R20,000 and get about R14,450.~~ USED: Short 004, 9 Nov 2026 (framed as SARS takes R5,200, R14,800 left before the fund's fee).
-- Two-pot: it's called two-pot, but there are 3 pots.
+- ~~Two-pot: it's called two-pot, but there are 3 pots.~~ USED: Short 005, 10 Nov 2026 (2nd two-pot Short in a row; next Short should switch topic or be the 3rd and last two-pot).
 - Two-pot: 62% of claims are third withdrawals (Momentum, March 2026).
 - Two-pot: don't apply at the end of February.
 - Two-pot: R320 fee = 16% of a R2,000 withdrawal.
