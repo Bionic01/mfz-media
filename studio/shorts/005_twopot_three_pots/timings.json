@@ -1,0 +1,69 @@
+{
+ "voice": "Darius (ElevenLabs eleven_v4) single take, 9 Nov 2026",
+ "duration": 59.19,
+ "lines": [
+  {
+   "key": "hook",
+   "start": 0.15,
+   "end": 4.39,
+   "n": 10,
+   "text": "It's called two-pot. But your retirement fund has three pots."
+  },
+  {
+   "key": "vested",
+   "start": 4.87,
+   "end": 13.43,
+   "n": 20,
+   "text": "Pot one: the vested pot. Everything you saved up to 31 August 2024. The old rules still apply to it."
+  },
+  {
+   "key": "savings",
+   "start": 13.67,
+   "end": 20.55,
+   "n": 17,
+   "text": "Pot two: the savings pot. One third of what goes into your fund from 1 September 2024."
+  },
+  {
+   "key": "retire",
+   "start": 20.95,
+   "end": 26.47,
+   "n": 13,
+   "text": "Pot three: the retirement pot. The other two thirds, locked until you retire."
+  },
+  {
+   "key": "seed",
+   "start": 26.71,
+   "end": 32.95,
+   "n": 17,
+   "text": "Your savings pot also got a once-off start: 10% of your vested pot, up to R30,000."
+  },
+  {
+   "key": "example",
+   "start": 33.59,
+   "end": 41.51,
+   "n": 21,
+   "text": "So if R1,500 a month goes into your fund, R500 goes to savings and R1,000 is locked away."
+  },
+  {
+   "key": "access",
+   "start": 41.75,
+   "end": 48.63,
+   "n": 20,
+   "text": "While you're still in the fund, only the savings pot can be withdrawn: once a tax year, from R2,000."
+  },
+  {
+   "key": "guide",
+   "start": 48.67,
+   "end": 53.43,
+   "n": 16,
+   "text": "The full two-pot guide is on the channel. Follow for a new money rule every day."
+  },
+  {
+   "key": "loop",
+   "start": 53.67,
+   "end": 57.99,
+   "n": 12,
+   "text": "So next time someone says two-pot, ask them: which of the three?"
+  }
+ ]
+}

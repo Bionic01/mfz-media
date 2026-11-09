@@ -1,0 +1,70 @@
+[Script Info]
+ScriptType: v4.00+
+PlayResX: 1080
+PlayResY: 1920
+WrapStyle: 2
+ScaledBorderAndShadow: yes
+
+[V4+ Styles]
+Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding
+Style: Cap,Barlow ExtraBold,96,&H00DFEEF4,&H00DFEEF4,&H00141212,&H96000000,0,0,0,0,100,100,0,0,1,7,4,2,70,70,400,1
+
+[Events]
+Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
+Dialogue: 0,0:00:00.15,0:00:00.95,Cap,,0,0,0,,{\fad(40,0)}It's called
+Dialogue: 0,0:00:00.95,0:00:02.04,Cap,,0,0,0,,{\fad(40,0)}two-pot.
+Dialogue: 0,0:00:02.07,0:00:02.43,Cap,,0,0,0,,{\fad(40,0)}But your
+Dialogue: 0,0:00:02.43,0:00:03.27,Cap,,0,0,0,,{\fad(40,0)}retirement fund
+Dialogue: 0,0:00:03.27,0:00:04.84,Cap,,0,0,0,,{\fad(40,0)}has three pots.
+Dialogue: 0,0:00:04.87,0:00:05.87,Cap,,0,0,0,,{\fad(40,0)}Pot one:
+Dialogue: 0,0:00:05.87,0:00:07.40,Cap,,0,0,0,,{\fad(40,0)}the vested pot.
+Dialogue: 0,0:00:07.43,0:00:08.07,Cap,,0,0,0,,{\fad(40,0)}Everything you
+Dialogue: 0,0:00:08.07,0:00:08.79,Cap,,0,0,0,,{\fad(40,0)}saved up to 31
+Dialogue: 0,0:00:08.79,0:00:11.43,Cap,,0,0,0,,{\fad(40,0)}August 2024.
+Dialogue: 0,0:00:11.43,0:00:12.23,Cap,,0,0,0,,{\fad(40,0)}The old rules
+Dialogue: 0,0:00:12.23,0:00:13.03,Cap,,0,0,0,,{\fad(40,0)}still apply to
+Dialogue: 0,0:00:13.03,0:00:13.67,Cap,,0,0,0,,{\fad(40,0)}it.
+Dialogue: 0,0:00:13.67,0:00:14.67,Cap,,0,0,0,,{\fad(40,0)}Pot two:
+Dialogue: 0,0:00:14.67,0:00:16.12,Cap,,0,0,0,,{\fad(40,0)}the savings pot.
+Dialogue: 0,0:00:16.23,0:00:17.03,Cap,,0,0,0,,{\fad(40,0)}One third of
+Dialogue: 0,0:00:17.03,0:00:17.67,Cap,,0,0,0,,{\fad(40,0)}what goes into
+Dialogue: 0,0:00:17.67,0:00:18.39,Cap,,0,0,0,,{\fad(40,0)}your fund from 1
+Dialogue: 0,0:00:18.39,0:00:20.95,Cap,,0,0,0,,{\fad(40,0)}September 2024.
+Dialogue: 0,0:00:20.95,0:00:21.95,Cap,,0,0,0,,{\fad(40,0)}Pot three:
+Dialogue: 0,0:00:21.95,0:00:22.71,Cap,,0,0,0,,{\fad(40,0)}the retirement
+Dialogue: 0,0:00:22.71,0:00:23.43,Cap,,0,0,0,,{\fad(40,0)}pot.
+Dialogue: 0,0:00:23.43,0:00:24.07,Cap,,0,0,0,,{\fad(40,0)}The other two
+Dialogue: 0,0:00:24.07,0:00:25.19,Cap,,0,0,0,,{\fad(40,0)}thirds, locked
+Dialogue: 0,0:00:25.19,0:00:25.79,Cap,,0,0,0,,{\fad(40,0)}until you
+Dialogue: 0,0:00:25.79,0:00:26.71,Cap,,0,0,0,,{\fad(40,0)}retire.
+Dialogue: 0,0:00:26.71,0:00:27.67,Cap,,0,0,0,,{\fad(40,0)}Your savings pot
+Dialogue: 0,0:00:27.67,0:00:28.31,Cap,,0,0,0,,{\fad(40,0)}also got a
+Dialogue: 0,0:00:28.31,0:00:29.67,Cap,,0,0,0,,{\fad(40,0)}once-off start:
+Dialogue: 0,0:00:29.67,0:00:30.55,Cap,,0,0,0,,{\fad(40,0)}{\c&H33BEF7&}10%{\c&HDFEEF4&} of your
+Dialogue: 0,0:00:30.55,0:00:31.67,Cap,,0,0,0,,{\fad(40,0)}vested pot, up
+Dialogue: 0,0:00:31.67,0:00:33.40,Cap,,0,0,0,,{\fad(40,0)}to {\c&H33BEF7&}R30 000.{\c&HDFEEF4&}
+Dialogue: 0,0:00:33.59,0:00:35.67,Cap,,0,0,0,,{\fad(40,0)}So if {\c&H33BEF7&}R1 500{\c&HDFEEF4&} a
+Dialogue: 0,0:00:35.67,0:00:36.43,Cap,,0,0,0,,{\fad(40,0)}month goes into
+Dialogue: 0,0:00:36.43,0:00:38.15,Cap,,0,0,0,,{\fad(40,0)}your fund, {\c&H33BEF7&}R500{\c&HDFEEF4&}
+Dialogue: 0,0:00:38.15,0:00:39.27,Cap,,0,0,0,,{\fad(40,0)}goes to savings
+Dialogue: 0,0:00:39.27,0:00:40.63,Cap,,0,0,0,,{\fad(40,0)}and {\c&H33BEF7&}R1 000{\c&HDFEEF4&} is
+Dialogue: 0,0:00:40.63,0:00:41.75,Cap,,0,0,0,,{\fad(40,0)}locked away.
+Dialogue: 0,0:00:41.75,0:00:42.27,Cap,,0,0,0,,{\fad(40,0)}While you're
+Dialogue: 0,0:00:42.27,0:00:42.71,Cap,,0,0,0,,{\fad(40,0)}still in the
+Dialogue: 0,0:00:42.71,0:00:43.83,Cap,,0,0,0,,{\fad(40,0)}fund, only the
+Dialogue: 0,0:00:43.83,0:00:44.75,Cap,,0,0,0,,{\fad(40,0)}savings pot can
+Dialogue: 0,0:00:44.75,0:00:45.95,Cap,,0,0,0,,{\fad(40,0)}be withdrawn:
+Dialogue: 0,0:00:45.95,0:00:47.03,Cap,,0,0,0,,{\fad(40,0)}once a tax year,
+Dialogue: 0,0:00:47.03,0:00:48.67,Cap,,0,0,0,,{\fad(40,0)}from {\c&H33BEF7&}R2 000.{\c&HDFEEF4&}
+Dialogue: 0,0:00:48.67,0:00:49.75,Cap,,0,0,0,,{\fad(40,0)}The full two-pot
+Dialogue: 0,0:00:49.75,0:00:50.39,Cap,,0,0,0,,{\fad(40,0)}guide is on the
+Dialogue: 0,0:00:50.39,0:00:51.11,Cap,,0,0,0,,{\fad(40,0)}channel.
+Dialogue: 0,0:00:51.11,0:00:51.91,Cap,,0,0,0,,{\fad(40,0)}Follow for a new
+Dialogue: 0,0:00:51.91,0:00:52.95,Cap,,0,0,0,,{\fad(40,0)}money rule every
+Dialogue: 0,0:00:52.95,0:00:53.67,Cap,,0,0,0,,{\fad(40,0)}day.
+Dialogue: 0,0:00:53.67,0:00:54.31,Cap,,0,0,0,,{\fad(40,0)}So next time
+Dialogue: 0,0:00:54.31,0:00:55.11,Cap,,0,0,0,,{\fad(40,0)}someone says
+Dialogue: 0,0:00:55.11,0:00:56.31,Cap,,0,0,0,,{\fad(40,0)}two-pot, ask
+Dialogue: 0,0:00:56.31,0:00:56.95,Cap,,0,0,0,,{\fad(40,0)}them:
+Dialogue: 0,0:00:56.95,0:00:57.35,Cap,,0,0,0,,{\fad(40,0)}which of the
+Dialogue: 0,0:00:57.35,0:00:58.44,Cap,,0,0,0,,{\fad(40,0)}three?
