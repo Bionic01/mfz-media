@@ -43,7 +43,7 @@ _From 9 Nov, switch to two-pot (main02 goes live 9 Nov 16:00). Don't post more t
 ## Shorts from main03 (emergency fund)
 - Emergency fund: fewer than 1 in 5 could cover R10,000 from savings (JustMoney 2026 survey).
 - Emergency fund: R200 a month gets you R2,000 in 10 months (6% illustration).
-- Emergency fund: CODI covers R100,000 per bank, but not a money market unit trust.
+- ~~Emergency fund: CODI covers R100,000 per bank, but not a money market unit trust.~~ USED: Short 006, 11 Nov 2026 (goes out 2 h after main03 and points to it).
 - Emergency fund: why your TFSA is the wrong place for it.
 
 ## Timely Shorts (post only with official figures, on the day)
