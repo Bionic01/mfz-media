@@ -1,0 +1,13 @@
+const C = CINE; const { sv, G, shot } = C; C.setTheme('fluxr');
+shot(0, 4, ({ world }) => { const w = world(); const L = w.layer(1); C.studio(L, { c1: '#2b2e38', c2: '#0b0c10' });
+  const pp = C.printingPress(L.svg, L.defs, {}); G(pp.g, 420, 520, 0, .8);
+  const bl = C.balance(L.svg, L.defs, {}); G(bl.g, 1150, 560, 0, .7); const zn = C.note(bl.left, L.defs, { kind: 'ZWD', w: 220, h: 100 }); zn.setAttribute('transform', 'translate(0,-50)'); const un = C.note(bl.right, L.defs, { kind: 'USD20', w: 200, h: 96 }); un.setAttribute('transform', 'translate(0,-48)'); bl.set(-8);
+  const sk = C.sack(L.svg, L.defs, {}); G(sk, 1650, 520, 0, .9);
+  const bk = C.basket(L.svg, L.defs, {}); G(bk, 200, 1000, 0, .8);
+  const cal = C.calendarPage(L.svg, L.defs, {}); G(cal.g, 600, 860, 0, .8); cal.set('JANUARY', '2009', 0);
+  const ph = C.phoneHand(L.svg, L.defs, {}); G(ph.g, 1050, 760, 0, .5); ph.thumb(0, 280, 0);
+  const st = C.stampMark(L.svg, L.defs, 'SUSPENDED', {}); G(st.g, 1500, 820); st.set(1);
+  const tg = C.priceTag(L.svg, L.defs, {}); G(tg.g, 1750, 200); tg.label.textContent = 'Z$ 1.2M'; tg.set(1);
+  const da = C.dayArc(L.svg, L.defs, {}); G(da.g, 1500, 1000, 0, .6); da.set(.7);
+  const pr = { pp }; return pr;
+}, (s, lt, t) => { s.pp.set(t, .6); });

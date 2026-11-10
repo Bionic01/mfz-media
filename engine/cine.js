@@ -174,9 +174,17 @@ window.renderAt = (t) => {
       else if (m === 'zoom') { op = E.ioS(q); tr = `scale(${lerp(1.35, 1, E.outC(q)).toFixed(4)})`; fl = `blur(${((1 - q) * 16).toFixed(1)}px)`; }
       else if (m === 'iris') { S.root.style.clipPath = `circle(${(E.ioC(q) * 120).toFixed(2)}% at ${S.opts.ix || 50}% ${S.opts.iy || 50}%)`; }
       else if (m === 'flash') { op = 1; }
+      else if (m === 'bands' || m === 'circle') { op = q > .45 ? 1 : 0; }
     } else if (m === 'iris') S.root.style.clipPath = 'none';
     S.root.style.opacity = op; S.root.style.transform = tr; S.root.style.filter = fl;
   }
+  // shape transitions (bands / circle) drawn in a stage overlay
+  if (!fx.tov) { fx.tov = el('div', { class: 'abs' }, stage); fx.tov.style.cssText += 'width:1920px;height:1080px;z-index:8995;pointer-events:none;overflow:hidden'; fx.tb = [0, 1, 2].map(i => { const d = el('div', { class: 'abs' }, fx.tov); d.style.cssText += 'width:1500px;height:2800px;left:0;top:-860px'; return d; }); fx.tc = el('div', { class: 'abs' }, fx.tov); fx.tc.style.cssText += 'width:100px;height:100px;border-radius:50%;left:0;top:0'; }
+  let bandK = -1, circK = -1, bcol = null, cx0 = 960, cy0 = 540;
+  for (const S of SHOTS) { const tin = S.opts.tin ?? .5; const d = t - S.a; if (d >= 0 && d < tin) { if (S.opts.in === 'bands') { bandK = d / tin; bcol = S.opts.colors; } if (S.opts.in === 'circle') { circK = d / tin; bcol = S.opts.colors; cx0 = (S.opts.ix ?? 50) * 19.2; cy0 = (S.opts.iy ?? 50) * 10.8; } } }
+  const cols = bcol || [TH.green, TH.gold, TH.ink];
+  fx.tb.forEach((b, i) => { if (bandK < 0) { b.style.display = 'none'; return; } b.style.display = 'block'; b.style.background = cols[i % cols.length]; const k = E.ioC(clamp(bandK * 1.25 - i * .1)); b.style.transform = `translateX(${lerp(-2300, 2700, k).toFixed(1)}px) rotate(18deg)`; });
+  if (circK < 0) fx.tc.style.display = 'none'; else { fx.tc.style.display = 'block'; fx.tc.style.background = cols[0]; const k = circK < .5 ? E.ioC(circK * 2) : 1 - E.ioC((circK - .5) * 2); const r = k * 2300; fx.tc.style.width = fx.tc.style.height = (r * 2).toFixed(0) + 'px'; fx.tc.style.transform = `translate(${(cx0 - r).toFixed(1)}px,${(cy0 - r).toFixed(1)}px)`; }
   // global flash on 'flash' transitions
   let fla = 0; for (const S of SHOTS) if (S.opts.in === 'flash') { const d = t - S.a; if (d > -0.12 && d < .45) fla = Math.max(fla, d < 0 ? (d + .12) / .12 : 1 - d / .45); }
   if (fx.flash) fx.flash.style.opacity = clamp(fla) * .85;

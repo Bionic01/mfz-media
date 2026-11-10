@@ -26,7 +26,8 @@ Read this whole file, and `STRATEGY.md` (goals, monetisation rules, learnings), 
 - **From 10 Nov 2026, long videos are made with the CINE engine (`engine/`, read `engine/README.md`), not manim.** Rodney (10 Nov): users say the videos "are fine, but they are not engaging... Need to 10 times our animations... real concepts, maybe human figures and bank and money... up close... full production"; and "11 Labs should just be for voice. You need to use your code to code the highest level of video that you can possibly achieve. Benchmark, highest of the highest." So:
   - **ElevenLabs is for the voice only.** No ElevenLabs (or other AI) images, video, music or sound effects. Music and effects come from `engine/audio.py`.
   - Every 3–6 seconds a new picture that **shows** the idea: people (rigged characters), money (notes, coins, cards, phones), places (banks, shops, streets, maps), up close, with a moving camera, depth of field and sound effects. Kinetic text only for the key number or phrase. No slides of text.
-  - Template: `engine/demo/mfz_capitec/scene.js` (copy its patterns; build new shots for each topic).
+  - Template: `engine/demo/mfz_capitec_v2/scene.js` (copy its patterns; build new shots for each topic).
+  - Meet the README's "density bar" (Rodney, 10 Nov 22:24: "small flags, more motion graphics... Can you 10 times what you've done"; "the video itself has to be engaging"): flag and icon badges, callouts, odometers, timelines, money flying along arcs, moving backgrounds with haze, characters that act, intentional transitions, a sound cue for every pop. A new composition every 2–4 seconds.
   - The split-flap brand stays: `flapText` headlines, the gold "0" bug, the colours below.
 - **Brand kit:** `studio/lib/mfz_brand.py` (manim, still used by the Shorts). The style is a split-flap "departure board" in charcoal, with a gold zero and green accents.
   - BG #121214, TEXT #F4EEDF, MUTED #B9B3A8, GREEN #2FD27F, GOLD #F7BE33, RED #FF5D5D, BLUE #6CB4FF.
@@ -54,7 +55,7 @@ Read this whole file, and `STRATEGY.md` (goals, monetisation rules, learnings), 
    - Poll `creative_get_flow_run_status` and download each mp3 into `audio/partN.mp3`.
    - Word timings: run `creative_transcribe_audio` with `connect_from` set to the TTS node (free). It returns forced-aligned words; save them as `words_partN_raw.json` in the form `[[text, start, end], ...]`. If the status result is too big, read it from the saved file with python.
 6. **Join and master:** `python3 ../../tools/build_voice.py` gives voice_master.m4a (-14 LUFS, 48 kHz AAC 320k), words_all.json and timeline.json.
-7. **Animate with the CINE engine** (from 10 Nov 2026; read `engine/README.md` first). Write `scene.js` in the video folder, copying patterns from `engine/demo/mfz_capitec/scene.js`.
+7. **Animate with the CINE engine** (from 10 Nov 2026; read `engine/README.md` first). Write `scene.js` in the video folder, copying patterns from `engine/demo/mfz_capitec_v2/scene.js`.
    - Timing: `C.voice(C.loadJSON(BASE + 'words_all.json'), 0)` (words_all.json is already in voice_master time, so LEAD is 0). Every shot starts on a spoken word with `at('word', after)`.
    - Plan the shots first in `shots.md`: one line per shot (time, words, what we SEE, camera move, sound). About 80–120 shots for 8–9 minutes, a new picture every 3–6 seconds. Each chapter needs at least one "world" shot with characters (street, bank, shop, home, office), not only charts.
    - Chapter titles: a split-flap headline (`flapText`) over a moving scene, not a static card.
@@ -62,8 +63,9 @@ Read this whole file, and `STRATEGY.md` (goals, monetisation rules, learnings), 
    - Disclaimer "general information, not financial advice" on screen (end card and intro corner).
    - Check stills of every shot: `python3 ../../../engine/render.py snap scene.js <times> --theme mfz` and look at `snaps/sheet.jpg`. Nothing cut off, no text over faces, text readable on a phone, the picture matches the words. Fix and repeat until every shot passes.
 8. **Render** in the background with `run_in_background`: `python3 ../../../engine/render.py video scene.js video_silent.mp4 --workers 2 --theme mfz` (about 8 seconds of render per second of video on 2 cores, so roughly 70 minutes for 9 minutes). Then the sound: `python3 ../../../engine/render.py cues scene.js cues.json --theme mfz` and `python3 ../../../engine/audio.py cues.json mix.wav --voice voice_master.m4a --lead 0` (music + effects ducked under the voice, -14 LUFS).
-9. **Mux:** `ffmpeg -i video_silent.mp4 -i mix.wav -map 0:v -map 1:a -c:v libx264 -preset slow -crf 23 -tune animation -pix_fmt yuv420p -c:a aac -b:a 192k -movflags +faststart out.mp4`, then check frames and the audio.
-   - Keep each file under 95 MB (the GitHub limit is 100 MB): raise the CRF (up to about 27) if it's bigger. Engine videos move the camera all the time, so they need more bitrate than the old manim slides; 1080p is fine. If a 4K upscale (`-vf scale=3840:2160:flags=lanczos`) still fits under 95 MB, use it.
+9. **Mux (HEVC, so 9 minutes fit under 95 MB):** `ffmpeg -i video_silent.mp4 -i mix.wav -map 0:v -map 1:a -c:v libx265 -preset medium -crf 26 -tag:v hvc1 -pix_fmt yuv420p -x265-params log-level=error -c:a aac -b:a 160k -movflags +faststart out.mp4` (run it in the background; about 10–15 minutes). Then check frames and the audio.
+   - Keep each file under 95 MB (the GitHub limit is 100 MB): raise the CRF by 1–2 if it's bigger. Engine videos move all the time, so H.264 at the same size looks worse (measured 10 Nov: 15 s of the v2 demo was 2.1 MB in HEVC CRF 26 vs 3.0 MB in x264 CRF 24 at the same look). 1080p.
+   - If Metricool or YouTube ever rejects the HEVC file, fall back to `-c:v libx264 -preset slow -crf 27 -tune animation` and note it in STRATEGY.md.
 10. **Thumbnail:** HTML plus Playwright at 1920x1080 (see `videos/*/thumb.html`).
     - One huge rand figure on flip tiles, at most 6 words, and a gold badge with the topic.
     - Check it at 640x360.

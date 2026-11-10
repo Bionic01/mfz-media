@@ -71,6 +71,9 @@ class Person {
     if (o.lashes === undefined) o.lashes = o.female;
     this.defs = defs; this.seed = o.seed;
     this.g = sv('g', {}, parent); this.inner = sv('g', {}, this.g);
+    if (o.outline !== false) { const id = uid('ol'); const f = sv('filter', { id, x: '-20%', y: '-20%', width: '140%', height: '140%' }, defs);
+      sv('feMorphology', { in: 'SourceAlpha', operator: 'dilate', radius: o.outlineW || 2.6, result: 'd' }, f); sv('feFlood', { 'flood-color': o.outlineC || '#1b1215', result: 'c' }, f); sv('feComposite', { in: 'c', in2: 'd', operator: 'in', result: 'ol' }, f);
+      const m = sv('feMerge', {}, f); sv('feMergeNode', { in: 'ol' }, m); sv('feMergeNode', { in: 'SourceGraphic' }, m); this.bodyFilter = `url(#${id})`; }
     const skin = o.skin, sd = dk(skin, .22);
     this.c = { skin, sd, hi: lt(skin, .1), shirt: o.shirt, shirtSd: dk(o.shirt, .25), pants: o.pants, pantsSd: dk(o.pants, .28), hair: o.hairColor, lip: mix(skin, '#7a2a2a', .35) };
     this._build();
@@ -99,6 +102,7 @@ class Person {
     this.gArmFront = sv('g', {}, this.gTorso);
     this._buildBody(); this._buildHead();
     this.arm = [this.gArmBack, this.gArmFront].map((par, i) => this._buildArm(par, i));
+    if (this.bodyFilter) { [this.gBackHair, this.gLegs, this.gTorso].forEach(x => x.setAttribute('filter', this.bodyFilter)); }
     this.held = [null, null];
   }
   _buildBody() {
@@ -138,7 +142,8 @@ class Person {
     const uphi = sv('path', { fill: 'none', stroke: '#fff', 'stroke-width': aw * .22, 'stroke-linecap': 'round', opacity: .12 }, g);
     const holdG = sv('g', {}, g);
     const hand = sv('g', {}, g);
-    sv('ellipse', { cx: 0, cy: 6, rx: 17 * o.build, ry: 19 * o.build, fill: i ? c.skin : c.sd }, hand);
+    sv('rect', { x: -16 * o.build, y: -8, width: 32 * o.build, height: 34 * o.build, rx: 14 * o.build, fill: i ? c.skin : c.sd }, hand);
+    sv('path', { d: 'M -7 16 v 9 M 0 17 v 10 M 7 16 v 9', stroke: dk(c.skin, .32), 'stroke-width': 2.4, 'stroke-linecap': 'round', opacity: .8 }, hand);
     sv('ellipse', { cx: -9, cy: 0, rx: 7, ry: 11, fill: i ? c.skin : c.sd, transform: 'rotate(30 -9 0)' }, hand);
     if (long) sv('ellipse', { cx: 0, cy: -10, rx: 18 * o.build, ry: 7, fill: dk(sleeveC, .25) }, hand);
     return { g, up, fo, uphi, hand, holdG };
@@ -223,7 +228,8 @@ class Person {
     let bob = (P.bob || 0); let walkLegs = null, walkArms = null, wph = st.walk;
     if (wph !== undefined && wph !== null) { const a = Math.sin(wph * 2 * Math.PI); const st0 = st.stride ?? 26; walkLegs = [a * st0, -a * st0]; walkArms = [-a * st0 * .8, a * st0 * .8]; bob += -Math.abs(Math.cos(wph * 2 * Math.PI)) * 9 + 4; }
     const lean = (P.lean || 0) + noise1(t * .4, this.seed) * 1.2;
-    this.g.setAttribute('transform', `translate(${(st.x || 0).toFixed(1)},${(st.y || 0).toFixed(1)}) scale(${(s * flip).toFixed(4)},${s.toFixed(4)})`);
+    const sway = (wph === undefined || wph === null) ? noise1(t * .45, this.seed + 21) * 3 : 0;
+    this.g.setAttribute('transform', `translate(${((st.x || 0) + sway * s).toFixed(1)},${(st.y || 0).toFixed(1)}) scale(${(s * flip).toFixed(4)},${s.toFixed(4)})`);
     this.g.setAttribute('opacity', st.o ?? 1);
     // legs (from hip)
     const hipY = -220 + bob; const hx = 26 * o.build * (1 - .7 * side);
@@ -253,6 +259,7 @@ class Person {
       const sgn = i ? 1 : -1; let [ua, el] = P[i ? 'aB' : 'aA'];
       if (walkArms) { ua = lerp(ua, walkArms[i] * (side ? 1 : .5) + sgn * 6, st.walkArms ?? 1); el = lerp(el, (side ? 18 : sgn * 10), st.walkArms ?? 1); }
       ua += noise1(t * .5 + i * 9, this.seed + 3) * 2.5;
+      const gg = st.gesture || 0; if (gg) { ua += noise1(t * 1.6 + i * 3.1, this.seed + 11) * 20 * gg; el += (i ? -1 : 1) * Math.abs(noise1(t * 2.2 + i * 5.3, this.seed + 13)) * 46 * gg * (i ? 1 : .6); }
       const sh = [sgn * shx, shY + (P.sh && i === 1 ? P.sh : 0)];
       const [d1x, d1y] = dir(ua); const e = [sh[0] + d1x * 90, sh[1] + d1y * 90];
       const [d2x, d2y] = dir(ua + el); const w = [e[0] + d2x * 84, e[1] + d2y * 84];
