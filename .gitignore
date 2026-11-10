@@ -1,0 +1,14 @@
+
+# CINE engine renders and checks (keep code, scenes, words, cues)
+engine/**/*.mp4
+engine/**/*.parts/
+engine/**/*.wav
+engine/**/snaps*/
+engine/**/chk_*
+engine/**/spec.png
+engine/**/wave.png
+engine/**/t_*.mp4
+engine/**/render.log
+engine/test/out/
+engine/test/p1/
+engine/test/p2/

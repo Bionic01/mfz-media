@@ -1,0 +1,12 @@
+<!doctype html>
+<html><head><meta charset="utf-8">
+<link rel="stylesheet" href="cine.css">
+<script>window.SCENE = new URLSearchParams(location.search).get('scene'); window.THEME = new URLSearchParams(location.search).get('theme') || 'mfz';</script>
+</head><body><div id="stage"></div>
+<script src="cine.js"></script>
+<script src="chars.js"></script>
+<script src="assets/africa.js"></script>
+<script src="props.js"></script>
+<script src="worlds.js"></script>
+<script>document.write('<script src="' + window.SCENE + '"><\/script>');</script>
+</body></html>

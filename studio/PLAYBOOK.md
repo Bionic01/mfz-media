@@ -19,11 +19,16 @@ Read this whole file, and `STRATEGY.md` (goals, monetisation rules, learnings), 
   - Everything is automatic.
   - Posts go straight to the schedule, with no review step.
   - One voice take per video (no extra takes).
-  - Maximum quality (4K).
+  - Maximum quality (4K). With the engine (10 Nov 2026) the 95 MB file limit usually means 1080p; upscale to 4K only when the file still fits.
 - **Metricool brand:** "Money From Zero", id **7906209**, with YouTube connected. Fluxr is a separate brand (7157206); never post channel content there.
 
 ## Look and sound
-- **Brand kit:** `studio/lib/mfz_brand.py`. The style is a split-flap "departure board" in charcoal, with a gold zero and green accents.
+- **From 10 Nov 2026, long videos are made with the CINE engine (`engine/`, read `engine/README.md`), not manim.** Rodney (10 Nov): users say the videos "are fine, but they are not engaging... Need to 10 times our animations... real concepts, maybe human figures and bank and money... up close... full production"; and "11 Labs should just be for voice. You need to use your code to code the highest level of video that you can possibly achieve. Benchmark, highest of the highest." So:
+  - **ElevenLabs is for the voice only.** No ElevenLabs (or other AI) images, video, music or sound effects. Music and effects come from `engine/audio.py`.
+  - Every 3–6 seconds a new picture that **shows** the idea: people (rigged characters), money (notes, coins, cards, phones), places (banks, shops, streets, maps), up close, with a moving camera, depth of field and sound effects. Kinetic text only for the key number or phrase. No slides of text.
+  - Template: `engine/demo/mfz_capitec/scene.js` (copy its patterns; build new shots for each topic).
+  - The split-flap brand stays: `flapText` headlines, the gold "0" bug, the colours below.
+- **Brand kit:** `studio/lib/mfz_brand.py` (manim, still used by the Shorts). The style is a split-flap "departure board" in charcoal, with a gold zero and green accents.
   - BG #121214, TEXT #F4EEDF, MUTED #B9B3A8, GREEN #2FD27F, GOLD #F7BE33, RED #FF5D5D, BLUE #6CB4FF.
   - Fonts: Barlow Condensed (headings) and Barlow (labels and body). They are in `studio/fonts`; install them with `mkdir -p ~/.fonts && cp studio/fonts/*.ttf ~/.fonts && fc-cache -f`.
 - **Backgrounds:** `studio/lib/bg_board_16x9.png` (3840x2160) for long videos, and `studio/lib/bg_board.png` (2160x3840) for Shorts.
@@ -49,18 +54,16 @@ Read this whole file, and `STRATEGY.md` (goals, monetisation rules, learnings), 
    - Poll `creative_get_flow_run_status` and download each mp3 into `audio/partN.mp3`.
    - Word timings: run `creative_transcribe_audio` with `connect_from` set to the TTS node (free). It returns forced-aligned words; save them as `words_partN_raw.json` in the form `[[text, start, end], ...]`. If the status result is too big, read it from the saved file with python.
 6. **Join and master:** `python3 ../../tools/build_voice.py` gives voice_master.m4a (-14 LUFS, 48 kHz AAC 320k), words_all.json and timeline.json.
-7. **Animate:** first copy `studio/lib/*` and `studio/tools/still.sh` into the video folder, because the scene imports `mfz_brand` and loads the background from its own folder. Then write the manim scene by copying the latest `videos/main02_two_pot/mfz_main02.py` as the template. Its helpers are `chapter_in`, `clear`, `at(cue(...))`, `fit` and `para`.
-   - Every visual must sync to a spoken cue.
-   - Check every chapter with stills (`still.sh <seconds>`, rendered at 1080p) before the 4K render. Fix overlaps and text running off the screen.
-8. **Render:** `manim --disable_caching --media_dir media_4k <scene>.py <Class>` in the background.
-   - Expect about 1.5–2.5 hours at 4K30 on 2 cores. Use `run_in_background` and don't use nohup.
-   - A fresh container may not have manim: `apt-get install -y libpango1.0-dev libcairo2-dev pkg-config python3-dev && pip install manim --break-system-packages` (0.22.1 worked, 8 Nov 2026).
-   - main03 (8 Nov 2026, 312 animations) rendered in about 40 minutes. The 4K mux below took about 15 minutes, so start it in the background as well and poll it; a foreground call times out at 10 minutes.
-9. **Mux:** encode the final file, then check frames:
-   ```
-   ffmpeg -i video -i voice_master.m4a -filter_complex "[0:v]tpad=stop_mode=clone:stop_duration=3[v]" -map "[v]" -map 1:a -c:v libx264 -preset slow -crf 16 -tune animation -pix_fmt yuv420p -c:a copy -movflags +faststart out.mp4
-   ```
-   Keep each file under 95 MB (the GitHub limit is 100 MB); raise the CRF if it's bigger.
+7. **Animate with the CINE engine** (from 10 Nov 2026; read `engine/README.md` first). Write `scene.js` in the video folder, copying patterns from `engine/demo/mfz_capitec/scene.js`.
+   - Timing: `C.voice(C.loadJSON(BASE + 'words_all.json'), 0)` (words_all.json is already in voice_master time, so LEAD is 0). Every shot starts on a spoken word with `at('word', after)`.
+   - Plan the shots first in `shots.md`: one line per shot (time, words, what we SEE, camera move, sound). About 80–120 shots for 8–9 minutes, a new picture every 3–6 seconds. Each chapter needs at least one "world" shot with characters (street, bank, shop, home, office), not only charts.
+   - Chapter titles: a split-flap headline (`flapText`) over a moving scene, not a static card.
+   - The worked example: show it with people and money (notes leaving a wallet, coins in a jar, a payslip, a phone app screen) plus the key rand figure as kinetic text; re-run the arithmetic in python.
+   - Disclaimer "general information, not financial advice" on screen (end card and intro corner).
+   - Check stills of every shot: `python3 ../../../engine/render.py snap scene.js <times> --theme mfz` and look at `snaps/sheet.jpg`. Nothing cut off, no text over faces, text readable on a phone, the picture matches the words. Fix and repeat until every shot passes.
+8. **Render** in the background with `run_in_background`: `python3 ../../../engine/render.py video scene.js video_silent.mp4 --workers 2 --theme mfz` (about 8 seconds of render per second of video on 2 cores, so roughly 70 minutes for 9 minutes). Then the sound: `python3 ../../../engine/render.py cues scene.js cues.json --theme mfz` and `python3 ../../../engine/audio.py cues.json mix.wav --voice voice_master.m4a --lead 0` (music + effects ducked under the voice, -14 LUFS).
+9. **Mux:** `ffmpeg -i video_silent.mp4 -i mix.wav -map 0:v -map 1:a -c:v libx264 -preset slow -crf 23 -tune animation -pix_fmt yuv420p -c:a aac -b:a 192k -movflags +faststart out.mp4`, then check frames and the audio.
+   - Keep each file under 95 MB (the GitHub limit is 100 MB): raise the CRF (up to about 27) if it's bigger. Engine videos move the camera all the time, so they need more bitrate than the old manim slides; 1080p is fine. If a 4K upscale (`-vf scale=3840:2160:flags=lanczos`) still fits under 95 MB, use it.
 10. **Thumbnail:** HTML plus Playwright at 1920x1080 (see `videos/*/thumb.html`).
     - One huge rand figure on flip tiles, at most 6 words, and a gold badge with the topic.
     - Check it at 640x360.
@@ -107,6 +110,7 @@ Read this whole file, and `STRATEGY.md` (goals, monetisation rules, learnings), 
 5. Never post channel content to any other brand. Never delete anything.
 
 ## Quality bar (check every time)
+- **Visual bar (from 10 Nov 2026):** the engine look, not slides. Every shot moves, most shots show people, money or places, a new picture every 3–6 seconds, and nothing is AI-generated except the voice.
 - Every number matches `facts.md`. The arithmetic is re-run in python.
 - No text overlaps or runs off the screen; check the stills.
 - Audio is around -14 LUFS with no clipping; spot-check a few seconds of every part.

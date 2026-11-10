@@ -1,0 +1,15 @@
+const C = CINE; const { sv, G, shot } = C;
+shot(0, 4, ({ world }) => { const w = world(); const L = w.layer(1);
+  C.sky(L, [[0, '#3a5a9a'], [.7, '#f0a46b'], [1, '#f9d9a5']]); C.sun(L, 1500, 300, {}); 
+  const cl = C.cloud(L.svg, L.defs, { s: .8 }); G(cl, 400, 200);
+  C.hills(L, 640, { color: '#6d8a5a', amp: 80 });
+  const sk = C.skyline(L.svg, L.defs, { w: 1920, h: 260, color: '#4a5f86', joburg: true }); G(sk.g, 0, 700);
+  C.ground(L, 760, { color: '#c98a5a' });
+  const bh = C.bankHall(L.svg, L.defs, { w: 600, h: 430 }); G(bh, 380, 960);
+  const b2 = C.branch(L.svg, L.defs, { w: 480, h: 280, sign: 'BANK', sub: 'OPEN 08:00' }); G(b2.g, 960, 960); b2.setLight(1);
+  const sp = C.spaza(L.svg, L.defs, { w: 460, h: 280 }); G(sp, 1500, 960);
+  const tx = C.taxi(L.svg, L.defs, {}); G(tx.g, 1500, 1060, 0, .5);
+  const st = C.stall(L.svg, L.defs, {}); G(st, 160, 1070, 0, .5);
+  const ac = C.acacia(L.svg, L.defs, { s: .8 }); G(ac, 1820, 780);
+  return {};
+}, () => {});
