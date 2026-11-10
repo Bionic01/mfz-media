@@ -1,0 +1,45 @@
+{
+ "duration": 512.43,
+ "chapters": [
+  {
+   "key": "cold_open",
+   "start": 0.533
+  },
+  {
+   "key": "ch1_start",
+   "start": 37.76
+  },
+  {
+   "key": "ch2_bet",
+   "start": 87.04
+  },
+  {
+   "key": "ch3_growth",
+   "start": 129.6
+  },
+  {
+   "key": "ch4_money",
+   "start": 183.186
+  },
+  {
+   "key": "ch5_lesson",
+   "start": 259.666
+  },
+  {
+   "key": "ch6_example",
+   "start": 294.546
+  },
+  {
+   "key": "ch7_traps",
+   "start": 373.917
+  },
+  {
+   "key": "ch8_how",
+   "start": 423.757
+  },
+  {
+   "key": "ch9_recap",
+   "start": 469.597
+  }
+ ]
+}
