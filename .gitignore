@@ -12,3 +12,5 @@ engine/**/render.log
 engine/test/out/
 engine/test/p1/
 engine/test/p2/
+__pycache__/
+*.mp4.parts/

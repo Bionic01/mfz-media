@@ -113,7 +113,7 @@ class World {
 }
 
 // ---------------- timeline / shots ----------------
-const SHOTS = []; const CUES = []; window.CUES = CUES;
+const SHOTS = []; const CUES = []; window.CUES = CUES; window.__SHOTS = SHOTS;
 /** cue a sound effect at absolute time t: types see engine/audio.py */
 function cue(t, type, gain = 1, extra = {}) { if (CUES.some(c => c.type === type && Math.abs(c.t - t) < .002)) return; CUES.push(Object.assign({ t: +t.toFixed(3), type, gain }, extra)); }
 /**
