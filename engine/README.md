@@ -41,7 +41,7 @@ Working samples (copy these when starting a video). **Use the v2 demos** (`demo/
 3. **Check stills** of every shot: `python3 render.py snap scene.js 3,9.5,14,... --theme mfz` → `snaps/sheet.jpg`. Look at each frame: nothing cut off, no text over faces, text readable, the action matches the words. Fix and repeat.
 4. **Cues:** `python3 render.py cues scene.js cues.json --theme mfz`.
 5. **Render** (run in the background): `python3 render.py video scene.js video_silent.mp4 --workers 2 --theme mfz`. About 0.5–0.9 s per frame per worker on 2 cores at v2 density: a 9-minute video (16,200 frames) takes roughly 1.5–2 hours. `--from/--to` render a part.
-6. **Audio** (music and effects sit at half the first level since 10 Nov 2026, Rodney: "a little bit too high... tune it down, maybe by like 50%"; use `--music`/`--sfx` below 1 to go quieter, never above 1 without his say-so): `python3 audio.py cues.json mix.wav --voice voice.mp3 --lead 0.6` (style comes from META; `--music 0.8` to lower the bed).
+6. **Audio** (music and effects sit well below the first level since 10 Nov 2026: halved at 23:12 ("a little bit too high... tune it down, maybe by like 50%"), then 25% lower again at 23:17 ("reduce the volume by 25% again"); use `--music`/`--sfx` below 1 to go quieter, never above 1 without his say-so): `python3 audio.py cues.json mix.wav --voice voice.mp3 --lead 0.6` (style comes from META; `--music 0.8` to lower the bed).
 7. **Mux:** for the upload use HEVC so long videos fit the 95 MB repo limit: `ffmpeg -i video_silent.mp4 -i mix.wav -map 0:v -map 1:a -c:v libx265 -preset medium -crf 26 -tag:v hvc1 -pix_fmt yuv420p -c:a aac -b:a 160k -movflags +faststart final.mp4` (about 1.1 Mbps for v2-density 1080p).
 
 ## The density bar (v2, from 10 Nov 2026)
