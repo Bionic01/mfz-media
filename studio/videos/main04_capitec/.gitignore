@@ -1,0 +1,18 @@
+# render artifacts and local copies (final mp4, thumbnail and srt live in media/main04_capitec)
+MoneyFromZero_Capitec_story.mp4
+thumbnail.png
+__pycache__/
+audio/
+check/
+media_4k/
+media_s/
+*.log
+*.m4a
+*.wav
+bg_board.png
+bg_board_16x9.png
+thumb_bg.png
+mfz_brand.py
+make_srt.py
+split_script.py
+still.sh
