@@ -2,28 +2,42 @@
 
 Take topics from the top of each list. Move a topic to LOG.md once it's published. Re-check every figure on the day you use it.
 
-## Long videos (8–9 min). Timely topics come first.
-_Re-ranked 8 Nov 2026 by the weekly review. The suggested slots fit the Mon/Wed/Fri 16:00 cadence; move them if production slips, but keep the deadlines._
-1. **Black Friday and store cards: the real cost of buying on credit (SA 2026).** Suggested slot: **Mon 16 Nov**; it must be out by Fri 20 Nov. Black Friday is **Fri 27 Nov 2026**. Cover store-card interest (check the current National Credit Act maximum against prime 10.75%), credit-life and service fees, and a worked rand example.
-2. **The repo rate explained: what a 0.25% change does to your bond, car payment and savings (SA).** NEW. Suggested slot: **Wed 18 Nov**, the day before the MPC decision on **Thu 19 Nov 2026**. Use current figures (repo 7.25%, prime 10.75% since 25 Sep; verify on the day) and work the repayment changes out in python. Keep it evergreen: no prediction of the decision.
-3. **Your bonus or 13th cheque: what to do with it**: the tax on a bonus, debt first, and the TFSA/RA top-up. Suggested slot: **Fri 27 Nov or Mon 30 Nov**, before December pay day.
-4. **Festive season on a budget: how not to start January broke.** NEW. Suggested slot: **early to mid December**. This also seeds the January-reset topic (#8).
-5. **Your credit score in South Africa**: how to check it free and how to improve it. It links naturally to the Black Friday and repo-rate videos.
-6. **Retirement annuities explained: the tax refund most people miss.** Post in Jan/Feb, before the end-February deadline. Use the 27.5% deduction capped at R430,000 from 2026/27 (verify), with a worked refund.
-7. **Investing R500 a month: ETFs for complete beginners (SA)**: what an ETF is, costs (TER), using a TFSA, and risk.
-8. **The 50/30/20 budget in rand**: a January reset with real salaries.
-9. **Debt review vs debt consolidation vs debt counselling**: what each one does to you.
-10. **Savings account vs money market vs fixed deposit**: where your cash earns most.
-11. **Buying a home**: deposit, bond costs, transfer duty (2026 table) and what you can afford.
-12. **Car finance and balloon payments**: the trap.
-13. **Medical aid vs hospital plan vs gap cover.**
-14. **How to claim UIF**: step by step.
-15. **Provisional tax for side hustles and freelancers (SA).** NEW. Post in early January, before the **22 Jan 2027** filing deadline for provisional taxpayers. Verify on sars.gov.za.
-16. **Tax season: how to file on SARS eFiling and what auto-assessment means.** Post July–Oct.
-17. **Stokvels**: how they work and how to protect your money. December payouts make this a good fit for late November or December.
-18. **Funeral cover**: what to check before you sign.
-19. **Investing offshore**: the R1 million allowance explained.
-20. **Inflation explained with SA prices**: why your salary buys less.
+## Long videos (8–9 min): run order. Take the top unused topic.
+_Re-planned 10 Nov 2026 with Rodney's approval: each week, **two money stories and one how-to**. Money stories are big South African company and money stories told simply, so they can pull more views than plain how-tos; each one ends with a clear "what this means for you" lesson for beginners and links to a related how-to. Timely how-tos keep their dates. The suggested slots fit the Mon/Wed/Fri 16:00 cadence; move them if production slips, but keep the deadlines. Partner companies (Flash/1Voucher, Blue Label/Blu Voucher, OTT, Lesaka/4ALL Voucher) stay factual and neutral. Every figure, date and claim is verified on the day from primary sources; scandal stories use court findings, official reports and reputable news only, and say "alleged" where nothing has been proven._
+1. **STORY: How Capitec became South Africa's biggest bank by customers.** Suggested slot: **Fri 13 Nov**. Lesson: what bank fees cost you and how to compare accounts.
+2. **HOW-TO: Black Friday and store cards: the real cost of buying on credit (SA 2026).** Suggested slot: **Mon 16 Nov**; it must be out by Fri 20 Nov. Black Friday is **Fri 27 Nov 2026**. Cover store-card interest (check the current National Credit Act maximum against prime 10.75%), credit-life and service fees, and a worked rand example.
+3. **HOW-TO: The repo rate explained: what a 0.25% change does to your bond, car payment and savings (SA).** Suggested slot: **Wed 18 Nov**, the day before the MPC decision on **Thu 19 Nov 2026**. Use current figures (repo 7.25%, prime 10.75% since 25 Sep; verify on the day) and work the repayment changes out in python. Keep it evergreen: no prediction of the decision.
+4. **STORY: Steinhoff: South Africa's biggest corporate fraud, explained simply.** Suggested slot: **Fri 20 Nov**. Lesson: why one company should never be all your savings, and the warning signs.
+5. **STORY: VBS Mutual Bank: how a bank for ordinary people was looted.** Suggested slot: **Mon 23 Nov**. Lesson: what deposit insurance (CODI) covers today and how to check your bank.
+6. **STORY: How Shoprite makes money, and why it's in every town.** Suggested slot: **Wed 25 Nov**. Lesson: how retailers' money services (sending money, accounts) work and what they cost.
+7. **HOW-TO: Your bonus or 13th cheque: what to do with it**: the tax on a bonus, debt first, and the TFSA/RA top-up. Suggested slot: **Fri 27 Nov**, before December pay day.
+8. **STORY: How Eskom went broke, and what it costs you every month.** Suggested slot: **Mon 30 Nov**. Lesson: where your electricity rand goes and how tariff increases hit a household budget.
+9. **STORY: Why the petrol price changes every month.** Suggested slot: **Wed 2 Dec** (the December pump-price change). Explain how the price is built; use the official DMPR figures only if they are out, otherwise keep it evergreen.
+10. **HOW-TO: Festive season on a budget: how not to start January broke.** Suggested slot: **Fri 4 Dec**. This also seeds the January-reset topic.
+11. **STORY: Stokvels: how ordinary people move billions.** Suggested slot: **Mon 7 Dec** (December payouts). Lesson: how to protect your stokvel money.
+12. **STORY: How Pep and Mr Price sell so cheap.**
+13. **HOW-TO: Your credit score in South Africa**: how to check it free and how to improve it.
+14. **STORY: African Bank: how a lender collapsed, and the lesson for borrowers.**
+15. **STORY: How TymeBank grew with no branches.**
+16. **HOW-TO: Provisional tax for side hustles and freelancers (SA).** Post in early January, before the **22 Jan 2027** filing deadline for provisional taxpayers. Verify on sars.gov.za.
+17. **STORY: How Takealot makes money.**
+18. **STORY: Why bread costs what it does: inflation explained with one loaf.**
+19. **HOW-TO: The 50/30/20 budget in rand**: a January reset with real salaries.
+20. **STORY: What really happens when you tap your card.**
+21. **STORY: How spaza shops really work.**
+22. **HOW-TO: Retirement annuities explained: the tax refund most people miss.** Post in Jan/Feb, before the end-February deadline. Use the 27.5% deduction capped at R430,000 from 2026/27 (verify), with a worked refund.
+23. **HOW-TO: Investing R500 a month: ETFs for complete beginners (SA)**: what an ETF is, costs (TER), using a TFSA, and risk.
+
+### More how-tos (use these to keep the one-a-week how-to slot filled)
+- **Debt review vs debt consolidation vs debt counselling**: what each one does to you.
+- **Savings account vs money market vs fixed deposit**: where your cash earns most.
+- **Buying a home**: deposit, bond costs, transfer duty (2026 table) and what you can afford.
+- **Car finance and balloon payments**: the trap.
+- **Medical aid vs hospital plan vs gap cover.**
+- **How to claim UIF**: step by step.
+- **Tax season: how to file on SARS eFiling and what auto-assessment means.** Post July–Oct.
+- **Funeral cover**: what to check before you sign.
+- **Investing offshore**: the R1 million allowance explained.
 
 ## Published long videos (don't repeat)
 - TFSA complete guide (main01), two-pot retirement system (main02), emergency fund from zero (main03, 11 Nov 2026)

@@ -48,6 +48,7 @@ Read this before every production run. The weekly growth review updates it.
    - Each is one surprising number or rule from a long video, with the hook in 2 seconds.
    - Make the ending loop-friendly.
 7. **Community:** the description invites a comment ("What should the next guide be?"). Use commenters' questions as future topics.
+8. **Money stories (from 10 Nov 2026):** two a week. Open with the most dramatic moment or number, tell the story in plain words with a clear timeline, then finish with "what this means for you" and point to the related how-to. Keep partner companies (Flash/1Voucher, Blue Label/Blu Voucher, OTT, Lesaka/4ALL Voucher) factual and neutral. For scandals, use court findings, official reports and reputable news, and say "alleged" where nothing has been proven.
 
 ## Promoting Fluxr (Rodney's business)
 - **When to start:** only once the channel gets views, meaning any video passes 1,000 views or the channel passes 500 subscribers.
@@ -57,6 +58,7 @@ Read this before every production run. The weekly growth review updates it.
 - **Rules:** never invent prices or offers, and never put it in the first 30 seconds.
 
 ## Learnings log (newest first; dated, with evidence)
+- 2026-11-10 (Rodney's decision): **New content mix.** Each week, two money stories and one how-to (Mon/Wed/Fri), with Shorts cut from both. Money stories are famous South African company and money stories (Capitec, Steinhoff, VBS, Shoprite, Eskom, the petrol price, stokvels and so on) told simply, each ending with a beginner lesson and a link to a related how-to. Reason: plain how-tos may not pull enough views, while story videos can. Corporate stories that were on the Fluxr channel's list (Capitec, Shoprite, Steinhoff, VBS, Eskom, Takealot) now belong to this channel only, so the two channels never make the same video. Compare story vs how-to views in each weekly review and adjust the mix with evidence.
 - 2026-11-08 (week 1 review): **No audience data yet.** Metricool shows 0 subscribers, 0 views and no per-video rows for 1 Oct–8 Nov; traffic sources are empty. Published so far: Short 001 (6 Nov), main01 TFSA guide and Short 002 (7 Nov). YouTube analytics usually lags 2–3 days, so judge nothing on week 1. No tool here exposes comments; check them by hand or when a tool appears.
 - 2026-11-08: **YPP rules confirmed** on support.google.com/youtube (answers 72851 and 12843009): 1,000 subs + 4,000 hours (12 months) or 10M Shorts views (90 days) until 31 Jan 2027; new applicants from 1 Feb 2027 need 8,000 hours or 20M Shorts views. Realistically we won't hit 4,000 hours by 31 Jan, so plan for the 8,000-hour bar and treat the fan-funding tier (500 subs + 3,000 hours or 3M Shorts views, unchanged) as the first paid milestone.
 - 2026-11-08: **Topic concentration.** The first 4 Shorts (incl. tonight's) are all TFSA. Hypothesis to test, not yet evidence: rotating topics reaches more viewers and gives each long guide its own Shorts funnel. From 9 Nov, Shorts switch to two-pot (main02 goes live 9 Nov 16:00) and rotate after that.
