@@ -1,0 +1,11 @@
+[
+ ["hook", "If your bank fails tomorrow, how much of your savings is safe? R100,000.", "If your bank fails tomorrow, how much of your savings is safe? 100,000 rand."],
+ ["codi", "Since 1 April 2024, bank deposits in South Africa are insured by CODI, the Corporation for Deposit Insurance.", "Since 1 April 2024, bank deposits in South Africa are insured by CODI, the Corporation for Deposit Insurance."],
+ ["limit", "It covers up to R100,000 per person, per bank, and that includes interest.", "It covers up to 100,000 rand per person, per bank, and that includes interest."],
+ ["free", "It's automatic and free. You don't apply, and you don't pay.", "It's automatic and free. You don't apply, and you don't pay."],
+ ["covered", "Savings, cheque, notice and fixed deposit accounts are all covered. So is a money market account at a bank.", "Savings, cheque, notice and fixed deposit accounts are all covered. So is a money market account at a bank."],
+ ["trap", "But a money market unit trust is not. It's an investment, not a bank deposit.", "But a money market unit trust is not. It's an investment, not a bank deposit."],
+ ["banks", "All your accounts at one bank share one limit. A second bank gets its own R100,000.", "All your accounts at one bank share one limit. A second bank gets its own 100,000 rand."],
+ ["guide", "Where to keep your emergency fund is in the full guide on the channel. Follow for a new money rule every day.", "Where to keep your emergency fund is in the full guide on the channel. Follow for a new money rule every day."],
+ ["loop", "So if your bank failed tomorrow, how much of yours is safe?", "So if your bank failed tomorrow, how much of yours is safe?"]
+]

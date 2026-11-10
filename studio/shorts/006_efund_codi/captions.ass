@@ -1,0 +1,69 @@
+[Script Info]
+ScriptType: v4.00+
+PlayResX: 1080
+PlayResY: 1920
+WrapStyle: 2
+ScaledBorderAndShadow: yes
+
+[V4+ Styles]
+Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding
+Style: Cap,Barlow ExtraBold,96,&H00DFEEF4,&H00DFEEF4,&H00141212,&H96000000,0,0,0,0,100,100,0,0,1,7,4,2,70,70,400,1
+
+[Events]
+Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
+Dialogue: 0,0:00:00.15,0:00:00.87,Cap,,0,0,0,,{\fad(40,0)}If your bank
+Dialogue: 0,0:00:00.87,0:00:02.23,Cap,,0,0,0,,{\fad(40,0)}fails tomorrow,
+Dialogue: 0,0:00:02.23,0:00:02.95,Cap,,0,0,0,,{\fad(40,0)}how much of your
+Dialogue: 0,0:00:02.95,0:00:04.55,Cap,,0,0,0,,{\fad(40,0)}savings is safe?
+Dialogue: 0,0:00:04.55,0:00:06.63,Cap,,0,0,0,,{\fad(40,0)}{\c&H33BEF7&}R100 000.{\c&HDFEEF4&}
+Dialogue: 0,0:00:06.63,0:00:07.35,Cap,,0,0,0,,{\fad(40,0)}Since 1 April
+Dialogue: 0,0:00:07.35,0:00:09.43,Cap,,0,0,0,,{\fad(40,0)}2024, bank
+Dialogue: 0,0:00:09.43,0:00:10.15,Cap,,0,0,0,,{\fad(40,0)}deposits in
+Dialogue: 0,0:00:10.15,0:00:11.03,Cap,,0,0,0,,{\fad(40,0)}South Africa are
+Dialogue: 0,0:00:11.03,0:00:13.59,Cap,,0,0,0,,{\fad(40,0)}insured by CODI,
+Dialogue: 0,0:00:13.59,0:00:14.47,Cap,,0,0,0,,{\fad(40,0)}the Corporation
+Dialogue: 0,0:00:14.47,0:00:15.11,Cap,,0,0,0,,{\fad(40,0)}for Deposit
+Dialogue: 0,0:00:15.11,0:00:16.20,Cap,,0,0,0,,{\fad(40,0)}Insurance.
+Dialogue: 0,0:00:16.23,0:00:17.19,Cap,,0,0,0,,{\fad(40,0)}It covers up to
+Dialogue: 0,0:00:17.19,0:00:18.87,Cap,,0,0,0,,{\fad(40,0)}{\c&H33BEF7&}R100 000{\c&HDFEEF4&} per
+Dialogue: 0,0:00:18.87,0:00:19.91,Cap,,0,0,0,,{\fad(40,0)}person, per
+Dialogue: 0,0:00:19.91,0:00:21.11,Cap,,0,0,0,,{\fad(40,0)}bank, and that
+Dialogue: 0,0:00:21.11,0:00:21.75,Cap,,0,0,0,,{\fad(40,0)}includes
+Dialogue: 0,0:00:21.75,0:00:22.76,Cap,,0,0,0,,{\fad(40,0)}interest.
+Dialogue: 0,0:00:22.79,0:00:23.83,Cap,,0,0,0,,{\fad(40,0)}It's automatic
+Dialogue: 0,0:00:23.83,0:00:24.95,Cap,,0,0,0,,{\fad(40,0)}and free.
+Dialogue: 0,0:00:24.95,0:00:26.03,Cap,,0,0,0,,{\fad(40,0)}You don't apply,
+Dialogue: 0,0:00:26.03,0:00:26.63,Cap,,0,0,0,,{\fad(40,0)}and you don't
+Dialogue: 0,0:00:26.63,0:00:27.40,Cap,,0,0,0,,{\fad(40,0)}pay.
+Dialogue: 0,0:00:27.51,0:00:28.95,Cap,,0,0,0,,{\fad(40,0)}Savings, cheque,
+Dialogue: 0,0:00:28.95,0:00:30.27,Cap,,0,0,0,,{\fad(40,0)}notice and fixed
+Dialogue: 0,0:00:30.27,0:00:31.03,Cap,,0,0,0,,{\fad(40,0)}deposit accounts
+Dialogue: 0,0:00:31.03,0:00:32.44,Cap,,0,0,0,,{\fad(40,0)}are all covered.
+Dialogue: 0,0:00:32.47,0:00:33.19,Cap,,0,0,0,,{\fad(40,0)}So is a money
+Dialogue: 0,0:00:33.19,0:00:33.91,Cap,,0,0,0,,{\fad(40,0)}market account
+Dialogue: 0,0:00:33.91,0:00:35.00,Cap,,0,0,0,,{\fad(40,0)}at a bank.
+Dialogue: 0,0:00:35.03,0:00:35.51,Cap,,0,0,0,,{\fad(40,0)}But a money
+Dialogue: 0,0:00:35.51,0:00:36.31,Cap,,0,0,0,,{\fad(40,0)}market unit
+Dialogue: 0,0:00:36.31,0:00:37.75,Cap,,0,0,0,,{\fad(40,0)}trust is not.
+Dialogue: 0,0:00:37.75,0:00:38.07,Cap,,0,0,0,,{\fad(40,0)}It's an
+Dialogue: 0,0:00:38.07,0:00:39.27,Cap,,0,0,0,,{\fad(40,0)}investment, not
+Dialogue: 0,0:00:39.27,0:00:40.68,Cap,,0,0,0,,{\fad(40,0)}a bank deposit.
+Dialogue: 0,0:00:40.87,0:00:41.39,Cap,,0,0,0,,{\fad(40,0)}All your
+Dialogue: 0,0:00:41.39,0:00:42.07,Cap,,0,0,0,,{\fad(40,0)}accounts at one
+Dialogue: 0,0:00:42.07,0:00:43.19,Cap,,0,0,0,,{\fad(40,0)}bank share one
+Dialogue: 0,0:00:43.19,0:00:43.99,Cap,,0,0,0,,{\fad(40,0)}limit.
+Dialogue: 0,0:00:43.99,0:00:44.95,Cap,,0,0,0,,{\fad(40,0)}A second bank
+Dialogue: 0,0:00:44.95,0:00:45.75,Cap,,0,0,0,,{\fad(40,0)}gets its own
+Dialogue: 0,0:00:45.75,0:00:47.48,Cap,,0,0,0,,{\fad(40,0)}{\c&H33BEF7&}R100 000.{\c&HDFEEF4&}
+Dialogue: 0,0:00:47.59,0:00:48.15,Cap,,0,0,0,,{\fad(40,0)}Where to keep
+Dialogue: 0,0:00:48.15,0:00:49.03,Cap,,0,0,0,,{\fad(40,0)}your emergency
+Dialogue: 0,0:00:49.03,0:00:49.83,Cap,,0,0,0,,{\fad(40,0)}fund is in the
+Dialogue: 0,0:00:49.83,0:00:50.55,Cap,,0,0,0,,{\fad(40,0)}full guide on
+Dialogue: 0,0:00:50.55,0:00:51.51,Cap,,0,0,0,,{\fad(40,0)}the channel.
+Dialogue: 0,0:00:51.51,0:00:52.39,Cap,,0,0,0,,{\fad(40,0)}Follow for a new
+Dialogue: 0,0:00:52.39,0:00:53.43,Cap,,0,0,0,,{\fad(40,0)}money rule every
+Dialogue: 0,0:00:53.43,0:00:54.23,Cap,,0,0,0,,{\fad(40,0)}day.
+Dialogue: 0,0:00:54.23,0:00:55.51,Cap,,0,0,0,,{\fad(40,0)}So if your bank
+Dialogue: 0,0:00:55.51,0:00:56.87,Cap,,0,0,0,,{\fad(40,0)}failed tomorrow,
+Dialogue: 0,0:00:56.87,0:00:57.43,Cap,,0,0,0,,{\fad(40,0)}how much of
+Dialogue: 0,0:00:57.43,0:00:59.08,Cap,,0,0,0,,{\fad(40,0)}yours is safe?
