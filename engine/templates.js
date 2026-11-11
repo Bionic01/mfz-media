@@ -32,7 +32,10 @@ T.flapTitle = (a, b, o) => shot(a, b + .35, ({ root, world }) => { const w = wor
   const fl = (o.lines || []).map((l, i) => C.flapText(u, l, { size: i ? 110 : 130, accent: i === (o.accentLine ?? -1) }));
   const k = o.kicker ? tag(u, o.kicker) : null; const ic = o.icon ? C.icon(us.svg, us.defs, o.icon, { r: 60, bg: acc(), fg: DARK() }) : null; const fg = o.flag ? C.flag(us.svg, us.defs, o.flag, { r: 52 }) : null;
   const sub = o.sub ? hl(u, o.sub, 56) : null; const sp = C.sparkles(us.svg, { n: 14, color: acc(), area: [300, 200, 1320, 600] }); return { w, g, fl, k, ic, fg, sub, sp };
-}, (s, lt, t) => { s.g.set(t); s.sp(t); const n = s.fl.length; const fast = b - a < 2.6; s.fl.forEach((f, i) => { f.set(t, a + .1 + i * (fast ? .18 : .35), fast ? .028 : .045); P(f.el, { x: 960, y: 540 - (n - 1) * 85 + i * 170 }); });
+}, (s, lt, t) => { s.g.set(t); s.sp(t); const n = s.fl.length; const fast = b - a < 2.6; s.fl.forEach((f, i) => { f.set(t, a + .1 + i * (fast ? .18 : .35), fast ? .028 : .045); P(f.el, { x: 960, y: 540 - (n - 1) * 85 + i * 170 });
+    // keep the headline alive: a slow 3D tilt and a glint that runs along the letters (motion v3)
+    f.el.style.transform += ` perspective(1400px) rotateY(${(Math.sin(t * .55 + i * 1.3) * 7).toFixed(2)}deg) rotateX(${(Math.cos(t * .45 + i) * 5).toFixed(2)}deg)`;
+    const kids = f.el.children, ph = ((t - a) * .5 + i * .18) % 1.8 - .4; for (let j = 0; j < kids.length; j++) { const d = j / Math.max(1, kids.length - 1) - ph; const bump = Math.exp(-d * d * 50); kids[j].style.filter = bump > .03 ? `brightness(${(1 + .7 * bump).toFixed(3)})` : ''; } });
   if (s.k) P(s.k, { x: 960, y: 200, o: prog(t, a + .1, a + .4) }); const wMax = Math.max(...(o.lines || ['']).map((l, i) => l.length * (i ? 110 : 130) * .82)); const icx = Math.max(110, Math.min(300, 960 - wMax / 2 - 110));
   if (s.ic) { pop(s.ic.g, icx, 540 - (n - 1) * 85, t, a + .2, { spin: -30 }); s.ic.draw(prog(t, a + .2, a + .8)); }
   if (s.fg) pop(s.fg, 1920 - icx, 540 - (n - 1) * 85, t, a + .4, { spin: 30 }); if (s.sub) { s.sub.set(t, (o.subAt || a + .9)); P(s.sub.el, { x: 960, y: 540 + (n - 1) * 85 + 170, o: prog(t, (o.subAt || a + .9) - .3, (o.subAt || a + .9)) }); }
