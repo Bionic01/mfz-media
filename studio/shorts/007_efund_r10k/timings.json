@@ -1,0 +1,76 @@
+{
+ "voice": "Darius (ElevenLabs eleven_v4) single take, 11 Nov 2026",
+ "duration": 52.39,
+ "lines": [
+  {
+   "key": "hook",
+   "start": 0.15,
+   "end": 3.99,
+   "n": 10,
+   "text": "Could you pay a R10,000 emergency today, from savings?"
+  },
+  {
+   "key": "survey",
+   "start": 4.47,
+   "end": 11.67,
+   "n": 17,
+   "text": "A JustMoney survey of over 5,400 South Africans this year found fewer than one in five could."
+  },
+  {
+   "key": "earners",
+   "start": 11.91,
+   "end": 19.91,
+   "n": 18,
+   "text": "And it's not only low earners. Even among people earning over R35,000 a month, 57% could not."
+  },
+  {
+   "key": "borrow",
+   "start": 19.99,
+   "end": 24.75,
+   "n": 11,
+   "text": "43% need to borrow before month-end, just to cover living costs."
+  },
+  {
+   "key": "debt",
+   "start": 24.95,
+   "end": 28.63,
+   "n": 11,
+   "text": "So when an emergency hits, it gets paid with borrowed money."
+  },
+  {
+   "key": "fix",
+   "start": 28.95,
+   "end": 34.55,
+   "n": 15,
+   "text": "The fix starts small. Aim for a first R2,000, in a separate savings account."
+  },
+  {
+   "key": "math",
+   "start": 34.71,
+   "end": 37.59,
+   "n": 10,
+   "text": "R200 a month gets you there in 10 months."
+  },
+  {
+   "key": "goal",
+   "start": 37.75,
+   "end": 42.03,
+   "n": 12,
+   "text": "Then keep building, towards three to six months of your essential costs."
+  },
+  {
+   "key": "guide",
+   "start": 42.23,
+   "end": 47.51,
+   "n": 17,
+   "text": "The full emergency fund guide is on the channel. Follow for a new money rule every day."
+  },
+  {
+   "key": "loop",
+   "start": 47.63,
+   "end": 51.19,
+   "n": 9,
+   "text": "So, could you pay a R10,000 emergency today?"
+  }
+ ]
+}
