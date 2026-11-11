@@ -54,7 +54,7 @@ _From 9 Nov, switch to two-pot (main02 goes live 9 Nov 16:00). Don't post more t
 - Two-pot: R320 fee = 16% of a R2,000 withdrawal.
 
 ## Shorts from main03 (emergency fund)
-- Emergency fund: fewer than 1 in 5 could cover R10,000 from savings (JustMoney 2026 survey).
+- ~~Emergency fund: fewer than 1 in 5 could cover R10,000 from savings (JustMoney 2026 survey).~~ USED: Short 007, 12 Nov 2026 (also 57% of R35,000+ earners and 43% borrow before month-end; 2nd emergency-fund Short in a row, so Short 008 can be the 3rd at most).
 - Emergency fund: R200 a month gets you R2,000 in 10 months (6% illustration).
 - ~~Emergency fund: CODI covers R100,000 per bank, but not a money market unit trust.~~ USED: Short 006, 11 Nov 2026 (goes out 2 h after main03 and points to it).
 - Emergency fund: why your TFSA is the wrong place for it.
