@@ -23,3 +23,6 @@ thumbnail_logo.png
 thumb_logo.html
 capitec_v3.mp4
 qa/
+seg*.mp4
+seg*.mp4.parts/
+seg.log
