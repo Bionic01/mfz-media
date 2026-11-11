@@ -93,7 +93,56 @@ function airtime(g, defs) {
   return { set(t, st = {}) { const k = E.outB(prog(t, st.selAt ?? 1e9, (st.selAt ?? 1e9) + .4)); zr.setAttribute('transform', `translate(180,305) scale(${(1 + .045 * k).toFixed(4)}) translate(-180,-305)`); zc.setAttribute('stroke', k > .05 ? LIME : LINE); zc.setAttribute('stroke-width', 1 + k * 1.6); } };
 }
 
-const SCREENS = { home, redeem, airtime };
+// ---------------- list helpers for the other screens ----------------
+const chev = (g, x, y) => sv('path', { d: `M${x} ${y - 5} L${x + 5} ${y} L${x} ${y + 5}`, stroke: GREY, 'stroke-width': 1.6, fill: 'none', 'stroke-linecap': 'round' }, g);
+function rowCard(g, defs, y, { title, sub, flag, icon: ic, color = '#1d3d4a', h = 62 } = {}) {
+  const rg = sv('g', {}, g); const card = sv('rect', { x: 20, y, width: 320, height: h, rx: 15, fill: CARD, stroke: LINE, 'stroke-width': 1 }, rg);
+  if (flag) { const f = C.flag(rg, defs, flag, { r: 16, ringW: 2, shadow: false, gloss: false }); f.setAttribute('transform', `translate(50,${y + h / 2})`); }
+  else { sv('circle', { cx: 50, cy: y + h / 2, r: 16, fill: color }, rg); icon(rg, ic || 'star', 50, y + h / 2, 18, WHITE); }
+  TX(rg, title, 78, y + h / 2 - (sub ? 2 : -5), { 'font-size': 14, 'font-weight': 700 }); if (sub) TX(rg, sub, 78, y + h / 2 + 15, { 'font-size': 10, fill: GREY, 'font-weight': 500 }); chev(rg, 322, y + h / 2);
+  return { g: rg, card, cy: y + h / 2 };
+}
+const glow = (r, k) => { r.card.setAttribute('stroke', k > .05 ? LIME : LINE); r.card.setAttribute('stroke-width', 1 + k * 1.6); r.g.setAttribute('transform', `translate(180,${r.cy}) scale(${(1 + .04 * k).toFixed(4)}) translate(-180,${-r.cy})`); };
+
+// ---------------- Zim Services ----------------
+function zim(g, defs) {
+  const f = C.flag(g, defs, 'zw', { r: 11, ringW: 1.5, shadow: false, gloss: false }); f.setAttribute('transform', 'translate(48,64)');
+  sv('path', { d: 'M28 58 L22 64 L28 70', stroke: WHITE, 'stroke-width': 2.2, fill: 'none', 'stroke-linecap': 'round', 'stroke-linejoin': 'round' }, g); TX(g, 'Zim Services', 66, 70, { 'font-size': 18, 'font-weight': 700 });
+  TX(g, 'Everything for Zimbabwe in one place: pay in rand,', 22, 98, { 'font-size': 10, fill: GREY, 'font-weight': 500 }); TX(g, 'delivered in-country.', 22, 111, { 'font-size': 10, fill: GREY, 'font-weight': 500 });
+  const tiles = [['phone', 'Airtime', 'Econet · NetOne · Telecel'], ['wifi', 'Bundles', 'Data · voice · SMS'], ['bolt', 'ZESA', 'Prepaid electricity tokens'], ['tv', 'DStv Zim', 'USD accounts · live rate']].map(([n, l, sub], i) => {
+    const x = 20 + (i % 2) * 164, y = 126 + Math.floor(i / 2) * 104; const tg = sv('g', {}, g); const card = sv('rect', { x, y, width: 156, height: 96, rx: 15, fill: CARD, stroke: LINE }, tg);
+    sv('rect', { x: x + 14, y: y + 14, width: 30, height: 30, rx: 9, fill: '#1d3d2d' }, tg); icon(tg, n, x + 29, y + 29, 16, LIME); TX(tg, l, x + 14, y + 64, { 'font-size': 14, 'font-weight': 700 }); TX(tg, sub, x + 14, y + 81, { 'font-size': 9, fill: GREY, 'font-weight': 500 });
+    return { g: tg, card, cy: y + 48, cx: x + 78 }; });
+  return { set(t, st = {}) { tiles.forEach((tl, i) => { const k = st.sel === i ? E.outB(prog(t, st.selAt ?? 1e9, (st.selAt ?? 1e9) + .4)) : 0; tl.card.setAttribute('stroke', k > .05 ? LIME : LINE); tl.card.setAttribute('stroke-width', 1 + k * 1.6); tl.g.setAttribute('transform', `translate(${tl.cx},${tl.cy}) scale(${(1 + .05 * k).toFixed(4)}) translate(${-tl.cx},${-tl.cy})`); }); } };
+}
+// ---------------- Buy electricity ----------------
+function power(g, defs) {
+  header(g, 'Buy electricity');
+  const r1 = rowCard(g, defs, 92, { title: 'Eskom', sub: 'South Africa · prepaid meters', flag: 'za' });
+  const r2 = rowCard(g, defs, 164, { title: 'ZESA Token', sub: 'Zimbabwe · minimum $5', flag: 'zw' });
+  const r3 = rowCard(g, defs, 236, { title: 'Global Electricity', sub: 'Kenya · Malawi · Mozambique', icon: 'globe' });
+  return { set(t, st = {}) { [r1, r2, r3].forEach((r, i) => glow(r, (st.sel ?? 1) === i ? E.outB(prog(t, st.selAt ?? 1e9, (st.selAt ?? 1e9) + .4)) : 0)); } };
+}
+// ---------------- Buy vouchers ----------------
+function vouchers(g) {
+  header(g, 'Buy vouchers'); pill(g, 20, 88, 320, 34, { fill: '#0e1f18', stroke: '#2a5543', 'stroke-width': 1.2 }); icon(g, 'globe', 40, 105, 12, GREY); TX(g, 'Search brands', 54, 109, { 'font-size': 11, fill: GREY, 'font-weight': 500 });
+  const sec = (title, y, items) => { caps(g, title, 22, y); return items.map(([n, c], i) => { const x = 20 + (i % 2) * 164, yy = y + 10 + Math.floor(i / 2) * 44; const rg = sv('g', {}, g); const card = sv('rect', { x, y: yy, width: 156, height: 38, rx: 11, fill: CARD, stroke: LINE }, rg); sv('rect', { x: x + 9, y: yy + 8, width: 22, height: 22, rx: 6, fill: c }, rg); TX(rg, n, x + 38, yy + 24, { 'font-size': 11, 'font-weight': 600 }); return { g: rg, card, cx: x + 78, cy: yy + 19 }; }); };
+  const all = [...sec('PAYMENTS', 142, [['1Voucher', '#f26522'], ['BluVoucher', '#2b3a8f'], ['EasyLoad Voucher', '#d4a017'], ['FNB Voucher', '#00a0af'], ['Flash Token', '#2fb35a'], ['OTT Voucher', '#1c9b4a']]),
+    ...sec('MOBILE', 300, [['Eezi Voucher', '#e04f8a'], ['Ringas Voucher', '#e23b3b']]), ...sec('SHOPPING', 370, [['Amazon Gift Card', '#ff9900'], ['Takealot Voucher', '#0b79bf']]), ...sec('RIDES & FOOD', 440, [['Uber', '#000000']])];
+  return { set(t, st = {}) { all.forEach((r, i) => { const k = st.sel === i ? E.outB(prog(t, st.selAt ?? 1e9, (st.selAt ?? 1e9) + .4)) : 0; r.card.setAttribute('stroke', k > .05 ? LIME : LINE); r.card.setAttribute('stroke-width', 1 + k * 1.6); r.g.setAttribute('transform', `translate(${r.cx},${r.cy}) scale(${(1 + .06 * k).toFixed(4)}) translate(${-r.cx},${-r.cy})`); }); } };
+}
+// ---------------- Pay bills ----------------
+function bills(g) {
+  header(g, 'Pay Bills');
+  const big = [['Pay@', 'Any Pay@ bill or account', '#e23b3b'], ['EasyPay', 'Any EasyPay bill or account', '#2f6fe0']].map(([n, sub, c], i) => { const x = 20 + i * 164; const rg = sv('g', {}, g); const card = sv('rect', { x, y: 88, width: 156, height: 84, rx: 15, fill: CARD, stroke: LINE }, rg); sv('rect', { x: x + 14, y: 100, width: 30, height: 26, rx: 7, fill: c }, rg); TX(rg, n, x + 14, 146, { 'font-size': 14, 'font-weight': 700 }); TX(rg, sub, x + 14, 161, { 'font-size': 8.5, fill: GREY, 'font-weight': 500 }); return { g: rg, card, cx: x + 78, cy: 130 }; });
+  caps(g, 'ACCOUNTS & TRAVEL', 22, 196);
+  ['African Bank', 'Avon', 'City of Ekurhuleni', 'SABC', 'Eskom', 'Herotel', 'HomeChoice', 'StarTimes', 'Telkom', 'Vumatel'].forEach((n, i) => { const x = 20 + (i % 3) * 110, y = 206 + Math.floor(i / 3) * 70; sv('rect', { x, y, width: 100, height: 62, rx: 13, fill: CARD, stroke: LINE }, g); sv('circle', { cx: x + 50, cy: y + 22, r: 11, fill: '#1d3d4a' }, g); TX(g, n, x + 50, y + 49, { 'font-size': 9, 'font-weight': 600, 'text-anchor': 'middle' }); });
+  pill(g, 20, 494, 320, 36, { fill: CARD, stroke: LINE }); TX(g, 'Other bills', 40, 517, { 'font-size': 12, 'font-weight': 600 }); chev(g, 322, 512);
+  return { set(t, st = {}) { big.forEach((r, i) => { const k = (st.sel ?? 0) === i ? E.outB(prog(t, st.selAt ?? 1e9, (st.selAt ?? 1e9) + .4)) : 0; r.card.setAttribute('stroke', k > .05 ? LIME : LINE); r.card.setAttribute('stroke-width', 1 + k * 1.6); r.g.setAttribute('transform', `translate(${r.cx},${r.cy}) scale(${(1 + .05 * k).toFixed(4)}) translate(${-r.cx},${-r.cy})`); }); } };
+}
+
+const SCREENS = { home, redeem, airtime, zim, power, vouchers, bills };
+C.APP_FILES = { 'phone-01-home.png': 'home', 'phone-02-redeem.png': 'redeem', 'phone-03-airtime.png': 'airtime', 'phone-04-zim.png': 'zim', 'phone-05-power.png': 'power', 'phone-06-vouchers.png': 'vouchers', 'phone-07-bills.png': 'bills' };
 /** draw an app screen into g (the phone's screen group, w x h). Content is laid out on a 360-wide grid and scaled to fit. */
 function appUI(g, w, h, defs, screen = 'home', opts = {}) {
   const s = w / 360; const root = sv('g', { transform: `scale(${s.toFixed(5)})` }, g); const H = h / s;
