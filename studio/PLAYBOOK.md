@@ -129,6 +129,16 @@ His words (11 Nov 2026, 23:36): "you're supposed to self-heal, always improving 
    - Every number from a source checked on the day; sources in the description.
 7. **Sound level (Rodney, 11 Nov 2026 23:38: "reduce the volume for all the tones and music by 50%. I find it kind of irritating"):** music and effects are now at half the 10 Nov level in `engine/audio.py` (music .03, effects .09375). Never raise them; go lower with `--music`/`--sfx` below 1 if a mix still sounds busy.
 
+**Engagement (Rodney, 11 Nov 2026 23:50: "The goal is to have engagement, very high engagement with the stories"; 23:46: "high quality, non-stop motion, like no errors").** The aim is that viewers watch to the end. Every script and every scene must do this:
+- **Cold open:** the first 5 seconds show the most surprising picture or number in the story and ask the question the video answers. No logo intro, no "welcome back".
+- **Stakes and promise in the first 20 seconds:** why this matters to the viewer, and what they'll understand by the end.
+- **Follow a person:** give the story a face (a sender, a shop owner, a grandmother) with a name and a problem, and come back to them; people remember people, not facts.
+- **Open loops:** tease a twist early ("but someone had to pay for all this") and pay it off later; keep one loop open at all times, especially right before the Fluxr part so viewers stay through it.
+- **A new picture every 2–4 seconds and a new kind of shot every 20–30 seconds** (map, character scene, number, cards, diagram); never two shots of the same template back to back.
+- **Fill the frame:** the subject takes up a large part of the frame; no small icon alone on an empty background. At most two card shots per minute.
+- **Non-stop motion:** the engine's living camera, idle motion and moving backgrounds are on by default; qa.py fails any stretch where the picture freezes for 1.5 s or more.
+- **Payoff and next step:** end on the answer, a one-line recap and a reason to watch the next video.
+
 ## Quality bar (check every time)
 - **Visual bar (from 10 Nov 2026):** the engine look, not slides. Every shot moves, most shots show people, money or places, a new picture every 3–6 seconds, and nothing is AI-generated except the voice.
 - Every number matches `facts.md`. The arithmetic is re-run in python.

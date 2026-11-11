@@ -93,18 +93,24 @@ const IC = {
 };
 /** circular icon badge; returns {g, draw(k)} (k 0..1 draws the line art) */
 function icon(parent, defs, name, { r = 40, bg = '#ffffff', fg = '#0d372b', ring = null, sw = 3.4, shadow = true } = {}) {
-  const g = sv('g', {}, parent);
+  const g = sv('g', {}, parent); const rip = sv('circle', { r, fill: 'none', stroke: bg, 'stroke-width': 3, opacity: 0 }, g); const seed = (ICN = (ICN + .37) % 1);
   if (shadow) sv('circle', { cy: r * .16, r, fill: '#000', opacity: .3, filter: blurFilter(defs, r * .15) }, g);
   sv('circle', { r, fill: grad(defs, [[0, lt(bg, .12)], [1, dk(bg, .1)]], { x1: 0, y1: 0, x2: .3, y2: 1 }) }, g);
   if (ring) sv('circle', { r: r - 2.5, fill: 'none', stroke: ring, 'stroke-width': 5 }, g);
   const s = r * 1.1 / 48; const p = sv('path', { d: IC[name] || IC.star, fill: 'none', stroke: fg, 'stroke-width': sw, 'stroke-linecap': 'round', 'stroke-linejoin': 'round', pathLength: 1, transform: `scale(${s}) translate(-24,-24)` }, g);
   p.style.strokeDasharray = '1 1';
-  return { g, path: p, draw(k) { p.style.strokeDashoffset = (1 - clamp(k)).toFixed(4); } };
+  return { g, path: p, draw(k) { p.style.strokeDashoffset = (1 - clamp(k)).toFixed(4);
+    // once drawn, a ring keeps pulsing out of the badge
+    const now = C.now || 0; const ph = (now * .62 + seed) % 1; const on = k >= 1 ? 1 : 0; rip.setAttribute('r', (r * (1 + .6 * E.outC(ph))).toFixed(1)); rip.setAttribute('opacity', (on * .55 * (1 - ph)).toFixed(3)); } };
 }
+let ICN = 0;
 /** pop-in transform helper: places g at x,y with overshoot scale + small spin; returns progress */
-function pop(g, x, y, t, a, { s = 1, dur = .45, spin = 0, out = 1e9, outDur = .3 } = {}) {
+function pop(g, x, y, t, a, { s = 1, dur = .45, spin = 0, out = 1e9, outDur = .3, idle = 1 } = {}) {
   const q = E.outB(prog(t, a, a + dur)); const o = 1 - E.inC(prog(t, out, out + outDur)); const k = Math.max(.001, q * o);
-  g.setAttribute('transform', `translate(${x.toFixed(1)},${y.toFixed(1)}) rotate(${((1 - q) * spin).toFixed(1)}) scale(${(s * k).toFixed(4)})`); g.setAttribute('opacity', q > .001 && o > .001 ? 1 : 0); return q * o;
+  // after it lands, keep it alive: a slow bob, sway and breathe (Rodney 11 Nov 2026: "non-stop motion")
+  const ik = idle * E.ioS(prog(t, a + dur * .6, a + dur + .5)); const ph = x * .013 + y * .007;
+  const by = Math.sin(t * 1.7 + ph * 7) * 6 * ik, rr = Math.sin(t * 1.15 + ph * 5) * 2.4 * ik, br = 1 + Math.sin(t * 2.2 + ph * 3) * .025 * ik;
+  g.setAttribute('transform', `translate(${x.toFixed(1)},${(y + by).toFixed(1)}) rotate(${((1 - q) * spin + rr).toFixed(2)}) scale(${(s * k * br).toFixed(4)})`); g.setAttribute('opacity', q > .001 && o > .001 ? 1 : 0); return q * o;
 }
 
 // ---------------- callouts, labels, highlight ----------------

@@ -150,7 +150,7 @@ function brandBug() {
 let DUR = 10;
 window.ready = () => { if (window.SETUP) window.SETUP(); DUR = window.DURATION || Math.max(...SHOTS.map(s => s.b), 1); window.DURATION = DUR; return true; };
 window.renderAt = (t) => {
-  let active = [];
+  window.CINE.now = t; let active = [];
   for (const S of SHOTS) {
     const tin = S.opts.tin ?? (S.opts.in && S.opts.in !== 'cut' ? .5 : 0);
     if (t >= S.a - 1e-6 && t < S.b + (S.opts.tout ?? 0) + 1e-6) active.push(S);
@@ -176,7 +176,14 @@ window.renderAt = (t) => {
       else if (m === 'flash') { op = 1; }
       else if (m === 'bands' || m === 'circle') { op = q > .45 ? 1 : 0; }
     } else if (m === 'iris') S.root.style.clipPath = 'none';
-    S.root.style.opacity = op; S.root.style.transform = tr; S.root.style.filter = fl;
+    // living camera (Rodney 11 Nov 2026: "high quality, non-stop motion"): every shot keeps drifting and pushing in or
+    // pulling out, on top of its own camera, so nothing ever sits still. opts.live: false turns it off; a number scales it.
+    let live = '';
+    if (S.opts.live !== false) { const amp = typeof S.opts.live === 'number' ? S.opts.live : 1; const d = Math.max(.5, S.b - S.a); const kk = E.ioS(clamp((t - S.a) / d)); const ph = S.a * 1.37;
+      const dir = Math.floor(S.a * 3.1) % 2 ? 1 : -1; const sc = 1 + amp * .05 * (dir > 0 ? kk : 1 - kk);
+      const dx = amp * (noise1(t * .21 + ph, 11) * 16 + lerp(-10, 10, kk) * dir), dy = amp * noise1(t * .17 + ph, 13) * 10, rot = amp * noise1(t * .13 + ph, 17) * .45;
+      live = `translate(${dx.toFixed(2)}px,${dy.toFixed(2)}px) rotate(${rot.toFixed(3)}deg) scale(${sc.toFixed(4)})`; }
+    S.root.style.opacity = op; S.root.style.transform = (tr ? tr + ' ' : '') + live; S.root.style.filter = fl;
   }
   // shape transitions (bands / circle) drawn in a stage overlay
   if (!fx.tov) { fx.tov = el('div', { class: 'abs' }, stage); fx.tov.style.cssText += 'width:1920px;height:1080px;z-index:8995;pointer-events:none;overflow:hidden'; fx.tb = [0, 1, 2].map(i => { const d = el('div', { class: 'abs' }, fx.tov); d.style.cssText += 'width:1500px;height:2800px;left:0;top:-860px'; return d; }); fx.tc = el('div', { class: 'abs' }, fx.tov); fx.tc.style.cssText += 'width:100px;height:100px;border-radius:50%;left:0;top:0'; }
@@ -279,7 +286,7 @@ function voice(words, lead = 0) {
 }
 function loadJSON(path) { const x = new XMLHttpRequest(); x.open('GET', path, false); x.send(); return JSON.parse(x.responseText); }
 /** a DOM card holding an SVG, transformable in real CSS 3D (rotateX/Y with perspective) */
-function card3d(parent, w, h, { persp = 1400 } = {}) {
+function card3d(parent, w, h, { persp = 1400, sheenA = .55 } = {}) {
   const wrap = el('div', { class: 'abs' }, parent); wrap.style.cssText += `width:${w}px;height:${h}px;perspective:${persp}px;`;
   const inner = el('div', { class: 'card3d' }, wrap); inner.style.width = w + 'px'; inner.style.height = h + 'px';
   const s = svgBox(w, h, inner); const defs = sv('defs', {}, s);
@@ -287,7 +294,7 @@ function card3d(parent, w, h, { persp = 1400 } = {}) {
   return { wrap, inner, svg: s, defs, sheen, w, h, set({ x = 0, y = 0, rx = 0, ry = 0, rz = 0, s = 1, o = 1, light = null, blur = 0 }) {
     wrap.style.transform = `translate(${(x - w / 2).toFixed(1)}px,${(y - h / 2).toFixed(1)}px)`; wrap.style.opacity = o;
     inner.style.transform = `rotateX(${rx}deg) rotateY(${ry}deg) rotateZ(${rz}deg) scale(${s})`; inner.style.filter = blur > .1 ? `blur(${blur}px)` : 'none';
-    if (light !== null) sheen.style.background = `linear-gradient(105deg, rgba(255,255,255,0) ${light * 100 - 18}%, rgba(255,255,255,.55) ${light * 100}%, rgba(255,255,255,0) ${light * 100 + 18}%)`; } };
+    if (light !== null) sheen.style.background = `linear-gradient(105deg, rgba(255,255,255,0) ${light * 100 - 18}%, rgba(255,255,255,${sheenA}) ${light * 100}%, rgba(255,255,255,0) ${light * 100 + 18}%)`; } };
 }
 /** UI overlay layer that does not move with the camera */
 function ui(parent) { return el('div', { class: 'ui' }, parent); }

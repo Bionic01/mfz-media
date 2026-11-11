@@ -13,6 +13,10 @@ function bg(w, { glyphs = null, warm = false } = {}) {
   C.studio(L, m ? { c1: warm ? '#3a2a1c' : '#26262c', c2: '#08080a', key: '#ffd9a0' } : { c1: '#14513e', c2: '#04140e', key: '#85ed70' });
   const ups = [C.blobs(L, { colors: m ? (warm ? ['#5a3a1c', '#2a1c12', '#7a4a1c'] : ['#3a3326', '#1c1c22', '#4a3c1c']) : ['#1f6f4a', '#0b3f2f', '#2f8a5a'], o: .5 }), C.dotGrid(L, { o: .06 })];
   if (glyphs) ups.push(C.glyphs(L, { chars: glyphs, color: m ? TT().gold : TT().green, o: [.03, .09] }));
+  // always-moving depth: drifting bokeh and a soft light band sweeping across (Rodney 11 Nov 2026: "non-stop motion")
+  ups.push(C.bokeh(L, { n: 18, color: m ? '#ffe2b0' : '#d6ffd0', size: [10, 34], alpha: [.04, .13], area: [0, 0, L.w, L.h], drift: 30, seed: 11 }));
+  const sw = sv('rect', { x: -900, y: -400, width: 700, height: L.h + 800, fill: C.grad(L.defs, [[0, '#ffffff', 0], [.5, '#ffffff', m ? .05 : .06], [1, '#ffffff', 0]], { x1: 0, y1: 0, x2: 1, y2: 0 }), style: 'mix-blend-mode:screen' }, L.svg);
+  ups.push(t => sw.setAttribute('transform', `translate(${(((t * 260) % (L.w + 1800)) - 200).toFixed(1)},0) rotate(14)`));
   return { L, set: t => ups.forEach(f => f(t)) };
 }
 function tag(parent, text, color) { return el('div', { class: 'abs' }, parent, `<div style="display:inline-flex;align-items:center;gap:14px;font:800 36px/1 'Barlow Condensed';letter-spacing:.12em;color:#fff;background:rgba(10,10,12,.72);padding:12px 22px 12px 14px;border-radius:10px;box-shadow:0 10px 30px rgba(0,0,0,.3)"><span style="width:10px;height:40px;background:${color || TT().gold};border-radius:3px"></span>${text}</div>`); }
@@ -81,8 +85,34 @@ T.bars = (a, b, o) => shot(a, b + .35, ({ root, world }) => { const w = world();
   s.w.camera({ zoom: 1.04 - (t - a) * .01, y: lerp(30, 0, prog(t, a, b)) }); once(s, [[a, 'swish', .4], ...o.items.map((it, i) => [it.at ?? a + .3 + i * .25, 'pop', .4])]);
 }, tr(o));
 
-/** row of icon badges with labels popping on words: {title, items:[{icon, label, at, flag}], kicker} */
-T.icons = (a, b, o) => shot(a, b + .35, ({ root, world }) => { const w = world(); const g = bg(w, { glyphs: o.glyphs }); const u = C.ui(root); const us = uiSvg(u); const n = o.items.length;
+/** big 3D cards, one per point, flipping in on the spoken words and floating with a light sheen (v3, 11 Nov 2026:
+ *  replaces the small row of round icons, which looked sparse and static). Same options as before:
+ *  {title, titleAt, items:[{icon | flag, label, at}], kicker, glyphs}. o.style = 'row' brings back the old look. */
+T.icons = (a, b, o) => o.style === 'row' ? T.iconRow(a, b, o) : shot(a, b + .35, ({ root, world }) => { const w = world(); const g = bg(w, { glyphs: o.glyphs }); const u = C.ui(root); const n = o.items.length;
+  const cw = Math.min(420, Math.floor(1560 / n) - 70), ch = Math.round(cw * 1.16); const gap = Math.min(cw + 90, 1700 / n);
+  const wrap = (s, k) => { const ws = String(s).split(' '); const ls = []; let cur = ''; ws.forEach(x => { if ((cur + ' ' + x).trim().length > k && cur) { ls.push(cur); cur = x; } else cur = (cur + ' ' + x).trim(); }); if (cur) ls.push(cur); return ls.slice(0, 3); };
+  const cards = o.items.map((it, i) => { const card = C.card3d(u, cw, ch, { persp: 1600, sheenA: .3 }); const hot = i % 2 === 0; const S = card.svg, D = card.defs;
+    sv('rect', { x: 0, y: 0, width: cw, height: ch, rx: 34, fill: C.grad(D, hot ? [[0, C.lt(acc(), .12)], [1, C.dk(acc(), .18)]] : [[0, '#ffffff'], [1, '#dfe7e3']], { x1: 0, y1: 0, x2: .4, y2: 1 }) }, S);
+    sv('rect', { x: 10, y: 10, width: cw - 20, height: ch - 20, rx: 26, fill: 'none', stroke: hot ? '#ffffff' : acc(), 'stroke-width': 3, opacity: .35 }, S);
+    for (let k = 0; k < 5; k++) sv('circle', { cx: cw * (.15 + .18 * k), cy: ch * .12 + (k % 2) * 14, r: 3, fill: hot ? '#ffffff' : DARK(), opacity: .18 }, S);
+    const ic = it.flag ? { g: C.flag(S, D, it.flag, { r: cw * .22 }), draw() {} } : C.icon(S, D, it.icon, { r: cw * .22, bg: hot ? DARK() : acc(), fg: hot ? acc() : DARK() });
+    ic.g.setAttribute('transform', `translate(${cw / 2},${ch * .36})`);
+    const ls = wrap(it.label, cw > 330 ? 15 : 12); const fs = Math.min(54, cw * .13); ls.forEach((l, j) => C.T(S, l, { x: cw / 2, y: ch * .72 + (j - (ls.length - 1) / 2) * fs * 1.08, 'font-size': fs, fill: hot ? DARK() : '#0f1f19', 'font-family': 'Barlow Condensed', 'font-weight': 800, 'letter-spacing': 1 }));
+    return { card, ic, it, i }; });
+  const ti = o.title ? hl(u, o.title, 72) : null; const k = o.kicker ? tag(u, o.kicker) : null; return { w, g, cards, ti, k, ch, gap };
+}, (s, lt, t) => { s.g.set(t); const yc = s.ti || s.k ? 600 : 540;
+  // the row stays centred as cards arrive: each new card slides the others over to make room
+  const ats = s.cards.map((c, i) => c.it.at ?? a + .3 + i * .3); const shift = ats.slice(1).reduce((acc2, at2) => acc2 + E.ioC(prog(t, at2 - .15, at2 + .45)), 0);
+  s.cards.forEach(c => { c.x = 960 + c.i * s.gap - s.gap / 2 * shift; });
+  s.cards.forEach((c, i) => { const at = c.it.at ?? a + .3 + i * .3; const q = E.outB(prog(t, at, at + .6)), qo = E.outC(prog(t, at, at + .35)); const ph = i * 1.9;
+    c.card.set({ x: c.x + Math.sin(t * .6 + ph) * 10, y: yc + (1 - qo) * 140 + Math.sin(t * 1.1 + ph) * 12, ry: lerp(-75, 0, q) + Math.sin(t * .7 + ph) * 9, rx: Math.cos(t * .8 + ph) * 6, rz: Math.sin(t * .5 + ph) * 1.6 + (1 - q) * 8, s: lerp(.7, 1, qo), o: clamp(qo * 1.6), light: (((t - at) * .32 + i * .3) % 1.7) - .35 });
+    c.ic.draw(prog(t, at + .1, at + .6)); });
+  if (s.ti) { s.ti.set(t, o.titleAt || a + .5); P(s.ti.el, { x: 960, y: 150, o: prog(t, a, a + .3) }); } if (s.k) P(s.k, { x: 960, y: 80, o: prog(t, a, a + .3) });
+  s.w.camera({ zoom: 1.02 + (t - a) * .02 }); once(s, [[a, 'swish', .35], ...s.cards.map((c, i) => [c.it.at ?? a + .3 + i * .3, 'pop', .45])]);
+}, tr(o));
+
+/** the original row of icon badges (kept for o.style = 'row') */
+T.iconRow = (a, b, o) => shot(a, b + .35, ({ root, world }) => { const w = world(); const g = bg(w, { glyphs: o.glyphs }); const u = C.ui(root); const us = uiSvg(u); const n = o.items.length;
   const its = o.items.map((it, i) => { const ic = it.flag ? { g: C.flag(us.svg, us.defs, it.flag, { r: 84 }), draw() {} } : C.icon(us.svg, us.defs, it.icon, { r: 84, bg: i % 2 ? '#fff' : acc(), fg: DARK() });
     const l = el('div', { class: 'abs' }, u, it.label); l.style.cssText += "font:800 44px/1.1 'Barlow Condensed';letter-spacing:.06em;color:#fff;text-align:center;width:330px;white-space:normal"; return { ic, l, it, x: 960 + (i - (n - 1) / 2) * Math.min(400, 1600 / n) }; });
   const ti = o.title ? hl(u, o.title, 72) : null; const k = o.kicker ? tag(u, o.kicker) : null; return { w, g, its, ti, k };

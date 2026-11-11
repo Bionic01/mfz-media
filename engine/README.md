@@ -72,3 +72,11 @@ Poses: stand, relaxed, handsHips, wave, point, pointUp, pointL, present, phone, 
 
 ## Final-file QA
 `python3 qa.py <final.mp4>` before publishing any long video or Short: flags dead air (nearly empty screen for over 1 s), loudness off -14 LUFS, true peak over -1 dBTP and files over 95 MB, and writes qa/qa_sheet.jpg and qa/qa_flags.jpg to look at. Fix every flag, re-render only the bad shots with `render.py video ... --from A --to B`, splice, and run it again.
+
+## Motion v3 (11 Nov 2026, after Rodney: "Animations are just like maybe 10% good... high quality, non-stop motion, like no errors")
+- **Living camera:** every shot's whole frame drifts and pushes in or pulls out on top of its own camera (cine.js renderAt). Turn it off for one shot with `opts.live: false`, or scale it with a number.
+- **Idle motion:** everything placed with `pop()` keeps bobbing, swaying and breathing after it lands (`idle: 0` to stop it). Icon badges send out a pulsing ring once drawn.
+- **Living backgrounds:** template backgrounds (`C.tpl.bg`) add drifting bokeh and a soft light band sweeping across.
+- **Cards:** `T.icons` now shows big 3D cards that flip in on the spoken words, float and catch a light sheen, and the row re-centres as cards arrive. `style: 'row'` (or `T.iconRow`) gives the old small round icons.
+- **The Fluxr app in vector (`appui.js`):** `C.appUI(g, w, h, defs, 'home' | 'redeem' | 'airtime')` draws clean, centred app screens inside `C.phone`, with the balance counting up, taps, the PIN typing in and the "Credit in your wallet" toast. Never crop the Play Store graphics into a phone again: they have a phone, badges and pop-outs baked in.
+- **QA:** `qa.py` also flags frozen stretches (the picture barely moving for 1.5 s or more).
