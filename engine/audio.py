@@ -268,8 +268,9 @@ def main():
     for i in range(0, n, 64):
         tgt = act[i]; g += (tgt - g) * (ra if tgt > g else rr) * 64; g = min(max(g, 0), 1); sm[i:i + 64] = g
     duck = 1 - .55 * sm
-    # levels: halved on 10 Nov 2026 23:12 (Rodney: "a little bit too high... tune it down, maybe by like 50%"), then 25% lower again at 23:17 ("reduce the volume by 25% again")
-    mix = voice + mus * duck[:, None] * .06 * a.music + sfx.x * .1875 * a.sfx * (1 - .3 * sm)[:, None]
+    # levels: halved on 10 Nov 2026 23:12 (Rodney: "a little bit too high... tune it down, maybe by like 50%"), 25% lower again at 23:17
+    # ("reduce the volume by 25% again"), then halved again on 11 Nov 23:38 ("reduce the volume for all the tones and music by 50%. I find it kind of irritating")
+    mix = voice + mus * duck[:, None] * .03 * a.music + sfx.x * .09375 * a.sfx * (1 - .3 * sm)[:, None]
     tmp = a.out + '.raw.wav'
     a16 = (np.clip(mix / max(1, np.abs(mix).max() / .95), -1, 1) * 32767).astype(np.int16)
     with wave.open(tmp, 'wb') as wv:

@@ -112,6 +112,23 @@ Read this whole file, and `STRATEGY.md` (goals, monetisation rules, learnings), 
 4. After the post goes live, upload the SRT in YouTube Studio (Subtitles → English → Upload file → With timing) if a browser is available.
 5. Never post channel content to any other brand. Never delete anything.
 
+## Better every video, and keep the channel monetisable (Rodney, 11 Nov 2026)
+His words (11 Nov 2026, 23:36): "you're supposed to self-heal, always improving every video, step ahead, engaging, perfection, always improving better than the previous one. Everything, iteration, check. We have to make sure that we keep the monetization when it comes in. on both channels."
+
+1. **Before you start:** read the last entry in `studio/VIDEO_REVIEWS.md`. Its "Next bar" list is the minimum for this video: do every item and say how in this video's entry.
+2. **While building:** snap every shot near its start and its end; every shot must show something within about 0.3 s of starting (no title-less shot waiting for its first icon).
+3. **Before publishing:** run `python3 ../../../engine/qa.py <final.mp4>` (Shorts too) and look at `qa/qa_sheet.jpg` and `qa/qa_flags.jpg`. Fix every FLAG (dead air over 1 s, loudness off -14 LUFS, true peak over -1 dBTP, size): re-render only the bad shots with `render.py video scene.js segN.mp4 --from A --to B --theme ...` (A and B = shot start/end rounded to whole frames, frame/30), splice them in with separate trimmed inputs of video_silent.mp4 (not one input split into many trims: that runs out of memory), re-mux, and run qa.py again until it says OK. Then watch the first 30 seconds, the brand part and the last 20 seconds at full size.
+4. **After publishing:** add an entry to `studio/VIDEO_REVIEWS.md`: what is better than the last video, what is still weak (be honest: hook, slow or empty moments, repeated shot types, sound), and a "Next bar" list of 2 or 3 concrete upgrades for the next video.
+5. **Sunday review:** add the numbers (average view duration, where viewers drop, click-through rate) to the entries and turn them into the next bar.
+6. **Monetisation safety, every video, both channels:**
+   - Original work only: our own research, script, voice and animation. Never reuse another video's shots or re-skin a template with new words (YouTube's inauthentic-content rule refuses ads on mass-produced or repetitive videos).
+   - Nothing we don't own: music and effects are made in code; no clips, photos, footage or songs from anyone else. Brand logos only on thumbnails, small, from Rodney's files, to name the topic, never so it looks like the brand made, sponsors or endorses the video.
+   - Honest packaging: the title and thumbnail promise only what the video delivers.
+   - Advertiser-friendly: no swearing, shocking or graphic images; hard stories (fraud, collapse, debt) told factually with sources.
+   - Disclosures as set: isAiGeneratedContent true for Money From Zero; the "general information, not financial advice" disclaimer on screen and in the description. See also the monetisation rules in STRATEGY.md.
+   - Every number from a source checked on the day; sources in the description.
+7. **Sound level (Rodney, 11 Nov 2026 23:38: "reduce the volume for all the tones and music by 50%. I find it kind of irritating"):** music and effects are now at half the 10 Nov level in `engine/audio.py` (music .03, effects .09375). Never raise them; go lower with `--music`/`--sfx` below 1 if a mix still sounds busy.
+
 ## Quality bar (check every time)
 - **Visual bar (from 10 Nov 2026):** the engine look, not slides. Every shot moves, most shots show people, money or places, a new picture every 3–6 seconds, and nothing is AI-generated except the voice.
 - Every number matches `facts.md`. The arithmetic is re-run in python.
