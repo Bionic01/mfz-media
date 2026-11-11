@@ -17,7 +17,7 @@ _Re-planned 10 Nov 2026 with Rodney's approval: each week, **two money stories a
 11. **STORY: How Pep and Mr Price sell so cheap.**
 12. **HOW-TO: Your credit score in South Africa**: how to check it free and how to improve it.
 13. **STORY: African Bank: how a lender collapsed, and the lesson for borrowers.**
-14. **STORY: How TymeBank grew with no branches.**
+14. **STORY: How GoTyme Bank (formerly TymeBank) grew with no branches.** It was renamed GoTyme Bank in early 2026; check the latest customer numbers.
 15. **HOW-TO: Provisional tax for side hustles and freelancers (SA).** Post in early January, before the **22 Jan 2027** filing deadline for provisional taxpayers. Verify on sars.gov.za.
 16. **STORY: How Takealot makes money.**
 17. **STORY: Why bread costs what it does: inflation explained with one loaf.**
