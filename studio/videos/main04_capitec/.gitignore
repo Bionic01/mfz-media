@@ -26,3 +26,6 @@ qa/
 seg*.mp4
 seg*.mp4.parts/
 seg.log
+capitec_v4.mp4
+qa/
+finish.log
