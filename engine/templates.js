@@ -48,12 +48,15 @@ T.stat = (a, b, o) => shot(a, b + .35, ({ root, world }) => { const w = world();
   const suf = o.suffix ? el('div', { class: 'abs' }, u, o.suffix) : null; if (suf) suf.style.cssText += `font:800 ${(o.size || 200) * .5}px/1 'Barlow Condensed';color:${acc()};white-space:nowrap`;
   const lab = el('div', { class: 'abs' }, u, o.label || ''); lab.style.cssText += "font:800 56px/1 'Barlow Condensed';letter-spacing:.2em;color:#fff;white-space:nowrap";
   const ic = o.icon ? C.icon(us.svg, us.defs, o.icon, { r: 64, bg: acc(), fg: DARK() }) : null; const fg = o.flag ? C.flag(us.svg, us.defs, o.flag, { r: 46 }) : null;
+  const qm = (o.at ?? a + .3) > a + .6 ? el('div', { class: 'abs' }, u, '?') : null; if (qm) qm.style.cssText += `font:800 ${(o.size || 200) * 1.35}px/1 'Barlow Condensed';color:${acc()};text-shadow:0 0 40px ${acc()}66`;
   const br = C.burst(us.svg, 960, 470, { n: 16, r0: 260, r1: 480, color: acc(), width: 4 }); const ti = o.title ? hl(u, o.title, 64) : null; const sr = o.src ? src(u, o.src) : null; const k = o.kicker ? tag(u, o.kicker) : null;
-  return { w, g, od, suf, lab, ic, fg, br, ti, sr, k, digits };
+  return { w, g, od, suf, lab, ic, fg, br, ti, sr, k, digits, qm };
 }, (s, lt, t) => { s.g.set(t); const at = o.at ?? a + .3, dur = o.dur ?? 1.4; const q = E.outE(prog(t, at, at + dur)); const v = (o.from || 0) + (o.value - (o.from || 0)) * q;
   s.od.set(o.dec ? v * Math.pow(10, o.dec) : v); P(s.od.el, { x: 960, y: 480, o: prog(t, at - .1, at + .1), s: 1 + .04 * Math.max(0, 1 - Math.abs(t - at - dur) * 4) });
+  // until the number is spoken, a pulsing "?" holds its place (anticipation, and no made-up number is ever on screen)
+  if (s.qm) { const vis = prog(t, a + .1, a + .35) * (1 - prog(t, at - .15, at + .05)); P(s.qm, { x: 960, y: 480, o: vis, s: 1 + .06 * Math.sin(t * 5), blur: (1 - vis) * 6 }); }
   if (o.dec) s.od.el.style.letterSpacing = '0'; if (s.suf) P(s.suf, { x: 960 + (s.digits + 1.5) * (o.size || 200) * .3 + 40, y: 510, o: prog(t, at + dur * .6, at + dur) });
-  P(s.lab, { x: 960, y: 640, o: E.outC(prog(t, at + .2, at + .6)) }); s.br(prog(t, at + dur - .1, at + dur + .8));
+  P(s.lab, { x: 960, y: 640, o: s.qm ? E.outC(prog(t, a + .3, a + .7)) : E.outC(prog(t, at + .2, at + .6)) }); s.br(prog(t, at + dur - .1, at + dur + .8));
   if (s.ic) { pop(s.ic.g, 960, 250, t, a + .15); s.ic.draw(prog(t, a + .15, a + .7)); } if (s.fg) pop(s.fg, 1080, 205, t, a + .35); if (s.ti) { s.ti.set(t, o.titleAt || at + .4); P(s.ti.el, { x: 960, y: 800, o: prog(t, a, a + .3) }); }
   if (s.k) P(s.k, { x: 960, y: 130, o: prog(t, a, a + .3) }); if (s.sr) P(s.sr, { x: 960, y: 1030, o: prog(t, at + .5, at + 1) });
   s.w.camera({ zoom: 1.02 + (t - a) * .02, rot: noise1(t * .2, 3) * .3 }); once(s, [[a, 'swish', .4], [at, 'riser', .25], [at + dur, 'impact', .35], o.icon && [a + .15, 'pop', .4]]);
@@ -100,15 +103,19 @@ T.icons = (a, b, o) => o.style === 'row' ? T.iconRow(a, b, o) : shot(a, b + .35,
     for (let k = 0; k < 5; k++) sv('circle', { cx: cw * (.15 + .18 * k), cy: ch * .12 + (k % 2) * 14, r: 3, fill: hot ? '#ffffff' : DARK(), opacity: .18 }, S);
     const ic = it.flag ? { g: C.flag(S, D, it.flag, { r: cw * .22 }), draw() {} } : C.icon(S, D, it.icon, { r: cw * .22, bg: hot ? DARK() : acc(), fg: hot ? acc() : DARK() });
     ic.g.setAttribute('transform', `translate(${cw / 2},${ch * .36})`);
+    // the back of the card (seen until it flips on its word): a question mark in the accent colour, mirrored so it reads right
+    const back = sv('g', {}, S); sv('rect', { x: 0, y: 0, width: cw, height: ch, rx: 34, fill: C.grad(D, [[0, C.lt(DARK(), .1)], [1, C.dk(DARK(), .2)]], { x1: 0, y1: 0, x2: .4, y2: 1 }) }, back);
+    sv('rect', { x: 10, y: 10, width: cw - 20, height: ch - 20, rx: 26, fill: 'none', stroke: acc(), 'stroke-width': 3, opacity: .45 }, back);
+    const qm = C.T(back, '?', { x: cw / 2, y: ch / 2, 'font-size': cw * .5, fill: acc(), 'font-family': 'Barlow Condensed', 'font-weight': 800 }); qm.setAttribute('transform', `translate(${cw},0) scale(-1,1)`);
     const ls = wrap(it.label, cw > 330 ? 15 : 12); const fs = Math.min(54, cw * .13); ls.forEach((l, j) => C.T(S, l, { x: cw / 2, y: ch * .72 + (j - (ls.length - 1) / 2) * fs * 1.08, 'font-size': fs, fill: hot ? DARK() : '#0f1f19', 'font-family': 'Barlow Condensed', 'font-weight': 800, 'letter-spacing': 1 }));
-    return { card, ic, it, i }; });
+    S.appendChild(back); return { card, ic, it, i, back }; });
   const ti = o.title ? hl(u, o.title, 72) : null; const k = o.kicker ? tag(u, o.kicker) : null; return { w, g, cards, ti, k, ch, gap };
 }, (s, lt, t) => { s.g.set(t); const yc = s.ti || s.k ? 600 : 540;
-  // the row stays centred as cards arrive: each new card slides the others over to make room
-  const ats = s.cards.map((c, i) => c.it.at ?? a + .3 + i * .3); const shift = ats.slice(1).reduce((acc2, at2) => acc2 + E.ioC(prog(t, at2 - .15, at2 + .45)), 0);
-  s.cards.forEach(c => { c.x = 960 + c.i * s.gap - s.gap / 2 * shift; });
-  s.cards.forEach((c, i) => { const at = c.it.at ?? a + .3 + i * .3; const q = E.outB(prog(t, at, at + .6)), qo = E.outC(prog(t, at, at + .35)); const ph = i * 1.9;
-    c.card.set({ x: c.x + Math.sin(t * .6 + ph) * 10, y: yc + (1 - qo) * 140 + Math.sin(t * 1.1 + ph) * 12, ry: lerp(-75, 0, q) + Math.sin(t * .7 + ph) * 9, rx: Math.cos(t * .8 + ph) * 6, rz: Math.sin(t * .5 + ph) * 1.6 + (1 - q) * 8, s: lerp(.7, 1, qo), o: clamp(qo * 1.6), light: (((t - at) * .32 + i * .3) % 1.7) - .35 });
+  // every card is on screen from the start, face down; each flips face-up on its spoken word (anticipation, a full frame)
+  const n2 = s.cards.length; s.cards.forEach(c => { c.x = 960 + (c.i - (n2 - 1) / 2) * s.gap; });
+  s.cards.forEach((c, i) => { const at = Math.max(c.it.at ?? a + .3 + i * .3, a + .35 + i * .12); const ae = a + .05 + i * .1; const qo = E.outC(prog(t, ae, ae + .45)); const q = E.outB(prog(t, at, at + .6)); const ph = i * 1.9;
+    const ry0 = 180 * (1 - q); c.back.setAttribute('opacity', ry0 > 90 ? 1 : 0);
+    c.card.set({ x: c.x + Math.sin(t * .6 + ph) * 10, y: yc + (1 - qo) * 160 + Math.sin(t * 1.1 + ph) * 12 - Math.sin(Math.PI * clamp(prog(t, at, at + .6))) * 40, ry: ry0 + Math.sin(t * .7 + ph) * 9, rx: Math.cos(t * .8 + ph) * 6, rz: Math.sin(t * .5 + ph) * 1.6, s: lerp(.8, 1, qo) * (1 + .06 * Math.sin(Math.PI * clamp(prog(t, at, at + .6)))), o: clamp(qo * 1.6), light: (((t - at) * .32 + i * .3) % 1.7) - .35 });
     c.ic.draw(prog(t, at + .1, at + .6)); });
   if (s.ti) { s.ti.set(t, o.titleAt || a + .5); P(s.ti.el, { x: 960, y: 150, o: prog(t, a, a + .3) }); } if (s.k) P(s.k, { x: 960, y: 80, o: prog(t, a, a + .3) });
   s.w.camera({ zoom: 1.02 + (t - a) * .02 }); once(s, [[a, 'swish', .35], ...s.cards.map((c, i) => [c.it.at ?? a + .3 + i * .3, 'pop', .45])]);
