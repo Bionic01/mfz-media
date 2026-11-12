@@ -63,16 +63,31 @@ T.stat = (a, b, o) => shot(a, b + .35, ({ root, world }) => { const w = world();
 }, tr(o));
 
 /** from -> to comparison with arrow: {title, left:{value,label,prefix,at}, right:{...}, icon} */
+/** from one number to another on two big cards that flip over as each number is spoken (motion v3, 12 Nov 2026: the old
+ *  version left two small numbers on a mostly empty frame). Options as before: {title, titleAt, left:{value,label,at,prefix},
+ *  right:{...}, iconL, iconR, mult, multAt} */
 T.fromTo = (a, b, o) => shot(a, b + .35, ({ root, world }) => { const w = world(); const g = bg(w, {}); const u = C.ui(root); const us = uiSvg(u);
-  const mk = side => { const d = Math.max(1, Math.floor(Math.log10(Math.max(1, side.value))) + 1); const od = C.odometer(u, { digits: d, size: 130, color: side.color || '#fff', prefix: side.prefix || '' }); const l = el('div', { class: 'abs' }, u, side.label); l.style.cssText += "font:700 36px/1.2 Barlow;color:rgba(255,255,255,.8);white-space:nowrap;text-align:center"; return { od, l }; };
-  const L = mk(o.left), R = mk(Object.assign({ color: acc() }, o.right)); const arrow = sv('g', {}, us.svg); sv('path', { d: 'M -120 0 L 90 0 M 50 -40 L 100 0 L 50 40', stroke: acc(), 'stroke-width': 14, fill: 'none', 'stroke-linecap': 'round', 'stroke-linejoin': 'round' }, arrow);
+  const CW = 540, CH = 500;
+  const card = (hot) => { const c = C.card3d(u, CW, CH, { persp: 1600, sheenA: .22 }); const S = c.svg, D = c.defs;
+    sv('rect', { x: 0, y: 0, width: CW, height: CH, rx: 36, fill: C.grad(D, hot ? [[0, C.lt(acc(), .12)], [1, C.dk(acc(), .18)]] : [[0, '#ffffff'], [1, '#dfe7e3']], { x1: 0, y1: 0, x2: .4, y2: 1 }) }, S);
+    sv('rect', { x: 10, y: 10, width: CW - 20, height: CH - 20, rx: 28, fill: 'none', stroke: hot ? '#ffffff' : acc(), 'stroke-width': 3, opacity: .35 }, S);
+    const back = sv('g', {}, S); sv('rect', { x: 0, y: 0, width: CW, height: CH, rx: 36, fill: C.grad(D, [[0, C.lt(DARK(), .1)], [1, C.dk(DARK(), .2)]], { x1: 0, y1: 0, x2: .4, y2: 1 }) }, back);
+    sv('rect', { x: 10, y: 10, width: CW - 20, height: CH - 20, rx: 28, fill: 'none', stroke: acc(), 'stroke-width': 3, opacity: .45 }, back);
+    const qm = C.T(back, '?', { x: CW / 2, y: CH / 2, 'font-size': 240, fill: acc(), 'font-family': 'Barlow Condensed', 'font-weight': 800 }); qm.setAttribute('transform', `translate(${CW},0) scale(-1,1)`);
+    return { c, back }; };
+  const cL = card(false), cR = card(true);
+  const mk = side => { const d = Math.max(1, Math.floor(Math.log10(Math.max(1, side.value))) + 1); const od = C.odometer(u, { digits: d, size: 160, color: DARK(), prefix: side.prefix || '' }); const l = el('div', { class: 'abs' }, u, side.label); l.style.cssText += `font:800 34px/1.15 'Barlow Condensed';letter-spacing:.06em;color:${DARK()};white-space:nowrap;text-align:center`; return { od, l }; };
+  const L = mk(o.left), R = mk(o.right); const top = uiSvg(u); /* icons above the cards (top), the arrow between them */ const arrow = sv('g', {}, us.svg); sv('path', { d: 'M -60 0 L 50 0 M 15 -38 L 58 0 L 15 38', stroke: acc(), 'stroke-width': 16, fill: 'none', 'stroke-linecap': 'round', 'stroke-linejoin': 'round' }, arrow);
   const ti = o.title ? hl(u, o.title, 72) : null; const mult = o.mult ? el('div', { class: 'abs' }, u, o.mult) : null; if (mult) mult.style.cssText += `font:800 54px/1 'Barlow Condensed';color:${DARK()};background:${acc()};padding:10px 20px;border-radius:12px`;
-  const icL = o.iconL ? C.icon(us.svg, us.defs, o.iconL, { r: 46, bg: '#fff', fg: DARK() }) : null, icR = o.iconR ? C.icon(us.svg, us.defs, o.iconR, { r: 46, bg: acc(), fg: DARK() }) : null; return { w, g, L, R, arrow, ti, mult, icL, icR };
-}, (s, lt, t) => { s.g.set(t); const la = o.left.at ?? a + .2, ra = o.right.at ?? a + 1.2;
-  s.L.od.set(o.left.value * E.outE(prog(t, la, la + .9))); P(s.L.od.el, { x: 480, y: 500, o: prog(t, la - .1, la + .1) }); P(s.L.l, { x: 480, y: 620, o: prog(t, la + .2, la + .5) });
-  s.R.od.set(o.right.value * E.outE(prog(t, ra, ra + 1.3))); P(s.R.od.el, { x: 1440, y: 500, o: prog(t, ra - .1, ra + .1) }); P(s.R.l, { x: 1440, y: 620, o: prog(t, ra + .2, ra + .5) });
-  pop(s.arrow, 960, 500, t, ra - .3, { s: 1 }); if (s.icL) { pop(s.icL.g, 480, 320, t, la); s.icL.draw(prog(t, la, la + .5)); } if (s.icR) { pop(s.icR.g, 1440, 320, t, ra); s.icR.draw(prog(t, ra, ra + .5)); }
-  if (s.ti) { s.ti.set(t, o.titleAt || ra + .5); P(s.ti.el, { x: 960, y: 150, o: prog(t, a, a + .3) }); } if (s.mult) P(s.mult, { x: 960, y: 800, o: E.outC(prog(t, o.multAt || ra + 1, (o.multAt || ra + 1) + .3)), s: E.outB(prog(t, o.multAt || ra + 1, (o.multAt || ra + 1) + .4)) });
+  const icL = C.icon(top.svg, top.defs, o.iconL || 'clock', { r: 44, bg: DARK(), fg: '#fff' }), icR = C.icon(top.svg, top.defs, o.iconR || o.iconL || 'clock', { r: 44, bg: DARK(), fg: acc() });
+  return { w, g, L, R, cL, cR, arrow, ti, mult, icL, icR };
+}, (s, lt, t) => { s.g.set(t); const la = Math.max(o.left.at ?? a + .2, a + .3), ra = Math.max(o.right.at ?? a + 1.2, la + .4); const yc = 560;
+  const side = (cd, sd, ic, x, at, i, val, dur) => { const ent = E.outC(prog(t, a + .05 + i * .12, a + .5 + i * .12)); const q = E.outB(prog(t, at - .15, at + .45)); const ry0 = 180 * (1 - q); const bob = Math.sin(t * 1.1 + i * 2) * 10; const lift = Math.sin(Math.PI * clamp(prog(t, at - .15, at + .45))) * 30;
+    cd.back.setAttribute('opacity', ry0 > 90 ? 1 : 0); cd.c.set({ x, y: yc + (1 - ent) * 160 + bob - lift, ry: ry0 + Math.sin(t * .7 + i) * 5, rx: Math.cos(t * .6 + i) * 3, rz: Math.sin(t * .5 + i) * 1, s: .96 + .04 * ent, o: clamp(ent * 1.6) });
+    const fo = clamp((q - .5) * 3); sd.od.set(val * E.outE(prog(t, at, at + dur))); P(sd.od.el, { x, y: yc + 10 + bob - lift, o: fo }); P(sd.l, { x, y: yc + 135 + bob - lift, o: fo }); pop(ic.g, x, yc - 150 + bob - lift, t, at + .1, { s: 1, idle: 0 }); ic.draw(prog(t, at + .1, at + .6)); };
+  side(s.cL, s.L, s.icL, 500, la, 0, o.left.value, .9); side(s.cR, s.R, s.icR, 1420, ra, 1, o.right.value, 1.3);
+  pop(s.arrow, 960 + Math.sin(t * 3) * 8, yc, t, ra - .3, { s: 1.2, idle: 0 });
+  if (s.ti) { s.ti.set(t, o.titleAt || ra + .5); P(s.ti.el, { x: 960, y: 150, o: prog(t, a, a + .3) }); } if (s.mult) P(s.mult, { x: 960, y: 900, o: E.outC(prog(t, o.multAt || ra + 1, (o.multAt || ra + 1) + .3)), s: E.outB(prog(t, o.multAt || ra + 1, (o.multAt || ra + 1) + .4)) });
   s.w.camera({ zoom: 1.03 + (t - a) * .015 }); once(s, [[a, 'swish', .4], [la, 'pop', .4], [ra - .3, 'swoosh_up', .35], [ra + 1.3, 'thud', .45], o.mult && [o.multAt || ra + 1, 'pop', .45]]);
 }, tr(o));
 
