@@ -1,0 +1,33 @@
+{
+ "duration": 498.43,
+ "chapters": [
+  {
+   "key": "cold_open",
+   "start": 0.48
+  },
+  {
+   "key": "ch1_what",
+   "start": 44.96
+  },
+  {
+   "key": "ch2_costs",
+   "start": 96.16
+  },
+  {
+   "key": "ch3_example",
+   "start": 185.668
+  },
+  {
+   "key": "ch4_traps",
+   "start": 307.508
+  },
+  {
+   "key": "ch5_howto",
+   "start": 366.704
+  },
+  {
+   "key": "ch6_recap",
+   "start": 439.904
+  }
+ ]
+}

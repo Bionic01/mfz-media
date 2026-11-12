@@ -14,3 +14,20 @@ engine/test/p1/
 engine/test/p2/
 __pycache__/
 *.mp4.parts/
+# per-video renders and checks in studio (keep scene.js, shots.md, cues.json, words, scripts)
+studio/videos/**/video_silent*.mp4
+studio/videos/**/seg*.mp4
+studio/videos/**/p1.mp4
+studio/videos/**/p3.mp4
+studio/videos/**/mix.wav
+studio/videos/**/voice_raw.wav
+studio/videos/**/snaps*/
+studio/videos/**/chk/
+studio/videos/**/qa/
+studio/videos/**/thumbsnap/
+studio/videos/**/audio/
+studio/videos/**/*.log
+studio/videos/main05_store_cards/MoneyFromZero_*.mp4
+studio/videos/**/*.chunks/
+studio/videos/**/voice_master.m4a
+studio/videos/**/thumb_small.png

@@ -1,0 +1,5 @@
+12m instal 466.17 interest 594.03 fees 828 cl 150.95 TOTAL 6572.98 per month 547.75 extra 1572.98
+24m instal 257.54 interest 1181.02 fees 1656 cl 300.12 TOTAL 8137.14 per month 339.05 extra 3137.14
+36m instal 189.02 interest 1804.64 fees 2484 cl 458.59 TOTAL 9747.23 per month 270.76 extra 4747.23
+discount 1250 pct 0.2
+save 548/m x10 5480
