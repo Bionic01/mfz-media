@@ -27,7 +27,7 @@ def serve():
 
 
 def open_page(p, port, scene, theme, scale, extra=''):
-    b = p.chromium.launch(args=['--disable-web-security', '--font-render-hinting=none', '--disable-gpu-vsync', '--force-color-profile=srgb', '--disable-lcd-text'])
+    b = p.chromium.launch(args=['--disable-web-security', '--font-render-hinting=none', '--disable-gpu-vsync', '--force-color-profile=srgb', '--disable-lcd-text', '--enable-unsafe-swiftshader', '--ignore-gpu-blocklist', '--use-gl=angle', '--use-angle=swiftshader'])
     ctx = b.new_context(viewport={'width': 1920, 'height': 1080}, device_scale_factor=scale)
     pg = ctx.new_page()
     pg.on('pageerror', lambda e: print('pageerror:', e, flush=True))
@@ -71,7 +71,7 @@ def main():
     if a.mode in ('snap', 'cues', 'info'):
         port = serve()
         with sync_playwright() as p:
-            b, pg = open_page(p, port, a.scene, a.theme, a.scale)
+            b, pg = open_page(p, port, a.scene, a.theme, a.scale, '&nogl=1' if a.mode in ('cues', 'info') else '')
             dur = pg.evaluate('window.DURATION')
             if a.mode == 'snap':
                 out = a.out or os.path.join(os.path.dirname(os.path.abspath(a.scene)), 'snaps'); os.makedirs(out, exist_ok=True)
