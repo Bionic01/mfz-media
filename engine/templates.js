@@ -15,7 +15,7 @@ function bg(w, { glyphs = null, warm = false } = {}) {
   if (glyphs) ups.push(C.glyphs(L, { chars: glyphs, color: m ? TT().gold : TT().green, o: [.03, .09] }));
   // always-moving depth: drifting bokeh and a soft light band sweeping across (Rodney 11 Nov 2026: "non-stop motion")
   ups.push(C.bokeh(L, { n: 18, color: m ? '#ffe2b0' : '#d6ffd0', size: [10, 34], alpha: [.04, .13], area: [0, 0, L.w, L.h], drift: 30, seed: 11 }));
-  const sw = sv('rect', { x: -900, y: -400, width: 700, height: L.h + 800, fill: C.grad(L.defs, [[0, '#ffffff', 0], [.5, '#ffffff', m ? .05 : .06], [1, '#ffffff', 0]], { x1: 0, y1: 0, x2: 1, y2: 0 }), style: 'mix-blend-mode:screen' }, L.svg);
+  const sw = sv('rect', { x: -900, y: -400, width: 700, height: L.h + 800, fill: C.grad(L.defs, [[0, '#ffffff', 0], [.5, '#ffffff', m ? .05 : .06], [1, '#ffffff', 0]], { x1: 0, y1: 0, x2: 1, y2: 0 }) }, L.svg);
   ups.push(t => sw.setAttribute('transform', `translate(${(((t * 260) % (L.w + 1800)) - 200).toFixed(1)},0) rotate(14)`));
   return { L, set: t => ups.forEach(f => f(t)) };
 }

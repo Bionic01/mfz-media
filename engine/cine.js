@@ -236,8 +236,9 @@ function flapText(parent, text, { size = 84, color = TH.ink, accent = false } = 
 // ---------------- particles & light ----------------
 /** dust motes / bokeh in a layer (svg): returns update(t) */
 function bokeh(L, { n = 26, color = '#fff2c8', seed = 5, size = [6, 26], alpha = [.05, .22], area = [0, 0, W, H], drift = 18 } = {}) {
-  const r = rnd(seed); const f = blurFilter(L.defs, 3); const items = [];
-  for (let i = 0; i < n; i++) { const c = sv('circle', { r: lerp(size[0], size[1], r()), fill: color, opacity: lerp(alpha[0], alpha[1], r()), filter: f }, L.svg); items.push({ c, x: area[0] + r() * area[2], y: area[1] + r() * area[3], ph: r() * 100, sp: .3 + r() }); }
+  // soft edges come from a radial gradient, not a blur filter: blur on moving circles made renders about 2x slower (12 Nov 2026)
+  const r = rnd(seed); const f = grad(L.defs, [[0, color, 1], [.55, color, .8], [1, color, 0]], { radial: true }); const items = [];
+  for (let i = 0; i < n; i++) { const c = sv('circle', { r: lerp(size[0], size[1], r()) * 1.25, fill: f, opacity: lerp(alpha[0], alpha[1], r()) }, L.svg); items.push({ c, x: area[0] + r() * area[2], y: area[1] + r() * area[3], ph: r() * 100, sp: .3 + r() }); }
   return t => items.forEach(p => { p.c.setAttribute('cx', p.x + noise1(t * .2 * p.sp + p.ph, 2) * drift * 3); p.c.setAttribute('cy', p.y - ((t * drift * p.sp) % 200) + noise1(t * .15 + p.ph, 4) * drift); });
 }
 /** god rays from (x,y) in an svg layer */
