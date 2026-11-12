@@ -62,7 +62,7 @@ _From 9 Nov, switch to two-pot (main02 goes live 9 Nov 16:00). Don't post more t
 ## Shorts from main04 (Capitec story, live 13 Nov 16:00)
 - Capitec: from about 25,000 clients (2003) to 26.6 million (Aug 2026).
 - Bank fees: same bank, two habits changed, R336 a year saved (Lerato example, Capitec 2026 prices).
-- Bank fees: R1 on the app vs R6 in a branch for the same payment (Capitec 2026).
+- ~~Bank fees: R1 on the app vs R6 in a branch for the same payment (Capitec 2026).~~ USED, reframed with verified fees: Short 008, 13 Nov 2026 (immediate payment R6 vs normal R2 to another bank, 2 a month = R144 vs R48 a year; plus R10 per R1,000 at the ATM). No branch fee was verified, so don't use the "branch" framing.
 
 ## Timely Shorts (post only with official figures, on the day)
 - **Thu 19 Nov or Fri 20 Nov:** the SARB decision in one number: what it changes on a R1 million bond. Use the SARB statement only.
