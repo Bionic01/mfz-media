@@ -1,0 +1,74 @@
+[Script Info]
+ScriptType: v4.00+
+PlayResX: 1080
+PlayResY: 1920
+WrapStyle: 2
+ScaledBorderAndShadow: yes
+
+[V4+ Styles]
+Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding
+Style: Cap,Barlow ExtraBold,96,&H00DFEEF4,&H00DFEEF4,&H00141212,&H96000000,0,0,0,0,100,100,0,0,1,7,4,2,70,70,400,1
+
+[Events]
+Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
+Dialogue: 0,0:00:00.15,0:00:01.35,Cap,,0,0,0,,{\fad(40,0)}Same payment,
+Dialogue: 0,0:00:01.35,0:00:02.31,Cap,,0,0,0,,{\fad(40,0)}same bank.
+Dialogue: 0,0:00:02.31,0:00:04.15,Cap,,0,0,0,,{\fad(40,0)}One costs {\c&H33BEF7&}R6.{\c&HDFEEF4&}
+Dialogue: 0,0:00:04.15,0:00:04.95,Cap,,0,0,0,,{\fad(40,0)}The other costs
+Dialogue: 0,0:00:04.95,0:00:06.23,Cap,,0,0,0,,{\fad(40,0)}{\c&H33BEF7&}R2.{\c&HDFEEF4&}
+Dialogue: 0,0:00:06.23,0:00:07.35,Cap,,0,0,0,,{\fad(40,0)}At Capitec, in
+Dialogue: 0,0:00:07.35,0:00:08.79,Cap,,0,0,0,,{\fad(40,0)}2026, an
+Dialogue: 0,0:00:08.79,0:00:09.35,Cap,,0,0,0,,{\fad(40,0)}immediate
+Dialogue: 0,0:00:09.35,0:00:09.99,Cap,,0,0,0,,{\fad(40,0)}payment to
+Dialogue: 0,0:00:09.99,0:00:10.63,Cap,,0,0,0,,{\fad(40,0)}another bank
+Dialogue: 0,0:00:10.63,0:00:12.27,Cap,,0,0,0,,{\fad(40,0)}costs {\c&H33BEF7&}R6.{\c&HDFEEF4&}
+Dialogue: 0,0:00:12.27,0:00:13.27,Cap,,0,0,0,,{\fad(40,0)}A normal payment
+Dialogue: 0,0:00:13.27,0:00:14.15,Cap,,0,0,0,,{\fad(40,0)}to another bank
+Dialogue: 0,0:00:14.15,0:00:15.75,Cap,,0,0,0,,{\fad(40,0)}costs {\c&H33BEF7&}R2.{\c&HDFEEF4&}
+Dialogue: 0,0:00:15.75,0:00:16.55,Cap,,0,0,0,,{\fad(40,0)}The money lands
+Dialogue: 0,0:00:16.55,0:00:17.11,Cap,,0,0,0,,{\fad(40,0)}in the same
+Dialogue: 0,0:00:17.11,0:00:17.95,Cap,,0,0,0,,{\fad(40,0)}account.
+Dialogue: 0,0:00:17.95,0:00:18.31,Cap,,0,0,0,,{\fad(40,0)}The only
+Dialogue: 0,0:00:18.31,0:00:19.23,Cap,,0,0,0,,{\fad(40,0)}difference is
+Dialogue: 0,0:00:19.23,0:00:19.99,Cap,,0,0,0,,{\fad(40,0)}speed.
+Dialogue: 0,0:00:19.99,0:00:20.63,Cap,,0,0,0,,{\fad(40,0)}Immediate
+Dialogue: 0,0:00:20.63,0:00:21.43,Cap,,0,0,0,,{\fad(40,0)}arrives right
+Dialogue: 0,0:00:21.43,0:00:22.23,Cap,,0,0,0,,{\fad(40,0)}away.
+Dialogue: 0,0:00:22.23,0:00:23.31,Cap,,0,0,0,,{\fad(40,0)}Normal can take
+Dialogue: 0,0:00:23.31,0:00:24.12,Cap,,0,0,0,,{\fad(40,0)}longer.
+Dialogue: 0,0:00:24.15,0:00:24.71,Cap,,0,0,0,,{\fad(40,0)}Make two
+Dialogue: 0,0:00:24.71,0:00:25.35,Cap,,0,0,0,,{\fad(40,0)}immediate
+Dialogue: 0,0:00:25.35,0:00:25.83,Cap,,0,0,0,,{\fad(40,0)}payments a
+Dialogue: 0,0:00:25.83,0:00:26.47,Cap,,0,0,0,,{\fad(40,0)}month, and
+Dialogue: 0,0:00:26.47,0:00:28.39,Cap,,0,0,0,,{\fad(40,0)}that's {\c&H33BEF7&}R144{\c&HDFEEF4&} a
+Dialogue: 0,0:00:28.39,0:00:29.16,Cap,,0,0,0,,{\fad(40,0)}year.
+Dialogue: 0,0:00:29.19,0:00:29.59,Cap,,0,0,0,,{\fad(40,0)}Make them
+Dialogue: 0,0:00:29.59,0:00:30.55,Cap,,0,0,0,,{\fad(40,0)}normal, and it's
+Dialogue: 0,0:00:30.55,0:00:31.91,Cap,,0,0,0,,{\fad(40,0)}{\c&H33BEF7&}R48.{\c&HDFEEF4&}
+Dialogue: 0,0:00:31.91,0:00:33.35,Cap,,0,0,0,,{\fad(40,0)}That's {\c&H33BEF7&}R96{\c&HDFEEF4&} a
+Dialogue: 0,0:00:33.35,0:00:34.15,Cap,,0,0,0,,{\fad(40,0)}year back in
+Dialogue: 0,0:00:34.15,0:00:34.95,Cap,,0,0,0,,{\fad(40,0)}your pocket,
+Dialogue: 0,0:00:34.95,0:00:35.35,Cap,,0,0,0,,{\fad(40,0)}just for
+Dialogue: 0,0:00:35.35,0:00:36.60,Cap,,0,0,0,,{\fad(40,0)}planning ahead.
+Dialogue: 0,0:00:36.71,0:00:37.83,Cap,,0,0,0,,{\fad(40,0)}Cash costs money
+Dialogue: 0,0:00:37.83,0:00:38.68,Cap,,0,0,0,,{\fad(40,0)}too.
+Dialogue: 0,0:00:38.71,0:00:40.23,Cap,,0,0,0,,{\fad(40,0)}Every {\c&H33BEF7&}R1 000{\c&HDFEEF4&} you
+Dialogue: 0,0:00:40.23,0:00:41.51,Cap,,0,0,0,,{\fad(40,0)}draw at an ATM
+Dialogue: 0,0:00:41.51,0:00:43.19,Cap,,0,0,0,,{\fad(40,0)}costs {\c&H33BEF7&}R10.{\c&HDFEEF4&}
+Dialogue: 0,0:00:43.19,0:00:44.11,Cap,,0,0,0,,{\fad(40,0)}So open your
+Dialogue: 0,0:00:44.11,0:00:44.79,Cap,,0,0,0,,{\fad(40,0)}last bank
+Dialogue: 0,0:00:44.79,0:00:45.59,Cap,,0,0,0,,{\fad(40,0)}statement, find
+Dialogue: 0,0:00:45.59,0:00:46.23,Cap,,0,0,0,,{\fad(40,0)}your biggest
+Dialogue: 0,0:00:46.23,0:00:47.51,Cap,,0,0,0,,{\fad(40,0)}fee, and change
+Dialogue: 0,0:00:47.51,0:00:48.68,Cap,,0,0,0,,{\fad(40,0)}one habit.
+Dialogue: 0,0:00:48.71,0:00:49.67,Cap,,0,0,0,,{\fad(40,0)}The full Capitec
+Dialogue: 0,0:00:49.67,0:00:50.39,Cap,,0,0,0,,{\fad(40,0)}story, with a
+Dialogue: 0,0:00:50.39,0:00:51.11,Cap,,0,0,0,,{\fad(40,0)}real month of
+Dialogue: 0,0:00:51.11,0:00:51.91,Cap,,0,0,0,,{\fad(40,0)}fees, is on the
+Dialogue: 0,0:00:51.91,0:00:52.71,Cap,,0,0,0,,{\fad(40,0)}channel.
+Dialogue: 0,0:00:52.71,0:00:53.59,Cap,,0,0,0,,{\fad(40,0)}Follow for a new
+Dialogue: 0,0:00:53.59,0:00:54.63,Cap,,0,0,0,,{\fad(40,0)}money rule every
+Dialogue: 0,0:00:54.63,0:00:55.51,Cap,,0,0,0,,{\fad(40,0)}day.
+Dialogue: 0,0:00:55.51,0:00:56.47,Cap,,0,0,0,,{\fad(40,0)}So, same
+Dialogue: 0,0:00:56.47,0:00:57.35,Cap,,0,0,0,,{\fad(40,0)}payment.
+Dialogue: 0,0:00:57.35,0:00:59.64,Cap,,0,0,0,,{\fad(40,0)}{\c&H33BEF7&}R6,{\c&HDFEEF4&} or {\c&H33BEF7&}R2?{\c&HDFEEF4&}

@@ -1,0 +1,69 @@
+{
+ "voice": "Darius (ElevenLabs eleven_v4) single take, 12 Nov 2026",
+ "duration": 59.74,
+ "lines": [
+  {
+   "key": "hook",
+   "start": 0.15,
+   "end": 6.15,
+   "n": 13,
+   "text": "Same payment, same bank. One costs R6. The other costs R2."
+  },
+  {
+   "key": "fees",
+   "start": 6.23,
+   "end": 15.67,
+   "n": 22,
+   "text": "At Capitec, in 2026, an immediate payment to another bank costs R6. A normal payment to another bank costs R2."
+  },
+  {
+   "key": "diff",
+   "start": 15.75,
+   "end": 23.67,
+   "n": 20,
+   "text": "The money lands in the same account. The only difference is speed. Immediate arrives right away. Normal can take longer."
+  },
+  {
+   "key": "math",
+   "start": 24.15,
+   "end": 31.83,
+   "n": 19,
+   "text": "Make two immediate payments a month, and that's R144 a year. Make them normal, and it's R48."
+  },
+  {
+   "key": "save",
+   "start": 31.91,
+   "end": 36.15,
+   "n": 13,
+   "text": "That's R96 a year back in your pocket, just for planning ahead."
+  },
+  {
+   "key": "cash",
+   "start": 36.71,
+   "end": 43.11,
+   "n": 15,
+   "text": "Cash costs money too. Every R1,000 you draw at an ATM costs R10."
+  },
+  {
+   "key": "tip",
+   "start": 43.19,
+   "end": 48.23,
+   "n": 14,
+   "text": "So open your last bank statement, find your biggest fee, and change one habit."
+  },
+  {
+   "key": "guide",
+   "start": 48.71,
+   "end": 55.19,
+   "n": 22,
+   "text": "The full Capitec story, with a real month of fees, is on the channel. Follow for a new money rule every day."
+  },
+  {
+   "key": "loop",
+   "start": 55.51,
+   "end": 59.19,
+   "n": 8,
+   "text": "So, same payment. R6, or R2?"
+  }
+ ]
+}

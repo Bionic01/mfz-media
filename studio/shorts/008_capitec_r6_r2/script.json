@@ -1,0 +1,11 @@
+[
+ ["hook", "Same payment, same bank. One costs R6. The other costs R2.", "Same payment, same bank. One costs 6 rand. The other costs 2 rand."],
+ ["fees", "At Capitec, in 2026, an immediate payment to another bank costs R6. A normal payment to another bank costs R2.", "At Capitec, in 2026, an immediate payment to another bank costs 6 rand. A normal payment to another bank costs 2 rand."],
+ ["diff", "The money lands in the same account. The only difference is speed. Immediate arrives right away. Normal can take longer.", "The money lands in the same account. The only difference is speed. Immediate arrives right away. Normal can take longer."],
+ ["math", "Make two immediate payments a month, and that's R144 a year. Make them normal, and it's R48.", "Make two immediate payments a month, and that's 144 rand a year. Make them normal, and it's 48 rand."],
+ ["save", "That's R96 a year back in your pocket, just for planning ahead.", "That's 96 rand a year back in your pocket, just for planning ahead."],
+ ["cash", "Cash costs money too. Every R1,000 you draw at an ATM costs R10.", "Cash costs money too. Every 1,000 rand you draw at an ATM costs 10 rand."],
+ ["tip", "So open your last bank statement, find your biggest fee, and change one habit.", "So open your last bank statement, find your biggest fee, and change one habit."],
+ ["guide", "The full Capitec story, with a real month of fees, is on the channel. Follow for a new money rule every day.", "The full Capitec story, with a real month of fees, is on the channel. Follow for a new money rule every day."],
+ ["loop", "So, same payment. R6, or R2?", "So, same payment. 6 rand, or 2 rand?"]
+]
