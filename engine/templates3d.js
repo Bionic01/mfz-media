@@ -238,7 +238,7 @@ T3.title = (a, b, o) => shot3(a, b, o, (S, u, pal) => {
 T3.pile = (a, b, o) => shot3(a, b, o, (S, u, pal) => {
   S.add(floor(pal)); const N = o.to || 220; const geo = new T.BoxGeometry(1.5, .02, .7); const tex = GL.canvasTex(256, 120, (c, w, h) => { c.fillStyle = o.noteCol || '#3d8f5a'; c.fillRect(0, 0, w, h); c.strokeStyle = 'rgba(255,255,255,.4)'; c.lineWidth = 4; c.strokeRect(8, 8, w - 16, h - 16); c.fillStyle = '#fff'; c.font = '800 54px "Barlow Condensed"'; c.textBaseline = 'middle'; c.fillText(o.noteVal || '', 20, h / 2); });
   const mat = [GL.M.matte('#d8e4da'), GL.M.matte('#d8e4da'), new T.MeshStandardMaterial({ map: tex.tex, roughness: .7 }), new T.MeshStandardMaterial({ map: tex.tex, roughness: .7 }), GL.M.matte('#d8e4da'), GL.M.matte('#d8e4da')];
-  const im = new T.InstancedMesh(geo, mat, N); im.castShadow = true; im.receiveShadow = true; const r = C.rnd(7); const slots = [];
+  const im = new T.InstancedMesh(geo, mat, N); im.castShadow = true; im.receiveShadow = true; im.frustumCulled = false; // instances move: a bounding sphere from the first frame would cull the whole pile later const r = C.rnd(7); const slots = [];
   for (let i = 0; i < N; i++) { const stack = i % 6, lev = Math.floor(i / 6); slots.push({ x: (stack % 3 - 1) * 1.7 + (r() - .5) * .08, z: (Math.floor(stack / 3) - .5) * .9 + (r() - .5) * .08, y: .011 + lev * .021, ry: (r() - .5) * .12 }); }
   S.scene.add(im); const cnt = o.count ? big(u, '', { size: o.countSize || 170, color: pal.acc2 || pal.acc }) : null; const lab = o.label ? big(u, o.label, { size: 50, ls: '.06em' }) : null;
   return { im, slots, cnt, lab, N };
