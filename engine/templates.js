@@ -82,12 +82,13 @@ T.fromTo = (a, b, o) => shot(a, b + .35, ({ root, world }) => { const w = world(
   const icL = C.icon(top.svg, top.defs, o.iconL || 'clock', { r: 44, bg: DARK(), fg: '#fff' }), icR = C.icon(top.svg, top.defs, o.iconR || o.iconL || 'clock', { r: 44, bg: DARK(), fg: acc() });
   return { w, g, L, R, cL, cR, arrow, ti, mult, icL, icR };
 }, (s, lt, t) => { s.g.set(t); const la = Math.max(o.left.at ?? a + .2, a + .3), ra = Math.max(o.right.at ?? a + 1.2, la + .4); const yc = 560;
-  const side = (cd, sd, ic, x, at, i, val, dur) => { const ent = E.outC(prog(t, a + .05 + i * .12, a + .5 + i * .12)); const q = E.outB(prog(t, at - .15, at + .45)); const ry0 = 180 * (1 - q); const bob = Math.sin(t * 1.1 + i * 2) * 10; const lift = Math.sin(Math.PI * clamp(prog(t, at - .15, at + .45))) * 30;
+  const side = (cd, sd, ic, x, at, i, val, dur) => { const e0 = i === 0 ? a + .05 : Math.max(a + .17, at - 1.6); /* the right card arrives at most 1.6 s before its number (12 Nov 2026) */ const ent = E.outC(prog(t, e0, e0 + .45)); const q = E.outB(prog(t, at - .15, at + .45)); const ry0 = 180 * (1 - q); const bob = Math.sin(t * 1.1 + i * 2) * 10; const lift = Math.sin(Math.PI * clamp(prog(t, at - .15, at + .45))) * 30;
     cd.back.setAttribute('opacity', ry0 > 90 ? 1 : 0); cd.c.set({ x, y: yc + (1 - ent) * 160 + bob - lift, ry: ry0 + Math.sin(t * .7 + i) * 5, rx: Math.cos(t * .6 + i) * 3, rz: Math.sin(t * .5 + i) * 1, s: .96 + .04 * ent, o: clamp(ent * 1.6) });
     const fo = clamp((q - .5) * 3); sd.od.set(val * E.outE(prog(t, at, at + dur))); P(sd.od.el, { x, y: yc + 10 + bob - lift, o: fo }); P(sd.l, { x, y: yc + 135 + bob - lift, o: fo }); pop(ic.g, x, yc - 150 + bob - lift, t, at + .1, { s: 1, idle: 0 }); ic.draw(prog(t, at + .1, at + .6)); };
-  side(s.cL, s.L, s.icL, 500, la, 0, o.left.value, .9); side(s.cR, s.R, s.icR, 1420, ra, 1, o.right.value, 1.3);
+  const eR = Math.max(a + .17, ra - 1.6), mv = E.ioC(prog(t, eR, eR + .5)); /* the first card starts centred and slides left as the second flies in */
+  side(s.cL, s.L, s.icL, lerp(960, 500, mv), la, 0, o.left.value, .9); side(s.cR, s.R, s.icR, 1420, ra, 1, o.right.value, 1.3);
   pop(s.arrow, 960 + Math.sin(t * 3) * 8, yc, t, ra - .3, { s: 1.2, idle: 0 });
-  if (s.ti) { s.ti.set(t, o.titleAt || ra + .5); P(s.ti.el, { x: 960, y: 150, o: prog(t, a, a + .3) }); } if (s.mult) P(s.mult, { x: 960, y: 900, o: E.outC(prog(t, o.multAt || ra + 1, (o.multAt || ra + 1) + .3)), s: E.outB(prog(t, o.multAt || ra + 1, (o.multAt || ra + 1) + .4)) });
+  if (s.ti) { s.ti.set(t, o.titleAt || Math.min(ra + .5, b - 1.2)); /* the highlight finishes before the cut (Capitec 6:51 had it half-drawn) */ P(s.ti.el, { x: 960, y: 150, o: prog(t, a, a + .3) }); } if (s.mult) P(s.mult, { x: 960, y: 900, o: E.outC(prog(t, o.multAt || ra + 1, (o.multAt || ra + 1) + .3)), s: E.outB(prog(t, o.multAt || ra + 1, (o.multAt || ra + 1) + .4)) });
   s.w.camera({ zoom: 1.03 + (t - a) * .015 }); once(s, [[a, 'swish', .4], [la, 'pop', .4], [ra - .3, 'swoosh_up', .35], [ra + 1.3, 'thud', .45], o.mult && [o.multAt || ra + 1, 'pop', .45]]);
 }, tr(o));
 
@@ -126,9 +127,12 @@ T.icons = (a, b, o) => o.style === 'row' ? T.iconRow(a, b, o) : shot(a, b + .35,
     S.appendChild(back); return { card, ic, it, i, back }; });
   const ti = o.title ? hl(u, o.title, 72) : null; const k = o.kicker ? tag(u, o.kicker) : null; return { w, g, cards, ti, k, ch, gap };
 }, (s, lt, t) => { s.g.set(t); const yc = s.ti || s.k ? 600 : 540;
-  // every card is on screen from the start, face down; each flips face-up on its spoken word (anticipation, a full frame)
-  const n2 = s.cards.length; s.cards.forEach(c => { c.x = 960 + (c.i - (n2 - 1) / 2) * s.gap; });
-  s.cards.forEach((c, i) => { const at = Math.max(c.it.at ?? a + .3 + i * .3, a + .35 + i * .12); const ae = a + .05 + i * .1; const qo = E.outC(prog(t, ae, ae + .45)); const q = E.outB(prog(t, at, at + .6)); const ph = i * 1.9;
+  // the first card is on screen from the start, face down; each later card flies in face down at most 1.6 s before its word
+  // (12 Nov 2026: a row of '?' cards waiting 4-5 s read as stalling) and every card flips face-up on its spoken word
+  // the row stays centred as cards join: the cards already there slide aside while the new one flies in (a dealt hand)
+  const tim = s.cards.map((c, i) => { const at = Math.max(c.it.at ?? a + .3 + i * .3, a + .35 + i * .12); const ae = i === 0 ? a + .05 : Math.max(a + .05 + i * .1, at - 1.6); return { at, ae, qo: E.outC(prog(t, ae, ae + .45)) }; });
+  const m = Math.max(1, tim.reduce((acc2, x) => acc2 + x.qo, 0)); s.cards.forEach(c => { c.x = 960 + (c.i - (m - 1) / 2) * s.gap; });
+  s.cards.forEach((c, i) => { const { at, qo } = tim[i]; const q = E.outB(prog(t, at, at + .6)); const ph = i * 1.9;
     const ry0 = 180 * (1 - q); c.back.setAttribute('opacity', ry0 > 90 ? 1 : 0);
     c.card.set({ x: c.x + Math.sin(t * .6 + ph) * 10, y: yc + (1 - qo) * 160 + Math.sin(t * 1.1 + ph) * 12 - Math.sin(Math.PI * clamp(prog(t, at, at + .6))) * 40, ry: ry0 + Math.sin(t * .7 + ph) * 9, rx: Math.cos(t * .8 + ph) * 6, rz: Math.sin(t * .5 + ph) * 1.6, s: lerp(.8, 1, qo) * (1 + .06 * Math.sin(Math.PI * clamp(prog(t, at, at + .6)))), o: clamp(qo * 1.6), light: (((t - at) * .32 + i * .3) % 1.7) - .35 });
     c.ic.draw(prog(t, at + .1, at + .6)); });
