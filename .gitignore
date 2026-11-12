@@ -31,3 +31,7 @@ studio/videos/main05_store_cards/MoneyFromZero_*.mp4
 studio/videos/**/*.chunks/
 studio/videos/**/voice_master.m4a
 studio/videos/**/thumb_small.png
+studio/videos/**/tA.txt
+studio/videos/**/tB.txt
+studio/videos/**/splice.txt
+studio/videos/**/w3.json
