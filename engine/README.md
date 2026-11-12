@@ -83,3 +83,4 @@ Poses: stand, relaxed, handsHips, wave, point, pointUp, pointL, present, phone, 
 - **Steps on panels (12 Nov 2026):** `T.steps` rows sit on soft panels, centred in the frame, with the icon inside the panel.
 - **QA:** `qa.py` also flags frozen stretches (the picture barely moving for 1.5 s or more).
 - **Long renders:** motion v3 renders at about 1.4 frames a second on 2 cores (a 9-minute video is about 3 hours), so use `render_long.py scene.js video_silent.mp4 --theme ...`: resumable chunks, under 100 minutes per run, prints MORE until it prints DONE.
+- **Memory:** `audio.py` peaks at about 4 GB for a 9-minute video, and all background jobs share one memory limit. Never run it while a render (`render.py`/`render_long.py`) or another encode is running, or it gets killed (12 Nov 2026: killed twice while the Capitec render and a Zimbabwe encode ran). Finish or stop the render first; `render_long.py` resumes from its last finished chunk.
