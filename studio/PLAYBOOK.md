@@ -134,6 +134,7 @@ His words (11 Nov 2026, 23:36): "you're supposed to self-heal, always improving 
 - **Stakes and promise in the first 20 seconds:** why this matters to the viewer, and what they'll understand by the end.
 - **Follow a person:** give the story a face (a sender, a shop owner, a grandmother) with a name and a problem, and come back to them; people remember people, not facts.
 - **Open loops:** tease a twist early ("but someone had to pay for all this") and pay it off later; keep one loop open at all times, especially right before the Fluxr part so viewers stay through it.
+- **Show what you say (Rodney, 12 Nov 2026: "When talking about something try to show it, like screens"):** whenever the voice names a thing (an app screen, a button, a voucher, a brand, a country, a number), that exact thing is on screen at that moment: the app opens the screen being described and taps the tile being named; a list of names (the five vouchers) appears one by one as each is said, each in its own place, never overlapping or hidden behind another.
 - **A new picture every 2–4 seconds and a new kind of shot every 20–30 seconds** (map, character scene, number, cards, diagram); never two shots of the same template back to back.
 - **Fill the frame:** the subject takes up a large part of the frame; no small icon alone on an empty background. At most two card shots per minute.
 - **Non-stop motion:** the engine's living camera, idle motion and moving backgrounds are on by default; qa.py fails any stretch where the picture freezes for 1.5 s or more.

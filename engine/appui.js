@@ -50,8 +50,10 @@ function home(g, defs, o) {
   return { set(t, st = {}) {
     const v = lerp(st.from ?? 0, st.balance ?? 250, E.outE(prog(t, st.at ?? -1e9, (st.at ?? -1e9) + (st.dur ?? 1.2))));
     const [ip, fp] = v.toFixed(2).split('.'); bal.textContent = 'R ' + ip.replace(/\B(?=(\d{3})+(?!\d))/g, ' ') + '.' + fp;
-    tiles.forEach((tl, i) => { const on = st.tap === i ? prog(t, st.tapAt, st.tapAt + .12) * (1 - prog(t, st.tapAt + .35, st.tapAt + .6)) : 0; tl.g.setAttribute('transform', `translate(${tl.x},${tl.y}) scale(${(1 - .06 * on).toFixed(3)})`); tl.card.setAttribute('stroke', on > .01 ? LIME : LINE); tl.card.setAttribute('stroke-width', 1 + on * 1.5); });
-    if (st.tap != null) { const tl = tiles[st.tap]; const k = prog(t, st.tapAt, st.tapAt + .5); ripple.setAttribute('cx', tl.x); ripple.setAttribute('cy', tl.y); ripple.setAttribute('r', 10 + 60 * E.outC(k)); ripple.setAttribute('opacity', k > 0 && k < 1 ? .35 * (1 - k) : 0); }
+    // taps: one tile ({tap, tapAt}) or several in turn ({taps: [[index, time], ...]}), e.g. Airtime, Data, Electricity as each is named
+    const taps = st.taps || (st.tap != null ? [[st.tap, st.tapAt]] : []);
+    tiles.forEach((tl, i) => { let on = 0; taps.forEach(([j, ta]) => { if (j === i) on = Math.max(on, prog(t, ta, ta + .12) * (1 - prog(t, ta + .45, ta + .75))); }); tl.g.setAttribute('transform', `translate(${tl.x},${tl.y}) scale(${(1 - .06 * on).toFixed(3)})`); tl.card.setAttribute('stroke', on > .01 ? LIME : LINE); tl.card.setAttribute('stroke-width', 1 + on * 1.5); });
+    const last = taps.filter(([, ta]) => t >= ta).pop(); if (last) { const tl = tiles[last[0]]; const k = prog(t, last[1], last[1] + .5); ripple.setAttribute('cx', tl.x); ripple.setAttribute('cy', tl.y); ripple.setAttribute('r', 10 + 60 * E.outC(k)); ripple.setAttribute('opacity', k > 0 && k < 1 ? .35 * (1 - k) : 0); } else ripple.setAttribute('opacity', 0);
     if (st.addAt != null) { const k = prog(t, st.addAt, st.addAt + .12) * (1 - prog(t, st.addAt + .3, st.addAt + .5)); add.setAttribute('transform', `translate(98,205) scale(${(1 - .05 * k).toFixed(3)}) translate(-98,-205)`); }
   } };
 }
