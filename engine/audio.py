@@ -275,7 +275,7 @@ def main():
     a16 = (np.clip(mix / max(1, np.abs(mix).max() / .95), -1, 1) * 32767).astype(np.int16)
     with wave.open(tmp, 'wb') as wv:
         wv.setnchannels(2); wv.setsampwidth(2); wv.setframerate(SR); wv.writeframes(a16.tobytes())
-    subprocess.run(['ffmpeg', '-y', '-loglevel', 'error', '-i', tmp, '-af', 'loudnorm=I=-14:TP=-1.0:LRA=11', '-ar', str(SR), a.out], check=True); os.remove(tmp)
+    subprocess.run(['ffmpeg', '-y', '-loglevel', 'error', '-i', tmp, '-af', 'loudnorm=I=-14:TP=-1.5:LRA=11,alimiter=limit=0.708:level=false:attack=2:release=40', '-ar', str(SR), a.out], check=True); os.remove(tmp)
     r = subprocess.run(['ffmpeg', '-i', a.out, '-af', 'ebur128', '-f', 'null', '-'], capture_output=True, text=True)
     print('mixed', a.out, [l.strip() for l in r.stderr.splitlines() if l.strip().startswith('I:')][-1:], 'dur', round(dur, 2))
 
