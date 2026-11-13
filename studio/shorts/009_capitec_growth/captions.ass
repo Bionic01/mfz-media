@@ -1,0 +1,63 @@
+[Script Info]
+ScriptType: v4.00+
+PlayResX: 1080
+PlayResY: 1920
+WrapStyle: 2
+ScaledBorderAndShadow: yes
+
+[V4+ Styles]
+Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding
+Style: Cap,Barlow ExtraBold,96,&H00DFEEF4,&H00DFEEF4,&H00141212,&H96000000,0,0,0,0,100,100,0,0,1,7,4,2,70,70,400,1
+
+[Events]
+Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
+Dialogue: 0,0:00:00.15,0:00:01.91,Cap,,0,0,0,,{\fad(40,0)}In 2003, this
+Dialogue: 0,0:00:01.91,0:00:02.71,Cap,,0,0,0,,{\fad(40,0)}bank had about
+Dialogue: 0,0:00:02.71,0:00:05.51,Cap,,0,0,0,,{\fad(40,0)}{\c&H33BEF7&}25,000{\c&HDFEEF4&} clients.
+Dialogue: 0,0:00:05.51,0:00:06.39,Cap,,0,0,0,,{\fad(40,0)}Today it has
+Dialogue: 0,0:00:06.39,0:00:09.11,Cap,,0,0,0,,{\fad(40,0)}{\c&H33BEF7&}26.6{\c&HDFEEF4&} {\c&H33BEF7&}million.{\c&HDFEEF4&}
+Dialogue: 0,0:00:09.11,0:00:10.31,Cap,,0,0,0,,{\fad(40,0)}It's Capitec.
+Dialogue: 0,0:00:10.31,0:00:11.11,Cap,,0,0,0,,{\fad(40,0)}It started in
+Dialogue: 0,0:00:11.11,0:00:12.39,Cap,,0,0,0,,{\fad(40,0)}2001, in
+Dialogue: 0,0:00:12.39,0:00:13.35,Cap,,0,0,0,,{\fad(40,0)}Stellenbosch, as
+Dialogue: 0,0:00:13.35,0:00:13.91,Cap,,0,0,0,,{\fad(40,0)}a small
+Dialogue: 0,0:00:13.91,0:00:15.19,Cap,,0,0,0,,{\fad(40,0)}microlender.
+Dialogue: 0,0:00:15.19,0:00:16.71,Cap,,0,0,0,,{\fad(40,0)}From {\c&H33BEF7&}25,000{\c&HDFEEF4&} to
+Dialogue: 0,0:00:16.71,0:00:19.35,Cap,,0,0,0,,{\fad(40,0)}{\c&H33BEF7&}26.6{\c&HDFEEF4&} {\c&H33BEF7&}million{\c&HDFEEF4&} is
+Dialogue: 0,0:00:19.35,0:00:19.99,Cap,,0,0,0,,{\fad(40,0)}more than a
+Dialogue: 0,0:00:19.99,0:00:20.95,Cap,,0,0,0,,{\fad(40,0)}thousand times
+Dialogue: 0,0:00:20.95,0:00:21.99,Cap,,0,0,0,,{\fad(40,0)}bigger, in about
+Dialogue: 0,0:00:21.99,0:00:23.51,Cap,,0,0,0,,{\fad(40,0)}23 years.
+Dialogue: 0,0:00:23.51,0:00:24.31,Cap,,0,0,0,,{\fad(40,0)}It's now South
+Dialogue: 0,0:00:24.31,0:00:25.35,Cap,,0,0,0,,{\fad(40,0)}Africa's biggest
+Dialogue: 0,0:00:25.35,0:00:26.15,Cap,,0,0,0,,{\fad(40,0)}bank by number
+Dialogue: 0,0:00:26.15,0:00:27.27,Cap,,0,0,0,,{\fad(40,0)}of clients.
+Dialogue: 0,0:00:27.27,0:00:27.67,Cap,,0,0,0,,{\fad(40,0)}Here's the
+Dialogue: 0,0:00:27.67,0:00:28.79,Cap,,0,0,0,,{\fad(40,0)}lesson for you.
+Dialogue: 0,0:00:28.79,0:00:29.83,Cap,,0,0,0,,{\fad(40,0)}Your bank cost
+Dialogue: 0,0:00:29.83,0:00:30.71,Cap,,0,0,0,,{\fad(40,0)}is more than the
+Dialogue: 0,0:00:30.71,0:00:31.91,Cap,,0,0,0,,{\fad(40,0)}monthly fee.
+Dialogue: 0,0:00:31.91,0:00:32.79,Cap,,0,0,0,,{\fad(40,0)}Banks can also
+Dialogue: 0,0:00:32.79,0:00:33.67,Cap,,0,0,0,,{\fad(40,0)}charge for debit
+Dialogue: 0,0:00:33.67,0:00:34.87,Cap,,0,0,0,,{\fad(40,0)}orders, payments
+Dialogue: 0,0:00:34.87,0:00:35.43,Cap,,0,0,0,,{\fad(40,0)}and cash
+Dialogue: 0,0:00:35.43,0:00:36.47,Cap,,0,0,0,,{\fad(40,0)}withdrawals.
+Dialogue: 0,0:00:36.47,0:00:37.43,Cap,,0,0,0,,{\fad(40,0)}So add up three
+Dialogue: 0,0:00:37.43,0:00:38.23,Cap,,0,0,0,,{\fad(40,0)}months of fees
+Dialogue: 0,0:00:38.23,0:00:38.55,Cap,,0,0,0,,{\fad(40,0)}on your
+Dialogue: 0,0:00:38.55,0:00:39.43,Cap,,0,0,0,,{\fad(40,0)}statement, and
+Dialogue: 0,0:00:39.43,0:00:40.35,Cap,,0,0,0,,{\fad(40,0)}check if another
+Dialogue: 0,0:00:40.35,0:00:40.79,Cap,,0,0,0,,{\fad(40,0)}account would
+Dialogue: 0,0:00:40.79,0:00:41.99,Cap,,0,0,0,,{\fad(40,0)}cost you less.
+Dialogue: 0,0:00:41.99,0:00:42.95,Cap,,0,0,0,,{\fad(40,0)}The full Capitec
+Dialogue: 0,0:00:42.95,0:00:43.75,Cap,,0,0,0,,{\fad(40,0)}story, with a
+Dialogue: 0,0:00:43.75,0:00:44.47,Cap,,0,0,0,,{\fad(40,0)}real month of
+Dialogue: 0,0:00:44.47,0:00:45.27,Cap,,0,0,0,,{\fad(40,0)}fees, is on the
+Dialogue: 0,0:00:45.27,0:00:46.07,Cap,,0,0,0,,{\fad(40,0)}channel.
+Dialogue: 0,0:00:46.07,0:00:46.87,Cap,,0,0,0,,{\fad(40,0)}Follow for a new
+Dialogue: 0,0:00:46.87,0:00:47.91,Cap,,0,0,0,,{\fad(40,0)}money rule every
+Dialogue: 0,0:00:47.91,0:00:48.60,Cap,,0,0,0,,{\fad(40,0)}day.
+Dialogue: 0,0:00:48.71,0:00:49.83,Cap,,0,0,0,,{\fad(40,0)}So how does a
+Dialogue: 0,0:00:49.83,0:00:50.63,Cap,,0,0,0,,{\fad(40,0)}bank go from
+Dialogue: 0,0:00:50.63,0:00:52.55,Cap,,0,0,0,,{\fad(40,0)}{\c&H33BEF7&}25,000{\c&HDFEEF4&} clients,
+Dialogue: 0,0:00:52.55,0:00:55.32,Cap,,0,0,0,,{\fad(40,0)}to {\c&H33BEF7&}26.6{\c&HDFEEF4&} {\c&H33BEF7&}million?{\c&HDFEEF4&}

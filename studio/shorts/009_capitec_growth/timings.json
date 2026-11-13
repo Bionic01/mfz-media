@@ -1,0 +1,62 @@
+{
+ "voice": "Darius (ElevenLabs eleven_v4) single take, 13 Nov 2026",
+ "duration": 55.42,
+ "lines": [
+  {
+   "key": "hook",
+   "start": 0.15,
+   "end": 9.03,
+   "n": 13,
+   "text": "In 2003, this bank had about 25,000 clients. Today it has 26.6 million."
+  },
+  {
+   "key": "who",
+   "start": 9.11,
+   "end": 14.79,
+   "n": 12,
+   "text": "It's Capitec. It started in 2001, in Stellenbosch, as a small microlender."
+  },
+  {
+   "key": "math",
+   "start": 15.19,
+   "end": 23.11,
+   "n": 16,
+   "text": "From 25,000 to 26.6 million is more than a thousand times bigger, in about 23 years."
+  },
+  {
+   "key": "top",
+   "start": 23.51,
+   "end": 27.03,
+   "n": 10,
+   "text": "It's now South Africa's biggest bank by number of clients."
+  },
+  {
+   "key": "fees",
+   "start": 27.27,
+   "end": 36.23,
+   "n": 25,
+   "text": "Here's the lesson for you. Your bank cost is more than the monthly fee. Banks can also charge for debit orders, payments and cash withdrawals."
+  },
+  {
+   "key": "tip",
+   "start": 36.47,
+   "end": 41.75,
+   "n": 19,
+   "text": "So add up three months of fees on your statement, and check if another account would cost you less."
+  },
+  {
+   "key": "guide",
+   "start": 41.99,
+   "end": 48.15,
+   "n": 22,
+   "text": "The full Capitec story, with a real month of fees, is on the channel. Follow for a new money rule every day."
+  },
+  {
+   "key": "loop",
+   "start": 48.71,
+   "end": 54.87,
+   "n": 12,
+   "text": "So how does a bank go from 25,000 clients, to 26.6 million?"
+  }
+ ]
+}

@@ -1,0 +1,24 @@
+# Render and check artifacts (the published master lives in media/shorts/009_capitec_growth)
+media_4k/
+media_s/
+__pycache__/
+*.mp4
+bg_board.png
+still.sh
+render.log
+check/log_*.txt
+check/s_*.png
+check/f_*.png
+words_raw_dl.json
+bg_board_16x9.png
+mfz_brand.py
+thumb_bg.png
+check/s_*.png
+check/f_*.png
+check/log_*.txt
+render.log
+still.sh
+words_raw_dl.json
+qa/
+media_prev/
+render4k.log
