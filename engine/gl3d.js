@@ -13,7 +13,11 @@ const FONTS = {};
 
 const QS = new URLSearchParams(location.search);
 /** render settings (speed vs quality); a scene may set window.GLCFG before shots build. res = internal resolution scale */
-const CFG = Object.assign({ res: +(QS.get('glres') || .8), bloom: QS.get('glbloom') !== '0', fxaa: QS.get('glfxaa') !== '0', shadows: QS.get('glshadow') !== '0', physical: QS.get('glphys') !== '0', lite: QS.get('gllite') === '1', env: QS.get('glenv') !== '0', direct: QS.get('gldirect') !== '0', nogl: QS.get('nogl') === '1' }, window.GLCFG || {});
+const CFG = Object.assign({ res: +(QS.get('glres') || .8), bloom: QS.get('glbloom') !== '0', fxaa: QS.get('glfxaa') !== '0', shadows: QS.get('glshadow') !== '0', physical: QS.get('glphys') !== '0', lite: QS.get('gllite') === '1', env: QS.get('glenv') !== '0', direct: QS.get('gldirect') !== '0', nogl: QS.get('nogl') === '1',
+  /* colour (13 Nov 2026, Rodney on USSD v6: "the graphics are whitish"): ACES pushed every bright colour toward white and the
+     screen-blended light leaks lifted two corners of every frame. Neutral tone mapping keeps the palette's colours; no leaks.
+     tone: 'neutral' | 'aces' | 'agx'; leak/grain: film pass strengths; envK scales every stage's environment reflections */
+  tone: QS.get('gltone') || 'neutral', leak: +(QS.get('glleak') ?? 0), grain: +(QS.get('glgrain') ?? .03), envK: +(QS.get('glenvk') ?? .6) }, window.GLCFG || {});
 function init() {
   if (R) return R; Object.assign(CFG, window.GLCFG || {}); M._lite();
   const RW = Math.round(W * CFG.res), RH = Math.round(H * CFG.res);
@@ -21,14 +25,14 @@ function init() {
   R = new T.WebGLRenderer({ antialias: false, preserveDrawingBuffer: true, powerPreference: 'high-performance' });
   R.setPixelRatio(1); R.setSize(RW, RH, false);
   R.shadowMap.enabled = CFG.shadows; R.shadowMap.type = T.PCFShadowMap;
-  R.toneMapping = T.ACESFilmicToneMapping; R.outputColorSpace = T.SRGBColorSpace;
+  R.toneMapping = CFG.tone === 'aces' ? T.ACESFilmicToneMapping : CFG.tone === 'agx' ? T.AgXToneMapping : T.NeutralToneMapping; R.outputColorSpace = T.SRGBColorSpace;
   comp = new T.EffectComposer(R); comp.setSize(RW, RH);
   rp = new T.RenderPass(new T.Scene(), new T.PerspectiveCamera()); comp.addPass(rp);
   bloomP = new T.UnrealBloomPass(new T.Vector2(RW / 2, RH / 2), .6, .45, .82); if (CFG.bloom) { comp.addPass(bloomP); bloomP.setSize(RW / 2, RH / 2); }
   comp.addPass(new T.OutputPass());
   if (CFG.fxaa) { const fxaa = new T.ShaderPass(T.FXAAShader); fxaa.material.uniforms.resolution.value.set(1 / RW, 1 / RH); comp.addPass(fxaa); }
   // film look inside GL (vignette, static grain, drifting light leak): the CSS blend overlays cost ~1 s a frame in the software compositor
-  filmP = new T.ShaderPass({ uniforms: { tDiffuse: { value: null }, uT: { value: 0 }, uVig: { value: .42 }, uGrain: { value: .045 }, uLeak: { value: .16 } },
+  filmP = new T.ShaderPass({ uniforms: { tDiffuse: { value: null }, uT: { value: 0 }, uVig: { value: .42 }, uGrain: { value: CFG.grain }, uLeak: { value: CFG.leak } },
     vertexShader: 'varying vec2 vUv; void main(){ vUv = uv; gl_Position = projectionMatrix * modelViewMatrix * vec4(position, 1.0); }',
     fragmentShader: `uniform sampler2D tDiffuse; uniform float uT, uVig, uGrain, uLeak; varying vec2 vUv;
       float h(vec2 p){ return fract(sin(dot(p, vec2(12.9898, 78.233))) * 43758.5453); }
@@ -63,7 +67,7 @@ function stage(root, o = {}) {
   if (Array.isArray(o.bg)) scene.background = gradTex(o.bg[0], o.bg[1], o.bg[2]);
   else scene.background = new T.Color(o.bg || '#05080c');
   if (o.fog) scene.fog = new T.Fog(o.fog[0], o.fog[1], o.fog[2]);
-  if (CFG.env && !CFG.lite) { scene.environment = ENV; scene.environmentIntensity = o.env ?? .45; }
+  if (CFG.env && !CFG.lite) { scene.environment = ENV; scene.environmentIntensity = (o.env ?? .45) * CFG.envK; }
   const cam = new T.PerspectiveCamera(o.fov || 35, W / H, .05, 800);
   const S = { scene, cam, cv, g2, live: true, lastT: 0, bloom: o.bloom || [.55, .45, .82], exposure: o.exposure || 1,
     add(...a) { a.forEach(x => scene.add(x.group || x)); return S; },

@@ -54,6 +54,8 @@ function shot3(a, b, o, build, update) {
 const once = (s, list) => { if (!s.__c) { s.__c = 1; list.filter(Boolean).forEach(c => cue(...c)); } };
 
 // ---------------- props ----------------
+/** darker (k<1) or lighter (k>1) version of a hex colour */
+function shade(hex, k) { const c = new T.Color(hex); c.multiplyScalar(k); return '#' + c.getHexString(); }
 function floor(pal, o = {}) { return GL.ground({ color: o.color || pal.ground, grid: o.grid ?? 1, gridCol: pal.grid, gridA: o.gridA ?? .45, rough: o.rough ?? .55 }); }
 function envelope(col = '#cdd3da') { const g = new T.Group(); g.add(GL.mesh(GL.rbox(1.6, 1, .12, .06, 3), GL.M.plastic(col, .5)));
   const sh = new T.Shape(); sh.moveTo(-.78, .48); sh.lineTo(0, -.05); sh.lineTo(.78, .48); sh.lineTo(.7, .48); sh.lineTo(0, .05); sh.lineTo(-.7, .48); sh.closePath();
@@ -128,7 +130,8 @@ T3.phone = (a, b, o) => shot3(a, b, o, (S, u, pal) => {
 /** big 3D number / word: { text, at, label (2D under it), sub, props: 'coins'|'phones'|'notes'|'none', color, size } */
 T3.number = (a, b, o) => shot3(a, b, o, (S, u, pal) => {
   S.add(floor(pal, { gridA: .3 }));
-  const tx = GL.text3d(o.text, { size: o.size || 1.6, depth: .45, color: o.color || '#e9e9e9', side: o.sideCol || pal.acc, metal: .35, rough: .35 }); tx.position.set(0, 1.9, 0); S.add(tx);
+  /* colour pass (13 Nov 2026, "the graphics are whitish"): big numbers are the palette colour with a darker side, not white chrome */
+  const tx = GL.text3d(o.text, { size: o.size || 1.6, depth: .45, color: o.color || pal.acc, side: o.sideCol || shade(o.color || pal.acc, .42), metal: .05, rough: .42, emissive: o.color || pal.acc, ei: .12 }); tx.position.set(0, 1.9, 0); S.add(tx);
   tx.userData.fit = Math.min(1, (o.maxW || 7.2) / (tx.userData.w || 1)); S.exposure = .82; S.bloom = [.38, .4, .9];
   const light = new T.PointLight(pal.acc, 30, 12); light.position.set(-4, 3, 3); S.scene.add(light);
   const deco = []; const n = o.props === 'none' ? 0 : 14; const r = C.rnd(o.seed || 21);
@@ -223,7 +226,7 @@ T3.bars = (a, b, o) => shot3(a, b, o, (S, u, pal) => {
 /** chapter title in 3D: { lines: ['WHO', 'PAYS?'], kicker, prop: name, propOpts } */
 T3.title = (a, b, o) => shot3(a, b, o, (S, u, pal) => {
   S.add(floor(pal, { gridA: .55 }));
-  const lines = (o.lines || []).map((ln, i) => { const m = GL.text3d(ln, { size: o.size || (i ? 1.0 : 1.25), depth: .35, color: i === (o.accentLine ?? -1) ? pal.acc : '#ececec', side: pal.acc, metal: .25, rough: .4 }); m.userData.fit = Math.min(1, (o.maxW || 6.4) / (m.userData.w || 1)); S.scene.add(m); return m; });
+  const lines = (o.lines || []).map((ln, i) => { const m = GL.text3d(ln, { size: o.size || (i ? 1.0 : 1.25), depth: .35, color: i === (o.accentLine ?? (o.lines.length - 1)) ? pal.acc : '#f2f2f2', side: i === (o.accentLine ?? (o.lines.length - 1)) ? shade(pal.acc, .42) : pal.acc, metal: .05, rough: .45, emissive: i === (o.accentLine ?? (o.lines.length - 1)) ? pal.acc : '#000', ei: .1 }); m.userData.fit = Math.min(1, (o.maxW || 6.4) / (m.userData.w || 1)); S.scene.add(m); return m; });
   const pr = o.prop ? prop(o.prop, Object.assign({ pos: [o.propX ?? 0, 0, -3.2] }, o.propOpts || {}), pal) : null; if (pr) S.add(pr);
   /* A side prop gets its own part of the frame: the text moves over (and shrinks if it must) so it never covers the
      prop, and the prop sways toward the camera instead of spinning (USSD v6, 13 Nov 2026: a coin stack hid behind
@@ -320,15 +323,18 @@ T3.network = (a, b, o) => shot3(a, b, Object.assign({ pal: 'network' }, o), (S, 
     { source: 'GSMA · State of the Industry Report 2018', lines: ['...'], mark: 'over 90 per cent' (substring to highlight), markAt, quote: true } */
 T3.receipt = (a, b, o) => shot3(a, b, o, (S, u, pal) => {
   S.add(floor(pal, { gridA: .35 })); const W2 = 1400, H2 = 760; const card = GL.canvasTex(W2, H2);
-  const m = GL.mesh(GL.rbox(5.6, 3.04, .06, .08, 3), [GL.M.matte('#d9d5cc'), GL.M.matte('#d9d5cc'), GL.M.matte('#d9d5cc'), GL.M.matte('#d9d5cc'), new T.MeshStandardMaterial({ map: card.tex, roughness: .8, color: '#cfcbc4' }), GL.M.matte('#cfc9be')]); m.position.set(0, 1.9, 0); S.scene.add(m);
-  const draw = k => card.draw((c, w, h) => { c.fillStyle = '#f7f4ee'; c.fillRect(0, 0, w, h); c.fillStyle = pal.acc === '#ffd23a' ? '#2e1a5a' : '#13213a'; c.fillRect(0, 0, w, 110);
-    c.fillStyle = '#fff'; c.font = '800 54px "Barlow Condensed"'; c.textBaseline = 'middle'; c.fillText(o.source || '', 56, 56, w - 112);
+  /* colour pass: dark card with a palette-coloured header instead of white paper (o.paper keeps the old white card) */
+  const edge = o.paper ? '#d9d5cc' : '#1b2333'; const m = GL.mesh(GL.rbox(5.6, 3.04, .06, .08, 3), [GL.M.matte(edge), GL.M.matte(edge), GL.M.matte(edge), GL.M.matte(edge), new T.MeshStandardMaterial({ map: card.tex, roughness: .8, color: o.paper ? '#cfcbc4' : '#ffffff' }), GL.M.matte(edge)]); m.position.set(0, 1.9, 0); S.scene.add(m);
+  const draw = k => card.draw((c, w, h) => { const dark = !o.paper; c.fillStyle = dark ? '#121a28' : '#f7f4ee'; c.fillRect(0, 0, w, h); c.fillStyle = dark ? pal.acc : pal.acc === '#ffd23a' ? '#2e1a5a' : '#13213a'; c.fillRect(0, 0, w, 110);
+    c.fillStyle = dark ? '#0b0f17' : '#fff'; c.font = '800 54px "Barlow Condensed"'; c.textBaseline = 'middle'; c.fillText(o.source || '', 56, 56, w - 112);
     c.font = `${o.quote ? 600 : 700} ${o.fs || 66}px "Barlow"`; c.textBaseline = 'top'; let y = 170; const lh = (o.fs || 66) * 1.32;
     (o.lines || []).forEach(line => { const txt = (o.quote ? '' : '') + line; const mk = o.mark && line.includes(o.mark) ? line.indexOf(o.mark) : -1;
-      if (mk >= 0) { const pre = line.slice(0, mk); const x0 = 70 + c.measureText(pre).width, wM = c.measureText(o.mark).width; c.fillStyle = 'rgba(255,207,58,.85)'; c.fillRect(x0 - 6, y - 4, (wM + 12) * k, lh - 6); }
-      c.fillStyle = '#1b1f24'; c.fillText(txt, 70, y, w - 140); y += lh; });
-    if (o.foot) { c.fillStyle = '#6b6f76'; c.font = '600 34px "Barlow"'; c.fillText(o.foot, 70, h - 80, w - 140); } }, Math.round(k * 20));
-  S.exposure = .78; S.bloom = [.2, .35, .97]; draw(0); cue(o.markAt ?? a + 1, 'swish', .35); const sp = GL.dust({ n: 160, box: [16, 7, 10], color: pal.acc, alpha: .3 }); S.add(sp);
+      if (mk >= 0) { const pre = line.slice(0, mk); const x0 = 70 + c.measureText(pre).width, wM = c.measureText(o.mark).width; c.fillStyle = 'rgba(255,207,58,.92)'; c.fillRect(x0 - 6, y - 4, (wM + 12) * k, lh - 6); }
+      c.fillStyle = dark ? '#f1f4f8' : '#1b1f24'; c.fillText(txt, 70, y, w - 140);
+      if (dark && mk >= 0 && k > .5) { c.save(); c.beginPath(); const x0 = 70 + c.measureText(line.slice(0, mk)).width; c.rect(x0 - 6, y - 4, (c.measureText(o.mark).width + 12) * k, lh - 6); c.clip(); c.fillStyle = '#16120a'; c.fillText(txt, 70, y, w - 140); c.restore(); }
+      y += lh; });
+    if (o.foot) { c.fillStyle = dark ? '#8d97a8' : '#6b6f76'; c.font = '600 34px "Barlow"'; c.fillText(o.foot, 70, h - 80, w - 140); } }, Math.round(k * 20));
+  S.exposure = o.paper ? .78 : .95; S.bloom = [.2, .35, .97]; draw(0); cue(o.markAt ?? a + 1, 'swish', .35); const sp = GL.dust({ n: 160, box: [16, 7, 10], color: pal.acc, alpha: .3 }); S.add(sp);
   return { m, draw, sp };
 }, (s, lt, t) => { const k = E.ioC(prog(t, o.markAt ?? a + 1, (o.markAt ?? a + 1) + .7)); s.draw(k); s.sp.set(t);
   const q = E.outB(prog(t, a, a + .5)); s.m.rotation.set(-.12 + .04 * Math.sin(t * .5), -.25 + .08 * Math.sin(t * .4), .02); s.m.position.y = 1.9 - (1 - q) * 2.5;
