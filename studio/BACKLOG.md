@@ -59,7 +59,7 @@ _From 9 Nov, switch to two-pot (main02 goes live 9 Nov 16:00). Don't post more t
 - Emergency fund: why your TFSA is the wrong place for it.
 
 ## Shorts from main04 (Capitec story, live 13 Nov 16:00)
-- Capitec: from about 25,000 clients (2003) to 26.6 million (Aug 2026).
+- ~~Capitec: from about 25,000 clients (2003) to 26.6 million (Aug 2026).~~ USED: Short 009, 14 Nov 2026 (2nd Capitec Short in a row; Short 010 should be the 3rd at most, or switch topic: store cards once main05 is live on 16 Nov).
 - Bank fees: same bank, two habits changed, R336 a year saved (Lerato example, Capitec 2026 prices).
 - ~~Bank fees: R1 on the app vs R6 in a branch for the same payment (Capitec 2026).~~ USED, reframed with verified fees: Short 008, 13 Nov 2026 (immediate payment R6 vs normal R2 to another bank, 2 a month = R144 vs R48 a year; plus R10 per R1,000 at the ATM). No branch fee was verified, so don't use the "branch" framing.
 
