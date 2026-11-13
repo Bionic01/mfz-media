@@ -225,12 +225,23 @@ T3.title = (a, b, o) => shot3(a, b, o, (S, u, pal) => {
   S.add(floor(pal, { gridA: .55 }));
   const lines = (o.lines || []).map((ln, i) => { const m = GL.text3d(ln, { size: o.size || (i ? 1.0 : 1.25), depth: .35, color: i === (o.accentLine ?? -1) ? pal.acc : '#ececec', side: pal.acc, metal: .25, rough: .4 }); m.userData.fit = Math.min(1, (o.maxW || 6.4) / (m.userData.w || 1)); S.scene.add(m); return m; });
   const pr = o.prop ? prop(o.prop, Object.assign({ pos: [o.propX ?? 0, 0, -3.2] }, o.propOpts || {}), pal) : null; if (pr) S.add(pr);
+  /* A side prop gets its own part of the frame: the text moves over (and shrinks if it must) so it never covers the
+     prop, and the prop sways toward the camera instead of spinning (USSD v6, 13 Nov 2026: a coin stack hid behind
+     'PAYS?', a phone behind the D of 'USSD', a clock turned edge-on). o.propFree keeps the old free-spinning layout. */
+  let tx = 0, side = 0;
+  if (pr && !o.propFree) {
+    pr.group.updateMatrixWorld(true); const box = new T.Box3().setFromObject(pr.group);
+    const pcx = (box.max.x + box.min.x) / 2, pw = box.max.x - box.min.x, D = 8, k = D / (D - pr.group.position.z), half = 3.4;
+    const L = (pcx - pw / 2) * k, R = (pcx + pw / 2) * k; side = pcx >= 0 ? 1 : -1;
+    const lo = side > 0 ? -half : R + .75, hi = side > 0 ? L - .75 : half, span = Math.max(2.4, hi - lo); tx = (lo + hi) / 2;
+    lines.forEach(m => { m.userData.fit = Math.min(m.userData.fit, span / (m.userData.w || 1)); });
+  }
   S.bloom = [.32, .4, .92]; const sp = new T.SpotLight(pal.acc, 60, 20, .5, .6); sp.position.set(0, 7, 4); sp.target.position.set(0, 1.5, 0); S.scene.add(sp); S.scene.add(sp.target);
   cue(a + .15, 'whoosh', .4); cue(a + .45, 'impact', .35);
-  return { lines, pr };
+  return { lines, pr, tx, side };
 }, (s, lt, t) => {
-  const n = s.lines.length; s.lines.forEach((m, i) => { const at = a + .12 + i * .22; const q = E.outB(prog(t, at, at + .6)); const lh = (o.size || 1.1) * 1.4; const y = 1.95 + (n - 1) * lh / 2 - i * lh; m.position.set(0, y - (1 - q) * 1.5, (1 - q) * 2); m.rotation.x = (1 - q) * -1.2; m.scale.setScalar(Math.max(.001, q * m.userData.fit)); m.rotation.y = .08 * Math.sin(t * .6 + i); });
-  if (s.pr) { if (s.pr.blink) s.pr.blink(t); if (s.pr.set) s.pr.set(t); s.pr.group.rotation.y = t * .15; }
+  const n = s.lines.length; s.lines.forEach((m, i) => { const at = a + .12 + i * .22; const q = E.outB(prog(t, at, at + .6)); const lh = (o.size || 1.1) * 1.4; const y = 1.95 + (n - 1) * lh / 2 - i * lh; m.position.set(s.tx, y - (1 - q) * 1.5, (1 - q) * 2); m.rotation.x = (1 - q) * -1.2; m.scale.setScalar(Math.max(.001, q * m.userData.fit)); m.rotation.y = .08 * Math.sin(t * .6 + i); });
+  if (s.pr) { if (s.pr.blink) s.pr.blink(t); if (s.pr.set) s.pr.set(t); s.pr.group.rotation.y = o.propFree ? t * .15 : (o.propRot ?? -.3 * s.side) + .12 * Math.sin(t * .7); }
   const k = E.ioS(prog(t, a, b + .35)); s.S.cam.position.set(lerp(1.2, -1.2, k), lerp(2.0, 2.4, k), lerp(8.5, 7.4, k)); s.S.cam.lookAt(0, 1.8, 0); GL.drift(s.S.cam, t, .03);
 });
 
