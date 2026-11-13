@@ -15,7 +15,7 @@ html, body { margin: 0; padding: 0; background: #000; overflow: hidden; }
 .ui { position: absolute; left: 0; top: 0; width: 1920px; height: 1080px; pointer-events: none; z-index: 5000; }
 .ui > * { position: absolute; left: 0; top: 0; }
 .fx-vig { position: absolute; inset: 0; z-index: 9000; pointer-events: none; background: radial-gradient(ellipse 75% 70% at 50% 50%, rgba(0,0,0,0) 55%, rgba(0,0,0,.9) 100%); }
-.fx-flash { position: absolute; inset: 0; z-index: 9002; background: #fff; opacity: 0; pointer-events: none; }
+.fx-flash { position: absolute; inset: 0; z-index: 9002; background: #fff; opacity: 0; pointer-events: none; mix-blend-mode: overlay; display: none; } /* overlay, not a white veil: the frame pops brighter in its own colours (USSD v6 'whitish' feedback) */
 .fx-leak { position: absolute; left: -300px; top: -300px; width: 2520px; height: 1680px; z-index: 8990; pointer-events: none; mix-blend-mode: screen;
   background: radial-gradient(ellipse 30% 40% at 12% 18%, rgba(255,170,90,.55), rgba(0,0,0,0) 70%), radial-gradient(ellipse 25% 35% at 92% 85%, rgba(90,160,255,.35), rgba(0,0,0,0) 70%); }
 .fx-grain { position: absolute; left: 0; top: 0; width: 1920px; height: 1080px; z-index: 9001; pointer-events: none; mix-blend-mode: overlay; image-rendering: pixelated; }

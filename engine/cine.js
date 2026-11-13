@@ -194,7 +194,9 @@ window.renderAt = (t) => {
   if (circK < 0) fx.tc.style.display = 'none'; else { fx.tc.style.display = 'block'; fx.tc.style.background = cols[0]; const k = circK < .5 ? E.ioC(circK * 2) : 1 - E.ioC((circK - .5) * 2); const r = k * 2300; fx.tc.style.width = fx.tc.style.height = (r * 2).toFixed(0) + 'px'; fx.tc.style.transform = `translate(${(cx0 - r).toFixed(1)}px,${(cy0 - r).toFixed(1)}px)`; }
   // global flash on 'flash' transitions
   let fla = 0; for (const S of SHOTS) if (S.opts.in === 'flash') { const d = t - S.a; if (d > -0.12 && d < .45) fla = Math.max(fla, d < 0 ? (d + .12) / .12 : 1 - d / .45); }
-  if (fx.flash) fx.flash.style.opacity = clamp(fla) * .5; // was .85: full white flashes on every title read as "whitish" (USSD v6 feedback, 13 Nov 2026)
+  // flash = brightness pop via overlay blend (cine.css), hidden when idle so the blend costs nothing between flashes.
+  // Was a plain white veil at .85, which read as "whitish", and at .5 as a grey blink (USSD v6 feedback, 13 Nov 2026).
+  if (fx.flash) { const fo = clamp(fla) * .9; fx.flash.style.opacity = fo; fx.flash.style.display = fo > .001 ? 'block' : 'none'; }
   if (fx.leak) { const lk = .18 + .12 * noise1(t * .25, 3); fx.leak.style.opacity = lk; fx.leak.style.transform = `translateX(${(noise1(t * .1, 9) * 200).toFixed(1)}px)`; }
   _fxFrame(t);
   if (window.AFTER) window.AFTER(t);

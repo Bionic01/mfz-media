@@ -94,7 +94,7 @@ def main():
                 pg.evaluate('d => { for (let t = 0; t <= d; t += 0.2) window.renderAt(t); window.renderAt(d - 0.001); }', dur)
                 json.dump({'duration': dur, 'cues': pg.evaluate('window.CUES || []'), 'meta': pg.evaluate('window.META || {}')}, open(a.arg, 'w'), indent=1)
                 print('cues ->', a.arg, 'duration', dur)
-            else: print(json.dumps({'duration': dur}))
+            else: print(json.dumps({'duration': dur, 'shots': pg.evaluate("(window.__SHOTS || []).map(s => ({ a: s.a, b: s.b, in: s.opts.in || 'cut', tin: s.opts.tin ?? .5 }))")}))
             b.close()
         return
     # video
