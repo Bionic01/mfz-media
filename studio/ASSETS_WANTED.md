@@ -41,8 +41,8 @@ only news media are exempt, s4.2). Rand notes stay stylised.
 ## Still wanted from Rodney (drop in the chat; optional, the video goes ahead without them)
 | Video (slot) | Photos (people, buildings) | Clips he films | Logos still missing |
 |---|---|---|---|
-| Repo rate explained (Wed 18 Nov) | Lesetja Kganyago (SARB governor); SARB head office, Pretoria | A car dealership forecourt (wide, no plates). Houses: received | SARB |
-| Steinhoff (Fri 20 Nov) | Markus Jooste; Christo Wiese; Steinhoff head office, Stellenbosch; a PEP store; an Ackermans store | A PEP or Ackermans shopfront (wide) | Pepkor, Ackermans, JSE |
+| Repo rate explained (Wed 18 Nov) | RECEIVED: Kganyago, SARB building, SARB logos, a car dealership (Jetour, Commons, small copy), houses | Optional: a South African dealership forecourt (wide, no plates) | none |
+| Steinhoff (Fri 20 Nov) | No free photos of Jooste, Wiese or Steinhoff's office exist (Forbes/news photos were not used): show names, logos, buildings. Pepkor building: free on Commons | A PEP or Ackermans shopfront he films himself (wide) | JSE (Pepkor, Ackermans received) |
 | VBS Mutual Bank (Mon 23 Nov) | VBS head office or branch, Thohoyandou; Adv. Terry Motau; Tshifhiwa Matodzi | A bank branch or ATM from outside | CODI |
 | How Shoprite makes money (Wed 25 Nov) | Whitey Basson; Christo Wiese; Pieter Engelbrecht (CEO); a Shoprite store; a Checkers store; a Money Market counter; a Usave store | Store entrance; the Money Market counter (no faces) | Checkers, Usave |
 | Bonus / 13th cheque (Fri 27 Nov) | none | none | SARS |
