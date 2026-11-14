@@ -26,3 +26,15 @@ video what to send. Keep this list current: tick items off as they arrive and ad
 | Why the petrol price changes (Wed 2 Dec) | Petrol-station B-roll (have it); DMPR price release (official) | DMPR/Department of Mineral and Petroleum Resources logo. Clips: the price board at a petrol station; the pump counter running while filling (no plates) |
 | Festive season on a budget (Fri 4 Dec) | Festive and shopping B-roll (have it) | Optional clip: a busy mall or a shop's festive aisle (wide) |
 | Stokvels (Mon 7 Dec) | NASASA figures and pages (official) | NASASA logo. Optional: a stokvel meeting, only with everyone's OK (faces then fine) |
+
+## Images Rodney supplies (asked 14 Nov 2026)
+Drive folder **"Video images"** (id 1IKZhZ0aeuU6Ld230PTtOI480570J8S73), one subfolder per video ("01 Repo rate", "02 Steinhoff", ...).
+Check it before each video and use what's there; faces only from these. Ask him for the source page so photos can be credited.
+Best sources: his own photos, Wikimedia Commons, official media galleries (SARB, Eskom, company media centres), GovernmentZA on Flickr. Avoid agency news photos (Gallo, Reuters, AFP): copyright claims.
+- 01 Repo rate: Lesetja Kganyago (SARB governor) portrait or at an MPC press conference; SARB head office, Pretoria.
+- 02 Steinhoff: Markus Jooste; Christo Wiese; Steinhoff head office, Stellenbosch; a PEP store; an Ackermans store; a Mattress Firm store (US).
+- 03 VBS: VBS Mutual Bank head office or branch, Thohoyandou; Adv. Terry Motau (Great Bank Heist report); Tshifhiwa Matodzi (former chairman).
+- 05 Shoprite: Whitey Basson; Christo Wiese; Pieter Engelbrecht (CEO); a Shoprite store (township or small town); a Checkers store; a Money Market counter; a Usave store.
+- 06 Eskom: Medupi and Kusile power stations; Megawatt Park, Sunninghill; Dan Marokane (CEO); Andre de Ruyter (CEO 2020-2023); a street in darkness during load shedding.
+- 07 Petrol: a petrol-station price board; a refinery (Natref or Sasol Secunda).
+- 09 Stokvels: a stokvel meeting or a December grocery stokvel at a store (with everyone's OK).
