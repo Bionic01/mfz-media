@@ -1,0 +1,60 @@
+[Script Info]
+ScriptType: v4.00+
+PlayResX: 1080
+PlayResY: 1920
+WrapStyle: 2
+ScaledBorderAndShadow: yes
+
+[V4+ Styles]
+Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding
+Style: Cap,Barlow ExtraBold,96,&H00DFEEF4,&H00DFEEF4,&H00141212,&H96000000,0,0,0,0,100,100,0,0,1,7,4,2,70,70,400,1
+
+[Events]
+Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
+Dialogue: 0,0:00:00.15,0:00:01.67,Cap,,0,0,0,,{\fad(40,0)}Moving your TFSA
+Dialogue: 0,0:00:01.67,0:00:02.23,Cap,,0,0,0,,{\fad(40,0)}to a better
+Dialogue: 0,0:00:02.23,0:00:03.35,Cap,,0,0,0,,{\fad(40,0)}provider?
+Dialogue: 0,0:00:03.35,0:00:04.47,Cap,,0,0,0,,{\fad(40,0)}Do it wrong, and
+Dialogue: 0,0:00:04.47,0:00:05.63,Cap,,0,0,0,,{\fad(40,0)}you pay SARS a
+Dialogue: 0,0:00:05.63,0:00:07.40,Cap,,0,0,0,,{\fad(40,0)}{\c&H33BEF7&}40%{\c&HDFEEF4&} penalty.
+Dialogue: 0,0:00:07.43,0:00:08.31,Cap,,0,0,0,,{\fad(40,0)}Lerato has
+Dialogue: 0,0:00:08.31,0:00:09.67,Cap,,0,0,0,,{\fad(40,0)}{\c&H33BEF7&}R30 000{\c&HDFEEF4&} in a
+Dialogue: 0,0:00:09.67,0:00:11.23,Cap,,0,0,0,,{\fad(40,0)}TFSA, and this
+Dialogue: 0,0:00:11.23,0:00:11.91,Cap,,0,0,0,,{\fad(40,0)}year she's
+Dialogue: 0,0:00:11.91,0:00:12.55,Cap,,0,0,0,,{\fad(40,0)}already added
+Dialogue: 0,0:00:12.55,0:00:14.31,Cap,,0,0,0,,{\fad(40,0)}{\c&H33BEF7&}R20 000.{\c&HDFEEF4&}
+Dialogue: 0,0:00:14.31,0:00:15.03,Cap,,0,0,0,,{\fad(40,0)}She withdraws
+Dialogue: 0,0:00:15.03,0:00:16.59,Cap,,0,0,0,,{\fad(40,0)}the {\c&H33BEF7&}R30 000{\c&HDFEEF4&} and
+Dialogue: 0,0:00:16.59,0:00:17.43,Cap,,0,0,0,,{\fad(40,0)}puts it in a new
+Dialogue: 0,0:00:17.43,0:00:18.79,Cap,,0,0,0,,{\fad(40,0)}TFSA.
+Dialogue: 0,0:00:18.79,0:00:19.99,Cap,,0,0,0,,{\fad(40,0)}To SARS, that's
+Dialogue: 0,0:00:19.99,0:00:20.39,Cap,,0,0,0,,{\fad(40,0)}a new
+Dialogue: 0,0:00:20.39,0:00:21.67,Cap,,0,0,0,,{\fad(40,0)}contribution.
+Dialogue: 0,0:00:21.67,0:00:23.31,Cap,,0,0,0,,{\fad(40,0)}That's {\c&H33BEF7&}R50 000{\c&HDFEEF4&}
+Dialogue: 0,0:00:23.31,0:00:24.59,Cap,,0,0,0,,{\fad(40,0)}this tax year.
+Dialogue: 0,0:00:24.59,0:00:25.51,Cap,,0,0,0,,{\fad(40,0)}The limit is
+Dialogue: 0,0:00:25.51,0:00:27.51,Cap,,0,0,0,,{\fad(40,0)}{\c&H33BEF7&}R46 000.{\c&HDFEEF4&}
+Dialogue: 0,0:00:27.51,0:00:29.27,Cap,,0,0,0,,{\fad(40,0)}{\c&H33BEF7&}R4 000{\c&HDFEEF4&} over, at
+Dialogue: 0,0:00:29.27,0:00:32.31,Cap,,0,0,0,,{\fad(40,0)}{\c&H33BEF7&}40%,{\c&HDFEEF4&} is a {\c&H33BEF7&}R1 600{\c&HDFEEF4&}
+Dialogue: 0,0:00:32.31,0:00:33.43,Cap,,0,0,0,,{\fad(40,0)}penalty.
+Dialogue: 0,0:00:33.43,0:00:34.39,Cap,,0,0,0,,{\fad(40,0)}And withdrawals
+Dialogue: 0,0:00:34.39,0:00:35.19,Cap,,0,0,0,,{\fad(40,0)}never give your
+Dialogue: 0,0:00:35.19,0:00:36.47,Cap,,0,0,0,,{\fad(40,0)}{\c&H33BEF7&}R500 000{\c&HDFEEF4&}
+Dialogue: 0,0:00:36.47,0:00:37.35,Cap,,0,0,0,,{\fad(40,0)}lifetime limit
+Dialogue: 0,0:00:37.35,0:00:38.19,Cap,,0,0,0,,{\fad(40,0)}back.
+Dialogue: 0,0:00:38.19,0:00:39.43,Cap,,0,0,0,,{\fad(40,0)}The right way:
+Dialogue: 0,0:00:39.43,0:00:40.07,Cap,,0,0,0,,{\fad(40,0)}ask the new
+Dialogue: 0,0:00:40.07,0:00:41.03,Cap,,0,0,0,,{\fad(40,0)}provider for a
+Dialogue: 0,0:00:41.03,0:00:42.95,Cap,,0,0,0,,{\fad(40,0)}TFSA transfer.
+Dialogue: 0,0:00:42.95,0:00:43.83,Cap,,0,0,0,,{\fad(40,0)}It goes company
+Dialogue: 0,0:00:43.83,0:00:44.83,Cap,,0,0,0,,{\fad(40,0)}to company, and
+Dialogue: 0,0:00:44.83,0:00:45.43,Cap,,0,0,0,,{\fad(40,0)}doesn't touch
+Dialogue: 0,0:00:45.43,0:00:46.63,Cap,,0,0,0,,{\fad(40,0)}your limits.
+Dialogue: 0,0:00:46.63,0:00:47.75,Cap,,0,0,0,,{\fad(40,0)}The full TFSA
+Dialogue: 0,0:00:47.75,0:00:48.47,Cap,,0,0,0,,{\fad(40,0)}guide is on the
+Dialogue: 0,0:00:48.47,0:00:49.47,Cap,,0,0,0,,{\fad(40,0)}channel.
+Dialogue: 0,0:00:49.47,0:00:50.55,Cap,,0,0,0,,{\fad(40,0)}So, moving your
+Dialogue: 0,0:00:50.55,0:00:51.95,Cap,,0,0,0,,{\fad(40,0)}TFSA?
+Dialogue: 0,0:00:51.95,0:00:52.83,Cap,,0,0,0,,{\fad(40,0)}Transfer it.
+Dialogue: 0,0:00:52.83,0:00:53.63,Cap,,0,0,0,,{\fad(40,0)}Don't withdraw
+Dialogue: 0,0:00:53.63,0:00:54.44,Cap,,0,0,0,,{\fad(40,0)}it.

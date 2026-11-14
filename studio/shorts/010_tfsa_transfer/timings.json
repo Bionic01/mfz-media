@@ -1,0 +1,62 @@
+{
+ "voice": "Darius (ElevenLabs eleven_v4) single take, 14 Nov 2026",
+ "duration": 54.54,
+ "lines": [
+  {
+   "key": "hook",
+   "start": 0.15,
+   "end": 6.95,
+   "n": 18,
+   "text": "Moving your TFSA to a better provider? Do it wrong, and you pay SARS a 40% penalty."
+  },
+  {
+   "key": "lerato",
+   "start": 7.43,
+   "end": 14.23,
+   "n": 15,
+   "text": "Lerato has R30,000 in a TFSA, and this year she's already added R20,000."
+  },
+  {
+   "key": "withdraw",
+   "start": 14.31,
+   "end": 21.59,
+   "n": 18,
+   "text": "She withdraws the R30,000 and puts it in a new TFSA. To SARS, that's a new contribution."
+  },
+  {
+   "key": "math",
+   "start": 21.67,
+   "end": 33.35,
+   "n": 22,
+   "text": "That's R50,000 this tax year. The limit is R46,000. R4,000 over, at 40%, is a R1,600 penalty."
+  },
+  {
+   "key": "lifetime",
+   "start": 33.43,
+   "end": 38.15,
+   "n": 10,
+   "text": "And withdrawals never give your R500,000 lifetime limit back."
+  },
+  {
+   "key": "fix",
+   "start": 38.19,
+   "end": 46.55,
+   "n": 21,
+   "text": "The right way: ask the new provider for a TFSA transfer. It goes company to company, and doesn't touch your limits."
+  },
+  {
+   "key": "guide",
+   "start": 46.63,
+   "end": 49.35,
+   "n": 8,
+   "text": "The full TFSA guide is on the channel."
+  },
+  {
+   "key": "loop",
+   "start": 49.47,
+   "end": 53.99,
+   "n": 9,
+   "text": "So, moving your TFSA? Transfer it. Don't withdraw it."
+  }
+ ]
+}
