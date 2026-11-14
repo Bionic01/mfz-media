@@ -6,6 +6,9 @@
   "Video images/00 Fluxr real footage (USSD and app)") and copy what a video needs into fluxr-posts/kit (private repo).
 - Before each video, check its Drive folder and use what's there. **If something isn't there on production day,
   make the video without it** (building, logo, document, stock or drawn instead). Never hold a video for an asset.
+- **Show new things** (Rodney, 14 Nov 2026): every video should look fresh. Don't reuse a stock clip or photo that
+  an earlier video on the same channel already used, unless the story needs that exact thing; record the stock ids
+  and photos each video used in its facts.md ("Assets used") and check before picking.
 - Free stock B-roll: the shared library index is mfz-media/media/stock/manifest.json (Mixkit + Pexels, licence and
   download link per clip). The clip files are a cache in the workspace (/home/claude/stock); if they're gone,
   re-download the ones a video needs from the manifest links.
