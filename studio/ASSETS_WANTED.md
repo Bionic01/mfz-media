@@ -47,6 +47,6 @@ only news media are exempt, s4.2). Rand notes stay stylised.
 | How Shoprite makes money (Wed 25 Nov) | No free photos of Basson, Wiese or Engelbrecht exist (the ones sent were not used). Shoprite Zeerust and Checkers Durbanville are free on Commons; a Money Market counter; a Usave store | Store entrance; the Money Market counter (no faces) | Usave (Checkers received) |
 | Bonus / 13th cheque (Fri 27 Nov) | none | none | SARS |
 | How Eskom went broke (Mon 30 Nov) | Medupi and Kusile; Megawatt Park; Dan Marokane (CEO); Andre de Ruyter (CEO 2020-2023); a dark street in load shedding | Typing a token into a prepaid meter (numbers covered) | none |
-| Why the petrol price changes (Wed 2 Dec) | A South African price board; a refinery (Natref or Sasol Secunda) | The price board; the pump counter running (no plates) | DMPR |
+| Why the petrol price changes (Wed 2 Dec) | A South African price board; a refinery (Natref or Sasol Secunda) | The price board. RECEIVED: the pump counter running (kit/footage) | DMPR |
 | Festive season on a budget (Fri 4 Dec) | none | Optional: a busy mall or festive aisle | none |
 | Stokvels (Mon 7 Dec) | A stokvel meeting or a December grocery stokvel (with everyone's OK) | Same, optional | NASASA |
