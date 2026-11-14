@@ -1,40 +1,45 @@
 # Real assets for upcoming Money From Zero videos
 
-Rodney (14 Nov 2026): use real images wherever they exist (buildings, logos, documents, real places), and tell him per
-video what to send. Keep this list current: tick items off as they arrive and add the next videos.
+## How assets reach a video (Rodney, 14 Nov 2026)
+- Rodney drops photos and clips **in the chat**. I sort them: upload each one to his Google Drive (logos to
+  "Brand logos for thumbnails", everything else to "Video images/<nn video>"; his real Fluxr footage is in
+  "Video images/00 Fluxr real footage (USSD and app)") and copy what a video needs into fluxr-posts/kit (private repo).
+- Before each video, check its Drive folder and use what's there. **If something isn't there on production day,
+  make the video without it** (building, logo, document, stock or drawn instead). Never hold a video for an asset.
+- Free stock B-roll: the shared library index is mfz-media/media/stock/manifest.json (Mixkit + Pexels, licence and
+  download link per clip). The clip files are a cache in the workspace (/home/claude/stock); if they're gone,
+  re-download the ones a video needs from the manifest links.
 
-**Rules**
-- **No real rand banknote or coin images** unless the SARB approves in writing. The SARB currency image policy
-  (2026, applies from 1 April 2026, covers digital and educational use) says "No reproduction of images of the
-  currency is permitted without prior written permission from the Bank" (s5.1); only news media are exempt (s4.2).
-  Apply via currency@resbank.co.za if we want real notes. Until then, rand notes stay stylised (not photo-real).
-- Faces of real people only from photos Rodney supplies. Otherwise show the building, logo or document instead.
-- Logos: Rodney drops them in the Drive folder "Brand logos for thumbnails". Never commit logo files to this public repo.
-- Photos I find myself come from Wikimedia Commons (free licence, credited in the description) or official sites
-  (documents and reports). Stock B-roll: Mixkit and Pexels (free licences, kept outside the repo).
-- Clips Rodney films: landscape, 5–10 s each, phone held steady, no faces up close, no number plates, PINs,
-  account numbers or slips with personal details showing.
+## Monetisation first (Rodney, 14 Nov 2026: "protect monetisation at all costs")
+Never put anything in a video that could hurt monetisation or draw a copyright claim. If in doubt, leave it out.
+- OK: Rodney's own photos and clips; Wikimedia Commons files with a free licence (credited); Pexels and Mixkit
+  stock; official documents, report covers and statements; company logos shown to identify the company.
+- Not OK: news-agency or newspaper photos (Gallo, Reuters, AFP, News24...), TV or YouTube clips, any photo whose
+  source we can't name (even if Rodney drops it: ask where it's from, skip it if unknown), betting or gambling
+  brands, real rand notes without SARB permission, music or sound not from our licensed library.
+- Canva owns Pexels; Canva's own library is licensed only for use inside Canva designs, so don't pull media out of
+  Canva for these videos. Use Pexels directly.
 
-| Video (slot) | I'll get myself | Wanted from Rodney |
-|---|---|---|
-| Repo rate explained (Wed 18 Nov) | SARB building, Pretoria (Commons); SARB MPC statement page (official); house, car and bank B-roll (stock) | SARB logo. Optional clip: houses in your street or a car dealership forecourt (wide, no plates) |
-| Steinhoff (Fri 20 Nov) | Steinhoff head office, Stellenbosch; JSE building, Sandton (Commons); PwC report cover and court/FSCA documents (official) | Logos: Steinhoff, Pepkor, PEP, Ackermans, JSE. Clip: a PEP or Ackermans shopfront (wide). No Jooste face unless you send a photo you have rights to |
-| VBS Mutual Bank (Mon 23 Nov) | "The Great Bank Heist" report cover (Motau report, official); SARB Prudential Authority, CODI pages | Logos: VBS Mutual Bank, CODI. Clip: any bank branch or ATM exterior (wide) |
-| How Shoprite makes money (Wed 25 Nov) | Shoprite and Checkers store photos (Commons); annual report covers (official) | Logos: Shoprite, Checkers, Usave, Money Market. Clips: a Shoprite store entrance and the Money Market counter (no faces); photo of a money-transfer till slip with names and numbers covered |
-| Bonus / 13th cheque (Fri 27 Nov) | SARS tax tables (official); drawn payslip (clearly illustrative) | SARS logo |
-| How Eskom went broke (Mon 30 Nov) | Medupi and Kusile power stations, Megawatt Park (Commons); power-line and substation B-roll (have it) | Eskom logo. Clips: typing a prepaid token into a meter (numbers covered); a photo of a prepaid electricity slip with the meter number and token covered |
-| Why the petrol price changes (Wed 2 Dec) | Petrol-station B-roll (have it); DMPR price release (official) | DMPR/Department of Mineral and Petroleum Resources logo. Clips: the price board at a petrol station; the pump counter running while filling (no plates) |
-| Festive season on a budget (Fri 4 Dec) | Festive and shopping B-roll (have it) | Optional clip: a busy mall or a shop's festive aisle (wide) |
-| Stokvels (Mon 7 Dec) | NASASA figures and pages (official) | NASASA logo. Optional: a stokvel meeting, only with everyone's OK (faces then fine) |
+**Rand notes:** no real rand notes or coins unless the SARB approves in writing (SARB currency image policy 2026,
+s5.1: "No reproduction of images of the currency is permitted without prior written permission from the Bank";
+only news media are exempt, s4.2). Rand notes stay stylised.
 
-## Images Rodney supplies (asked 14 Nov 2026)
-Drive folder **"Video images"** (id 1IKZhZ0aeuU6Ld230PTtOI480570J8S73), one subfolder per video ("01 Repo rate", "02 Steinhoff", ...).
-Check it before each video and use what's there; faces only from these. Ask him for the source page so photos can be credited.
-Best sources: his own photos, Wikimedia Commons, official media galleries (SARB, Eskom, company media centres), GovernmentZA on Flickr. Avoid agency news photos (Gallo, Reuters, AFP): copyright claims.
-- 01 Repo rate: Lesetja Kganyago (SARB governor) portrait or at an MPC press conference; SARB head office, Pretoria.
-- 02 Steinhoff: Markus Jooste; Christo Wiese; Steinhoff head office, Stellenbosch; a PEP store; an Ackermans store; a Mattress Firm store (US).
-- 03 VBS: VBS Mutual Bank head office or branch, Thohoyandou; Adv. Terry Motau (Great Bank Heist report); Tshifhiwa Matodzi (former chairman).
-- 05 Shoprite: Whitey Basson; Christo Wiese; Pieter Engelbrecht (CEO); a Shoprite store (township or small town); a Checkers store; a Money Market counter; a Usave store.
-- 06 Eskom: Medupi and Kusile power stations; Megawatt Park, Sunninghill; Dan Marokane (CEO); Andre de Ruyter (CEO 2020-2023); a street in darkness during load shedding.
-- 07 Petrol: a petrol-station price board; a refinery (Natref or Sasol Secunda).
-- 09 Stokvels: a stokvel meeting or a December grocery stokvel at a store (with everyone's OK).
+## Already in hand
+- Logos in Drive "Brand logos for thumbnails": Steinhoff (icon and old wordmark), PEP, VBS, Shoprite, Eskom,
+  Takealot, Capitec, African Bank, Mr Price (two), TymeBank, GoTyme (two), EcoCash (two), M-Pesa (two).
+- Stock clips for: cities (Sandton, Cape Town, Johannesburg at night), townships, Soweto towers, taxis, malls and
+  supermarkets, tills and card machines, counting cash, phones, power lines and substations, power stations,
+  candles (load shedding), petrol stations and pump displays, refineries, Black Friday bags, braai and festive.
+
+## Still wanted from Rodney (drop in the chat; optional, the video goes ahead without them)
+| Video (slot) | Photos (people, buildings) | Clips he films | Logos still missing |
+|---|---|---|---|
+| Repo rate explained (Wed 18 Nov) | Lesetja Kganyago (SARB governor); SARB head office, Pretoria | Houses in a street or a car dealership forecourt (wide, no plates) | SARB |
+| Steinhoff (Fri 20 Nov) | Markus Jooste; Christo Wiese; Steinhoff head office, Stellenbosch; a PEP store; an Ackermans store | A PEP or Ackermans shopfront (wide) | Pepkor, Ackermans, JSE |
+| VBS Mutual Bank (Mon 23 Nov) | VBS head office or branch, Thohoyandou; Adv. Terry Motau; Tshifhiwa Matodzi | A bank branch or ATM from outside | CODI |
+| How Shoprite makes money (Wed 25 Nov) | Whitey Basson; Christo Wiese; Pieter Engelbrecht (CEO); a Shoprite store; a Checkers store; a Money Market counter; a Usave store | Store entrance; the Money Market counter (no faces) | Checkers, Usave |
+| Bonus / 13th cheque (Fri 27 Nov) | none | none | SARS |
+| How Eskom went broke (Mon 30 Nov) | Medupi and Kusile; Megawatt Park; Dan Marokane (CEO); Andre de Ruyter (CEO 2020-2023); a dark street in load shedding | Typing a token into a prepaid meter (numbers covered) | none |
+| Why the petrol price changes (Wed 2 Dec) | A South African price board; a refinery (Natref or Sasol Secunda) | The price board; the pump counter running (no plates) | DMPR |
+| Festive season on a budget (Fri 4 Dec) | none | Optional: a busy mall or festive aisle | none |
+| Stokvels (Mon 7 Dec) | A stokvel meeting or a December grocery stokvel (with everyone's OK) | Same, optional | NASASA |
