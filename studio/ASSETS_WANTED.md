@@ -34,10 +34,14 @@ only news media are exempt, s4.2). Rand notes stay stylised.
   supermarkets, tills and card machines, counting cash, phones, power lines and substations, power stations,
   candles (load shedding), petrol stations and pump displays, refineries, Black Friday bags, braai and festive.
 
+- Rodney's own photos (cleaned), in Drive "Video images/00 General photos (city, streets, places)" and
+  fluxr-posts/kit/supplied: a Johannesburg CBD street with taxis (Sep 2026); a suburban street with houses
+  (Jul 2026), which covers the repo rate's "houses in a street". Never name his street or suburb.
+
 ## Still wanted from Rodney (drop in the chat; optional, the video goes ahead without them)
 | Video (slot) | Photos (people, buildings) | Clips he films | Logos still missing |
 |---|---|---|---|
-| Repo rate explained (Wed 18 Nov) | Lesetja Kganyago (SARB governor); SARB head office, Pretoria | Houses in a street or a car dealership forecourt (wide, no plates) | SARB |
+| Repo rate explained (Wed 18 Nov) | Lesetja Kganyago (SARB governor); SARB head office, Pretoria | A car dealership forecourt (wide, no plates). Houses: received | SARB |
 | Steinhoff (Fri 20 Nov) | Markus Jooste; Christo Wiese; Steinhoff head office, Stellenbosch; a PEP store; an Ackermans store | A PEP or Ackermans shopfront (wide) | Pepkor, Ackermans, JSE |
 | VBS Mutual Bank (Mon 23 Nov) | VBS head office or branch, Thohoyandou; Adv. Terry Motau; Tshifhiwa Matodzi | A bank branch or ATM from outside | CODI |
 | How Shoprite makes money (Wed 25 Nov) | Whitey Basson; Christo Wiese; Pieter Engelbrecht (CEO); a Shoprite store; a Checkers store; a Money Market counter; a Usave store | Store entrance; the Money Market counter (no faces) | Checkers, Usave |
