@@ -40,6 +40,8 @@ Read this whole file, and `STRATEGY.md` (goals, monetisation rules, learnings), 
   - The cost is about 1 credit per character. A long video is about 7,000 credits; a 60-second Short is about 900.
 
 ## Long video pipeline (one folder per video, e.g. `studio/videos/main03_<topic>/`)
+
+**Real assets, not drawn ones (Rodney, 14 Nov 2026):** show the real thing wherever it exists: buildings, logos (Drive folder "Brand logos for thumbnails", never committed here), official documents and report covers. Faces only from photos Rodney supplies. **Real rand notes and coins need the SARB's written permission** (SARB currency image policy 2026, s5.1; only news media are exempt), so rand notes stay stylised unless approval arrives. Before each video, update studio/ASSETS_WANTED.md (what I get myself, what I need from Rodney) and send him the list. End story videos on where things stand today, checked on the day.
 1. **Topic:** pick the next topic from `studio/BACKLOG.md`. Prefer timely topics, for example tax season, Black Friday, or the February TFSA and RA deadlines.
 2. **Research:** write `facts.md` with every number labelled by source (primary sources first). **Current names and facts (Rodney, 11 Nov 2026: "make sure that you have the most up-to-date information"):** before writing, web-search every company, brand and product the video names for its current name, owner, status and latest figures (e.g. TymeBank became **GoTyme Bank** in early 2026). Use the current name; mention the old one only where the story needs it. Check the logo matches the current brand too.
    - Verify current figures on the web on the day you make the video.
