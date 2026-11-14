@@ -44,7 +44,7 @@ _Re-planned 10 Nov 2026 with Rodney's approval: each week, **two money stories a
 _From 9 Nov, switch to two-pot (main02 goes live 9 Nov 16:00). Don't post more than 3 in a row on one topic (PLAYBOOK)._
 - ~~TFSA: unused space is gone forever (use it or lose it).~~ USED: Short 003, 8 Nov 2026.
 - ~~TFSA: R3,834 a month means a SARS penalty (R8 over the limit).~~ USED: Short 002, 7 Nov 2026 (also covers "all accounts share one limit").
-- TFSA: switching providers? Transfer, don't withdraw.
+- ~~TFSA: switching providers? Transfer, don't withdraw.~~ USED: Short 010, 15 Nov 2026 (Lerato: R20,000 + re-deposited R30,000 = R50,000, R4,000 over, R1,600 penalty; topic switch after two Capitec Shorts. Short 011 on 16 Nov can point to main05 store cards, live 16:00).
 - TFSA: R500,000 in, about R2.7 million at 65 (illustration).
 - ~~Two-pot: you withdraw R20,000 and get about R14,450.~~ USED: Short 004, 9 Nov 2026 (framed as SARS takes R5,200, R14,800 left before the fund's fee).
 - ~~Two-pot: it's called two-pot, but there are 3 pots.~~ USED: Short 005, 10 Nov 2026 (2nd two-pot Short in a row; next Short should switch topic or be the 3rd and last two-pot).
