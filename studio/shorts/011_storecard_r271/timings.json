@@ -1,0 +1,76 @@
+{
+ "voice": "Darius (ElevenLabs eleven_v4) single take, 15 Nov 2026, atempo 1.04",
+ "duration": 59.47,
+ "lines": [
+  {
+   "key": "hook",
+   "start": 0.15,
+   "end": 9.612,
+   "n": 20,
+   "text": "Only R271 a month for a R5,000 TV? On a store card, it costs you almost R9,750."
+  },
+  {
+   "key": "thandi",
+   "start": 9.65,
+   "end": 15.304,
+   "n": 17,
+   "text": "Thandi buys it on Black Friday, on her store card, over 36 months, at the legal maximums."
+  },
+  {
+   "key": "interest",
+   "start": 15.765,
+   "end": 21.458,
+   "n": 9,
+   "text": "Interest at 21.25% a year: about R1,800."
+  },
+  {
+   "key": "fee",
+   "start": 21.535,
+   "end": 26.612,
+   "n": 8,
+   "text": "The R69 monthly service fee: R2,484."
+  },
+  {
+   "key": "life",
+   "start": 26.765,
+   "end": 30.227,
+   "n": 6,
+   "text": "Credit life insurance: about R460."
+  },
+  {
+   "key": "total",
+   "start": 30.342,
+   "end": 41.842,
+   "n": 18,
+   "text": "R5,000 becomes almost R9,750. About R4,750 extra, on a TV she saved R1,250 on."
+  },
+  {
+   "key": "short",
+   "start": 41.919,
+   "end": 49.073,
+   "n": 14,
+   "text": "Over 12 months, it's about R6,570. Better still: save first, and pay cash."
+  },
+  {
+   "key": "check",
+   "start": 49.304,
+   "end": 52.458,
+   "n": 9,
+   "text": "Your card may charge less, so check your statement."
+  },
+  {
+   "key": "guide",
+   "start": 52.496,
+   "end": 54.919,
+   "n": 9,
+   "text": "The full store card guide is on the channel."
+  },
+  {
+   "key": "loop",
+   "start": 54.996,
+   "end": 58.919,
+   "n": 10,
+   "text": "So next time you hear: only R271 a month..."
+  }
+ ]
+}
