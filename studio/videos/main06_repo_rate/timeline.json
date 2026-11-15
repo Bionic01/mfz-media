@@ -1,0 +1,33 @@
+{
+ "duration": 522.75,
+ "chapters": [
+  {
+   "key": "cold_open",
+   "start": 0.48
+  },
+  {
+   "key": "ch1_what",
+   "start": 71.92
+  },
+  {
+   "key": "ch2_prime",
+   "start": 117.36
+  },
+  {
+   "key": "ch3_why",
+   "start": 189.429
+  },
+  {
+   "key": "ch4_example",
+   "start": 272.869
+  },
+  {
+   "key": "ch5_steps",
+   "start": 381.019
+  },
+  {
+   "key": "ch6_recap",
+   "start": 475.899
+  }
+ ]
+}

@@ -1,0 +1,18 @@
+BT check R1m 20y 10.50 vs 10.75: 9983.8 10152.29
+bond 1.2m 20y 0.105 11980.56
+bond 1.2m 20y 0.1075 12182.75
+bond 1.2m 20y 0.11 12386.26
+bond 1.2m 20y 0.1125 12591.07
+bond 1.2m 20y 0.1175 13004.48
+bond diff/month 203.51 per year 2442.16 over 20y 48843.19
+bond total interest at 10.75 1723859.38
+car 7808.29 7861.07 diff 52.78 yr 633.38 total extra 72m 3800.29
+savings 10000 +0.25%/yr 25.0
+card 20000 21.25->21.5 per month 4.17 yr 50.0
+total per month 260.46 yr 3125.54
+bond +1pt 821.74
+bond cut to 10.50 202.19 car cut 52.58
+bond since May (prime 10.25->10.75) 403.03
+pay 12386.26 at 10.75: months 227 years 18.92 interest 1611248.53 saved 112610.85
+rule per R100k bond 20y per 0.25 16.96 car 72m 12.78
+repo+3.5 10.75 caps 19.25 21.25 28.25

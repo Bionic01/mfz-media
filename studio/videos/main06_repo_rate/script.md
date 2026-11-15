@@ -1,0 +1,101 @@
+# Money From Zero — Main video 06 (how-to)
+# The repo rate explained: what a 0.25% change does to your bond, car payment and savings (South Africa 2026)
+
+Voice: Darius (ElevenLabs eleven_v4), one take per part. Facts: facts.md (verified 15 Nov 2026).
+
+[cold_open]
+[serious] This is Naledi. Last month she got the keys to her first home in Johannesburg. Her bond is R1.2 million, and she pays R12,183 every month.
+
+This Thursday, the 19th of November, the Reserve Bank in Pretoria will announce one number. Naledi won't be in the room. She doesn't get a vote. But if that number goes up by a quarter of one percent, her bond goes up to R12,386. That's about R204 more, every month, for twenty years.
+
+And it's not just Naledi. If you have a bond, a car loan, a credit card or a savings account, the same number reaches you too.
+
+So here's the answer, up front. A quarter of a percent on the repo rate adds about R200 a month to a R1.2 million bond, about R53 to a big car loan, and only about R25 a year to R10,000 in savings.
+
+In this video you'll see why, how to work out your own number in ten seconds, and five things you can do before Thursday. And stay for the last step, because one small habit can save Naledi more than R100,000. Let's start from zero.
+
+[ch1_what]
+First, what is the repo rate?
+
+Banks borrow money too. When a bank needs cash, it can borrow from the South African Reserve Bank, and the Reserve Bank charges interest. The rate it charges is the repo rate. The Reserve Bank now calls it the policy rate, but almost everyone still says repo.
+
+Right now it's 7.25%. Before May, it was 6.75%. Then it went up twice this year: in May, and again in September.
+
+Who decides? A small committee at the Reserve Bank, the Monetary Policy Committee. They announce a decision six times a year. The next one is this Thursday.
+
+Here's the thing. You never borrow at the repo rate. So why does it touch your bond? Because the money takes a short trip to reach you. Three stops.
+
+[ch2_prime]
+Stop one: the Reserve Bank lends to the banks at 7.25%.
+
+Stop two: the banks add a fixed 3.5%. That gives the prime lending rate, the rate banks use as their starting point. Today, prime is 10.75%. When repo moves by a quarter, prime moves by a quarter. Every time.
+
+Stop three: you. Your loan is priced from prime. Look at your bond or car loan statement, and you'll see something like "prime", or "prime minus half a percent", or "prime plus two". That little plus or minus is your deal with the bank. Say your bond is prime minus half a percent: today that's 10.25%. The prime part moves with the Reserve Bank. Your deal stays the same.
+
+Even the legal limits move. The highest interest a credit card or store card may charge is the repo rate plus 14%. Today that's 21.25%. When repo moves, that ceiling moves with it.
+
+So one decision in Pretoria travels all the way to your payslip. But why would the Reserve Bank ever want to make loans more expensive?
+
+[ch3_why]
+Think of the repo rate as the brake pedal of the economy.
+
+The Reserve Bank's job is to keep prices steady. Its target is inflation of 3%, with one percent either side. When prices rise too fast, it presses the brake. Loans cost more, people borrow and spend a little less, and over time prices cool down. Dearer loans aren't a side effect. They're how the brake works.
+
+That's what happened this year. In September, inflation was 4.5%, and fuel prices were pushing it higher. So the Reserve Bank pressed the brake, from 7% to 7.25%.
+
+But a brake on a heavy truck takes time. The Reserve Bank says a change takes roughly 12 to 24 months to work through the economy. That's why it moves in small steps, a quarter at a time.
+
+And when inflation is under control, it can ease off the brake. A cut works exactly the same way, in reverse.
+
+So what happens this Thursday? Economists are split. Some expect another quarter percent up, others expect no change. Nobody knows for sure, which is exactly why it pays to know your number either way.
+
+So what does one small step actually cost? Let's go back to Naledi.
+
+[ch4_example]
+Naledi has three things the repo rate touches: a home loan, a car loan, and some savings. To keep it simple, both loans are at prime.
+
+Her bond: R1.2 million over twenty years. At 10.75%, she pays R12,183 a month. If prime goes to 11%, she pays R12,386. That's R204 more a month. About R2,440 a year.
+
+Her car: R413,000 over six years, about what an average new car loan in South Africa is today. At 10.75%, R7,808 a month. At 11%, R7,861. R53 more.
+
+Her credit card: R20,000 at the legal maximum. A quarter percent more is about R4 a month.
+
+Add it up: about R260 more, every month, from one quarter of one percent.
+
+Now her savings. She has R10,000 in the bank. If her bank passes the full quarter percent on, she earns R25 more. Not a month. A year.
+
+That's the lopsided part. If you owe more than you save, a rate hike costs you far more than it pays you.
+
+And if the rate is cut by a quarter instead? Naledi pays about R202 less on her bond. Same maths, in reverse.
+
+But small steps add up fast. Since May, prime has gone up by half a percent. On Naledi's bond, that's already R403 more a month.
+
+So how do you work out your own number?
+
+[ch5_steps]
+Step one: find your rate. Open your bond, car or credit card statement and look for "prime", plus or minus something. If it says "fixed", your rate won't move for now.
+
+Step two: work out your number. Here's a rule of thumb. On a twenty-year bond, every quarter percent is about R17 a month for every R100,000 you owe. Owe R800,000? That's eight times R17: about R136. On a six-year car loan, it's about R13 per R100,000. So a R300,000 car loan moves by about R38.
+
+Step three: build a buffer. Before Thursday, put that number aside in your budget, as if the rate had already gone up. For Naledi, that's R204. If it doesn't go up, you've saved it.
+
+Step four: pay the expensive debt first. Credit cards and store cards cost up to 21.25% a year. Every rand you pay off there beats almost any savings account.
+
+Step five: make the rate work for you. When rates rise, check what your savings earn, and compare accounts. Some pay much more than others.
+
+And here's the habit I promised. If Naledi pays the higher amount, R12,386, even while her rate is still 10.75%, her bond is paid off about a year early. And she saves more than R112,000 in interest. All from paying R204 extra a month.
+
+[ch6_recap]
+Let's recap.
+
+The repo rate is what the Reserve Bank charges banks. Banks add 3.5% to get prime. Your loans are priced from prime.
+
+A quarter percent on a R1.2 million bond is about R204 a month. Your rule of thumb: R17 per R100,000.
+
+If you owe more than you save, a hike costs you more than it pays you.
+
+Pay the expensive debt first, and if you can, pay a little extra on your bond.
+
+And whatever happens on Thursday, up, down or no change, you now know your number.
+
+If this helped, subscribe to Money From Zero. New Shorts every day, and a full guide like this every week. This is general information, not financial advice.

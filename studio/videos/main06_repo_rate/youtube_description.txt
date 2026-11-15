@@ -1,0 +1,50 @@
+TITLE: Repo Rate Explained: What a 0.25% Change Does to Your Bond, Car and Savings (South Africa 2026)
+
+DESCRIPTION:
+A quarter of a percent on the repo rate adds about R204 a month to a R1.2 million bond, about R53 to a R413,000 car loan, and only about R25 a year to R10,000 in savings. The Reserve Bank's next decision is on Thursday 19 November 2026. Here's what the repo rate is, how it reaches your payslip in three stops, why the Reserve Bank raises it, and how to work out your own number in ten seconds.
+
+Today's rates (SARB, 13 November 2026)
+- Repo rate (the SARB now calls it the policy rate): 7.25%, since 25 September 2026. It was 6.75% before May 2026, then 7.00% from 29 May.
+- Prime lending rate: 10.75% (repo + 3.5 percentage points, a fixed gap since 2001).
+- Legal maximum on credit cards and store cards: repo + 14% = 21.25% a year.
+- Inflation target: 3%, with a tolerance band of 1 percentage point either side. Inflation (CPI) was 4.5% in September 2026.
+
+Rule of thumb
+- 20-year bond: every 0.25% is about R17 a month for every R100,000 you owe (R16.96 at 10.75% to 11%).
+- 6-year car loan: about R13 a month per R100,000 (R12.78).
+
+Chapters
+0:00 Naledi's R1.2 million bond
+1:11 What is the repo rate?
+1:57 Three stops: from the Reserve Bank to your payslip
+3:09 Why the Reserve Bank raises it: the brake pedal
+4:32 Example: what 0.25% costs Naledi
+6:21 5 things to do before Thursday
+7:55 Recap
+
+About the example: Naledi is an illustration. Both loans are at prime for simplicity, with equal monthly payments. Bond R1,200,000 over 20 years: R12,182.75 a month at 10.75%, R12,386.26 at 11.00% (+R203.51 a month, about R2,442 a year); a cut to 10.50% would mean about R202 less. Car R413,000 over 72 months: R7,808.29 at 10.75%, R7,861.07 at 11.00% (+R52.78). Credit card R20,000: +0.25% is about R4.17 a month. Savings R10,000: +0.25% is R25 a year, if your bank passes it on (not every account does). Since May 2026 (prime 10.25% to 10.75%) the bond instalment rose by about R403 a month. Paying R12,386.26 a month on the bond while the rate is 10.75% pays it off in 227 months instead of 240 and saves about R112,600 in interest. The R1.2 million is BetterBond's average first-time buyer home loan (12 months to July 2026); R413,000 is TransUnion's estimated average new vehicle loan (Q4 2025). Your own rate, term and bank may differ: check your statement.
+
+Sources
+- South African Reserve Bank, MPC statement, 23 September 2026: https://www.resbank.co.za/content/dam/sarb/publications/statements/monetary-policy-statements/2026/september/september-statement.pdf
+- SARB, MPC statement, 28 May 2026: https://www.resbank.co.za/content/dam/sarb/publications/statements/monetary-policy-statements/2026/may/may-statement.pdf
+- SARB, current market rates (policy rate and prime): https://custom.resbank.co.za/SarbWebApi/WebIndicators/CurrentMarketRates
+- SARB, What we do: monetary policy (policy rate, inflation target, 12 to 24 months): https://www.resbank.co.za/en/home/what-we-do/monetary-policy
+- SARB, prime cessation paper, 2026 (prime = policy rate + 350 basis points since 2001): https://www.resbank.co.za/en/home/publications/publication-detail-pages/media-releases/2026/prime-cessation-paper
+- SAnews, new 3% inflation target, 12 November 2025: https://www.sanews.gov.za/node/78202
+- SAnews, CPI for September 2026: https://www.sanews.gov.za/node/85109
+- National Credit Regulations, reg 42 (maximum interest rates): https://www.acts.co.za/national-credit-act-2005/r489_42__maximum_prescribed_interest_and_initiation_fees.php
+- BetterBond via Property Professional, 17 August 2026: https://propertyprofessional.co.za/2026/08/17/property-market-holds-firm-as-first-time-buyers-set-a-new-price-record/
+- TransUnion South Africa, Q1 2026 industry report: https://www.transunion.co.za/content/dam/transunion/za/business/mir/documents/26-INT-AF-4461900-MIR-Q1-2026-Report.pdf
+- BusinessTech, 27 October 2026 (economists' views on 19 November): https://businesstech.co.za/news/?p=881553
+
+Related guides on this channel: Black Friday Store Cards Explained, and How to Build an Emergency Fund in South Africa.
+
+What should the next guide be? Tell me in the comments.
+
+New Shorts every day. Full step-by-step guides every week. Subscribe to Money From Zero and learn money from zero.
+
+This video is general information and education only, not financial advice. It does not predict the 19 November decision. Rates differ between banks and loans: check your own statement and credit agreement, or speak to a registered financial adviser, before you decide.
+
+#RepoRate #SouthAfrica #PersonalFinance
+
+TAGS: repo rate, repo rate South Africa, interest rate decision November 2026, prime rate South Africa, prime lending rate, Reserve Bank interest rates, SARB, bond repayments, home loan interest rate, car finance interest, interest rate hike, personal finance South Africa, Money From Zero
