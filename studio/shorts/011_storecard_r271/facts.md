@@ -11,8 +11,10 @@ Re-checked today (15 Nov 2026):
 Not used: the RCS page (29 July 2024) quotes "29.25%" as the NCA maximum; that matched the unsecured-credit cap at the 2024 repo rate, not credit facilities, and is out of date. The 2015 JustMoney table (repo x 2.2 + 10%) is the pre-2016 formula.
 
 ## Example (illustration, re-run in python 15 Nov 2026)
-Thandi: R5,000 TV (Black Friday price; normal price R6,250, so she "saved" R1,250), on a store card at the legal maximums, 36 equal monthly instalments, 21.25% a year, R69 a month service fee, credit life R4.50 per R1,000 on the opening balance each month, no initiation fee (existing card).
+A R5,000 TV (Black Friday price), on a store card at the legal maximums, 36 equal monthly instalments, 21.25% a year, R69 a month service fee, credit life R4.50 per R1,000 on the opening balance each month, no initiation fee (existing card).
 - Instalment R189.02; interest R1,804.64 ("about R1,800"); service fees 36 x R69 = R2,484; credit life R458.59 ("about R460").
 - Total R9,747.23 ("almost R9,750"); R270.76 a month all in ("R271"); extra over R5,000 = R4,747.23 ("about R4,750").
 - 12 months: total R6,572.98 ("about R6,570").
-- Script says the card may charge less than the maximum: check your statement.
+- "Almost double the price": 9,747.23 / 5,000 = 1.95.
+- The description says the card may charge less than the maximum: check your statement.
+- v2 script (42 s) for the 16 Nov Shorts test (hero number + consequence in frame 1, first sentence under 8 words, 35-45 s). The first 60 s take (audio/voice_v1_60s_unused.mp3) was not used.

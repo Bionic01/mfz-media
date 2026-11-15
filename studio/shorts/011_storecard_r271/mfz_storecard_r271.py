@@ -306,72 +306,70 @@ class MFZ_STORECARD_R271(Scene):
             self.add(*group)
             self.P(LaggedStart(*[Restore(t) for t in group], lag_ratio=0.1), *extra, rt=rt)
 
-        # ================= HOOK / LOOP: "only R271 a month" for a R5 000 TV =================
+        # ================= HOOK / LOOP: R271 a month -> you pay R9 750 (both on screen from frame 1) =================
+        def hook_layout():
+            tv = tv_icon(0.95, "R5 000").move_to([0, 4.75, 0])
+            pm = tiles("R271", 1.1, 1.55, GOLD).move_to([0, 1.95, 0])
+            pm_l = bold("A MONTH", 84, TEXT).next_to(pm, DOWN, buff=0.22)
+            pay = label("you pay", 60, MUTED).move_to([0, -0.55, 0])
+            big = tiles("R9 750", 1.0, 1.45, RED).move_to([0, -1.75, 0])
+            return tv, pm, pm_l, pay, big
+
         def hook_scene(key, ending=False):
-            tv = tv_icon(1.1, "R5 000").move_to([0, 4.55, 0])
-            pm = tiles("R271", 1.25, 1.75, GOLD).move_to([0, 0.45, 0])
-            pm_l = bold("A MONTH", 96, TEXT).next_to(pm, DOWN, buff=0.3)
-            only = label("only", 64, MUTED).next_to(pm, UP, buff=0.25).align_to(pm, LEFT)
+            tv, pm, pm_l, pay, big = hook_layout()
+            allg = VGroup(tv, pm, pm_l, pay, big)
             if not ending:
-                # the very first frame is already full: TV, "only", "A MONTH"; the R271 tiles flip in at once
-                self.add(tv, only, pm_l)
-                flip_in(pm, rt=0.45)
-                self.live = VGroup(tv, pm, pm_l, only)
-                self.at(wt(key, "store") - 0.15)
-                card = store_card(0.75).move_to([0, -2.35, 0]).rotate(0.08)
-                self.P(FadeIn(card, shift=UP * 0.6), rt=0.35)
-                self.live = VGroup(tv, pm, pm_l, only, card)
-                self.at(wt(key, "almost") - 0.1)
-                big = tiles("R9 750", 1.15, 1.65, RED).move_to([0, 0.45, 0])
-                cost = bold("REAL COST", 96, RED).next_to(big, DOWN, buff=0.3)
-                self.P(FadeOut(pm), FadeOut(pm_l), FadeOut(only), FadeOut(card, shift=DOWN * 0.4), rt=0.15)
-                flip_in(big, rt=0.5, extra=(FadeIn(cost, scale=1.2),))
-                self.P(Wiggle(tv), rt=0.5)
-                self.live = VGroup(tv, big, cost)
-                return VGroup(tv, big, cost)
+                self.add(allg)
+                self.live = allg
+                self.P(Wiggle(pm, scale_value=1.06), rt=0.6)
+                self.at(wt(key, "pay") - 0.15)
+                self.P(Indicate(pay, color=TEXT, scale_factor=1.2), rt=0.4)
+                self.at(wt(key, "9,750") - 0.2)
+                self.P(Wiggle(big, scale_value=1.1), Wiggle(tv, scale_value=1.04), rt=0.6)
+                return allg
             else:
                 self.at(key)
                 self.P(FadeIn(tv, scale=0.85), rt=0.3)
                 self.live = VGroup(tv)
                 self.at(wt(key, "only") - 0.15)
-                flip_in(pm, rt=0.5, extra=(FadeIn(only), FadeIn(pm_l, shift=UP * 0.2)))
-                self.live = VGroup(tv, pm, pm_l, only)
+                flip_in(pm, rt=0.45, extra=(FadeIn(pm_l, shift=UP * 0.2),))
+                self.live = VGroup(tv, pm, pm_l)
+                self.at(wt(key, "month") - 0.1)
+                flip_in(big, rt=0.45, extra=(FadeIn(pay),))
+                self.live = allg
                 self.at(END)
 
         hook_grp = hook_scene("hook")
 
-        # ================= THANDI: Black Friday, store card, 36 months, legal maximums =================
-        th = person(GOLD, 1.7).move_to([-2.4, 4.7, 0])
-        th_t = bold("THANDI", 84, GOLD).next_to(th, DOWN, buff=0.2)
-        tv2 = tv_icon(0.75, "R5 000").move_to([1.9, 4.6, 0])
+        # ================= SETUP: R5 000 TV, Black Friday, store card, 36 months, legal maximums =================
+        tv2 = tv_icon(0.95, "R5 000").move_to([0, 4.6, 0])
         bf = RoundedRectangle(corner_radius=0.15, width=6.4, height=1.2, stroke_width=0, fill_color=TEXT,
-                              fill_opacity=1).move_to([0, 1.35, 0])
+                              fill_opacity=1).move_to([0, 1.55, 0])
         bf_t = bold("BLACK FRIDAY", 100, BG).scale_to_fit_height(0.8).move_to(bf)
         bfg = VGroup(bf, bf_t).rotate(0.04)
-        cal = calendar_icon("36", 1.0, GOLD).move_to([-1.9, -0.7, 0])
+        cal = calendar_icon("36", 1.0, GOLD).move_to([-1.9, -0.6, 0])
         cal_l = bold("MONTHS", 84, TEXT).next_to(cal, RIGHT, buff=0.4)
         mx_box = RoundedRectangle(corner_radius=0.2, width=7.4, height=1.4, color=RED, stroke_width=8,
-                                  fill_color=RED, fill_opacity=0.12).move_to([0, -2.95, 0])
+                                  fill_color=RED, fill_opacity=0.12).move_to([0, -2.85, 0])
         mx = bold("LEGAL MAXIMUMS", 120, RED).scale_to_fit_width(6.6).move_to(mx_box)
         mxg = VGroup(mx_box, mx).rotate(-0.06)
-        self.at("thandi")
-        self.P(FadeOut(hook_grp), FadeIn(th, shift=UP * 0.4), FadeIn(th_t), rt=0.3)
-        self.P(FadeIn(tv2, shift=LEFT * 0.5), rt=0.3)
-        self.live = VGroup(th, th_t, tv2)
-        self.at(wt("thandi", "Black") - 0.15)
+        self.at("setup")
+        self.P(FadeOut(hook_grp), FadeIn(tv2, scale=0.8), rt=0.3)
+        self.live = VGroup(tv2)
+        self.at(wt("setup", "Black") - 0.15)
         self.P(FadeIn(bfg, scale=1.3), rt=0.35)
-        self.live = VGroup(th, th_t, tv2, bfg)
-        self.at(wt("thandi", "store") - 0.15)
-        card2 = store_card(0.55).move_to(th.get_center() + [0.9, -0.6, 0]).rotate(0.25)
-        self.P(FadeIn(card2, scale=0.5), rt=0.3)
-        self.live = VGroup(th, th_t, tv2, bfg, card2)
-        self.at(wt("thandi", "36") - 0.2)
+        self.live = VGroup(tv2, bfg)
+        self.at(wt("setup", "store") - 0.15)
+        card2 = store_card(0.6).move_to([-2.6, 3.4, 0]).rotate(0.25)
+        self.P(FadeIn(card2, shift=RIGHT * 0.5), rt=0.3)
+        self.live = VGroup(tv2, bfg, card2)
+        self.at(wt("setup", "36") - 0.2)
         self.P(FadeIn(cal, shift=UP * 0.3), FadeIn(cal_l, shift=LEFT * 0.3), rt=0.35)
-        self.live = VGroup(th, th_t, tv2, bfg, card2, cal, cal_l)
-        self.at(wt("thandi", "legal") - 0.15)
+        self.live = VGroup(tv2, bfg, card2, cal, cal_l)
+        self.at(wt("setup", "legal") - 0.15)
         self.P(FadeIn(mxg, scale=1.5), rt=0.3)
         self.P(Wiggle(mxg, scale_value=1.05), rt=0.45)
-        th_grp = VGroup(th, th_t, tv2, bfg, card2, cal, cal_l, mxg)
+        th_grp = VGroup(tv2, bfg, card2, cal, cal_l, mxg)
         self.live = th_grp
 
         # ================= THE STACK: R5 000 + interest + fees + credit life =================
@@ -431,6 +429,8 @@ class MFZ_STORECARD_R271(Scene):
         self.at("fee")
         fee = VGroup(bold("R69", 130, GOLD), bold("× 36", 100, TEXT)).arrange(RIGHT, buff=0.3).move_to([RX - 0.05, 4.9, 0])
         fee_l = label("service fee, every month", 42, MUTED).next_to(fee, DOWN, buff=0.15)
+        fee_l.scale_to_fit_width(min(fee_l.width, 3.9))
+        VGroup(fee, fee_l).shift(LEFT * max(0, VGroup(fee, fee_l).get_right()[0] - 3.85))
         self.P(FadeIn(fee, scale=1.2), FadeIn(fee_l), rt=0.35)
         self.live = VGroup(stack, fee, fee_l)
         self.at(wt("fee", "2,484") - 0.25)
@@ -456,30 +456,18 @@ class MFZ_STORECARD_R271(Scene):
         stack.add(b3, s3)
         self.live = stack
 
-        # ================= TOTAL: almost R9 750; R4 750 extra vs R1 250 saved =================
+        # ================= TOTAL: almost double the price (R9 750, +R4 750) =================
         self.at("total")
         tot = tiles("R9 750", 0.62, 0.9, RED, gap=0.04).move_to([RX + 0.05, 5.6, 0])
         brace = Brace(VGroup(b1, b2, b3), RIGHT, color=TEXT)
-        self.P(FadeOut(VGroup(s1, s2, s3)), Indicate(b0_t, color=GOLD, scale_factor=1.15), rt=0.35)
-        self.live = VGroup(b0, b0_t, b0_s, b1, b2, b3)
-        self.at(wt("total", "almost") - 0.15)
-        flip_in(tot, rt=0.5)
-        self.live = VGroup(b0, b0_t, b0_s, b1, b2, b3, tot)
-        self.at(wt("total", "About") - 0.15)
         brace.next_to(VGroup(b1, b2, b3), RIGHT, buff=0.15)
-        extra = VGroup(bold("+R4 750", 110, RED), label("extra", 56, RED)).arrange(DOWN, buff=0.05, aligned_edge=LEFT)
+        extra = VGroup(bold("+R4 750", 110, RED), label("almost double", 50, RED)).arrange(DOWN, buff=0.05, aligned_edge=LEFT)
         extra.scale_to_fit_width(min(extra.width, 3.3))
         extra.next_to(brace, RIGHT, buff=0.25)
-        self.P(GrowFromCenter(brace), FadeIn(extra, shift=LEFT * 0.3), rt=0.45)
-        self.live = VGroup(b0, b0_t, b0_s, b1, b2, b3, tot, brace, extra)
-        self.at(wt("total", "saved") - 0.15)
-        saved = VGroup(tick_icon(GREEN, 0.3), VGroup(label("saved", 48, GREEN), bold("R1 250", 90, GREEN)).arrange(DOWN, buff=0.05, aligned_edge=LEFT)).arrange(RIGHT, buff=0.2)
-        saved.scale_to_fit_width(min(saved.width, 3.3))
-        saved.next_to(b0, RIGHT, buff=0.35).shift(UP * 0.6)
-        self.P(FadeIn(saved, shift=UP * 0.2), rt=0.35)
-        self.at(wt("total", "on", 2) - 0.1)
-        self.P(saved.animate.set_opacity(0.5), Indicate(extra, color=RED, scale_factor=1.06), rt=0.45)
-        tot_grp = VGroup(b0, b0_t, b0_s, b1, b2, b3, tot, brace, extra, saved)
+        self.P(FadeOut(VGroup(s1, s2, s3)), GrowFromCenter(brace), FadeIn(extra, shift=LEFT * 0.3), rt=0.35)
+        flip_in(tot, rt=0.45)
+        self.P(Indicate(extra, color=RED, scale_factor=1.06), rt=0.4)
+        tot_grp = VGroup(b0, b0_t, b0_s, b1, b2, b3, tot, brace, extra)
         self.live = tot_grp
 
         # ================= SHORTER / SAVE FIRST =================
@@ -505,7 +493,7 @@ class MFZ_STORECARD_R271(Scene):
         self.at(wt("short", "6,570") - 0.2)
         self.P(FadeIn(v12, shift=UP * 0.2), rt=0.3)
         self.live = VGroup(r36, v36, l36, r12, v12, l12)
-        self.at(wt("short", "Better") - 0.15)
+        self.at(wt("short", "Cheapest") - 0.15)
         bars = VGroup(r36, v36, l36, r12, v12, l12)
         jar = jar_icon(0.85).move_to([-1.6, 4.0, 0])
         coins = VGroup(*[coin(0.34) for _ in range(6)])
@@ -526,23 +514,6 @@ class MFZ_STORECARD_R271(Scene):
         sv_grp = VGroup(jar, coins, sf, pc, tv3)
         self.live = sv_grp
 
-        # ================= CHECK YOUR STATEMENT =================
-        self.at("check")
-        st = statement_icon(1.15).move_to([0, 2.9, 0])
-        ln = lens_icon(1.0).move_to(st.get_center() + [1.5, -0.3, 0])
-        less = bold("MAY CHARGE LESS", 110, TEXT).scale_to_fit_width(7.0).move_to([0, -0.85, 0])
-        chk = VGroup(tick_icon(GOLD, 0.45), bold("CHECK IT", 120, GOLD)).arrange(RIGHT, buff=0.3).move_to([0, -2.5, 0])
-        self.P(FadeOut(sv_grp), FadeIn(st, shift=UP * 0.4), rt=0.3)
-        self.live = VGroup(st)
-        self.at(wt("check", "less") - 0.2)
-        self.P(FadeIn(less, scale=1.15), rt=0.3)
-        self.live = VGroup(st, less)
-        self.at(wt("check", "check") - 0.15)
-        self.P(FadeIn(ln, shift=UP * 0.4 + LEFT * 0.4), FadeIn(chk, scale=1.2), rt=0.35)
-        self.P(ln.animate.shift(LEFT * 1.4 + UP * 0.6), rt=0.6)
-        ck_grp = VGroup(st, ln, less, chk)
-        self.live = ck_grp
-
         # ================= GUIDE =================
         card = RoundedRectangle(corner_radius=0.35, width=8.0, height=3.8, color=GOLD, stroke_width=6,
                                 fill_color=PANEL, fill_opacity=1).move_to([0, 3.0, 0])
@@ -554,7 +525,7 @@ class MFZ_STORECARD_R271(Scene):
         fpill_t = bold("+ FOLLOW", 66, BG).move_to(fpill)
         disc = label("General information, not financial advice.", 34, MUTED).move_to([0, -1.7, 0])
         self.at(CUE["guide"][0] - 0.1)
-        self.P(FadeOut(ck_grp), rt=0.25)
+        self.P(FadeOut(sv_grp), rt=0.25)
         self.P(DrawBorderThenFill(card), FadeIn(g1), FadeIn(g2), FadeIn(g3), rt=0.55)
         self.live = VGroup(card, g1, g2, g3)
         self.at(wt("guide", "channel") - 0.2)

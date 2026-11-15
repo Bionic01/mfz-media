@@ -1,6 +1,6 @@
 """Word timings (free transcription of the TTS node) -> words_raw.json, words_B.json (on-screen R amounts), timings.json."""
 import json, re
-LEAD, TAIL, TEMPO = 0.15, 0.55, 1.04  # voice sped up 4% (atempo) to fit 60 s
+LEAD, TAIL, TEMPO = 0.15, 0.55, 1.0  # TEMPO: 1.0 = voice at its natural speed
 raw = [w for w in json.load(open("words_raw_dl.json"))["words"] if w["type"] == "word"]
 raw = [[w["text"], round(w["start"] / TEMPO + LEAD, 3), round(w["end"] / TEMPO + LEAD, 3)] for w in raw]
 json.dump(raw, open("words_raw.json", "w"))
@@ -29,7 +29,7 @@ while j < len(raw):
     out.append(raw[j]); j += 1
 json.dump(out, open("words_B.json", "w"), ensure_ascii=False)
 dur = round(raw[-1][2] + TAIL, 2)
-json.dump({"voice": "Darius (ElevenLabs eleven_v4) single take, 15 Nov 2026, atempo 1.04", "duration": dur, "lines": lines},
+json.dump({"voice": "Darius (ElevenLabs eleven_v4) single take (v2, 42 s script for the 16 Nov Shorts length test), 15 Nov 2026", "duration": dur, "lines": lines},
           open("timings.json", "w"), indent=1)
 for l in lines: print(f'{l["key"]:8s} {l["start"]:6.2f} {l["end"]:6.2f}')
 print("duration", dur); print(" ".join(w[0] for w in out))
