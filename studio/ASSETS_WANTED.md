@@ -42,11 +42,12 @@ only news media are exempt, s4.2). Rand notes stay stylised.
 | Video (slot) | Photos (people, buildings) | Clips he films | Logos still missing |
 |---|---|---|---|
 | Repo rate explained (Wed 18 Nov) | RECEIVED: Kganyago, SARB building, SARB logos, a car dealership (Jetour, Commons, small copy), houses | Optional: a South African dealership forecourt (wide, no plates) | none |
-| Debt review vs consolidation vs counselling (Fri 20 Nov) | none | none | NCR (National Credit Regulator) |
-| Savings vs money market vs fixed deposit (Mon 23 Nov) | A bank branch or ATM from outside (not a Capitec one) | Optional: same | none |
-| Car finance and balloon payments (Wed 25 Nov) | RECEIVED: car dealership (Commons, from the repo-rate video) | Optional: a dealership forecourt (wide, no plates) | none |
+| Steinhoff (Fri 20 Nov) | No free photos of Jooste, Wiese or Steinhoff's office exist (Forbes/news photos were not used): show names, logos, buildings. RECEIVED: JSE building (Commons). Pepkor building: free on Commons | A PEP or Ackermans shopfront he films himself (wide) | none (JSE, Pepkor, Ackermans received) |
+| Debt review vs consolidation vs counselling (Mon 23 Nov) | none | none | NCR (National Credit Regulator) |
+| VBS Mutual Bank (Wed 9 Dec) | VBS head office or branch, Thohoyandou. No free photos of Motau or Matodzi exist (the ones sent were not used) | A bank branch or ATM from outside (not a Capitec one) | none (CODI received) |
+| How Shoprite makes money (Wed 25 Nov) | No free photos of Basson, Wiese or Engelbrecht exist (the ones sent were not used). Shoprite Zeerust and Checkers Durbanville are free on Commons; a Money Market counter; a Usave store | Store entrance; the Money Market counter (no faces) | Usave (Checkers received) |
 | Bonus / 13th cheque (Fri 27 Nov) | none | none | SARS |
-| How to cut your electricity bill (Mon 30 Nov) | Optional: a prepaid electricity slip with the numbers covered | RECEIVED: typing a token into a prepaid meter (kit/footage) | none |
-| How the petrol price is set (Wed 2 Dec) | A South African price board; a refinery (Natref or Sasol Secunda) | The price board. RECEIVED: the pump counter running (kit/footage) | DMPR |
-| Festive season on a budget (Fri 4 Dec) | none | Optional: a busy mall or festive aisle | none |
-| How to start a stokvel (Mon 7 Dec) | A stokvel meeting or a December grocery stokvel (with everyone's OK) | Same, optional | NASASA |
+| How Eskom went broke (Mon 30 Nov) | Medupi and Kusile; Megawatt Park; Dan Marokane (CEO); Andre de Ruyter (CEO 2020-2023); a dark street in load shedding | RECEIVED: typing a token into a prepaid meter (kit/footage) | none |
+| How the petrol price is set, and how to spend less on fuel (Wed 2 Dec) | A South African price board; a refinery (Natref or Sasol Secunda) | The price board. RECEIVED: the pump counter running (kit/footage) | DMPR |
+| Festive season on a budget (Mon 7 Dec) | none | Optional: a busy mall or festive aisle | none |
+| Stokvels (Fri 4 Dec) | A stokvel meeting or a December grocery stokvel (with everyone's OK) | Same, optional | NASASA |
