@@ -323,6 +323,8 @@ T3.network = (a, b, o) => shot3(a, b, Object.assign({ pal: 'network' }, o), (S, 
 /** Fireship "receipt": a source card in 3D with the key words highlighted on time.
     { source: 'GSMA · State of the Industry Report 2018', lines: ['...'], mark: 'over 90 per cent' (substring to highlight), markAt, quote: true } */
 T3.receipt = (a, b, o) => shot3(a, b, o, (S, u, pal) => {
+  /* EcoCash v2 (15 Nov 2026): a 56-character source label ran under the channel logo as the camera pushed in. Keep it short. */
+  if ((o.source || '').length > 48) console.warn(`receipt at ${a}s: source label is ${o.source.length} characters (keep it to 48 or fewer so it never runs under the logo): ${o.source}`);
   S.add(floor(pal, { gridA: .35 })); const W2 = 1400, H2 = 760; const card = GL.canvasTex(W2, H2);
   /* colour pass: dark card with a palette-coloured header instead of white paper (o.paper keeps the old white card) */
   const edge = o.paper ? '#d9d5cc' : '#1b2333'; const m = GL.mesh(GL.rbox(5.6, 3.04, .06, .08, 3), [GL.M.matte(edge), GL.M.matte(edge), GL.M.matte(edge), GL.M.matte(edge), new T.MeshStandardMaterial({ map: card.tex, roughness: .8, color: o.paper ? '#cfcbc4' : '#ffffff' }), GL.M.matte(edge)]); m.position.set(0, 1.9, 0); S.scene.add(m);
