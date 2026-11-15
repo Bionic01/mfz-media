@@ -135,7 +135,7 @@ His words (11 Nov 2026, 23:36): "you're supposed to self-heal, always improving 
    - Every number from a source checked on the day; sources in the description.
 7. **Sound level (Rodney, 11 Nov 2026 23:38: "reduce the volume for all the tones and music by 50%. I find it kind of irritating"):** music and effects are now at half the 10 Nov level in `engine/audio.py` (music .03, effects .09375). Never raise them; go lower with `--music`/`--sfx` below 1 if a mix still sounds busy.
 
-**Engagement (Rodney, 11 Nov 2026 23:50: "The goal is to have engagement, very high engagement with the stories"; 23:46: "high quality, non-stop motion, like no errors").** The aim is that viewers watch to the end. Every script and every scene must do this:
+**Engagement (Rodney, 11 Nov 2026 23:50: "The goal is to have engagement, very high engagement with the stories"; 23:46: "high quality, non-stop motion, like no errors").** **Money From Zero makes how-tos only (Rodney, 15 Nov 2026: "moneyfzero shouldn't mix stories and money teaching"):** in the rules below, "the story" means the worked example told through a person with a money problem, never a company or history story. The aim is that viewers watch to the end. Every script and every scene must do this:
 - **Cold open:** the first 5 seconds show the most surprising picture or number in the story and ask the question the video answers. No logo intro, no "welcome back".
 - **Stakes and promise in the first 20 seconds:** why this matters to the viewer, and what they'll understand by the end.
 - **Follow a person:** give the story a face (a sender, a shop owner, a grandmother) with a name and a problem, and come back to them; people remember people, not facts.
