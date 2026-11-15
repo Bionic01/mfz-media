@@ -68,7 +68,7 @@ _From 9 Nov, switch to two-pot (main02 goes live 9 Nov 16:00). Don't post more t
 
 ## Shorts from main05 (Black Friday and store cards, live 16 Nov 16:00)
 - Black Friday: she saved R1,250 on a TV and paid R1,570 more on a store card (12 months at the legal maximums; facts.md).
-- Store cards: "only R271 a month" = almost R9,750 for a R5,000 TV over 36 months.
+- ~~Store cards: "only R271 a month" = almost R9,750 for a R5,000 TV over 36 months.~~ USED: Short 011, 16 Nov 2026 (43 s, first Short of the 16 Nov length test; also shows +R1,800 interest, +R2,484 fees, +R460 credit life, R6,570 over 12 months; the R1,250 "saved" framing and the R69 fee Short are still free, but don't repeat the stack layout in the next store-card Short).
 - Store cards: the R69 service fee alone is R2,484 over 36 months.
 - Credit life: you can use your own policy instead (NCA s106(4)).
 - Store-card interest cap = repo + 14% = 21.25% today (re-check after the 19 Nov MPC decision).
