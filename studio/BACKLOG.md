@@ -3,20 +3,22 @@
 Take topics from the top of each list. Move a topic to LOG.md once it's published. Re-check every figure on the day you use it.
 
 ## Long videos (8–9 min): run order. Take the top unused topic.
-_Re-planned 10 Nov 2026 with Rodney's approval: each week, **two money stories and one how-to**. Money stories are big South African company and money stories told simply, so they can pull more views than plain how-tos; each one ends with a clear "what this means for you" lesson for beginners and links to a related how-to. Timely how-tos keep their dates. The suggested slots fit the Mon/Wed/Fri 16:00 cadence; move them if production slips, but keep the deadlines. Partner companies (Flash/1Voucher, Blue Label/Blu Voucher, OTT, Lesaka/4ALL Voucher) stay factual and neutral. Every figure, date and claim is verified on the day from primary sources; scandal stories use court findings, official reports and reputable news only, and say "alleged" where nothing has been proven._
-1. **HOW-TO: The repo rate explained: what a 0.25% change does to your bond, car payment and savings (SA).** Suggested slot: **Wed 18 Nov**, the day before the MPC decision on **Thu 19 Nov 2026**. Use current figures (repo 7.25%, prime 10.75% since 25 Sep; verify on the day) and work the repayment changes out in python. Keep it evergreen: no prediction of the decision.
-2. **STORY: Steinhoff: South Africa's biggest corporate fraud, explained simply.** Suggested slot: **Fri 20 Nov**. Lesson: why one company should never be all your savings, and the warning signs.
+_Re-planned 10 Nov 2026 with Rodney's approval: each week, **two money stories and one how-to**. Money stories are big South African company and money stories told simply, so they can pull more views than plain how-tos; each one ends with a clear "what this means for you" lesson for beginners and links to a related how-to. Timely how-tos keep their dates. The suggested slots fit the Mon/Wed/Fri 16:00 cadence; move them if production slips, but keep the deadlines. Partner companies (Flash/1Voucher, Blu Label Unlimited Group (formerly Blue Label Telecoms)/Blu Voucher, OTT, Lesaka/4ALL Voucher) stay factual and neutral. Every figure, date and claim is verified on the day from primary sources; scandal stories use court findings, official reports and reputable news only, and say "alleged" where nothing has been proven._
+_Re-ranked 15 Nov 2026 (weekly review): order kept because every dated slot still fits the calendar and nothing has data yet to overturn it. Changes: names updated (Ibex, Capitec Limited, Blu Label), credit score moved up (in-demand search, fits "January is broke"), two-pot repeat-withdrawal Short moved up (Momentum: 55% withdrew more than once; FAnews 10 Nov 2026). **No long video is scheduled yet for Wed 18 Nov: make the repo-rate video in the Tue 17 Nov run.**_
+1. **HOW-TO: The repo rate explained: what a 0.25% change does to your bond, car payment and savings (SA).** Suggested slot: **Wed 18 Nov**, the day before the MPC decision on **Thu 19 Nov 2026**. Use current figures (repo 7.25%, prime 10.75% since 25 Sep; verify on the day) and work the repayment changes out in python. Keep it evergreen: no prediction of the decision (economists are split: Nedbank expects +25bp, Investec and Old Mutual a hold; BusinessTech 27 Oct 2026). Search phrases: "repo rate", "interest rate decision November 2026", "prime rate South Africa".
+2. **STORY: Steinhoff: South Africa's biggest corporate fraud, explained simply.** Suggested slot: **Fri 20 Nov**. End on where things stand: what's left is Ibex Investment Holdings, which sold its whole Pepkor stake in Jul 2025 (The Herald, 22 Jul 2025; verify on the day). Lesson: why one company should never be all your savings, and the warning signs.
 3. **STORY: VBS Mutual Bank: how a bank for ordinary people was looted.** Suggested slot: **Mon 23 Nov**. Lesson: what deposit insurance (CODI) covers today and how to check your bank.
 4. **STORY: How Shoprite makes money, and why it's in every town.** Suggested slot: **Wed 25 Nov**. Lesson: how retailers' money services (sending money, accounts) work and what they cost.
-5. **HOW-TO: Your bonus or 13th cheque: what to do with it**: the tax on a bonus, debt first, and the TFSA/RA top-up. Suggested slot: **Fri 27 Nov**, before December pay day.
+5. **HOW-TO: Your bonus or 13th cheque: how it's taxed and what to do with it**: (search: "bonus tax", "how is my 13th cheque taxed") the tax on a bonus, debt first, and the TFSA/RA top-up. Suggested slot: **Fri 27 Nov**, before December pay day.
 6. **STORY: How Eskom went broke, and what it costs you every month.** Suggested slot: **Mon 30 Nov**. Lesson: where your electricity rand goes and how tariff increases hit a household budget.
-7. **STORY: Why the petrol price changes every month.** Suggested slot: **Wed 2 Dec** (the December pump-price change). Explain how the price is built; use the official DMPR figures only if they are out, otherwise keep it evergreen.
+7. **STORY: Why the petrol price changes every month.** Suggested slot: **Wed 2 Dec** (the December pump-price change; mid-month data point to petrol about R1.80/l down and diesel up, EWN 10 Nov: predictions only). Explain how the price is built; use the official DMPR figures only if they are out, otherwise keep it evergreen.
 8. **HOW-TO: Festive season on a budget: how not to start January broke.** Suggested slot: **Fri 4 Dec**. This also seeds the January-reset topic.
 9. **STORY: Stokvels: how ordinary people move billions.** Suggested slot: **Mon 7 Dec** (December payouts). Lesson: how to protect your stokvel money.
-10. **STORY: How Pep and Mr Price sell so cheap.**
-11. **HOW-TO: Your credit score in South Africa**: how to check it free and how to improve it.
-12. **STORY: African Bank: how a lender collapsed, and the lesson for borrowers.**
-13. **STORY: How GoTyme Bank (formerly TymeBank) grew with no branches.** It was renamed GoTyme Bank in early 2026; check the latest customer numbers.
+9b. **HOW-TO: Your credit score in South Africa: how to check it free and how to improve it.** Moved up 15 Nov ("check credit score free" is an in-demand search; debt stress before December: TransUnion Q2 2026, 39% expect to miss a payment). Suggested slot: Wed 9 Dec.
+10. **STORY: How Pep and Mr Price sell so cheap.** (Pep's owner Pepkor plans a bank launch in 2027: News24 31 Mar 2026; verify.)
+11. (moved up as 9b)
+12. **STORY: African Bank: how a lender collapsed, and the lesson for borrowers.** (Still African Bank; IPO pushed back to about 2028: verify.)
+13. **STORY: How GoTyme Bank (formerly TymeBank) grew with no branches.** Rebrand made official by a SARB notice on 13 Apr 2026 (Financial Afrik); check the latest customer numbers.
 14. **HOW-TO: Provisional tax for side hustles and freelancers (SA).** Post in early January, before the **22 Jan 2027** filing deadline for provisional taxpayers. Verify on sars.gov.za.
 15. **STORY: How Takealot makes money.**
 16. **STORY: Why bread costs what it does: inflation explained with one loaf.**
@@ -48,6 +50,7 @@ _From 9 Nov, switch to two-pot (main02 goes live 9 Nov 16:00). Don't post more t
 - TFSA: R500,000 in, about R2.7 million at 65 (illustration).
 - ~~Two-pot: you withdraw R20,000 and get about R14,450.~~ USED: Short 004, 9 Nov 2026 (framed as SARS takes R5,200, R14,800 left before the fund's fee).
 - ~~Two-pot: it's called two-pot, but there are 3 pots.~~ USED: Short 005, 10 Nov 2026 (2nd two-pot Short in a row; next Short should switch topic or be the 3rd and last two-pot).
+- **Next two-pot Short (moved up 15 Nov):** more than half withdraw again: Momentum's Funds at Work survey, 55% of those who withdrew did so more than once (FAnews, 10 Nov 2026); frame it as a rand cost ("withdraw R10,000 twice, lose R..."; work it out in python on the day).
 - Two-pot: 62% of claims are third withdrawals (Momentum, March 2026).
 - Two-pot: don't apply at the end of February.
 - Two-pot: R320 fee = 16% of a R2,000 withdrawal.
@@ -71,6 +74,7 @@ _From 9 Nov, switch to two-pot (main02 goes live 9 Nov 16:00). Don't post more t
 - Store-card interest cap = repo + 14% = 21.25% today (re-check after the 19 Nov MPC decision).
 
 ## Timely Shorts (post only with official figures, on the day)
+_Shorts format test from 16 Nov (PLAYBOOK): rand number + consequence in frame 1, 35–45 s._
 - **Thu 19 Nov or Fri 20 Nov:** the SARB decision in one number: what it changes on a R1 million bond. Use the SARB statement only.
 - **Mon 30 Nov to Wed 2 Dec:** December fuel price: what the official DMPR change and the smaller levy relief mean for a 50-litre tank. Use the DMPR release only; early CEF data are predictions.
 - **Week of 23 Nov:** Black Friday: the store-card cost of a R5,000 TV paid off over 12 months (cut from main05; re-check the cap if the repo rate changes on 19 Nov).

@@ -49,6 +49,7 @@ Read this whole file, and `STRATEGY.md` (goals, monetisation rules, learnings), 
    - Mark proposals as proposals.
 3. **Script:** write `script.md` with `[chapter_key]` markers, about 1,250–1,350 words. That gives 8–9 minutes, which is over 8 minutes so mid-roll ads are possible.
    - Open with a hook built on a concrete rand figure.
+   - **Answer the title in the first 30 seconds (15 Nov 2026 review: main02 two-pot averaged 0:28 per view):** one sentence that gives the headline answer ("withdraw R20,000 and you keep about R14,800") before "Let's start from zero"; the rest of the video is the how and the why.
    - Say "Let's start from zero" at the end of the intro.
    - Then chapters, a worked example with real 2026/27 numbers, traps, step-by-step how-to, and a recap.
    - End with: "If this helped, subscribe to Money From Zero. New Shorts every day, and a full guide like this every week."
@@ -74,7 +75,7 @@ Read this whole file, and `STRATEGY.md` (goals, monetisation rules, learnings), 
     - Check it at 640x360.
 11. **Subtitles:** `python3 ../../tools/make_srt.py <name>.en.srt`.
 12. **Metadata:** write `youtube_description.txt`:
-    - Title of at most 100 characters, starting with the search phrase.
+    - Title of at most 100 characters, starting with the search phrase. Don't end a title on a question mark (vidIQ 2026 title study: question endings ~0.82x average views; observational).
     - Description with the basics, chapters (first one at 0:00), notes on the example, sources, and the disclaimer.
     - 13 tags.
 13. **Publish:** see below. Then add a line to `studio/LOG.md`.
@@ -89,6 +90,7 @@ Read this whole file, and `STRATEGY.md` (goals, monetisation rules, learnings), 
 - **Assembly:** `assemble.sh` burns in the captions at CRF 14 and muxes the voice. If the result is over 95 MB, raise the CRF.
 - Title of at most 60 characters ending in one hashtag, plus 3 hashtags in the description.
 - A good Short cuts down one chapter of the latest long video and points viewers to the full guide.
+- **First second and length (15 Nov 2026 review, test until 22 Nov):** Shorts 001–005 were watched for 6–14 s of about 55 s; the best (002, 47 views) put a specific rand number and its consequence in the title. So: the hero number and what it does to the viewer are on screen in frame 1, the first spoken sentence is under 8 words, and the Short runs 35–45 s. Titles: a rand number + a consequence, never a plain topic label.
 - **Topic rotation (added 8 Nov 2026):** don't post more than 3 Shorts in a row on the same topic. Once a new long guide goes live, the next Shorts point to it. This is a test, because the first 4 Shorts were all TFSA. Review it once per-Short views exist.
 - **Timely Shorts:** after a SARB rate decision or an official fuel-price announcement, a Short that day or the next may replace the planned one. Use only the official figures (SARB statement, DMPR media release), never forecasts presented as fact.
 
@@ -123,6 +125,8 @@ His words (11 Nov 2026, 23:36): "you're supposed to self-heal, always improving 
 4. **After publishing:** add an entry to `studio/VIDEO_REVIEWS.md`: what is better than the last video, what is still weak (be honest: hook, slow or empty moments, repeated shot types, sound), and a "Next bar" list of 2 or 3 concrete upgrades for the next video.
 5. **Sunday review:** add the numbers (average view duration, where viewers drop, click-through rate) to the entries and turn them into the next bar.
 6. **Monetisation safety, every video, both channels:**
+   - **No template look (YouTube inauthentic-content policy, clarified 16 Jul 2026: "looks like it's made with a template"):** no shot template more than 6 times in one long video, never the same template in two shots back to back, and at least one third of shots hand-made for that video. Shorts never share a layout with the previous Short on the same topic.
+   - **No AI persona (same policy: AI personas on finance are not monetisable):** the AI voice is a narrator, never presented as a real person, a named adviser or "your financial adviser"; no AI-made face or avatar presents; never give personal advice ("you should buy X"), only general rules with sources and the disclaimer.
    - Original work only: our own research, script, voice and animation. Never reuse another video's shots or re-skin a template with new words (YouTube's inauthentic-content rule refuses ads on mass-produced or repetitive videos).
    - Nothing we don't own: music and effects are made in code; no clips, photos, footage or songs from anyone else. Brand logos only on thumbnails, small, from Rodney's files, to name the topic, never so it looks like the brand made, sponsors or endorses the video.
    - Honest packaging: the title and thumbnail promise only what the video delivers.

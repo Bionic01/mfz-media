@@ -12,13 +12,15 @@ How this file works (see "Better every video" in PLAYBOOK.md): every new video s
   1. No template more than 6 times in a video; replace the extra bar charts with acted scenes (people handing over money, a statement being read).
   2. A third recurring character or a crowd/street shot in every chapter, so the "world" shots are more than the shop and the till.
   3. qa.py passes on the first full render again, and the first 5 seconds show the hero number on screen as it is said.
-- **Numbers (Sunday review):** not available yet.
+  4. (Added by the 15 Nov review) The title's answer in one sentence within the first 30 seconds, before "Let's start from zero": main02 averaged 0:28 per view, so search viewers leave if the intro only sets up. Say it with the hero number on screen.
+  5. (Added by the 15 Nov review) Template look: at least a third of the shots hand-made for this video (YouTube's 16 Jul 2026 clarification names content "that looks like it's made with a template").
+- **Numbers (Sunday review 15 Nov):** not available yet (goes live 16 Nov 16:00).
 
 ## main04 Capitec story (v4, Fri 13 Nov 2026 16:00, 8:33)
 - **Better than v2/v3:** the whole video re-rendered on motion v3 (12 Nov): a living camera on every shot, big 3D flip cards that are dealt near their spoken word with the row staying centred, numbered lists on centred panels, title highlights that always finish before the cut. qa.py: 0 dead air, 0 frozen stretches (motion median 0.048), -13.8 LUFS, -2.8 dBTP.
 - **Still weak:** 31 card shots in 8.5 minutes is a lot of the same device; the team and the lesson shots are text-led. A 9-minute render takes about 2.5 hours and audio.py needs about 4 GB, so plan renders so nothing runs next to the sound step.
 - **Next bar (main05 and on):** at most one card shot per minute; show the thing named (a bank app screen, a statement, a branch) instead of a card where possible; qa.py passes on the first full render.
-- **Numbers (Sunday review):** not available yet.
+- **Numbers (Sunday review 15 Nov):** not available yet. Metricool shows it PUBLISHED (vjjUl4ufPuw) but has no per-video row or daily data after 12 Nov. Re-check 22 Nov; this is the first CINE-engine video to compare against main01/main02.
 
 ## main04 The Capitec story (v2, Fri 13 Nov 2026 16:00)
 - **Better than the manim videos:** rebuilt on the CINE engine (97 shots) with characters, money, branches and maps up close; the thumbnail carries the real Capitec logo from Rodney's file.
@@ -27,4 +29,9 @@ How this file works (see "Better every video" in PLAYBOOK.md): every new video s
   1. `qa.py` passes on the first full render: every shot shows something within 0.3 s of starting.
   2. At most one icon-row shot per minute; the rest are acted scenes, animated diagrams or maps.
   3. A stronger first 5 seconds: the most surprising picture or number on screen in the first shot, said in the first sentence.
-- **Numbers (Sunday review):** not available yet.
+- **Numbers (Sunday review 15 Nov):** see the v4 entry above (same video, v4 went out).
+
+## Earlier long videos (manim era, no review entry at the time): numbers only
+- **main03 emergency fund (Wed 11 Nov, 8:21, OverFWqe52g):** numbers not available yet (no Metricool row as of 15 Nov).
+- **main02 two-pot (Mon 9 Nov):** 20 views, 9.5 minutes watched, average view 0:28 (Metricool, all videos, to 12 Nov). Where viewers drop: not exposed by Metricool. Versus main01: far more views (search for "two-pot" is strong) but much shorter views. Lesson turned into main06's bar item 4: answer the title in the first 30 seconds.
+- **main01 TFSA guide (Sat 7 Nov):** 2 views, 8.5 minutes watched, average view 4:14. Too few views to judge; the few who came stayed.
