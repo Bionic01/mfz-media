@@ -1,0 +1,69 @@
+{
+ "voice": "Darius (ElevenLabs eleven_v4) single take, 16 Nov 2026",
+ "duration": 44.78,
+ "lines": [
+  {
+   "key": "hook",
+   "start": 0.15,
+   "end": 6.11,
+   "n": 10,
+   "text": "She saved R1,250. Then paid more than full price."
+  },
+  {
+   "key": "setup",
+   "start": 6.31,
+   "end": 12.23,
+   "n": 10,
+   "text": "A R6,250 TV, on Black Friday for R5,000."
+  },
+  {
+   "key": "card",
+   "start": 12.31,
+   "end": 15.83,
+   "n": 11,
+   "text": "On a store card over 12 months, at the legal maximums."
+  },
+  {
+   "key": "costs",
+   "start": 16.23,
+   "end": 23.19,
+   "n": 13,
+   "text": "Interest, the R69 monthly fee and credit life add about R1,570."
+  },
+  {
+   "key": "total",
+   "start": 23.39,
+   "end": 26.95,
+   "n": 4,
+   "text": "Total: about R6,570."
+  },
+  {
+   "key": "verdict",
+   "start": 27.03,
+   "end": 30.43,
+   "n": 9,
+   "text": "That's about R320 more than the full price."
+  },
+  {
+   "key": "lesson",
+   "start": 30.63,
+   "end": 37.39,
+   "n": 19,
+   "text": "A discount on credit isn't always a discount. Save R500 a month for 10 months, and pay cash."
+  },
+  {
+   "key": "guide",
+   "start": 37.59,
+   "end": 39.55,
+   "n": 7,
+   "text": "Full store card guide on the channel."
+  },
+  {
+   "key": "loop",
+   "start": 39.83,
+   "end": 44.23,
+   "n": 7,
+   "text": "So... did she really save R1,250?"
+  }
+ ]
+}

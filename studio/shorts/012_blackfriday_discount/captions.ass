@@ -1,0 +1,48 @@
+[Script Info]
+ScriptType: v4.00+
+PlayResX: 1080
+PlayResY: 1920
+WrapStyle: 2
+ScaledBorderAndShadow: yes
+
+[V4+ Styles]
+Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding
+Style: Cap,Barlow ExtraBold,96,&H00DFEEF4,&H00DFEEF4,&H00141212,&H96000000,0,0,0,0,100,100,0,0,1,7,4,2,70,70,400,1
+
+[Events]
+Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
+Dialogue: 0,0:00:00.15,0:00:00.95,Cap,,0,0,0,,{\fad(40,0)}She saved
+Dialogue: 0,0:00:00.95,0:00:03.59,Cap,,0,0,0,,{\fad(40,0)}{\c&H33BEF7&}R1 250.{\c&HDFEEF4&}
+Dialogue: 0,0:00:03.59,0:00:05.03,Cap,,0,0,0,,{\fad(40,0)}Then paid more
+Dialogue: 0,0:00:05.03,0:00:06.31,Cap,,0,0,0,,{\fad(40,0)}than full price.
+Dialogue: 0,0:00:06.31,0:00:09.59,Cap,,0,0,0,,{\fad(40,0)}A {\c&H33BEF7&}R6 250{\c&HDFEEF4&} TV, on
+Dialogue: 0,0:00:09.59,0:00:10.79,Cap,,0,0,0,,{\fad(40,0)}Black Friday for
+Dialogue: 0,0:00:10.79,0:00:12.31,Cap,,0,0,0,,{\fad(40,0)}{\c&H33BEF7&}R5 000.{\c&HDFEEF4&}
+Dialogue: 0,0:00:12.31,0:00:13.31,Cap,,0,0,0,,{\fad(40,0)}On a store card
+Dialogue: 0,0:00:13.31,0:00:14.47,Cap,,0,0,0,,{\fad(40,0)}over 12 months,
+Dialogue: 0,0:00:14.47,0:00:15.11,Cap,,0,0,0,,{\fad(40,0)}at the legal
+Dialogue: 0,0:00:15.11,0:00:16.23,Cap,,0,0,0,,{\fad(40,0)}maximums.
+Dialogue: 0,0:00:16.23,0:00:17.31,Cap,,0,0,0,,{\fad(40,0)}Interest, the
+Dialogue: 0,0:00:17.31,0:00:18.95,Cap,,0,0,0,,{\fad(40,0)}{\c&H33BEF7&}R69{\c&HDFEEF4&} monthly fee
+Dialogue: 0,0:00:18.95,0:00:19.99,Cap,,0,0,0,,{\fad(40,0)}and credit life
+Dialogue: 0,0:00:19.99,0:00:20.63,Cap,,0,0,0,,{\fad(40,0)}add about
+Dialogue: 0,0:00:20.63,0:00:23.39,Cap,,0,0,0,,{\fad(40,0)}{\c&H33BEF7&}R1 570.{\c&HDFEEF4&}
+Dialogue: 0,0:00:23.39,0:00:24.15,Cap,,0,0,0,,{\fad(40,0)}Total:
+Dialogue: 0,0:00:24.15,0:00:27.03,Cap,,0,0,0,,{\fad(40,0)}about {\c&H33BEF7&}R6 570.{\c&HDFEEF4&}
+Dialogue: 0,0:00:27.03,0:00:27.59,Cap,,0,0,0,,{\fad(40,0)}That's about
+Dialogue: 0,0:00:27.59,0:00:29.35,Cap,,0,0,0,,{\fad(40,0)}{\c&H33BEF7&}R320{\c&HDFEEF4&} more than
+Dialogue: 0,0:00:29.35,0:00:30.63,Cap,,0,0,0,,{\fad(40,0)}the full price.
+Dialogue: 0,0:00:30.63,0:00:31.43,Cap,,0,0,0,,{\fad(40,0)}A discount on
+Dialogue: 0,0:00:31.43,0:00:32.39,Cap,,0,0,0,,{\fad(40,0)}credit isn't
+Dialogue: 0,0:00:32.39,0:00:32.87,Cap,,0,0,0,,{\fad(40,0)}always a
+Dialogue: 0,0:00:32.87,0:00:33.91,Cap,,0,0,0,,{\fad(40,0)}discount.
+Dialogue: 0,0:00:33.91,0:00:35.11,Cap,,0,0,0,,{\fad(40,0)}Save {\c&H33BEF7&}R500{\c&HDFEEF4&} a
+Dialogue: 0,0:00:35.11,0:00:35.91,Cap,,0,0,0,,{\fad(40,0)}month for 10
+Dialogue: 0,0:00:35.91,0:00:36.79,Cap,,0,0,0,,{\fad(40,0)}months, and pay
+Dialogue: 0,0:00:36.79,0:00:37.59,Cap,,0,0,0,,{\fad(40,0)}cash.
+Dialogue: 0,0:00:37.59,0:00:38.39,Cap,,0,0,0,,{\fad(40,0)}Full store card
+Dialogue: 0,0:00:38.39,0:00:38.95,Cap,,0,0,0,,{\fad(40,0)}guide on the
+Dialogue: 0,0:00:38.95,0:00:39.83,Cap,,0,0,0,,{\fad(40,0)}channel.
+Dialogue: 0,0:00:39.83,0:00:40.79,Cap,,0,0,0,,{\fad(40,0)}So...
+Dialogue: 0,0:00:40.79,0:00:41.75,Cap,,0,0,0,,{\fad(40,0)}did she really
+Dialogue: 0,0:00:41.75,0:00:44.68,Cap,,0,0,0,,{\fad(40,0)}save {\c&H33BEF7&}R1 250?{\c&HDFEEF4&}
