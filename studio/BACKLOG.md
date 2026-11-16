@@ -6,7 +6,6 @@ Take topics from the top of each list. Move a topic to LOG.md once it's publishe
 
 _Re-planned 15 Nov 2026 (16:06): **one how-to, then one story, alternating.** Rodney first said "moneyfzero shouldn't mix stories and money teaching seems like we would be going off topic like on the capitec video" (15:59), then decided "1 how to 1 story video", alternating on Money From Zero (16:06). Stories stay on money: each one is told for one money lesson the viewer can use, says that lesson by about the 2-minute mark, and spends its last 2 minutes on "what this means for you" with a pointer to the related how-to; no company trivia or history that doesn't serve the lesson (the Capitec video drifted). Keep strict alternation (H, S, H, S); if a timely how-to has to jump the queue, the next video is a story. Partner companies (Flash/1Voucher, Blu Label Unlimited Group/Blu Voucher, OTT, Lesaka/4ALL Voucher) stay factual and neutral. Every figure, date and claim is verified on the day from primary sources; scandal stories use court findings, official reports and reputable news only, and say "alleged" where nothing has been proven. The slots fit the Mon/Wed/Fri 16:00 cadence; move them if production slips, but keep the deadlines._
 
-1. **HOW-TO: The repo rate explained: what a 0.25% change does to your bond, car payment and savings (SA).** Suggested slot: **Wed 18 Nov**, the day before the MPC decision on **Thu 19 Nov 2026**. Use current figures (repo 7.25%, prime 10.75% since 25 Sep; verify on the day) and work the repayment changes out in python. Keep it evergreen: no prediction of the decision (economists are split: Nedbank expects +25bp, Investec and Old Mutual a hold; BusinessTech 27 Oct 2026). Search phrases: "repo rate", "interest rate decision November 2026", "prime rate South Africa".
 2. **STORY: Steinhoff: South Africa's biggest corporate fraud, explained simply.** Suggested slot: **Fri 20 Nov**. End on where things stand: what's left is Ibex Investment Holdings, which sold its whole Pepkor stake in Jul 2025 (The Herald, 22 Jul 2025; verify on the day). Lesson: why one company should never be all your savings, and the warning signs.
 3. **HOW-TO: Debt review vs debt consolidation vs debt counselling: which one fits your situation (SA).** Suggested slot: **Mon 23 Nov**, after the MPC decision on 19 Nov. Debt stress is high going into December (TransUnion Q2 2026: 39% expect to miss a payment; DebtBusters Q2 2026: verify). What each one is, what it does to your credit record, what it costs, and who should use which; work a rand example in python. Use the NCR and the National Credit Act as primary sources. Search phrases: "debt review", "debt consolidation loan South Africa", "debt counselling".
 4. **STORY: How Shoprite makes money, and why it's in every town.** Suggested slot: **Wed 25 Nov** (Black Friday week). Lesson: how retailers' money services (sending money, accounts) work and what they cost.
@@ -44,7 +43,7 @@ _Re-planned 15 Nov 2026 (16:06): **one how-to, then one story, alternating.** Ro
 - **Debit orders**: how to stop or dispute one you didn't agree to.
 
 ## Published long videos (don't repeat)
-- TFSA complete guide (main01), two-pot retirement system (main02), emergency fund from zero (main03, 11 Nov 2026), Capitec story + bank fees (main04, 13 Nov 2026), Black Friday and store cards (main05, 16 Nov 2026)
+- TFSA complete guide (main01), two-pot retirement system (main02), emergency fund from zero (main03, 11 Nov 2026), Capitec story + bank fees (main04, 13 Nov 2026), Black Friday and store cards (main05, 16 Nov 2026), the repo rate explained (main06, 18 Nov 2026)
 
 ## Shorts (45–60 s), cut from the long videos
 _From 9 Nov, switch to two-pot (main02 goes live 9 Nov 16:00). Don't post more than 3 in a row on one topic (PLAYBOOK)._
@@ -76,6 +75,12 @@ _From 9 Nov, switch to two-pot (main02 goes live 9 Nov 16:00). Don't post more t
 - Store cards: the R69 service fee alone is R2,484 over 36 months.
 - Credit life: you can use your own policy instead (NCA s106(4)).
 - Store-card interest cap = repo + 14% = 21.25% today (re-check after the 19 Nov MPC decision).
+
+## Shorts from main06 (repo rate, live 18 Nov 16:00)
+- Repo rate: +0.25% = about +R204 a month on a R1.2 million bond (R12,183 to R12,386, prime 10.75% to 11%).
+- Rule of thumb: every 0.25% is about R17 a month per R100,000 on a 20-year bond (R16.96).
+- Pay the higher instalment now: R1.2m bond paid off 13 months early, about R112,600 less interest.
+- Hikes are lopsided: +R260 a month on Naledi's debts vs +R25 a YEAR on R10,000 savings.
 
 ## Timely Shorts (post only with official figures, on the day)
 _Shorts format test from 16 Nov (PLAYBOOK): rand number + consequence in frame 1, 35–45 s._
