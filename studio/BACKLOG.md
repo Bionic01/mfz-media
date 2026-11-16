@@ -70,7 +70,7 @@ _From 9 Nov, switch to two-pot (main02 goes live 9 Nov 16:00). Don't post more t
 - ~~Bank fees: R1 on the app vs R6 in a branch for the same payment (Capitec 2026).~~ USED, reframed with verified fees: Short 008, 13 Nov 2026 (immediate payment R6 vs normal R2 to another bank, 2 a month = R144 vs R48 a year; plus R10 per R1,000 at the ATM). No branch fee was verified, so don't use the "branch" framing.
 
 ## Shorts from main05 (Black Friday and store cards, live 16 Nov 16:00)
-- Black Friday: she saved R1,250 on a TV and paid R1,570 more on a store card (12 months at the legal maximums; facts.md).
+- ~~Black Friday: she saved R1,250 on a TV and paid R1,570 more on a store card (12 months at the legal maximums; facts.md).~~ USED: Short 012, 17 Nov 2026 (framed as R320 more than the R6,250 full price; 2nd store-card Short in a row, so Short 013 can be the 3rd at most, or switch: main06 repo rate goes live 18 Nov 16:00 and the SARB decision is 19 Nov).
 - ~~Store cards: "only R271 a month" = almost R9,750 for a R5,000 TV over 36 months.~~ USED: Short 011, 16 Nov 2026 (43 s, first Short of the 16 Nov length test; also shows +R1,800 interest, +R2,484 fees, +R460 credit life, R6,570 over 12 months; the R1,250 "saved" framing and the R69 fee Short are still free, but don't repeat the stack layout in the next store-card Short).
 - Store cards: the R69 service fee alone is R2,484 over 36 months.
 - Credit life: you can use your own policy instead (NCA s106(4)).
