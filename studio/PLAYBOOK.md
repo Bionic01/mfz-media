@@ -76,7 +76,7 @@ Read this whole file, and `STRATEGY.md` (goals, monetisation rules, learnings), 
 11. **Subtitles:** `python3 ../../tools/make_srt.py <name>.en.srt`.
 12. **Metadata:** write `youtube_description.txt`:
     - Title of at most 100 characters, starting with the search phrase. Don't end a title on a question mark (vidIQ 2026 title study: question endings ~0.82x average views; observational).
-    - Description with the basics, chapters (first one at 0:00), notes on the example, sources, and the disclaimer.
+    - Description with the basics, chapters (first one at 0:00), notes on the example, sources, and the disclaimer. **YouTube allows 5,000 characters at most: keep it under 4,800 and check it with python (`len(text)`) before scheduling and after every edit** (Fluxr EcoCash v2, 16 Nov 2026: the longer source list made it 5,671 and Metricool refused the post; Rodney caught it). If it runs long, shorten the source labels (keep every link) before cutting anything else.
     - 13 tags.
 13. **Publish:** see below. Then add a line to `studio/LOG.md`.
 
