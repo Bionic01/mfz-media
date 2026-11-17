@@ -77,8 +77,8 @@ _From 9 Nov, switch to two-pot (main02 goes live 9 Nov 16:00). Don't post more t
 - Store-card interest cap = repo + 14% = 21.25% today (re-check after the 19 Nov MPC decision).
 
 ## Shorts from main06 (repo rate, live 18 Nov 16:00)
-- Repo rate: +0.25% = about +R204 a month on a R1.2 million bond (R12,183 to R12,386, prime 10.75% to 11%).
-- Rule of thumb: every 0.25% is about R17 a month per R100,000 on a 20-year bond (R16.96).
+- ~~Repo rate: +0.25% = about +R204 a month on a R1.2 million bond (R12,183 to R12,386, prime 10.75% to 11%).~~ USED: Short 013, 18 Nov 2026 (also carries the R17 per R100,000 rule of thumb and an R800,000 = R136 example; next repo Short: the SARB decision itself on 19/20 Nov, official figures only).
+- ~~Rule of thumb: every 0.25% is about R17 a month per R100,000 on a 20-year bond (R16.96).~~ USED inside Short 013, 18 Nov 2026.
 - Pay the higher instalment now: R1.2m bond paid off 13 months early, about R112,600 less interest.
 - Hikes are lopsided: +R260 a month on Naledi's debts vs +R25 a YEAR on R10,000 savings.
 
