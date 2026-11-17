@@ -40,3 +40,10 @@ studio/videos/main06_repo_rate/*.wav
 studio/videos/**/logo_*.png
 studio/videos/main06_repo_rate/thumb.js
 studio/videos/**/render_status.txt
+
+engine/demo/**/thumbsnap/
+studio/videos/main07_steinhoff/img/
+studio/videos/main07_steinhoff/thumb/
+studio/videos/main07_steinhoff/*.mp4
+studio/videos/main07_steinhoff/*.wav
+studio/videos/main07_steinhoff/render.log
