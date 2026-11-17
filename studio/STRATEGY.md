@@ -32,7 +32,7 @@ Read this before every production run. The weekly growth review updates it.
    - Interest-rate decisions (SARB MPC)
    - Fuel price changes (monthly)
 3. **Click-through:**
-   - Thumbnails show one huge rand figure on flip tiles, at most 6 words, high contrast, and the topic badge.
+   - Thumbnails (Look v5, 17 Nov 2026): one whole bright 2D scene, one hero, 2-4 huge words in one block, high contrast, no flip tiles or split panels (PLAYBOOK step 10).
    - The title starts with the search phrase, then the promise.
    - Never clickbait beyond what the video delivers.
 4. **Retention:**

@@ -1,0 +1,33 @@
+{
+ "duration": 552.61,
+ "chapters": [
+  {
+   "key": "cold_open",
+   "start": 0.4
+  },
+  {
+   "key": "ch1_rise",
+   "start": 80.08
+  },
+  {
+   "key": "ch2_trick",
+   "start": 130.24
+  },
+  {
+   "key": "ch3_signs",
+   "start": 203.118
+  },
+  {
+   "key": "ch4_crash",
+   "start": 276.318
+  },
+  {
+   "key": "ch5_you",
+   "start": 413.358
+  },
+  {
+   "key": "outro_end",
+   "start": 524.238
+  }
+ ]
+}
