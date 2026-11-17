@@ -6,7 +6,6 @@ Take topics from the top of each list. Move a topic to LOG.md once it's publishe
 
 _Re-planned 15 Nov 2026 (16:06): **one how-to, then one story, alternating.** Rodney first said "moneyfzero shouldn't mix stories and money teaching seems like we would be going off topic like on the capitec video" (15:59), then decided "1 how to 1 story video", alternating on Money From Zero (16:06). Stories stay on money: each one is told for one money lesson the viewer can use, says that lesson by about the 2-minute mark, and spends its last 2 minutes on "what this means for you" with a pointer to the related how-to; no company trivia or history that doesn't serve the lesson (the Capitec video drifted). Keep strict alternation (H, S, H, S); if a timely how-to has to jump the queue, the next video is a story. Partner companies (Flash/1Voucher, Blu Label Unlimited Group/Blu Voucher, OTT, Lesaka/4ALL Voucher) stay factual and neutral. Every figure, date and claim is verified on the day from primary sources; scandal stories use court findings, official reports and reputable news only, and say "alleged" where nothing has been proven. The slots fit the Mon/Wed/Fri 16:00 cadence; move them if production slips, but keep the deadlines._
 
-2. **STORY: Steinhoff: South Africa's biggest corporate fraud, explained simply.** Suggested slot: **Fri 20 Nov**. End on where things stand: what's left is Ibex Investment Holdings, which sold its whole Pepkor stake in Jul 2025 (The Herald, 22 Jul 2025; verify on the day). Lesson: why one company should never be all your savings, and the warning signs.
 3. **HOW-TO: Debt review vs debt consolidation vs debt counselling: which one fits your situation (SA).** Suggested slot: **Mon 23 Nov**, after the MPC decision on 19 Nov. Debt stress is high going into December (TransUnion Q2 2026: 39% expect to miss a payment; DebtBusters Q2 2026: verify). What each one is, what it does to your credit record, what it costs, and who should use which; work a rand example in python. Use the NCR and the National Credit Act as primary sources. Search phrases: "debt review", "debt consolidation loan South Africa", "debt counselling".
 4. **STORY: How Shoprite makes money, and why it's in every town.** Suggested slot: **Wed 25 Nov** (Black Friday week). Lesson: how retailers' money services (sending money, accounts) work and what they cost.
 5. **HOW-TO: Your bonus or 13th cheque: how it's taxed and what to do with it**: (search: "bonus tax", "how is my 13th cheque taxed") the tax on a bonus, debt first, and the TFSA/RA top-up. Suggested slot: **Fri 27 Nov**, before December pay day.
@@ -43,7 +42,12 @@ _Re-planned 15 Nov 2026 (16:06): **one how-to, then one story, alternating.** Ro
 - **Debit orders**: how to stop or dispute one you didn't agree to.
 
 ## Published long videos (don't repeat)
-- TFSA complete guide (main01), two-pot retirement system (main02), emergency fund from zero (main03, 11 Nov 2026), Capitec story + bank fees (main04, 13 Nov 2026), Black Friday and store cards (main05, 16 Nov 2026), the repo rate explained (main06, 18 Nov 2026)
+- TFSA complete guide (main01), two-pot retirement system (main02), emergency fund from zero (main03, 11 Nov 2026), Capitec story + bank fees (main04, 13 Nov 2026), Black Friday and store cards (main05, 16 Nov 2026), the repo rate explained (main06, 18 Nov 2026), Steinhoff story (main07, 20 Nov 2026)
+
+## Shorts from main07 (Steinhoff, live 20 Nov 16:00)
+- R100,000 in one share became R21,900 in two days; split over 20 companies it stays about R96,100 (calc in main07 facts.md).
+- The spaza-shop trick: 'sell' stock to a shop you secretly control (PwC: parties 'made to appear' independent).
+- 4 warning signs before you buy one company's shares.
 
 ## Shorts (45–60 s), cut from the long videos
 _From 9 Nov, switch to two-pot (main02 goes live 9 Nov 16:00). Don't post more than 3 in a row on one topic (PLAYBOOK)._
