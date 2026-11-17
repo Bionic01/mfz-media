@@ -1,0 +1,76 @@
+{
+ "voice": "Thandi (ElevenLabs eleven_v4, BcpjRWrYhDBHmOnetmBl) single take, 17 Nov 2026",
+ "duration": 47.9,
+ "lines": [
+  {
+   "key": "hook",
+   "start": 0.287,
+   "end": 4.63,
+   "n": 8,
+   "text": "A quarter percent. R204 more, every month."
+  },
+  {
+   "key": "setup",
+   "start": 4.71,
+   "end": 9.11,
+   "n": 14,
+   "text": "That's what a 0.25% hike does to a R1.2 million home loan."
+  },
+  {
+   "key": "prime",
+   "start": 9.27,
+   "end": 19.75,
+   "n": 17,
+   "text": "Prime goes from 10.75% to 11%. Your instalment jumps from R12,183 to R12,386."
+  },
+  {
+   "key": "year",
+   "start": 19.83,
+   "end": 23.43,
+   "n": 6,
+   "text": "That's about R2,442 a year."
+  },
+  {
+   "key": "rule",
+   "start": 23.55,
+   "end": 31.11,
+   "n": 22,
+   "text": "Here's the trick for your own bond. Every quarter percent is about R17 a month, for every R100,000 you owe."
+  },
+  {
+   "key": "example",
+   "start": 31.15,
+   "end": 35.11,
+   "n": 7,
+   "text": "Owe R800,000? That's about R136."
+  },
+  {
+   "key": "cut",
+   "start": 35.15,
+   "end": 37.99,
+   "n": 9,
+   "text": "And a cut works the same way, in reverse."
+  },
+  {
+   "key": "when",
+   "start": 38.017,
+   "end": 41.83,
+   "n": 8,
+   "text": "The Reserve Bank's next decision: Thursday, 19 November."
+  },
+  {
+   "key": "guide",
+   "start": 41.95,
+   "end": 44.07,
+   "n": 7,
+   "text": "Full repo rate guide on the channel."
+  },
+  {
+   "key": "loop",
+   "start": 44.15,
+   "end": 47.35,
+   "n": 8,
+   "text": "So... what does a quarter percent cost you?"
+  }
+ ]
+}
