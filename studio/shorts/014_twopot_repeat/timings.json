@@ -1,0 +1,62 @@
+{
+ "voice": "Thandi (ElevenLabs eleven_v4, BcpjRWrYhDBHmOnetmBl) single take, 18 Nov 2026",
+ "duration": 45.02,
+ "lines": [
+  {
+   "key": "hook",
+   "start": 0.15,
+   "end": 6.19,
+   "n": 8,
+   "text": "Three withdrawals. About R75,900 less at retirement."
+  },
+  {
+   "key": "rare",
+   "start": 6.39,
+   "end": 13.35,
+   "n": 18,
+   "text": "And it's not rare! In March, Momentum said more than 60% of two-pot claims were third withdrawals."
+  },
+  {
+   "key": "first",
+   "start": 13.51,
+   "end": 16.07,
+   "n": 4,
+   "text": "First-timers? Just 5%."
+  },
+  {
+   "key": "example",
+   "start": 16.31,
+   "end": 21.75,
+   "n": 15,
+   "text": "So say you take R10,000, three years in a row. That's R30,000 out."
+  },
+  {
+   "key": "tax",
+   "start": 21.91,
+   "end": 25.83,
+   "n": 12,
+   "text": "Each time it's taxed at your marginal rate, and there's a fee."
+  },
+  {
+   "key": "growth",
+   "start": 25.99,
+   "end": 39.19,
+   "n": 31,
+   "text": "But the real cost? Growth. Left in the fund for about 20 more years, at 5% a year above inflation, that R30,000 becomes about R75,900 in today's money."
+  },
+  {
+   "key": "guide",
+   "start": 39.31,
+   "end": 41.11,
+   "n": 6,
+   "text": "Full two-pot guide on the channel."
+  },
+  {
+   "key": "loop",
+   "start": 41.19,
+   "end": 44.47,
+   "n": 7,
+   "text": "So before you tap withdraw again, remember..."
+  }
+ ]
+}

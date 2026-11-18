@@ -1,0 +1,56 @@
+[Script Info]
+ScriptType: v4.00+
+PlayResX: 1080
+PlayResY: 1920
+WrapStyle: 2
+ScaledBorderAndShadow: yes
+
+[V4+ Styles]
+Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding
+Style: Cap,Barlow ExtraBold,96,&H00DFEEF4,&H00DFEEF4,&H00141212,&H96000000,0,0,0,0,100,100,0,0,1,7,4,2,70,70,400,1
+
+[Events]
+Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
+Dialogue: 0,0:00:00.15,0:00:00.63,Cap,,0,0,0,,{\fad(40,0)}Three
+Dialogue: 0,0:00:00.63,0:00:01.83,Cap,,0,0,0,,{\fad(40,0)}withdrawals.
+Dialogue: 0,0:00:01.83,0:00:04.71,Cap,,0,0,0,,{\fad(40,0)}About {\c&H33BEF7&}R75 900{\c&HDFEEF4&}
+Dialogue: 0,0:00:04.71,0:00:05.27,Cap,,0,0,0,,{\fad(40,0)}less at
+Dialogue: 0,0:00:05.27,0:00:06.39,Cap,,0,0,0,,{\fad(40,0)}retirement.
+Dialogue: 0,0:00:06.39,0:00:07.11,Cap,,0,0,0,,{\fad(40,0)}And it's not
+Dialogue: 0,0:00:07.11,0:00:07.91,Cap,,0,0,0,,{\fad(40,0)}rare!
+Dialogue: 0,0:00:07.91,0:00:08.75,Cap,,0,0,0,,{\fad(40,0)}In March,
+Dialogue: 0,0:00:08.75,0:00:09.59,Cap,,0,0,0,,{\fad(40,0)}Momentum said
+Dialogue: 0,0:00:09.59,0:00:11.03,Cap,,0,0,0,,{\fad(40,0)}more than {\c&H33BEF7&}60%{\c&HDFEEF4&} of
+Dialogue: 0,0:00:11.03,0:00:11.91,Cap,,0,0,0,,{\fad(40,0)}two-pot claims
+Dialogue: 0,0:00:11.91,0:00:12.67,Cap,,0,0,0,,{\fad(40,0)}were third
+Dialogue: 0,0:00:12.67,0:00:13.51,Cap,,0,0,0,,{\fad(40,0)}withdrawals.
+Dialogue: 0,0:00:13.51,0:00:14.63,Cap,,0,0,0,,{\fad(40,0)}First-timers?
+Dialogue: 0,0:00:14.63,0:00:16.31,Cap,,0,0,0,,{\fad(40,0)}Just {\c&H33BEF7&}5%.{\c&HDFEEF4&}
+Dialogue: 0,0:00:16.31,0:00:17.11,Cap,,0,0,0,,{\fad(40,0)}So say you take
+Dialogue: 0,0:00:17.11,0:00:18.63,Cap,,0,0,0,,{\fad(40,0)}{\c&H33BEF7&}R10 000,{\c&HDFEEF4&} three
+Dialogue: 0,0:00:18.63,0:00:19.67,Cap,,0,0,0,,{\fad(40,0)}years in a row.
+Dialogue: 0,0:00:19.67,0:00:21.19,Cap,,0,0,0,,{\fad(40,0)}That's {\c&H33BEF7&}R30 000{\c&HDFEEF4&}
+Dialogue: 0,0:00:21.19,0:00:21.91,Cap,,0,0,0,,{\fad(40,0)}out.
+Dialogue: 0,0:00:21.91,0:00:22.91,Cap,,0,0,0,,{\fad(40,0)}Each time it's
+Dialogue: 0,0:00:22.91,0:00:23.51,Cap,,0,0,0,,{\fad(40,0)}taxed at your
+Dialogue: 0,0:00:23.51,0:00:24.55,Cap,,0,0,0,,{\fad(40,0)}marginal rate,
+Dialogue: 0,0:00:24.55,0:00:25.51,Cap,,0,0,0,,{\fad(40,0)}and there's a
+Dialogue: 0,0:00:25.51,0:00:25.99,Cap,,0,0,0,,{\fad(40,0)}fee.
+Dialogue: 0,0:00:25.99,0:00:26.63,Cap,,0,0,0,,{\fad(40,0)}But the real
+Dialogue: 0,0:00:26.63,0:00:27.51,Cap,,0,0,0,,{\fad(40,0)}cost?
+Dialogue: 0,0:00:27.51,0:00:28.47,Cap,,0,0,0,,{\fad(40,0)}Growth.
+Dialogue: 0,0:00:28.47,0:00:29.31,Cap,,0,0,0,,{\fad(40,0)}Left in the fund
+Dialogue: 0,0:00:29.31,0:00:30.15,Cap,,0,0,0,,{\fad(40,0)}for about 20
+Dialogue: 0,0:00:30.15,0:00:31.19,Cap,,0,0,0,,{\fad(40,0)}more years, at
+Dialogue: 0,0:00:31.19,0:00:32.63,Cap,,0,0,0,,{\fad(40,0)}{\c&H33BEF7&}5%{\c&HDFEEF4&} a year above
+Dialogue: 0,0:00:32.63,0:00:33.75,Cap,,0,0,0,,{\fad(40,0)}inflation, that
+Dialogue: 0,0:00:33.75,0:00:35.31,Cap,,0,0,0,,{\fad(40,0)}{\c&H33BEF7&}R30 000{\c&HDFEEF4&} becomes
+Dialogue: 0,0:00:35.31,0:00:38.23,Cap,,0,0,0,,{\fad(40,0)}about {\c&H33BEF7&}R75 900{\c&HDFEEF4&} in
+Dialogue: 0,0:00:38.23,0:00:39.31,Cap,,0,0,0,,{\fad(40,0)}today's money.
+Dialogue: 0,0:00:39.31,0:00:39.91,Cap,,0,0,0,,{\fad(40,0)}Full two-pot
+Dialogue: 0,0:00:39.91,0:00:40.47,Cap,,0,0,0,,{\fad(40,0)}guide on the
+Dialogue: 0,0:00:40.47,0:00:41.19,Cap,,0,0,0,,{\fad(40,0)}channel.
+Dialogue: 0,0:00:41.19,0:00:42.19,Cap,,0,0,0,,{\fad(40,0)}So before you
+Dialogue: 0,0:00:42.19,0:00:43.03,Cap,,0,0,0,,{\fad(40,0)}tap withdraw
+Dialogue: 0,0:00:43.03,0:00:43.87,Cap,,0,0,0,,{\fad(40,0)}again,
+Dialogue: 0,0:00:43.87,0:00:44.92,Cap,,0,0,0,,{\fad(40,0)}remember...
