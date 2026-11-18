@@ -244,15 +244,36 @@ def load(p):
     return np.frombuffer(r.stdout, np.float32).astype(np.float64).reshape(-1, 2)
 
 
+AIRY = {'whoosh', 'swish', 'whoosh_low', 'swoosh_up'}
+
+
+def thin_cues(cues, dense=False):
+    """Kurzgesagt-style restraint (Rodney, 18 Nov 2026: their effects are "demure... so low, but you can still hear them").
+    Keep at most one whoosh-family effect every 2.5 s and any effect at least 0.4 s after the last one kept.
+    Stamps, impacts and other accents on key numbers stay. --dense keeps every cue (old behaviour)."""
+    if dense:
+        return cues
+    out, last_any, last_airy = [], -9.0, -9.0
+    for c in sorted(cues, key=lambda c: c['t']):
+        airy = c['type'] in AIRY
+        if c['t'] - last_any < .4 or (airy and c['t'] - last_airy < 2.5):
+            continue
+        out.append(c); last_any = c['t']
+        if airy:
+            last_airy = c['t']
+    return out
+
+
 def main():
     ap = argparse.ArgumentParser(); ap.add_argument('cues'); ap.add_argument('out'); ap.add_argument('--voice'); ap.add_argument('--lead', type=float, default=0)
+    ap.add_argument('--dense', action='store_true', help='keep every effect cue (no thinning)')
     ap.add_argument('--style', default=None); ap.add_argument('--seed', type=int, default=7); ap.add_argument('--bpm', type=float, default=0)
     ap.add_argument('--drop', type=float, default=None); ap.add_argument('--music', type=float, default=1.0); ap.add_argument('--sfx', type=float, default=1.0)
     a = ap.parse_args(); cj = json.load(open(a.cues)); dur = cj['duration']; n = int(dur * SR); meta = (cj.get('meta') or {}).get('music', {})
     style = a.style or meta.get('style', 'doc'); drop = a.drop if a.drop is not None else meta.get('drop', 4.0); end = meta.get('end', dur - 2.0)
     mus = music(style, dur, a.seed, a.bpm, drop, end, meta.get('breaks', []))
     fx = FX(a.seed + 11); sfx = Bus(n)
-    for c in cj['cues']:
+    for c in thin_cues(cj['cues'], a.dense):
         x, off = fx.make(c['type']); sfx.add(x, c['t'] + off, c.get('gain', 1), c.get('pan', 0))
     sfx.x = reverb(sfx.x, 1.2, .18, 9)
     voice = np.zeros((n, 2))
@@ -269,8 +290,10 @@ def main():
         tgt = act[i]; g += (tgt - g) * (ra if tgt > g else rr) * 64; g = min(max(g, 0), 1); sm[i:i + 64] = g
     duck = 1 - .55 * sm
     # levels: halved on 10 Nov 2026 23:12 (Rodney: "a little bit too high... tune it down, maybe by like 50%"), 25% lower again at 23:17
-    # ("reduce the volume by 25% again"), then halved again on 11 Nov 23:38 ("reduce the volume for all the tones and music by 50%. I find it kind of irritating")
-    mix = voice + mus * duck[:, None] * .03 * a.music + sfx.x * .09375 * a.sfx * (1 - .3 * sm)[:, None]
+    # ("reduce the volume by 25% again"), then halved again on 11 Nov 23:38 ("reduce the volume for all the tones and music by 50%. I find it kind of irritating"),
+    # then 25% lower again on 18 Nov 2026 14:01 ("Reduce the sound effects in the background's volume by a further 25% for the next videos";
+    # he wants them like Kurzgesagt's: "so low, but you can still hear them in the background"). Music .03 -> .0225, effects .09375 -> .0703.
+    mix = voice + mus * duck[:, None] * .0225 * a.music + sfx.x * .0703 * a.sfx * (1 - .3 * sm)[:, None]
     tmp = a.out + '.raw.wav'
     a16 = (np.clip(mix / max(1, np.abs(mix).max() / .95), -1, 1) * 32767).astype(np.int16)
     with wave.open(tmp, 'wb') as wv:

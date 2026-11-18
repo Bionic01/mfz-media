@@ -68,7 +68,7 @@ Poses: stand, relaxed, handsHips, wave, point, pointUp, pointL, present, phone, 
 ## Brand rules
 - MFZ (`theme mfz`): background #121214, text #F4EEDF, gold #F7BE33, green #2FD27F, red #FF5D5D; split-flap headlines (`flapText`), the "0" bug. Rand amounts as `R` + space-grouped digits.
 - Fluxr (`theme fluxr`): deep green #0d372b, lime #85ED70, white; Fluxr logo from `fluxr-posts/kit/logos/fluxr-white.png`; voucher logos on white cards. The Fluxr part follows PLAYBOOK_YOUTUBE.md (both audiences, USSD + app, end card).
-- Never draw real people or copy real logos/banknotes exactly: notes are stylised (value, colour, pattern), company buildings are generic ("BANK"). Partner voucher logos are fine in the Fluxr part. Cite sources on screen for key numbers (`src()` line in the demos).
+- Never draw real people or copy real banknotes exactly: notes are stylised (value, colour, pattern), company buildings are generic ("BANK"). Never redraw a logo: when the voice names a company, show its real logo file whole on a card or chip (rules: "Brand logos and real pictures in the video" in studio/PLAYBOOK.md and fluxr-posts youtube/PLAYBOOK_YOUTUBE.md). Logo files stay out of this public repo. Partner voucher logos are fine in the Fluxr part. Cite sources on screen for key numbers (`src()` line in the demos).
 
 ## Final-file QA
 `python3 qa.py <final.mp4>` before publishing any long video or Short: flags dead air (nearly empty screen for over 1 s), loudness off -14 LUFS, true peak over -1 dBTP and files over 95 MB, and writes qa/qa_sheet.jpg and qa/qa_flags.jpg to look at. Fix every flag, re-render only the bad shots with `render.py video ... --from A --to B`, splice, and run it again.
