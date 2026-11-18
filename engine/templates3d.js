@@ -433,8 +433,11 @@ T3.vouchers = (a, b, o) => shot3(a, b, Object.assign({ pal: 'brand' }, o), (S, u
 
 /** the Fluxr logo in light: { tex: 'fluxr', line: html, at } */
 T3.logo = (a, b, o) => shot3(a, b, Object.assign({ pal: 'brand' }, o), (S, u, pal) => {
-  S.add(floor(pal, { gridA: .5 })); const tx = GL.TEX[o.tex || 'fluxr']; const ar = tx && tx.image ? tx.image.width / tx.image.height : 3;
-  const m = GL.mesh(new T.PlaneGeometry(4.6, 4.6 / ar), new T.MeshBasicMaterial({ map: tx, transparent: true, toneMapped: false, color: new T.Color(1.6, 1.6, 1.6) }), { cast: false }); m.position.set(0, 2, 0); S.scene.add(m);
+  /* Rodney, 19 Nov 2026: "the fluxr logo is too whiteish". The logo was drawn 1.6x over-bright under the default bloom, so the
+     white wordmark blew out into a glow. Draw it at its true colours (1.0) and keep the bloom gentle: the logo stays crisp and
+     readable, the rings and dust still glow. */
+  S.add(floor(pal, { gridA: .5 })); S.bloom = [.22, .3, .92]; const tx = GL.TEX[o.tex || 'fluxr']; const ar = tx && tx.image ? tx.image.width / tx.image.height : 3;
+  const m = GL.mesh(new T.PlaneGeometry(4.6, 4.6 / ar), new T.MeshBasicMaterial({ map: tx, transparent: true, toneMapped: false, color: new T.Color(.96, .96, .96) }), { cast: false }); m.position.set(0, 2, 0); m.renderOrder = 10; S.scene.add(m);
   const ring = GL.waves(pal.acc, 3, { maxR: 5, facing: 'camera', thick: .03 }); ring.group.position.set(0, 2, -.2); S.add(ring); const dust = GL.dust({ n: 260, box: [20, 8, 14], color: pal.acc, alpha: .45 }); S.add(dust);
   const line = o.line ? hl(u, o.line, 60, pal) : null; cue(o.at ?? a + .2, 'impact', .4); return { m, ring, dust, line };
 }, (s, lt, t) => { const at = o.at ?? a + .2; const q = E.outB(prog(t, at, at + .6)); s.m.scale.setScalar(Math.max(.001, q)); s.m.rotation.y = .1 * Math.sin(t * .6); s.ring.set(t - at, .6); s.dust.set(t);
