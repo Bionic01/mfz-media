@@ -57,8 +57,8 @@ _From 9 Nov, switch to two-pot (main02 goes live 9 Nov 16:00). Don't post more t
 - TFSA: R500,000 in, about R2.7 million at 65 (illustration).
 - ~~Two-pot: you withdraw R20,000 and get about R14,450.~~ USED: Short 004, 9 Nov 2026 (framed as SARS takes R5,200, R14,800 left before the fund's fee).
 - ~~Two-pot: it's called two-pot, but there are 3 pots.~~ USED: Short 005, 10 Nov 2026 (2nd two-pot Short in a row; next Short should switch topic or be the 3rd and last two-pot).
-- **Next two-pot Short (moved up 15 Nov):** more than half withdraw again: Momentum's Funds at Work survey, 55% of those who withdrew did so more than once (FAnews, 10 Nov 2026); frame it as a rand cost ("withdraw R10,000 twice, lose R..."; work it out in python on the day).
-- Two-pot: 62% of claims are third withdrawals (Momentum, March 2026).
+- ~~**Next two-pot Short (moved up 15 Nov):** repeat withdrawals as a rand cost.~~ USED: Short 014, 19 Nov 2026 (three R10,000 withdrawals = about R75,900 less at retirement at 5% real; uses TimesLIVE 17 Mar 2026 Momentum data: 60%+ third, 33% second, 5% first; the 55% FAnews figure could not be found on 18 Nov, don't use it unverified).
+- ~~Two-pot: 62% of claims are third withdrawals (Momentum, March 2026).~~ USED inside Short 014 (as 'more than 60%').
 - Two-pot: don't apply at the end of February.
 - Two-pot: R320 fee = 16% of a R2,000 withdrawal.
 
