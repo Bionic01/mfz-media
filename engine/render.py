@@ -27,7 +27,10 @@ def serve():
 
 
 def open_page(p, port, scene, theme, scale, extra=''):
-    b = p.chromium.launch(args=['--disable-web-security', '--font-render-hinting=none', '--disable-gpu-vsync', '--force-color-profile=srgb', '--disable-lcd-text', '--enable-unsafe-swiftshader', '--ignore-gpu-blocklist', '--use-gl=angle', '--use-angle=swiftshader'])
+    # CINE_SOFTWARE=1: plain software compositing, no SwiftShader GL. About 5x faster for 2D scenes (Look v5 / blended, measured
+    # 19 Nov 2026: 0.73 s against 4 s a frame); scenes that use WebGL (gl3d.js, C.T3) need the default GL path.
+    gl = ['--disable-gpu', '--disable-gpu-compositing'] if os.environ.get('CINE_SOFTWARE') == '1' else ['--enable-unsafe-swiftshader', '--ignore-gpu-blocklist', '--use-gl=angle', '--use-angle=swiftshader']
+    b = p.chromium.launch(args=['--disable-web-security', '--font-render-hinting=none', '--disable-gpu-vsync', '--force-color-profile=srgb', '--disable-lcd-text'] + gl)
     ctx = b.new_context(viewport={'width': 1920, 'height': 1080}, device_scale_factor=scale)
     pg = ctx.new_page()
     pg.on('pageerror', lambda e: print('pageerror:', e, flush=True))
