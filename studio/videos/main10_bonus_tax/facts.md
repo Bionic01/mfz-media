@@ -32,3 +32,4 @@ SARS only (the voice names SARS). No bank or product brands.
 
 ## Final check
 - 19 Nov 2026: SARS 2027 tables as above (checked on sars.gov.za). MPC decision today: re-check "over twenty percent" after 15:00 (any repo of 6% or more keeps it true).
+- 19 Nov 2026 after the MPC: repo rate unchanged at 7.25% (SAnews, 19 Nov 2026: https://www.sanews.gov.za/south-africa/interest-rate-stays-unchanged-725). Credit and store card cap = repo + 14 = 21.25%, so "over twenty percent right now" holds; no change to the video.
