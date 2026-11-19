@@ -1,0 +1,37 @@
+{
+ "duration": 498.36,
+ "chapters": [
+  {
+   "key": "cold_open",
+   "start": 0.4
+  },
+  {
+   "key": "ch1_what",
+   "start": 70.48
+  },
+  {
+   "key": "ch2_size",
+   "start": 136.244
+  },
+  {
+   "key": "ch3_risks",
+   "start": 208.911
+  },
+  {
+   "key": "ch4_protect",
+   "start": 283.608
+  },
+  {
+   "key": "ch5_grow",
+   "start": 357.128
+  },
+  {
+   "key": "ch6_join",
+   "start": 409.996
+  },
+  {
+   "key": "outro_end",
+   "start": 452.796
+  }
+ ]
+}
