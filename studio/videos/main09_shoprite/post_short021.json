@@ -1,0 +1,44 @@
+{
+ "autoPublish": true,
+ "draft": false,
+ "descendants": [],
+ "firstCommentText": "",
+ "hasNotReadNotes": false,
+ "shortener": false,
+ "smartLinkData": {
+  "ids": []
+ },
+ "mediaAltText": [],
+ "providers": [
+  {
+   "network": "youtube"
+  }
+ ],
+ "media": [
+  "https://raw.githubusercontent.com/Bionic01/mfz-media/__SHA__/media/shorts/021_main09/MoneyFromZero_021_blend.mp4"
+ ],
+ "videoThumbnailUrl": "https://raw.githubusercontent.com/Bionic01/mfz-media/__SHA__/media/shorts/021_main09/cover_blend.jpg",
+ "publicationDate": {
+  "dateTime": "2026-11-26T18:00:00",
+  "timezone": "Africa/Johannesburg"
+ },
+ "text": "Sending money from one Shoprite or Checkers counter to another costs a flat R9.99 on top of the money you send. Flat means the same fee whether you send a little or a lot: on R200 it's about 5%, on R2,000 only about 0.5%. Lerato (an illustration) sends her mother R200 four times a month: four fees, almost R40. One R800 transfer a month costs one fee, about R10. That's about R30 a month, or about R360 a year, back in her pocket for the same money sent.\n\nAbout the example: 4 x R9.99 = R39.96 a month; 1 x R9.99 = R9.99; the difference is R29.97 a month, R359.64 a year.\n\nFull story: \"How Shoprite Makes Money: R6 of Every R100 (and Why It's in Every Town)\" on the Money From Zero channel.\n\nSources\n- Checkers money transfer (fee and limits, checked 20 Nov 2026): https://www.checkers.co.za/send-money-checkers\n\nLogos and brand names belong to their owners and are shown only to identify the companies discussed. This video is not sponsored or endorsed by any of them.\n\nWhat should the next Short be? Tell me in the comments.\n\nNew Shorts every day. Full step-by-step guides every week. Subscribe to learn money from zero.\n\nGeneral information and education only, not financial advice.\n\n#MoneyTransfer #BankFees #SouthAfrica",
+ "youtubeData": {
+  "title": "The R9.99 fee that costs R360 a year #MoneyTransfer",
+  "type": "short",
+  "privacy": "public",
+  "tags": [
+   "Shoprite money transfer",
+   "Checkers money transfer",
+   "money transfer fees",
+   "send money South Africa",
+   "flat fee",
+   "save on fees",
+   "personal finance South Africa",
+   "Money From Zero"
+  ],
+  "category": "EDUCATION",
+  "madeForKids": false,
+  "isAiGeneratedContent": true
+ }
+}
