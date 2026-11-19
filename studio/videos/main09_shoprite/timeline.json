@@ -1,0 +1,37 @@
+{
+ "duration": 498.68,
+ "chapters": [
+  {
+   "key": "cold_open",
+   "start": 0.4
+  },
+  {
+   "key": "ch1_story",
+   "start": 73.6
+  },
+  {
+   "key": "ch2_machine",
+   "start": 131.908
+  },
+  {
+   "key": "ch3_every_town",
+   "start": 215.588
+  },
+  {
+   "key": "ch4_counter",
+   "start": 290.949
+  },
+  {
+   "key": "ch5_you",
+   "start": 354.709
+  },
+  {
+   "key": "ch5b_plan",
+   "start": 435.1
+  },
+  {
+   "key": "outro_end",
+   "start": 459.107
+  }
+ ]
+}

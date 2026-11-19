@@ -1,0 +1,37 @@
+{
+ "duration": 489.53,
+ "chapters": [
+  {
+   "key": "cold_open",
+   "start": 0.4
+  },
+  {
+   "key": "ch1_brackets",
+   "start": 46.267
+  },
+  {
+   "key": "ch2_bonus",
+   "start": 127.989
+  },
+  {
+   "key": "ch2b_your_rate",
+   "start": 246.462
+  },
+  {
+   "key": "ch3_order",
+   "start": 275.988
+  },
+  {
+   "key": "ch3b_mistakes",
+   "start": 393.668
+  },
+  {
+   "key": "ch4_plan",
+   "start": 421.105
+  },
+  {
+   "key": "outro_end",
+   "start": 449.345
+  }
+ ]
+}
