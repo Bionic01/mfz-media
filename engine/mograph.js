@@ -34,7 +34,7 @@ function flag(parent, defs, code, { r = 48, ring = '#ffffff', ringW = 5, shadow 
   const fx = (FOCUS[code] ?? .5) - .5, sq = SQUASH[code] || 1;
   if (FILE_FLAGS.includes(code)) sv('image', { href: ENG + 'assets/flags/' + code + '.svg', x: -r * 1.5 / sq - fx * r * 3 / sq, y: -r, width: r * 3 / sq, height: r * 2, preserveAspectRatio: 'none' }, inner);
   else if (DRAWN[code]) { const fg = sv('g', { transform: `translate(${-r * 1.5 / sq - fx * r * 3 / sq},${-r}) scale(${r / 100 / sq},${r / 100})` }, inner); DRAWN[code](fg); }
-  else sv('circle', { r, fill: '#888' }, inner);
+  else { sv('circle', { r, fill: '#888' }, inner); console.warn('CINE: no flag for "' + code + '" (grey placeholder drawn); add it to assets/flags'); }
   if (gloss) { sv('ellipse', { cx: -r * .25, cy: -r * .45, rx: r * .7, ry: r * .38, fill: '#fff', opacity: .22 }, inner); sv('circle', { r, fill: grad(defs, [[0, '#000', 0], [.7, '#000', 0], [1, '#000', .25]], { radial: true }) }, inner); }
   if (ringW) sv('circle', { r: r - ringW / 2 + .5, fill: 'none', stroke: ring, 'stroke-width': ringW }, g);
   return g;
