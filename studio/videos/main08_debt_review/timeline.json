@@ -1,0 +1,33 @@
+{
+ "duration": 507.06,
+ "chapters": [
+  {
+   "key": "cold_open",
+   "start": 0.4
+  },
+  {
+   "key": "ch1_words",
+   "start": 68.16
+  },
+  {
+   "key": "ch2_consolidation",
+   "start": 105.04
+  },
+  {
+   "key": "ch3_review",
+   "start": 198.964
+  },
+  {
+   "key": "ch3b_side_by_side",
+   "start": 303.67
+  },
+  {
+   "key": "ch4_choose",
+   "start": 375.984
+  },
+  {
+   "key": "outro_end",
+   "start": 463.304
+  }
+ ]
+}
