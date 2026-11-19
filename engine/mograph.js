@@ -7,7 +7,7 @@ const ENG = (document.currentScript && document.currentScript.src.replace(/[^/]*
 C.ENG = ENG;
 
 // ---------------- flags ----------------
-const FILE_FLAGS = ['bw', 'cd', 'et', 'ke', 'ls', 'mw', 'mz', 'ng', 'pk', 'so', 'za', 'zw'];
+const FILE_FLAGS = ['bd', 'bw', 'cd', 'ci', 'et', 'id', 'ke', 'ls', 'mw', 'mz', 'ng', 'ph', 'pk', 'so', 'ss', 'za', 'zw']; // bd ci id ph ss added 19 Nov 2026 (country-flag-icons 1.5.13, MIT, 3x2)
 // code-drawn flags (simplified, 300x200)
 const DRAWN = {
   us: g => { for (let i = 0; i < 13; i++) sv('rect', { x: 0, y: i * 200 / 13, width: 300, height: 200 / 13, fill: i % 2 ? '#fff' : '#b22234' }, g); sv('rect', { x: 0, y: 0, width: 130, height: 108, fill: '#3c3b6e' }, g); for (let j = 0; j < 5; j++) for (let i = 0; i < 6; i++) sv('circle', { cx: 12 + i * 21, cy: 12 + j * 21, r: 4, fill: '#fff' }, g); },
@@ -23,7 +23,7 @@ const DRAWN = {
   ae: g => { ['#00732f', '#fff', '#000'].forEach((c, i) => sv('rect', { y: i * 200 / 3, width: 300, height: 200 / 3, fill: c }, g)); sv('rect', { width: 80, height: 200, fill: '#ff0000' }, g); },
   eu: g => { sv('rect', { width: 300, height: 200, fill: '#003399' }, g); for (let i = 0; i < 12; i++) { const a = i / 12 * Math.PI * 2; sv('circle', { cx: 150 + Math.cos(a) * 60, cy: 100 + Math.sin(a) * 60, r: 8, fill: '#ffcc00' }, g); } },
 };
-const FOCUS = { zm: .78, us: .32, gb: .5, ae: .4 }; // horizontal point of the flag to centre in the badge
+const FOCUS = { zm: .78, us: .32, gb: .5, ae: .4, ph: .42, ss: .42 }; // horizontal point of the flag to centre in the badge
 const SQUASH = { ng: 1.5, cd: 1.15, mw: 1.15, ke: 1.15, zw: 1.1, za: 1.1, gb: 1.2, us: 1.1, bw: 1.1, et: 1.15, mz: 1.15, ls: 1.1, so: 1.1 }; // fit more of wide flags
 /** circular flag badge centred on 0,0. returns g */
 function flag(parent, defs, code, { r = 48, ring = '#ffffff', ringW = 5, shadow = true, gloss = true } = {}) {
