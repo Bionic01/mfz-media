@@ -1,0 +1,33 @@
+{
+ "duration": 489.58,
+ "chapters": [
+  {
+   "key": "cold_open",
+   "start": 0.4
+  },
+  {
+   "key": "ch1_build",
+   "start": 64.56
+  },
+  {
+   "key": "ch2_broke",
+   "start": 122.399
+  },
+  {
+   "key": "ch3_today",
+   "start": 186.559
+  },
+  {
+   "key": "ch4_bill",
+   "start": 266.08
+  },
+  {
+   "key": "ch5_you",
+   "start": 369.611
+  },
+  {
+   "key": "outro_end",
+   "start": 443.771
+  }
+ ]
+}
