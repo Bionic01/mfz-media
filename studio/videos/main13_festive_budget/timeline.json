@@ -1,0 +1,37 @@
+{
+ "duration": 480.43,
+ "chapters": [
+  {
+   "key": "cold_open",
+   "start": 0.4
+  },
+  {
+   "key": "ch1_gap",
+   "start": 46.24
+  },
+  {
+   "key": "ch2_split",
+   "start": 116.548
+  },
+  {
+   "key": "ch3_spend",
+   "start": 201.349
+  },
+  {
+   "key": "ch4_traps",
+   "start": 260.549
+  },
+  {
+   "key": "ch5_january",
+   "start": 335.756
+  },
+  {
+   "key": "ch6_next",
+   "start": 368.338
+  },
+  {
+   "key": "outro_end",
+   "start": 433.497
+  }
+ ]
+}
