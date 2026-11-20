@@ -46,3 +46,4 @@ Eskom (logo from eskom.co.za), NERSA (name card if no clean logo), Parliament (n
 
 ## Final check
 - 19 Nov 2026 (web): the 2027 increase of 8.83% is still a proposal pending NERSA's final approval (EWN 4 Sep 2026) -> screen label says so. Municipal arrears rose to R120.26bn at 31 July 2026 (TimesLIVE, 23 Sep 2026: https://www.timeslive.co.za/news/south-africa/2026-09-23-municipalities-owe-eskom-r120bn-as-debt-threatens-viability/) -> screen adds it; the voice's "by March 2026 ... R111.6bn" and recap "more than R111bn" stay true. Free basic electricity change still a proposal.
+- 20 Nov 2026 (before publishing, two searches): no final NERSA decision on the 1 April 2027 increase found; latest is the October public hearing (IOL Cape Times, 13 Oct 2026: https://iol.co.za/capetimes/news/2026-10-13-eskom-tariff-restructuring-faces-affordability-backlash-at-nersa-hearing/). The label "proposed, pending final approval" stands.
