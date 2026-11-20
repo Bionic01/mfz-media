@@ -34,3 +34,4 @@ Wonga (name card), Debt Rescue (name card), Standard Bank (name card; logo not a
 
 ## Final check
 - 19 Nov 2026 (web): no 2026 Wonga festive survey published yet (Business Explainer 7 Oct 2026 still cites the 2025 one), so the voice says "last festive season". School opening date 13 Jan 2027 confirmed. Re-check on 1 Dec for a new 2026 festive survey; if one is out, update the cold-open figure on screen.
+- 20 Nov 2026 (after render): still no 2026 Wonga festive survey found (search shows only the 2025 one), so "last festive season" and R289bn stand. Re-check on 1 Dec still due. Quote cards: the two NCR lines now use the NCR's own words (EWN 15 Dec 2025) with quotation marks; other cards plain.
