@@ -1,0 +1,44 @@
+{
+ "autoPublish": true,
+ "draft": false,
+ "descendants": [],
+ "firstCommentText": "",
+ "hasNotReadNotes": false,
+ "shortener": false,
+ "smartLinkData": {
+  "ids": []
+ },
+ "mediaAltText": [],
+ "providers": [
+  {
+   "network": "youtube"
+  }
+ ],
+ "media": [
+  "https://raw.githubusercontent.com/Bionic01/mfz-media/__SHA__/media/shorts/027_main11/MoneyFromZero_027_blend.mp4"
+ ],
+ "videoThumbnailUrl": "https://raw.githubusercontent.com/Bionic01/mfz-media/__SHA__/media/shorts/027_main11/cover_blend.jpg",
+ "publicationDate": {
+  "dateTime": "2026-12-01T18:00:00",
+  "timezone": "Africa/Johannesburg"
+ },
+ "text": "Since 2007, electricity prices in South Africa have gone up by about 900%. Over the same time, prices in general went up by about 150%. Nomsa (an illustration) spends the same R500 on her prepaid meter every month, but each July she gets fewer units. So how did Eskom end up so deep in debt that the government stepped in with up to R254 billion?\n\nFull guide: \"How Eskom Went Broke, and What It Costs You Every Month (South Africa 2026)\" on the Money From Zero channel.\n\nSources\n- Electricity Minister Kgosientsho Ramokgopa, 18 Aug 2026 (prices since 2007)\n- Eskom Debt Relief Act, 2023 (up to R254 billion over three years)\n\n__CREDITS__Logos and brand names belong to their owners and are shown only to identify the organisations discussed. This video is not sponsored or endorsed by any of them.\n\nWhat should the next Short be? Tell me in the comments.\n\nNew Shorts every day. Full step-by-step guides every week. Subscribe to learn money from zero.\n\nGeneral information and education only, not financial advice. Your municipality's tariff may differ.\n\n#Eskom #Electricity #SouthAfrica",
+ "youtubeData": {
+  "title": "Electricity is up 900% since 2007 #Eskom",
+  "type": "short",
+  "privacy": "public",
+  "tags": [
+   "Eskom",
+   "electricity prices South Africa",
+   "electricity price increase",
+   "Eskom debt",
+   "prepaid electricity",
+   "load shedding",
+   "Eskom tariffs 2026",
+   "Money From Zero"
+  ],
+  "category": "EDUCATION",
+  "madeForKids": false,
+  "isAiGeneratedContent": true
+ }
+}
