@@ -1,0 +1,43 @@
+{
+ "autoPublish": true,
+ "draft": false,
+ "descendants": [],
+ "firstCommentText": "",
+ "hasNotReadNotes": false,
+ "shortener": false,
+ "smartLinkData": {
+  "ids": []
+ },
+ "mediaAltText": [],
+ "providers": [
+  {
+   "network": "youtube"
+  }
+ ],
+ "media": [
+  "https://raw.githubusercontent.com/Bionic01/mfz-media/__SHA__/media/shorts/026_main10/MoneyFromZero_026_blend.mp4"
+ ],
+ "videoThumbnailUrl": "https://raw.githubusercontent.com/Bionic01/mfz-media/__SHA__/media/shorts/026_main10/cover_blend.jpg",
+ "publicationDate": {
+  "dateTime": "2026-11-30T18:00:00",
+  "timezone": "Africa/Johannesburg"
+ },
+ "text": "Money you put into a retirement annuity can be deducted from your taxable income: up to 27.5% of your income, and up to R430,000 a year. Sipho's bonus (an illustration) pushed him into the 26% tax step, so every rand he puts into an RA this tax year saves him 26 cents in tax. Put in R5,000 and he gets about R1,300 back from SARS when he files. Remember: an RA is for retirement, and most of it stays locked in until you retire.\n\nFull guide: \"Your Bonus or 13th Cheque: How It's Taxed and What to Do With It (South Africa 2026)\" on the Money From Zero channel.\n\nSources\n- SARS, rates of tax for individuals (2027 tax year): https://www.sars.gov.za/tax-rates/income-tax/rates-of-tax-for-individuals/\n- TimesLIVE, Budget 2026: good news for small businesses and savers, 25 Feb 2026: https://www.timeslive.co.za/news/2026-02-25-budget-2026-good-news-for-small-businesses-and-savers/\n\nLogos and brand names belong to their owners and are shown only to identify the organisations discussed. This video is not sponsored or endorsed by any of them.\n\nWhat should the next Short be? Tell me in the comments.\n\nNew Shorts every day. Full step-by-step guides every week. Subscribe to learn money from zero.\n\nGeneral information and education only, not financial or tax advice. Check your own payslip, or speak to a registered tax practitioner.\n\n#RetirementAnnuity #Tax #SouthAfrica",
+ "youtubeData": {
+  "title": "Put R5,000 in an RA, get R1,300 back #RetirementAnnuity",
+  "type": "short",
+  "privacy": "public",
+  "tags": [
+   "retirement annuity tax",
+   "RA tax deduction",
+   "retirement annuity South Africa",
+   "tax back from SARS",
+   "27.5% deduction",
+   "bonus tax",
+   "Money From Zero"
+  ],
+  "category": "EDUCATION",
+  "madeForKids": false,
+  "isAiGeneratedContent": true
+ }
+}

@@ -1,0 +1,43 @@
+{
+ "autoPublish": true,
+ "draft": false,
+ "descendants": [],
+ "firstCommentText": "",
+ "hasNotReadNotes": false,
+ "shortener": false,
+ "smartLinkData": {
+  "ids": []
+ },
+ "mediaAltText": [],
+ "providers": [
+  {
+   "network": "youtube"
+  }
+ ],
+ "media": [
+  "https://raw.githubusercontent.com/Bionic01/mfz-media/__SHA__/media/shorts/024_main10/MoneyFromZero_024_blend.mp4"
+ ],
+ "videoThumbnailUrl": "https://raw.githubusercontent.com/Bionic01/mfz-media/__SHA__/media/shorts/024_main10/cover_blend.jpg",
+ "publicationDate": {
+  "dateTime": "2026-11-28T18:00:00",
+  "timezone": "Africa/Johannesburg"
+ },
+ "text": "Find your marginal rate in two steps. Multiply your monthly salary before tax by 12, then find the step it lands in (2026/27 tax year, March 2026 to February 2027): up to R245,100 a year, 18%; up to R383,100, 26%; up to R530,200, 31%. That's roughly the share of your bonus that goes to tax before you see it.\n\nFull guide: \"Your Bonus or 13th Cheque: How It's Taxed and What to Do With It (South Africa 2026)\" on the Money From Zero channel.\n\nSources\n- SARS, rates of tax for individuals (2027 tax year): https://www.sars.gov.za/tax-rates/income-tax/rates-of-tax-for-individuals/\n\nLogos and brand names belong to their owners and are shown only to identify the organisations discussed. This video is not sponsored or endorsed by any of them.\n\nWhat should the next Short be? Tell me in the comments.\n\nNew Shorts every day. Full step-by-step guides every week. Subscribe to learn money from zero.\n\nGeneral information and education only, not financial or tax advice. Check your own payslip, or speak to a registered tax practitioner.\n\n#Tax #Bonus #SouthAfrica",
+ "youtubeData": {
+  "title": "How much tax will your bonus pay? #Tax",
+  "type": "short",
+  "privacy": "public",
+  "tags": [
+   "marginal tax rate",
+   "tax brackets South Africa 2026",
+   "SARS tax tables",
+   "bonus tax",
+   "13th cheque",
+   "income tax South Africa",
+   "Money From Zero"
+  ],
+  "category": "EDUCATION",
+  "madeForKids": false,
+  "isAiGeneratedContent": true
+ }
+}
