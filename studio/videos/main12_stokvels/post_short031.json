@@ -1,0 +1,43 @@
+{
+ "autoPublish": true,
+ "draft": false,
+ "descendants": [],
+ "firstCommentText": "",
+ "hasNotReadNotes": false,
+ "shortener": false,
+ "smartLinkData": {
+  "ids": []
+ },
+ "mediaAltText": [],
+ "providers": [
+  {
+   "network": "youtube"
+  }
+ ],
+ "media": [
+  "https://raw.githubusercontent.com/Bionic01/mfz-media/__SHA__/media/shorts/031_main12/MoneyFromZero_031_blend.mp4"
+ ],
+ "videoThumbnailUrl": "https://raw.githubusercontent.com/Bionic01/mfz-media/__SHA__/media/shorts/031_main12/cover_blend.jpg",
+ "publicationDate": {
+  "dateTime": "2026-12-05T18:00:00",
+  "timezone": "Africa/Johannesburg"
+ },
+ "text": "Twelve women in Soweto each put R500 into their stokvel every month. Twelve women, twelve months: R72,000. On the first Sunday of December, each one goes home with R6,000 for Christmas. Thandeka's stokvel is an illustration, but the scale is real: more than 11 million South Africans belong to a stokvel, saving about R50 billion a year. And every year, some stokvels go wrong.\n\nAbout the example: 12 members x R500 x 12 months = R72,000; R72,000 / 12 = R6,000 each.\n\nFull guide: \"Stokvels Explained: How to Protect Your Stokvel Money (South Africa 2026)\" on the Money From Zero channel.\n\nSources\n- NASASA chair Andrew Lukhele on 702, via EWN, 14 Aug 2025 (more than 11 million members): https://www.ewn.co.za/more-than-11-million-south-africans-are-members-of-stokvels-nasasa\n- Ipsos, \"Stokvels remain the untapped human banks of South Africa\", 13 Mar 2024 (about R50 billion): https://www.ipsos.com/en-za/stokvels-remain-untapped-human-banks-south-africa\n\nPhotos via Wikimedia Commons: Welcome to Soweto and Soweto market, Nolabob, CC BY-SA 4.0; Johannesburg, Frankbel, CC BY-SA 4.0. Everything else is animated.\nLogos and brand names belong to their owners and are shown only to identify the organisations discussed. This video is not sponsored or endorsed by any of them.\n\nWhat should the next Short be? Tell me in the comments.\n\nNew Shorts every day. Full step-by-step guides every week. Subscribe to learn money from zero.\n\nGeneral information and education only, not financial advice.\n\n#Stokvel #Savings #SouthAfrica",
+ "youtubeData": {
+  "title": "12 women, R500 a month: R72,000 by December #Stokvel",
+  "type": "short",
+  "privacy": "public",
+  "tags": [
+   "stokvel",
+   "stokvels South Africa",
+   "stokvel savings",
+   "December stokvel payout",
+   "savings club",
+   "NASASA",
+   "Money From Zero"
+  ],
+  "category": "EDUCATION",
+  "madeForKids": false,
+  "isAiGeneratedContent": true
+ }
+}
