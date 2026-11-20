@@ -7,7 +7,7 @@ const ENG = (document.currentScript && document.currentScript.src.replace(/[^/]*
 C.ENG = ENG;
 
 // ---------------- flags ----------------
-const FILE_FLAGS = ['bd', 'bw', 'cd', 'ci', 'et', 'id', 'ke', 'ls', 'mg', 'mw', 'mz', 'ng', 'ph', 'pk', 'so', 'ss', 'za', 'zw']; // bd ci id ph ss added 19 Nov 2026 (country-flag-icons 1.5.13, MIT, 3x2)
+const FILE_FLAGS = ['bd', 'bw', 'cd', 'cg', 'ci', 'et', 'id', 'ir', 'ke', 'ls', 'mg', 'mw', 'mz', 'ng', 'ph', 'pk', 'rw', 'so', 'ss', 'za', 'zw']; // cg ir rw added 20 Nov 2026 (FE11 drew grey placeholders); bd ci id ph ss added 19 Nov 2026 (country-flag-icons 1.5.13, MIT, 3x2)
 // code-drawn flags (simplified, 300x200)
 const DRAWN = {
   us: g => { for (let i = 0; i < 13; i++) sv('rect', { x: 0, y: i * 200 / 13, width: 300, height: 200 / 13, fill: i % 2 ? '#fff' : '#b22234' }, g); sv('rect', { x: 0, y: 0, width: 130, height: 108, fill: '#3c3b6e' }, g); for (let j = 0; j < 5; j++) for (let i = 0; i < 6; i++) sv('circle', { cx: 12 + i * 21, cy: 12 + j * 21, r: 4, fill: '#fff' }, g); },
